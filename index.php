@@ -1,0 +1,2 @@
+<?php
+digita_layout();

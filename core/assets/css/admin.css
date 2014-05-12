@@ -1,0 +1,98 @@
+.digita-ot-section{  padding:5px 20px; display:block; text-align:center; margin-bottom:0px; }
+.digita-ot-section h2{ color:#FFF; }
+.ot-background-group { padding-top: 5px; }
+.option-tree-ui-colorpicker-input-wrap .wp-picker-container, .wp-picker-container:active{ padding-top:3px; }
+
+/*---Topbar---*/
+#setting_color_block_topbar.format-settings .format-setting-wrap{ padding:0; background:#A1AA35; }
+#setting_color_topbar_accent.format-settings .format-setting-wrap,
+#setting_color_topbar_heading.format-settings .format-setting-wrap,
+#setting_color_topbar_subheading.format-settings .format-setting-wrap,
+#setting_color_topbar_text.format-settings .format-setting-wrap,
+#setting_color_topbar_meta.format-settings .format-setting-wrap,
+#setting_color_topbar_border.format-settings .format-setting-wrap,
+#setting_color_topbar_border2.format-settings .format-setting-wrap,
+#setting_color_topbar_inner_bg.format-settings .format-setting-wrap,
+#setting_color_topbar_bg.format-settings .format-setting-wrap{ border-left:solid 5px #A1AA35; border-right:solid 5px #A1AA35; margin-bottom:0px; padding:20px; }
+#setting_color_topbar_bg.format-settings .format-setting-wrap{ border-bottom:solid 5px #A1AA35; margin-bottom:30px; }
+
+
+/*---Header---*/
+#setting_color_block_header.format-settings .format-setting-wrap{ padding:0; background:#333; }
+#setting_color_header_accent.format-settings .format-setting-wrap,
+#setting_color_header_heading.format-settings .format-setting-wrap,
+#setting_color_header_subheading.format-settings .format-setting-wrap,
+#setting_color_header_text.format-settings .format-setting-wrap,
+#setting_color_header_meta.format-settings .format-setting-wrap,
+#setting_color_header_border.format-settings .format-setting-wrap,
+#setting_color_header_border2.format-settings .format-setting-wrap,
+#setting_color_header_inner_bg.format-settings .format-setting-wrap,
+#setting_color_header_bg.format-settings .format-setting-wrap{ border-left:solid 5px #333; border-right:solid 5px #333; margin-bottom:0px; padding:20px; }
+#setting_color_header_bg.format-settings .format-setting-wrap{ border-bottom:solid 5px #333; margin-bottom:30px; }
+
+
+/*---navigation---*/
+#setting_color_block_navigation.format-settings .format-setting-wrap{ padding:0; background:#3BCED5; }
+#setting_color_navigation_text.format-settings .format-setting-wrap,
+#setting_color_navigation_border.format-settings .format-setting-wrap,
+#setting_color_navigation_bg.format-settings .format-setting-wrap,
+#setting_color_navigation_text_hover.format-settings .format-setting-wrap,
+#setting_color_navigation_border_hover.format-settings .format-setting-wrap,
+#setting_color_navigation_bg_hover.format-settings .format-setting-wrap{ border-left:solid 5px #3BCED5; border-right:solid 5px #3BCED5; margin-bottom:0px; padding:20px; }
+#setting_color_navigation_bg_hover.format-settings .format-setting-wrap{ border-bottom:solid 5px #3BCED5; margin-bottom:30px; }
+
+
+/*---Sub Header---*/
+#setting_color_block_subheader.format-settings .format-setting-wrap{ padding:0; background:#903; }
+#setting_color_subheader_accent.format-settings .format-setting-wrap,
+#setting_color_subheader_heading.format-settings .format-setting-wrap,
+#setting_color_subheader_subheading.format-settings .format-setting-wrap,
+#setting_color_subheader_text.format-settings .format-setting-wrap,
+#setting_color_subheader_meta.format-settings .format-setting-wrap,
+#setting_color_subheader_border.format-settings .format-setting-wrap,
+#setting_color_subheader_border2.format-settings .format-setting-wrap,
+#setting_color_subheader_inner_bg.format-settings .format-setting-wrap,
+#setting_color_subheader_bg.format-settings .format-setting-wrap{ border-left:solid 5px #903; border-right:solid 5px #903; margin-bottom:0px; padding:20px; }
+#setting_color_subheader_bg.format-settings .format-setting-wrap{ border-bottom:solid 5px #903; margin-bottom:30px; }
+
+
+/*---Main Content---*/
+#setting_color_block_content.format-settings .format-setting-wrap{ padding:0; background:#690; }
+#setting_color_content_accent.format-settings .format-setting-wrap,
+#setting_color_content_heading.format-settings .format-setting-wrap,
+#setting_color_content_subheading.format-settings .format-setting-wrap,
+#setting_color_content_text.format-settings .format-setting-wrap,
+#setting_color_content_meta.format-settings .format-setting-wrap,
+#setting_color_content_border.format-settings .format-setting-wrap,
+#setting_color_content_border2.format-settings .format-setting-wrap,
+#setting_color_content_inner_bg.format-settings .format-setting-wrap,
+#setting_color_content_bg.format-settings .format-setting-wrap{ border-left:solid 5px #690; border-right:solid 5px #690; margin-bottom:0px; padding:20px; }
+#setting_color_content_bg.format-settings .format-setting-wrap{ border-bottom:solid 5px #690; margin-bottom:30px; }
+
+
+/*---Footer widgets Content---*/
+#setting_color_block_fwidget.format-settings .format-setting-wrap{ padding:0; background:#069; }
+#setting_color_fwidget_accent.format-settings .format-setting-wrap,
+#setting_color_fwidget_heading.format-settings .format-setting-wrap,
+#setting_color_fwidget_subheading.format-settings .format-setting-wrap,
+#setting_color_fwidget_text.format-settings .format-setting-wrap,
+#setting_color_fwidget_link.format-settings .format-setting-wrap,
+#setting_color_fwidget_border.format-settings .format-setting-wrap,
+#setting_color_fwidget_border2.format-settings .format-setting-wrap,
+#setting_color_fwidget_inner_bg.format-settings .format-setting-wrap,
+#setting_color_fwidget_bg.format-settings .format-setting-wrap{ border-left:solid 5px #069; border-right:solid 5px #069; margin-bottom:0px; padding:20px; }
+#setting_color_fwidget_bg.format-settings .format-setting-wrap{ border-bottom:solid 5px #069; margin-bottom:30px; }
+
+
+/*---Footer Content---*/
+#setting_color_block_footer.format-settings .format-setting-wrap{ padding:0; background:#90C; }
+#setting_color_footer_accent.format-settings .format-setting-wrap,
+#setting_color_footer_heading.format-settings .format-setting-wrap,
+#setting_color_footer_subheading.format-settings .format-setting-wrap,
+#setting_color_footer_text.format-settings .format-setting-wrap,
+#setting_color_footer_link.format-settings .format-setting-wrap,
+#setting_color_footer_border.format-settings .format-setting-wrap,
+#setting_color_footer_border2.format-settings .format-setting-wrap,
+#setting_color_footer_inner_bg.format-settings .format-setting-wrap,
+#setting_color_footer_bg.format-settings .format-setting-wrap{ border-left:solid 5px #90C; border-right:solid 5px #90C; margin-bottom:0px; padding:20px; }
+#setting_color_footer_bg.format-settings .format-setting-wrap{ border-bottom:solid 5px #90C; margin-bottom:30px; }

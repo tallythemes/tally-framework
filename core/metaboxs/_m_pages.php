@@ -1,0 +1,158 @@
+<?php
+add_action( 'admin_init', 'digita_page_metabox_register' );
+function digita_page_metabox_register() {
+	$prefix = 'digita_';
+	
+	$settings = array();
+	
+	if(DIGITA_LAYOUT_TOPBAR_REMOVE == false):
+		$settings[] = array(
+			'id'          => 'digita_is_topbar',
+			'label'       => __('Enable TopBar Area', 'digita_taxdomain'),
+			'desc'        => __('Enable or Disable TopBar of this page / post.', 'digita_taxdomain'),
+			'std'         => '',
+			'type'        => 'select',
+			'section'     => 'branding',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => array(
+				 array( 'label' => '', 'value' => '' ),
+				 array( 'label' => 'Yes', 'value' => 'yes' ),
+				 array( 'label' => 'No', 'value' => 'no'),
+			)
+		);
+	endif;
+	
+	$settings[] = array(
+		'id'          => 'digita_is_header',
+        'label'       => __('Enable Header', 'digita_taxdomain'),
+        'desc'        => __('Enable or Disable Header of this page', 'digita_taxdomain'),
+        'std'         => '',
+        'type'        => 'select',
+        'section'     => 'branding',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'class'       => '',
+		'choices'     => array(
+			array( 'label' => '', 'value' => '' ),
+			 array( 'label' => 'Yes', 'value' => 'yes' ),
+			 array( 'label' => 'No', 'value' => 'no'),
+		)
+	);
+	
+	if(DIGITA_LAYOUT_SUBHEADER_REMOVE == false):
+		$settings[] = array(
+			'id'          => 'digita_is_subheader',
+			'label'       => __('Enable SubHeader', 'digita_taxdomain'),
+			'desc'        => __('Enable or Disable SubHeader of this page', 'digita_taxdomain'),
+			'std'         => '',
+			'type'        => 'select',
+			'section'     => 'branding',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => array(
+				array( 'label' => '', 'value' => '' ),
+				 array( 'label' => 'Yes', 'value' => 'yes' ),
+				 array( 'label' => 'No', 'value' => 'no'),
+			)
+		);
+	endif;
+	
+	$settings[] = array(
+		'id'          => 'digita_sidebar_layout',
+        'label'       => __('Sidebar Layout', 'digita_taxdomain'),
+        'desc'        => '',
+        'std'         => '',
+        'type'        => 'radio-image',
+        'section'     => 'branding',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'class'       => '',
+		'choices'     => array(
+			 array( 'label' => 'full-width-content', 'value' => 'full-width-content', 'src' => DIGITA_URL.'/core/assets/images/admin/c.gif'),
+			 array( 'label' => 'Content - Sidebar', 'value' => 'content-sidebar', 'src' => DIGITA_URL.'/core/assets/images/admin/cs.gif'),
+			 array( 'label' => 'Content - Sidebar - Sidebar', 'value' => 'content-sidebar-sidebar', 'src' => DIGITA_URL.'/core/assets/images/admin/css.gif'),
+			 array( 'label' => 'Sidebar - Content', 'value' => 'sidebar-content', 'src' => DIGITA_URL.'/core/assets/images/admin/sc.gif'),
+			 array( 'label' => 'Sidebar - Content - Sidebar', 'value' => 'sidebar-content-sidebar', 'src' => DIGITA_URL.'/core/assets/images/admin/scs.gif'),
+			 array( 'label' => 'Sidebar - Sidebar - Content', 'value' => 'sidebar-sidebar-content', 'src' => DIGITA_URL.'/core/assets/images/admin/ssc.gif'),
+		)
+	);
+	
+	$settings[] = array(
+		'id'          => 'digita_is_comment',
+        'label'       => __('Enable Comment Area', 'digita_taxdomain'),
+        'desc'        => __('Enable or Disable comment on this page / post.', 'digita_taxdomain'),
+        'std'         => '',
+        'type'        => 'select',
+        'section'     => 'branding',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'class'       => '',
+		'choices'     => array(
+			 array( 'label' => '', 'value' => '' ),
+			 array( 'label' => 'Yes', 'value' => 'yes' ),
+			 array( 'label' => 'No', 'value' => 'no'),
+		)
+	);
+	
+	
+	if(DIGITA_LAYOUT_FOOTER_WIDGETS_REMOVE == false):
+	$settings[] = array(
+		'id'          => 'digita_footer_widget_layout',
+        'label'       => __('Footer Widget Layout', 'digita_taxdomain'),
+        'desc'        => __('Select a <strong>Footer Widget</strong> layout. If you select the red cross no widget will display in footer', 'digita_taxdomain'),
+        'std'         => '',
+        'type'        => 'radio-image',
+        'section'     => 'footer',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'class'       => '',
+		'choices'     => array(
+			 array( 'label' => 'none', 'value' => 'none', 'src' => DIGITA_URL.'/core/assets/images/admin/sc-nonel.png'),
+			 array( 'label' => 'One Column', 'value' => '1', 'src' => DIGITA_URL.'/core/assets/images/admin/sc-full.png'),
+			 array( 'label' => 'Two Column', 'value' => '2', 'src' => DIGITA_URL.'/core/assets/images/admin/sc-half.png'),
+			 array( 'label' => 'Three Column', 'value' => '3', 'src' => DIGITA_URL.'/core/assets/images/admin/sc-third.png'),
+			 array( 'label' => 'Four Column', 'value' => '4', 'src' => DIGITA_URL.'/core/assets/images/admin/sc-fourth.png'),
+		)
+	);
+	endif;
+	
+	if(DIGITA_LAYOUT_FOOTER_REMOVE == false):
+	$settings[] = array(
+		'id'          => 'digita_footer_layout',
+        'label'       => __('Footer Layout', 'digita_taxdomain'),
+        'desc'        => __('Enable or Disable Footer on this page / post.', 'digita_taxdomain'),
+        'std'         => '',
+        'type'        => 'select',
+        'section'     => 'footer',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'class'       => '',
+		'choices'     => array(
+			 array( 'label' => '', 'value' => '' ),
+			 array( 'label' => 'no', 'value' => 'none'),
+			 array( 'label' => 'yes', 'value' => '2'),
+		)
+	);
+	endif;
+	
+	$metabox = array(
+		'id'        => 'digita_ot_page_metabox',
+		'title'     => 'Page / Post Settings',
+		'desc'      => '',
+		'pages'     => array( 'post', 'page' ),
+		'context'   => 'normal',
+		'priority'  => 'high',
+		'fields'    => $settings,
+	);
+	ot_register_meta_box( $metabox );
+}

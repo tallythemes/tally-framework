@@ -1,0 +1,79 @@
+/* #Laptop [ 960px ] * ---styles for browsers smaller than 800px;
+================================================== */
+@media only screen and (max-width: 800px) {
+	
+	#nav select{ display:block; float:left; width:70%; margin-left:15%; margin-top:0; }
+	#nav ul{ display:none; }
+	
+	
+	/*--Header--*/
+	#header{ text-align:center; padding-bottom:20px; padding-top:20px; }
+	#header .hheaight{ height:auto; width:100%; clear:both; }
+	#header .logo_area{  float:none; border-right:none;  margin-right: 0; padding-right:0;  }
+	#header .menu_area{ float:none; }
+	#header .icons_area{ float:none;  border-left:none; padding-left:0; padding-right:0;  }
+	#header .search_area{ float:none; border-left:none; padding-left:0; }
+	
+	.header-sticky #header.stickyMenu{ position:relative !important; }
+}
+
+/* #Tablet (Portrait) [ 768px ]  ---styles for browsers smaller than 768px;
+================================================== */
+@media only screen and (max-width: 768px) {	
+	
+	.col-holder .col{ margin-left:0; }
+	.col-holder .col_1,
+	.col-holder .col_2,
+	.col-holder .col_3,
+	.col-holder .col_4,
+	.col-holder .col_5,
+	.col-holder .col_6,
+	.col-holder .col_7,
+	.col-holder .col_8,
+	.col-holder .col_9,
+	.col-holder .col_10,
+	.col-holder .col_11,
+	.col-holder .col_12{ width: 100%; *width: 99.94680851063829%; margin-bottom:30px; }
+	
+	
+	.cl_holder{ margin-left:0; }
+	.cl{ margin-left:0; float:left; margin-bottom:30px; }
+	.cl_1,
+	.cl_2,
+	.cl_3,
+	.cl_4,
+	.cl_5,
+	.cl_6{ width: 100%; *width: 99.94680851063829%; }
+
+
+	#wrapper{ margin-bottom:0; margin-top:0; }
+	
+	#nav select{ display:block; float:left; width:70%; margin-left:15%; margin-top:0; }
+	#nav ul{ display:none; }
+	
+	
+	/*--Header--*/
+	#header{ text-align:center; padding-bottom:20px; padding-top:20px; }
+	#header .hheaight{ height:auto; width:100%; clear:both;  height:auto !important;}
+	#header .logo_area{  float:none; border-right:none;  margin-right: 0; padding-right:0;  }
+	#header .menu_area{ float:none; }
+	.header-sticky #header.stickyMenu{ position:relative !important; }
+	
+	#subheader .page_title{ float:none; width:100%; text-align:center; }
+	#subheader .page_subtitle{ float:none; width:100%; text-align:center; }
+	#subheader .breadcrumbs{ float:none; width:100%; text-align:center; }
+	
+	
+	/*--Footer--*/
+	#footer{ text-align:center; }
+	#footer .copy_text{ width:100%; float:none; }
+	#footer .footer_menu{ float:none; width:100%; margin-top:20px; }
+	
+	
+	/*--Comment --*/
+	.comment-form-author{ width:100%; float:left; margin-bottom:0px; }
+	.comment-form-email{ width:100%;  float:left; margin-left: 0px; margin-right: 0px; margin-bottom:0px; }
+	.comment-form-url{ width:100%;  float:left; margin-bottom:0px; }
+
+	
+}

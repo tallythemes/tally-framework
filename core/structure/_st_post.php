@@ -1,0 +1,282 @@
+<?php
+/***
+	Post Header markup open and close
+*-----------------------------------------------*/
+function digita_entry_header_markup_open(){
+	echo '<div class="entry-header">';	
+}
+
+function digita_entry_header_markup_close(){
+	echo '</div>';	
+}
+
+
+
+/***
+	Post Footer markup open and close
+*-----------------------------------------------*/
+function digita_entry_footer_markup_open(){
+	echo '<div class="entry-footer">';	
+}
+
+function digita_entry_footer_markup_close(){
+	echo '</div>';	
+}
+
+
+
+/***
+	Add post Title 
+*-----------------------------------------------*/
+function digita_do_post_title(){
+	if(is_single()) return;
+	if(get_post_format() == 'aside') return;
+	if(get_post_format() == 'quote') return;
+	?>
+	<h2 class="entry-title">
+		<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'digita_textdomain' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
+	</h2>
+    <?php
+}
+
+
+
+/***
+	Add post info 
+*-----------------------------------------------*/
+function digita_do_post_info(){
+	if(get_post_format() == 'aside') return;
+	if(get_post_format() == 'quote') return;
+	if(get_post_format() == 'link') return;
+	?>
+    <div class="entry-meta">
+        <div class="entry-meta-item"><i class="fa-user fa"></i> <?php the_author_posts_link(); ?></div>
+        <div class="entry-meta-item"><i class="fa-calendar fa"></i> <?php the_date(); ?></div>
+        <div class="entry-meta-item"><i class="fa-comment fa"></i> <?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></div>
+    </div>
+    <div class="clear"></div>
+    <?php
+}
+
+
+
+/***
+	Add post Content
+*-----------------------------------------------*/
+function digita_do_post_content(){
+	if(is_search()) {
+		the_excerpt();
+		echo '<div class="entry-readmore"><a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'digita_textdomain') . '</a></div>';
+	}else{
+		$more = apply_filters('digita_content_more', __( '<div class="entry-readmore">Read More</div>', 'digita_textdomain' ));
+		the_content($more);
+	}
+}
+
+
+
+
+/***
+	Add wp_link_pages aftet the post content
+*-----------------------------------------------*/
+function digita_do_post_content_nav(){
+	wp_link_pages(array('before' => '<p class="page_nav_link">' . __('Pages:', 'digita_textdomain'), 'after' => '</p>',));
+}
+
+
+
+
+/***
+	Add Pagenation
+*-----------------------------------------------*/
+function digita_do_posts_nav(){
+	echo digitafn_paginate2();	
+}
+
+
+
+
+/***
+	Add loop else content
+*-----------------------------------------------*/
+function digita_do_noposts(){
+	?>
+    <h4 class="page-title"><?php _e( 'Nothing Found', 'digita_taxdomain' ); ?></h4>
+	<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'digita_taxdomain' ); ?></p>
+	<?php get_search_form(); ?>
+    <?php
+}
+
+
+
+/***
+	Add the comment template after the loop
+*-----------------------------------------------*/
+function digita_do_comments_template(){
+	global $post;
+
+	if ( ! post_type_supports( $post->post_type, 'comments' ) ) return;
+	
+	if (digita_is_comment_template() != 'yes') return;
+
+	comments_template( '', true );
+}
+
+
+
+/***
+	Add Author bio
+*-----------------------------------------------*/
+function digita_do_author_box_single(){
+	if(!is_single()) return;
+	global $authordata;
+	 $context = '';
+	$authordata    = is_object( $authordata ) ? $authordata : get_userdata( get_query_var( 'author' ) );
+	$gravatar_size = apply_filters( 'genesis_author_box_gravatar_size', 70, $context );
+	$gravatar      = get_avatar( get_the_author_meta( 'email' ), $gravatar_size );
+	$description   = wpautop( get_the_author_meta( 'description' ) );
+
+	//* The author box markup, contextual
+
+	$title = apply_filters( 'genesis_author_box_title', sprintf( '%s <span itemprop="name">%s</span>', __( 'About', 'genesis' ), get_the_author() ), $context );
+
+	$pattern  = '<section class="author-box">';
+	$pattern .= $gravatar.'<h1 class="author-box-title">'.$title.'</h1>';
+	$pattern .= '<div class="author-box-content" itemprop="description">'.$description.'</div>';
+	$pattern .= '<div class="clear"></div>';
+	$pattern .= '</section>';
+	
+	echo $pattern;
+}
+
+
+/***
+	Post Meta
+*-----------------------------------------------*/
+function digita_do_post_meta(){
+	if(!is_single()) return;
+	?>
+    <div class="entry-single-meta">
+        <div class="tagmeta"><strong><?php _e('Categories:', 'digita_taxdomain'); ?>&nbsp;</strong><?php the_category(', '); ?></div>
+        <div class="tagmeta"><strong><?php _e('Tags:', 'digita_taxdomain'); ?>&nbsp;</strong><?php the_tags('',''); ?></div>
+    </div>
+	<?php
+}
+
+
+
+
+/***
+	Post Meta
+*-----------------------------------------------*/
+function digita_do_post_media(){
+	
+	//video
+	if(get_post_format() == 'video'){
+		$video_mp4 = get_post_meta(get_the_ID(), 'digita_postformat_video_mp4', true);
+		$video_ogv = get_post_meta(get_the_ID(), 'digita_postformat_video_ogv', true);
+		$video_mov = get_post_meta(get_the_ID(), 'digita_postformat_video_mov', true);
+		$video_poster = get_post_meta(get_the_ID(), 'digita_postformat_video_poster', true);
+		$embed = get_post_meta(get_the_ID(), 'digita_postformat_video_embed', true);
+		if($embed){
+			echo '<div class="entry-video-om entry-media">';
+				echo wp_oembed_get($embed);
+			echo '</div>';
+		}else{
+			echo '<div class="entry-video entry-media">';
+				echo do_shortcode('[video mp4="'.$video_mp4.'" ogv="'.$video_ogv.'" mov="'.$video_mov.'" poster="'.$video_poster.'"]');
+			echo '</div>';
+		}
+	}
+	
+	//audio
+	if(get_post_format() == 'audio'){
+		$ogg_url = get_post_meta(get_the_ID(), 'digita_postformat_audio_ogg', true);
+		$m4a_url = get_post_meta(get_the_ID(), 'digita_postformat_audio_m4a', true);
+		$embed = (string)get_post_meta(get_the_ID(), 'digita_postformat_audio_embed', true);
+		if($embed){
+			echo '<div class="audio-embed entry-media">';
+				echo wp_oembed_get($embed);
+			echo '</div>';
+		}else{
+			echo '<div class="audio-hosted entry-media">';
+				echo get_the_post_thumbnail(get_the_ID(), 'image_format', array('class'	=> "audio-poster-image"));
+				echo do_shortcode('[audio mp3="'.$m4a_url.'" ogg="'.$ogg_url.'"]');
+			echo '</div>';
+		}
+	}
+	
+	//Gallery
+	if(get_post_format() == 'gallery'){
+		echo '<div class="entry-gallery flexslider-gallery  entry-media" id="slidersingle_'.get_the_ID().'">';
+			echo '<ul class="slides" >';
+				$attachments = explode(",", get_post_meta(get_the_ID(), 'digita_postformat_gallery', true));
+				if ( $attachments ) {
+					foreach ( $attachments as $attachment ) {
+						$image = wp_get_attachment_image_src($attachment, 'gallery_format');
+						$imagefull = wp_get_attachment_image_src($attachment, 'full');
+						
+						echo '<li>';
+							echo '<a href="'.$imagefull[0].'" rel="prettyPhoto[g_'.get_the_ID().']"><img src="' . $image[0] . '" height="960" width="400" alt="" /></a>';
+						echo '</li>';
+					}
+				}
+			echo '</ul>';
+		echo '</div>';
+		?>
+        <script type="text/javascript">
+			jQuery(window).load(function() {
+				jQuery("#slidersingle_<?php echo get_the_ID(); ?>").flexslider({
+					animation: "fade",
+					smoothHeight: false,
+					reverse: true,
+					controlNav: true,
+					pauseOnHover: true
+				});
+			});
+		</script>
+        <?php
+	}
+	
+	//image
+	if(get_post_format() == 'image'){
+		echo '<div class="entry-image entry-media">';
+			$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
+			echo '<a href="'.$large_image_url[0].'" rel="prettyPhoto">';
+				echo get_the_post_thumbnail(get_the_ID(), 'image_format');
+			echo '</a>';
+		echo '</div>';
+	}
+}
+
+
+/***
+	Post format quote
+*-----------------------------------------------*/
+function digita_do_post_format_quote(){
+	if(get_post_format() == 'quote'){
+		$author_name = get_the_title();
+		$author_url = get_post_meta(get_the_ID(), 'digita_postformat_quote_source_url', true);
+		?>
+		<a target="_blank" href="<?php echo $author_url; ?>"  title="Source" class="entry-source">&mdash; <?php echo $author_name; ?></a>
+		<?php	
+	}
+}
+
+
+/***
+	Post format link
+*-----------------------------------------------*/
+function digita_do_post_format_link(){
+	if(get_post_format() == 'link'){
+		$link = get_post_meta(get_the_ID(), 'digita_postformat_link_url', true);
+		?>
+		<div class="entry-link">
+        	Link - 
+        	<a class="link_s" href="<?php echo $link; ?>" target="_blank" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'digita_textdomain' ), $link ) ); ?>">
+			<?php echo $link; ?>
+        	</a>
+        </div>
+		<?php
+	}
+}
