@@ -2,12 +2,12 @@
 /**
  * Initialize the options before anything else.
  */
-add_action( 'admin_init', 'digita_ot_theme_options', 1 );
+add_action( 'admin_init', 'tally_ot_theme_options', 1 );
 
 /**
  * Build the custom settings & update OptionTree.
  */
-function digita_ot_theme_options() {
+function tally_ot_theme_options() {
   /**
    * Get a copy of the saved settings array. 
    */

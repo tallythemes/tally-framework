@@ -2,14 +2,14 @@
 /*
  	Footer Widget Open Div
 --------------------------------------------*/
-if('digita_do_footer_widget_open_warp'):
-	function digita_do_footer_widget_open_warp(){
-		if(digita_footer_widget_layout_option() == 'none') return;
+if('tally_do_footer_widget_open_warp'):
+	function tally_do_footer_widget_open_warp(){
+		if(tally_footer_widget_layout_option() == 'none') return;
 		
 		echo '<div id="fwidget">';
 			echo '<div id="fwidget-inner">';
 	}
-	add_action('digita_before_footer', 'digita_do_footer_widget_open_warp', 5);
+	add_action('tally_before_footer', 'tally_do_footer_widget_open_warp', 5);
 endif;
 
 
@@ -17,15 +17,15 @@ endif;
 /*
  	Footer Widget Closing Div
 --------------------------------------------*/
-if('digita_do_footer_widget_closing_warp'):
-	function digita_do_footer_widget_closing_warp(){
-		if(digita_footer_widget_layout_option() == 'none') return;
+if('tally_do_footer_widget_closing_warp'):
+	function tally_do_footer_widget_closing_warp(){
+		if(tally_footer_widget_layout_option() == 'none') return;
 		
 				echo '<div class="clear"></div>';
 			echo '</div>';
 		echo '</div>';
 	}
-	add_action('digita_before_footer', 'digita_do_footer_widget_closing_warp', 15);
+	add_action('tally_before_footer', 'tally_do_footer_widget_closing_warp', 15);
 endif;
 
 
@@ -34,13 +34,13 @@ endif;
 /*
  	Footer Widget content
 --------------------------------------------*/
-if('digita_do_footer_widget_content'):
-	function digita_do_footer_widget_content(){
+if('tally_do_footer_widget_content'):
+	function tally_do_footer_widget_content(){
 		
-		if(digita_footer_widget_layout_option() == 'none') return;
+		if(tally_footer_widget_layout_option() == 'none') return;
 		
 		echo '<div class="col-holder nomargin">';
-			$footer_widget_layout = digita_footer_widget_layout_option();
+			$footer_widget_layout = tally_footer_widget_layout_option();
 			$widget_column = '12';
 						
 			if( $footer_widget_layout == '4' ){ $widget_column = '3'; }
@@ -61,5 +61,5 @@ if('digita_do_footer_widget_content'):
 			endif;
 		echo '</div>';
 	}
-	add_action('digita_before_footer', 'digita_do_footer_widget_content', 10);
+	add_action('tally_before_footer', 'tally_do_footer_widget_content', 10);
 endif;

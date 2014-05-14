@@ -1,11 +1,11 @@
 <?php
-add_filter('option_tree_settings_args', 'digita_social_icons_ot_options');
-function digita_social_icons_ot_options($custom_settings){
+add_filter('option_tree_settings_args', 'tally_social_icons_ot_options');
+function tally_social_icons_ot_options($custom_settings){
 	$custom_settings['sections'][] = array( 'id' => 'social_icons','title' => 'Social Icons');
 	
 	$custom_settings['settings']['enable_social_icons'] = array(
         'id'          => 'enable_social_icons',
-        'label'       => __('Enable Social Icons', 'digita_taxdomain'),
+        'label'       => __('Enable Social Icons', 'tally_taxdomain'),
         'desc'        => '',
         'std'         => 'yes',
         'type'        => 'select',
@@ -30,7 +30,7 @@ function digita_social_icons_ot_options($custom_settings){
 	
 	$custom_settings['settings']['social_icons'] = array(
         'id'          => 'social_icons',
-        'label'       => __('Social Icons', 'digita_taxdomain'),
+        'label'       => __('Social Icons', 'tally_taxdomain'),
         'desc'        => '',
         'std'         => array(
 							array('title'=> 'Dribbble', 'link'=> '#', 'icon'=>'fa-dribbble'),
@@ -47,7 +47,7 @@ function digita_social_icons_ot_options($custom_settings){
         'settings'    => array(
 			array(
 				'id'          => 'link',
-				'label'       => __('Link', 'digita_taxdomain'),
+				'label'       => __('Link', 'tally_taxdomain'),
 				'desc'        => '',
 				'std'         => '',
 				'type'        => 'text',
@@ -60,7 +60,7 @@ function digita_social_icons_ot_options($custom_settings){
 			),
 			array(
 				'id'          => 'icon',
-				'label'       => __('Select a Icon', 'digita_taxdomain'),
+				'label'       => __('Select a Icon', 'tally_taxdomain'),
 				'desc'        => '',
 				'std'         => '',
 				'type'        => 'select',

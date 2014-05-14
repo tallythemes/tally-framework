@@ -2,4 +2,4 @@
 /*
 Template Name: Blog
 */
-digita_layout();
+tally_layout();

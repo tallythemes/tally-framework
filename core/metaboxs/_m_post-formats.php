@@ -1,13 +1,13 @@
 <?php
-add_action( 'admin_init', 'digita_postformat_metabox_register' );
-function digita_postformat_metabox_register() {
-	$prefix = 'digita_postformat_';
+add_action( 'admin_init', 'tally_postformat_metabox_register' );
+function tally_postformat_metabox_register() {
+	$prefix = 'tally_postformat_';
 	
 	//audio
 	$settings = array();
 	$settings[] = array(
 		'id'          => $prefix.'audio_ogg',
-        'label'       => __('OGG URL', 'digita_textdomain'),
+        'label'       => __('OGG URL', 'tally_textdomain'),
         'desc'        => '',
         'std'         => '',
 		'rows'         => '3',
@@ -17,7 +17,7 @@ function digita_postformat_metabox_register() {
 	);
 	$settings[] = array(
 		'id'          =>  $prefix.'audio_m4a',
-        'label'       => __('MP3 URL', 'digita_textdomain'),
+        'label'       => __('MP3 URL', 'tally_textdomain'),
         'desc'        => '',
         'std'         => '',
 		'rows'         => '3',
@@ -27,7 +27,7 @@ function digita_postformat_metabox_register() {
 	);
 	$settings[] = array(
 		'id'          =>  $prefix.'audio_embed',
-        'label'       => __('AUDIO URL (OEMBED) OR EMBED CODE', 'digita_textdomain'),
+        'label'       => __('AUDIO URL (OEMBED) OR EMBED CODE', 'tally_textdomain'),
         'desc'        => '',
         'std'         => '',
 		'rows'         => '3',
@@ -36,7 +36,7 @@ function digita_postformat_metabox_register() {
         'choices'     => array()
 	);
 	$metabox = array(
-		'id'        => 'digita_ot_postFormat_audio_metabox',
+		'id'        => 'tally_ot_postFormat_audio_metabox',
 		'title'     => 'Audio: Post Format',
 		'desc'      => '',
 		'pages'     => array( 'post' ),
@@ -50,7 +50,7 @@ function digita_postformat_metabox_register() {
 	$settings = array();
 	$settings[] = array(
 		'id'          =>  $prefix.'video_embed',
-        'label'       => __('Video URL (OEMBED) OR EMBED CODE', 'digita_textdomain'),
+        'label'       => __('Video URL (OEMBED) OR EMBED CODE', 'tally_textdomain'),
         'desc'        => '',
         'std'         => '',
 		'rows'         => '3',
@@ -60,8 +60,8 @@ function digita_postformat_metabox_register() {
 	);
 	$settings[] = array(
 		'id'          => $prefix.'video_mp4',
-        'label'       => __('Full URL of <strong>MP4</strong> video', 'digita_textdomain'),
-        'desc'        => __('This is for hosted HTML5 video.', 'digita_textdomain'),
+        'label'       => __('Full URL of <strong>MP4</strong> video', 'tally_textdomain'),
+        'desc'        => __('This is for hosted HTML5 video.', 'tally_textdomain'),
         'std'         => '',
 		'rows'         => '3',
         'type'        => 'upload',
@@ -70,8 +70,8 @@ function digita_postformat_metabox_register() {
 	);
 	$settings[] = array(
 		'id'          => $prefix.'video_ogv',
-        'label'       => __('Full URL of <strong>OGV</strong> video', 'digita_textdomain'),
-        'desc'        => __('This is for hosted HTML5 video.', 'digita_textdomain'),
+        'label'       => __('Full URL of <strong>OGV</strong> video', 'tally_textdomain'),
+        'desc'        => __('This is for hosted HTML5 video.', 'tally_textdomain'),
         'std'         => '',
 		'rows'         => '3',
         'type'        => 'upload',
@@ -80,8 +80,8 @@ function digita_postformat_metabox_register() {
 	);
 	$settings[] = array(
 		'id'          => $prefix.'video_mov',
-        'label'       => __('Full URL of <strong>MOV</strong> video', 'digita_textdomain'),
-        'desc'        => __('This is for hosted HTML5 video.', 'digita_textdomain'),
+        'label'       => __('Full URL of <strong>MOV</strong> video', 'tally_textdomain'),
+        'desc'        => __('This is for hosted HTML5 video.', 'tally_textdomain'),
         'std'         => '',
 		'rows'         => '3',
         'type'        => 'upload',
@@ -90,8 +90,8 @@ function digita_postformat_metabox_register() {
 	);
 	$settings[] = array(
 		'id'          => $prefix.'video_poster',
-        'label'       => __('Upload a Poster', 'digita_textdomain'),
-        'desc'        => __('This is for hosted HTML5 video.', 'digita_textdomain'),
+        'label'       => __('Upload a Poster', 'tally_textdomain'),
+        'desc'        => __('This is for hosted HTML5 video.', 'tally_textdomain'),
         'std'         => '',
 		'rows'         => '3',
         'type'        => 'upload',
@@ -99,7 +99,7 @@ function digita_postformat_metabox_register() {
         'choices'     => array()
 	);
 	$metabox = array(
-		'id'        => 'digita_ot_postFormat_video_metabox',
+		'id'        => 'tally_ot_postFormat_video_metabox',
 		'title'     => 'Video: Post Format',
 		'desc'      => '',
 		'pages'     => array( 'post' ),
@@ -113,7 +113,7 @@ function digita_postformat_metabox_register() {
 	$settings = array();
 	$settings[] = array(
 		'id'          =>  $prefix.'quote_source_url',
-        'label'       => __('Source URL', 'digita_textdomain'),
+        'label'       => __('Source URL', 'tally_textdomain'),
         'desc'        => '',
         'std'         => '',
 		'rows'         => '3',
@@ -123,7 +123,7 @@ function digita_postformat_metabox_register() {
 	);
 	$settings[] = array(
 		'id'          =>  $prefix.'quote_source_name',
-        'label'       => __('Source Name', 'digita_textdomain'),
+        'label'       => __('Source Name', 'tally_textdomain'),
         'desc'        => '',
         'std'         => '',
 		'rows'         => '3',
@@ -132,7 +132,7 @@ function digita_postformat_metabox_register() {
         'choices'     => array()
 	);
 	$metabox = array(
-		'id'        => 'digita_ot_postFormat_quote_metabox',
+		'id'        => 'tally_ot_postFormat_quote_metabox',
 		'title'     => 'Quote: Post Format',
 		'desc'      => '',
 		'pages'     => array( 'post' ),
@@ -147,7 +147,7 @@ function digita_postformat_metabox_register() {
 	$settings = array();
 	$settings[] = array(
 		'id'          =>  $prefix.'link_url',
-        'label'       => __('Source URL', 'digita_textdomain'),
+        'label'       => __('Source URL', 'tally_textdomain'),
         'desc'        => '',
         'std'         => '',
 		'rows'         => '3',
@@ -156,7 +156,7 @@ function digita_postformat_metabox_register() {
         'choices'     => array()
 	);
 	$metabox = array(
-		'id'        => 'digita_ot_postFormat_link_metabox',
+		'id'        => 'tally_ot_postFormat_link_metabox',
 		'title'     => 'Link: Post Format',
 		'desc'      => '',
 		'pages'     => array( 'post' ),
@@ -171,8 +171,8 @@ function digita_postformat_metabox_register() {
 	$settings = array();
 	$settings[] = array(
 		'id'          => $prefix.'gallery',
-        'label'       => __('Gallery', 'digita_textdomain'),
-        'desc'        => __('Upload some image via Media uploder of this post', 'digita_textdomain'),
+        'label'       => __('Gallery', 'tally_textdomain'),
+        'desc'        => __('Upload some image via Media uploder of this post', 'tally_textdomain'),
         'std'         => '',
 		'rows'         => '3',
         'type'        => 'gallery',
@@ -180,7 +180,7 @@ function digita_postformat_metabox_register() {
         'choices'     => array()
 	);
 	$metabox = array(
-		'id'        => 'digita_ot_postFormat_gallery_metabox',
+		'id'        => 'tally_ot_postFormat_gallery_metabox',
 		'title'     => 'Gallery: Post Format',
 		'desc'      => '',
 		'pages'     => array( 'post' ),
@@ -194,8 +194,8 @@ function digita_postformat_metabox_register() {
 	$settings = array();
 	$settings[] = array(
 		'id'          => $prefix.'image',
-        'label'       => __('Image', 'digita_textdomain'),
-        'desc'        => __('Set an Image as Featured Image', 'digita_textdomain'),
+        'label'       => __('Image', 'tally_textdomain'),
+        'desc'        => __('Set an Image as Featured Image', 'tally_textdomain'),
         'std'         => '',
 		'rows'         => '3',
         'type'        => 'textblock',
@@ -203,7 +203,7 @@ function digita_postformat_metabox_register() {
         'choices'     => array()
 	);
 	$metabox = array(
-		'id'        => 'digita_ot_postFormat_image_metabox',
+		'id'        => 'tally_ot_postFormat_image_metabox',
 		'title'     => 'Image: Post Format',
 		'desc'      => '',
 		'pages'     => array( 'post' ),
@@ -217,7 +217,7 @@ function digita_postformat_metabox_register() {
 	$settings = array();
 	$settings[] = array(
 		'id'          => $prefix.'status',
-        'label'       => __('Status URL (OEMBED) OR EMBED CODE', 'digita_textdomain'),
+        'label'       => __('Status URL (OEMBED) OR EMBED CODE', 'tally_textdomain'),
         'desc'        => '',
         'std'         => '',
 		'rows'         => '3',
@@ -226,7 +226,7 @@ function digita_postformat_metabox_register() {
         'choices'     => array()
 	);
 	$metabox = array(
-		'id'        => 'digita_ot_postFormat_status_metabox',
+		'id'        => 'tally_ot_postFormat_status_metabox',
 		'title'     => 'Status: Post Format',
 		'desc'      => '',
 		'pages'     => array( 'post' ),

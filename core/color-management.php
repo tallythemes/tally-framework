@@ -2,8 +2,8 @@
 /*
 	Theme Color Output function
 ---------------------------------------------------*/
-function digita_color($option_name, $rgba = '', $echo = true){
-	$light_colors = apply_filters('digita_light_colors', array(
+function tally_color($option_name, $rgba = '', $echo = true){
+	$light_colors = apply_filters('tally_light_colors', array(
 		'color_topbar_text' => '#1f1f1f',
 		'color_topbar_border' => '#1f1f1f',
 		'color_topbar_bg' => '#1f1f1f',
@@ -46,7 +46,7 @@ function digita_color($option_name, $rgba = '', $echo = true){
 	));
 
 	
-	$dark_colors = apply_filters('digita_dark_colors', array(
+	$dark_colors = apply_filters('tally_dark_colors', array(
 		'color_topbar_text' => '#1f1f1f',
 		'color_topbar_border' => '#1f1f1f',
 		'color_topbar_bg' => '#1f1f1f',
@@ -89,19 +89,19 @@ function digita_color($option_name, $rgba = '', $echo = true){
 	));
 	
 	$all_colors = NULL;
-	if(digita_option('site_color_skin', 'light') == 'light'){ $all_colors = $light_colors; }else{ $all_colors = $dark_colors; }
+	if(tally_option('site_color_skin', 'light') == 'light'){ $all_colors = $light_colors; }else{ $all_colors = $dark_colors; }
 	
-	$get_color = digita_option($option_name, $all_colors[$option_name]);
+	$get_color = tally_option($option_name, $all_colors[$option_name]);
 	
-	if($rgba != ''){ $get_color = digita_hex2rgb($get_color); }
+	if($rgba != ''){ $get_color = tally_hex2rgb($get_color); }
 	
 	if($echo == true){ echo $get_color; }else{ return $get_color; }
 	
 }
 
 
-add_filter('digita_light_colors', 'digita_light_color_filter', 10);
-function digita_light_color_filter($light_color){
+add_filter('tally_light_colors', 'tally_light_color_filter', 10);
+function tally_light_color_filter($light_color){
 	
 	$light_color['color_topbar_text'] = '#757575'; 
 	$light_color['color_topbar_border'] = '#EBEBEB'; 
@@ -149,8 +149,8 @@ function digita_light_color_filter($light_color){
 
 
 
-add_filter('digita_dark_colors', 'digita_dark_color_filter', 10);
-function digita_dark_color_filter($dark_color){
+add_filter('tally_dark_colors', 'tally_dark_color_filter', 10);
+function tally_dark_color_filter($dark_color){
 	
 	$dark_color['color_topbar_text'] = '#A5A5A5'; 
 	$dark_color['color_topbar_border'] = '#4D4D4D'; 

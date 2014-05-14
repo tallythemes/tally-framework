@@ -1,2 +1,2 @@
 <?php
-digita_layout();
+tally_layout();

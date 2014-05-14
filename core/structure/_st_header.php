@@ -2,14 +2,14 @@
 /*
  	Header Open Div
 --------------------------------------------*/
-if('digita_do_header_open_warp'):
-	function digita_do_header_open_warp(){
-		if(digita_is_header() == 'no') return;
+if('tally_do_header_open_warp'):
+	function tally_do_header_open_warp(){
+		if(tally_is_header() == 'no') return;
 		
 		echo '<div id="header">';
 			echo '<div id="header-inner">';
 	}
-	add_action('digita_header', 'digita_do_header_open_warp', 5);
+	add_action('tally_header', 'tally_do_header_open_warp', 5);
 endif;
 
 
@@ -17,15 +17,15 @@ endif;
 /*
  	Header Closing Div
 --------------------------------------------*/
-if('digita_do_header_closing_warp'):
-	function digita_do_header_closing_warp(){
-		if(digita_is_header() == 'no') return;
+if('tally_do_header_closing_warp'):
+	function tally_do_header_closing_warp(){
+		if(tally_is_header() == 'no') return;
 		
 				echo '<div class="clear"></div>';
 			echo '</div>';
 		echo '</div>';
 	}
-	add_action('digita_header', 'digita_do_header_closing_warp', 15);
+	add_action('tally_header', 'tally_do_header_closing_warp', 15);
 endif;
 
 
@@ -33,13 +33,13 @@ endif;
 /*
  	Add Site Logo
 --------------------------------------------*/
-if('digita_do_header_logo'):
-	function digita_do_header_logo(){
-		if(digita_is_header() == 'no') return;
+if('tally_do_header_logo'):
+	function tally_do_header_logo(){
+		if(tally_is_header() == 'no') return;
 		
-		?><div class="logo_area hheight"><?php digitafn_logo(digita_option('site_logo')); ?></div><?php
+		?><div class="logo_area hheight"><?php tallyfn_logo(tally_option('site_logo')); ?></div><?php
 	}
-	add_action('digita_header', 'digita_do_header_logo', 10);
+	add_action('tally_header', 'tally_do_header_logo', 10);
 endif;
 
 
@@ -47,9 +47,9 @@ endif;
 /*
  	Add Main menu
 --------------------------------------------*/
-if('digita_do_header_menu'):
-	function digita_do_header_menu(){
-		if(digita_is_header() == 'no') return;
+if('tally_do_header_menu'):
+	function tally_do_header_menu(){
+		if(tally_is_header() == 'no') return;
 		
 		?>
         <div class="menu_area hheight">
@@ -59,5 +59,5 @@ if('digita_do_header_menu'):
         </div>
 		<?php
 	}
-	add_action('digita_header', 'digita_do_header_menu', 10);
+	add_action('tally_header', 'tally_do_header_menu', 10);
 endif;

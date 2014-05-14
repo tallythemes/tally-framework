@@ -1,5 +1,5 @@
 <?php
-if (!function_exists('digita_breadcrumb2')):
+if (!function_exists('tally_breadcrumb2')):
 /** 
  * Displays the breadcrumb for the current page
  * @since 1.0
@@ -7,7 +7,7 @@ if (!function_exists('digita_breadcrumb2')):
  * @param array $args Mixed arguments for the menu.
  * @return string Output of the breadcrumb menu.
  */
-function digita_breadcrumb2( $args = array() ) {
+function tally_breadcrumb2( $args = array() ) {
 
 	/* Empty variable for the breadcrumb. */
 	$breadcrumb = '';
@@ -21,7 +21,7 @@ function digita_breadcrumb2( $args = array() ) {
 		'before'     => '',
 		'after'      => false,
 		'front_page' => true,
-		'show_home'  => __( 'Home', 'digita_taxdomain' ),
+		'show_home'  => __( 'Home', 'tally_taxdomain' ),
 		'network'    => false,
 		'echo'       => true
 	);
@@ -396,13 +396,13 @@ function breadcrumb_trail_get_items( $args = array() ) {
 		elseif ( is_time() ) {
 
 			if ( get_query_var( 'minute' ) && get_query_var( 'hour' ) )
-				$trail[] = get_the_time( __( 'g:i a', 'digita_taxdomain' ) );
+				$trail[] = get_the_time( __( 'g:i a', 'tally_taxdomain' ) );
 
 			elseif ( get_query_var( 'minute' ) )
-				$trail[] = sprintf( __( 'Minute %1$s', 'digita_taxdomain' ), get_the_time( __( 'i', 'digita_taxdomain' ) ) );
+				$trail[] = sprintf( __( 'Minute %1$s', 'tally_taxdomain' ), get_the_time( __( 'i', 'tally_taxdomain' ) ) );
 
 			elseif ( get_query_var( 'hour' ) )
-				$trail[] = get_the_time( __( 'g a', 'digita_taxdomain' ) );
+				$trail[] = get_the_time( __( 'g a', 'tally_taxdomain' ) );
 		}
 
 		/* If viewing a date-based archive. */
@@ -413,39 +413,39 @@ function breadcrumb_trail_get_items( $args = array() ) {
 				$trail = array_merge( $trail, breadcrumb_trail_get_parents( '', $wp_rewrite->front ) );
 
 			if ( is_day() ) {
-				$trail[] = '<a href="' . get_year_link( get_the_time( 'Y' ) ) . '" title="' . get_the_time( esc_attr__( 'Y', 'digita_taxdomain' ) ) . '">' . get_the_time( __( 'Y', 'digita_taxdomain' ) ) . '</a>';
-				$trail[] = '<a href="' . get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) . '" title="' . get_the_time( esc_attr__( 'F', 'digita_taxdomain' ) ) . '">' . get_the_time( __( 'F', 'digita_taxdomain' ) ) . '</a>';
+				$trail[] = '<a href="' . get_year_link( get_the_time( 'Y' ) ) . '" title="' . get_the_time( esc_attr__( 'Y', 'tally_taxdomain' ) ) . '">' . get_the_time( __( 'Y', 'tally_taxdomain' ) ) . '</a>';
+				$trail[] = '<a href="' . get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) . '" title="' . get_the_time( esc_attr__( 'F', 'tally_taxdomain' ) ) . '">' . get_the_time( __( 'F', 'tally_taxdomain' ) ) . '</a>';
 
 				if ( is_paged() )
-					$trail[] = '<a href="' . get_day_link( get_the_time( 'Y' ), get_the_time( 'm' ), get_the_time( 'd' ) ) . '" title="' . get_the_time( esc_attr__( 'd', 'digita_taxdomain' ) ) . '">' . get_the_time( __( 'd', 'digita_taxdomain' ) ) . '</a>';
+					$trail[] = '<a href="' . get_day_link( get_the_time( 'Y' ), get_the_time( 'm' ), get_the_time( 'd' ) ) . '" title="' . get_the_time( esc_attr__( 'd', 'tally_taxdomain' ) ) . '">' . get_the_time( __( 'd', 'tally_taxdomain' ) ) . '</a>';
 				else
-					$trail[] = get_the_time( __( 'd', 'digita_taxdomain' ) );
+					$trail[] = get_the_time( __( 'd', 'tally_taxdomain' ) );
 			}
 
 			elseif ( get_query_var( 'w' ) ) {
-				$trail[] = '<a href="' . get_year_link( get_the_time( 'Y' ) ) . '" title="' . get_the_time( esc_attr__( 'Y', 'digita_taxdomain' ) ) . '">' . get_the_time( __( 'Y', 'digita_taxdomain' ) ) . '</a>';
+				$trail[] = '<a href="' . get_year_link( get_the_time( 'Y' ) ) . '" title="' . get_the_time( esc_attr__( 'Y', 'tally_taxdomain' ) ) . '">' . get_the_time( __( 'Y', 'tally_taxdomain' ) ) . '</a>';
 
 				if ( is_paged() )
-					$trail[] = get_archives_link( add_query_arg( array( 'm' => get_the_time( 'Y' ), 'w' => get_the_time( 'W' ) ), home_url() ), sprintf( __( 'Week %1$s', 'digita_taxdomain' ), get_the_time( esc_attr__( 'W', 'digita_taxdomain' ) ) ), false );
+					$trail[] = get_archives_link( add_query_arg( array( 'm' => get_the_time( 'Y' ), 'w' => get_the_time( 'W' ) ), home_url() ), sprintf( __( 'Week %1$s', 'tally_taxdomain' ), get_the_time( esc_attr__( 'W', 'tally_taxdomain' ) ) ), false );
 				else
-					$trail[] = sprintf( __( 'Week %1$s', 'digita_taxdomain' ), get_the_time( esc_attr__( 'W', 'digita_taxdomain' ) ) );
+					$trail[] = sprintf( __( 'Week %1$s', 'tally_taxdomain' ), get_the_time( esc_attr__( 'W', 'tally_taxdomain' ) ) );
 			}
 
 			elseif ( is_month() ) {
-				$trail[] = '<a href="' . get_year_link( get_the_time( 'Y' ) ) . '" title="' . get_the_time( esc_attr__( 'Y', 'digita_taxdomain' ) ) . '">' . get_the_time( __( 'Y', 'digita_taxdomain' ) ) . '</a>';
+				$trail[] = '<a href="' . get_year_link( get_the_time( 'Y' ) ) . '" title="' . get_the_time( esc_attr__( 'Y', 'tally_taxdomain' ) ) . '">' . get_the_time( __( 'Y', 'tally_taxdomain' ) ) . '</a>';
 
 				if ( is_paged() )
-					$trail[] = '<a href="' . get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) . '" title="' . get_the_time( esc_attr__( 'F', 'digita_taxdomain' ) ) . '">' . get_the_time( __( 'F', 'digita_taxdomain' ) ) . '</a>';
+					$trail[] = '<a href="' . get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) . '" title="' . get_the_time( esc_attr__( 'F', 'tally_taxdomain' ) ) . '">' . get_the_time( __( 'F', 'tally_taxdomain' ) ) . '</a>';
 				else
-					$trail[] = get_the_time( __( 'F', 'digita_taxdomain' ) );
+					$trail[] = get_the_time( __( 'F', 'tally_taxdomain' ) );
 			}
 
 			elseif ( is_year() ) {
 
 				if ( is_paged() )
-					$trail[] = '<a href="' . get_year_link( get_the_time( 'Y' ) ) . '" title="' . esc_attr( get_the_time( __( 'Y', 'digita_taxdomain' ) ) ) . '">' . get_the_time( __( 'Y', 'digita_taxdomain' ) ) . '</a>';
+					$trail[] = '<a href="' . get_year_link( get_the_time( 'Y' ) ) . '" title="' . esc_attr( get_the_time( __( 'Y', 'tally_taxdomain' ) ) ) . '">' . get_the_time( __( 'Y', 'tally_taxdomain' ) ) . '</a>';
 				else
-					$trail[] = get_the_time( __( 'Y', 'digita_taxdomain' ) );
+					$trail[] = get_the_time( __( 'Y', 'tally_taxdomain' ) );
 			}
 		}
 	}
@@ -454,23 +454,23 @@ function breadcrumb_trail_get_items( $args = array() ) {
 	elseif ( is_search() ) {
 
 		if ( is_paged() )
-			$trail[] = '<a href="' . get_search_link() . '" title="' . sprintf( esc_attr__( 'Search results for &quot;%1$s&quot;', 'digita_taxdomain' ), esc_attr( get_search_query() ) ) . '">' . sprintf( __( 'Search results for &quot;%1$s&quot;', 'digita_taxdomain' ), esc_attr( get_search_query() ) ) . '</a>';
+			$trail[] = '<a href="' . get_search_link() . '" title="' . sprintf( esc_attr__( 'Search results for &quot;%1$s&quot;', 'tally_taxdomain' ), esc_attr( get_search_query() ) ) . '">' . sprintf( __( 'Search results for &quot;%1$s&quot;', 'tally_taxdomain' ), esc_attr( get_search_query() ) ) . '</a>';
 		else
-			$trail[] = "<span>".sprintf( __( 'Search results for &quot;%1$s&quot;', 'digita_taxdomain' ), esc_attr( get_search_query() ) )."</span>";
+			$trail[] = "<span>".sprintf( __( 'Search results for &quot;%1$s&quot;', 'tally_taxdomain' ), esc_attr( get_search_query() ) )."</span>";
 	}
 
 	/* If viewing a 404 error page. */
 	elseif ( is_404() ) {
-		$trail[] = "<span>".__( '404 Not Found', 'digita_taxdomain' )."</span>";
+		$trail[] = "<span>".__( '404 Not Found', 'tally_taxdomain' )."</span>";
 	}
 
             
 
 	/* Check for pagination. */
 	if ( is_paged() )
-		$trail[] = "<span>".sprintf( __( 'Page %d', 'digita_taxdomain' ), absint( get_query_var( 'paged' ) ) )."</span>";
+		$trail[] = "<span>".sprintf( __( 'Page %d', 'tally_taxdomain' ), absint( get_query_var( 'paged' ) ) )."</span>";
 	elseif ( is_singular() && 1 < get_query_var( 'page' ) )
-		$trail[] = "<span>".sprintf( __( 'Page %d', 'digita_taxdomain' ), absint( get_query_var( 'page' ) ) )."</span>";
+		$trail[] = "<span>".sprintf( __( 'Page %d', 'tally_taxdomain' ), absint( get_query_var( 'page' ) ) )."</span>";
 
 	/* Allow devs to step in and filter the $trail array. */
 	return apply_filters( 'breadcrumb_trail_items', $trail, $args );
@@ -599,7 +599,7 @@ function breadcrumb_trail_get_bbpress_items( $args = array() ) {
 	/* If viewing a topic tag edit page. */
 	elseif ( bbp_is_topic_tag_edit() ) {
 		$trail[] = '<a href="' . bbp_get_topic_tag_link() . '">' . bbp_get_topic_tag_name() . '</a>';
-		$trail[] = "<span>".__( 'Edit', 'digita_taxdomain' )."</span>";
+		$trail[] = "<span>".__( 'Edit', 'tally_taxdomain' )."</span>";
 	}
 
 	/* If viewing a "view" page. */
@@ -624,15 +624,15 @@ function breadcrumb_trail_get_bbpress_items( $args = array() ) {
 
 		/* If viewing a topic split page. */
 		if ( bbp_is_topic_split() )
-			$trail[] = "<span>".__( 'Split', 'digita_taxdomain' )."</span>";
+			$trail[] = "<span>".__( 'Split', 'tally_taxdomain' )."</span>";
 
 		/* If viewing a topic merge page. */
 		elseif ( bbp_is_topic_merge() )
-			$trail[] = "<span>".__( 'Merge', 'digita_taxdomain' )."</span>";
+			$trail[] = "<span>".__( 'Merge', 'tally_taxdomain' )."</span>";
 
 		/* If viewing a topic edit page. */
 		elseif ( bbp_is_topic_edit() )
-			$trail[] = "<span>".__( 'Edit', 'digita_taxdomain' )."</span>";
+			$trail[] = "<span>".__( 'Edit', 'tally_taxdomain' )."</span>";
 	}
 
 	/* If viewing a single reply page. */
@@ -647,7 +647,7 @@ function breadcrumb_trail_get_bbpress_items( $args = array() ) {
 		/* If viewing a reply edit page, link back to the reply. Else, display the reply title. */
 		if ( bbp_is_reply_edit() ) {
 			$trail[] = '<a href="' . bbp_get_reply_url( $reply_id ) . '">' . bbp_get_reply_title( $reply_id ) . '</a>';
-			$trail[] = "<span>".__( 'Edit', 'digita_taxdomain' )."</span>";
+			$trail[] = "<span>".__( 'Edit', 'tally_taxdomain' )."</span>";
 
 		} else {
 			$trail[] = '<span>'.bbp_get_reply_title( $reply_id ).'</span>';
@@ -675,7 +675,7 @@ function breadcrumb_trail_get_bbpress_items( $args = array() ) {
 
 		if ( bbp_is_single_user_edit() ) {
 			$trail[] = '<a href="' . bbp_get_user_profile_url() . '">' . bbp_get_displayed_user_field( 'display_name' ) . '</a>';
-			$trail[] = "<span>".__( 'Edit', 'digita_taxdomain' )."</span>";
+			$trail[] = "<span>".__( 'Edit', 'tally_taxdomain' )."</span>";
 		} else {
 			$trail[] = '<span>'.bbp_get_displayed_user_field( 'display_name' ).'</span>';
 		}
@@ -731,15 +731,15 @@ function breadcrumb_trail_map_rewrite_tags( $post_id = '', $path = '', $args = a
 
 			/* If using the %year% tag, add a link to the yearly archive. */
 			if ( '%year%' == $tag )
-				$trail[] = '<a href="' . get_year_link( get_the_time( 'Y', $post_id ) ) . '" title="' . get_the_time( esc_attr__( 'Y', 'digita_taxdomain' ), $post_id ) . '">' . get_the_time( __( 'Y', 'digita_taxdomain' ), $post_id ) . '</a>';
+				$trail[] = '<a href="' . get_year_link( get_the_time( 'Y', $post_id ) ) . '" title="' . get_the_time( esc_attr__( 'Y', 'tally_taxdomain' ), $post_id ) . '">' . get_the_time( __( 'Y', 'tally_taxdomain' ), $post_id ) . '</a>';
 
 			/* If using the %monthnum% tag, add a link to the monthly archive. */
 			elseif ( '%monthnum%' == $tag )
-				$trail[] = '<a href="' . get_month_link( get_the_time( 'Y', $post_id ), get_the_time( 'm', $post_id ) ) . '" title="' . get_the_time( esc_attr__( 'F Y', 'digita_taxdomain' ), $post_id ) . '">' . get_the_time( __( 'F', 'digita_taxdomain' ), $post_id ) . '</a>';
+				$trail[] = '<a href="' . get_month_link( get_the_time( 'Y', $post_id ), get_the_time( 'm', $post_id ) ) . '" title="' . get_the_time( esc_attr__( 'F Y', 'tally_taxdomain' ), $post_id ) . '">' . get_the_time( __( 'F', 'tally_taxdomain' ), $post_id ) . '</a>';
 
 			/* If using the %day% tag, add a link to the daily archive. */
 			elseif ( '%day%' == $tag )
-				$trail[] = '<a href="' . get_day_link( get_the_time( 'Y', $post_id ), get_the_time( 'm', $post_id ), get_the_time( 'd', $post_id ) ) . '" title="' . get_the_time( esc_attr__( 'F j, Y', 'digita_taxdomain' ), $post_id ) . '">' . get_the_time( __( 'd', 'digita_taxdomain' ), $post_id ) . '</a>';
+				$trail[] = '<a href="' . get_day_link( get_the_time( 'Y', $post_id ), get_the_time( 'm', $post_id ), get_the_time( 'd', $post_id ) ) . '" title="' . get_the_time( esc_attr__( 'F j, Y', 'tally_taxdomain' ), $post_id ) . '">' . get_the_time( __( 'd', 'tally_taxdomain' ), $post_id ) . '</a>';
 
 			/* If using the %author% tag, add a link to the post author archive. */
 			elseif ( '%author%' == $tag )

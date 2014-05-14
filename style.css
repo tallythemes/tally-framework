@@ -1,5 +1,5 @@
 /*
-Theme Name: Digita
+Theme Name: Tally
 Theme URI: http://bignetstudio.com/
 Author: BignetStudio
 Author URI: http://bignetstudio.com/
@@ -8,7 +8,7 @@ Version: 0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, flexible-width, custom-menu, featured-images, full-width-template, bbpress, buddypress
-Text Domain: digita_textdomain
+Text Domain: tally_textdomain
 */
 
 
@@ -36,7 +36,7 @@ Text Domain: digita_textdomain
 	#topbar .topbar-info-text{ float:left; }
 	#topbar .topbar-info-text .topbar-phone{ float:left; margin-right:15px; }
 	#topbar .topbar-info-text .topbar-email{ float:left; }
-	#topbar .digita-social-icons{ float:right; }
+	#topbar .tally-social-icons{ float:right; }
 	
 
 /* HEADER
