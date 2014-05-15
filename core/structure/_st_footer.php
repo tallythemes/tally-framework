@@ -4,7 +4,7 @@
 --------------------------------------------*/
 if('tally_do_footer_open_warp'):
 	function tally_do_footer_open_warp(){
-		if(tally_footer_layout_option() == 'none') return;
+		if(tally_is_footer() == 'none') return;
 		
 		echo '<div id="footer">';
 			echo '<div id="footer-inner">';
@@ -19,7 +19,7 @@ endif;
 --------------------------------------------*/
 if('tally_do_footer_closing_warp'):
 	function tally_do_footer_closing_warp(){
-		if(tally_footer_layout_option() == 'none') return;
+		if(tally_is_footer() == 'none') return;
 		
 				echo '<div class="clear"></div>';
 			echo '</div>';
@@ -36,10 +36,10 @@ endif;
 --------------------------------------------*/
 if('tally_do_footer_copyright'):
 	function tally_do_footer_copyright(){
-		if(tally_footer_layout_option() == 'none') return;
+		if(tally_is_footer() == 'none') return;
 		
         echo '<div class="copy_text">';
-			echo apply_filters('footer_copyright_text', __('Copyright @ 2014', 'tally_taxdomain'));
+			echo apply_filters('footer_copyright_text', tally_option('footer_copyright'));
         echo '</div>';
 	}
 	add_action('tally_footer', 'tally_do_footer_copyright', 10);
@@ -52,7 +52,7 @@ endif;
 --------------------------------------------*/
 if('tally_do_footer_menu'):
 	function tally_do_footer_menu(){
-		if(tally_footer_layout_option() == 'none') return;
+		if(tally_is_footer() == 'none') return;
 		
         echo '<div class="footer_menu">';
 			wp_nav_menu( array('theme_location'=>'footer_menu') );

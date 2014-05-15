@@ -199,9 +199,9 @@ function tally_footer_widget_layout_option(){
 
 /* Footer Layour Option
 -------------------------------------------------*/
-function tally_footer_layout_option(){
+function tally_is_footer(){
 	global $wp_query;
-	$footer_layout = tally_option( 'footer_layout', 2);
+	$footer_layout = tally_option( 'footer_layout', 'yes');
 	
 	if(!is_404()){
 		$custom_field = get_post_meta( get_the_ID(), 'tally_footer_layout', true );
@@ -211,7 +211,7 @@ function tally_footer_layout_option(){
 	if(TALLY_LAYOUT_FOOTER_REMOVE == true){ $footer_layout  = 'none'; }
 	
 	return $footer_layout;
-	return apply_filters('tally_footer_layout_option', $footer_layout);
+	return apply_filters('tally_is_footer', $footer_layout);
 }
 
 

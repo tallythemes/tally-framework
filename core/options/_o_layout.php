@@ -154,18 +154,17 @@ function tally_layout_ot_options($custom_settings){
 	$custom_settings['settings']['footer_layout'] = array(
 		'id'          => 'footer_layout',
         'label'       => __('Footer Layout', 'tally_taxdomain'),
-        'desc'        => __('Select a <strong>Footer</strong> layout. If you select the red cross no footer will display', 'tally_taxdomain'),
-        'std'         => '2',
-        'type'        => 'radio-image',
+        'desc'        => __('Enable or Disable the footer of the site', 'tally_taxdomain'),
+        'std'         => 'yes',
+        'type'        => 'select',
         'section'     => 'layout',
         'rows'        => '',
         'post_type'   => '',
         'taxonomy'    => '',
         'class'       => '',
 		'choices'     => array(
-			 array( 'label' => 'none', 'value' => 'none', 'src' => TALLY_URL.'/core/assets/images/admin/sc-nonel.png'),
-			 array( 'label' => 'One Column', 'value' => '1', 'src' => TALLY_URL.'/core/assets/images/admin/sc-full.png'),
-			 array( 'label' => 'Two Column', 'value' => '2', 'src' => TALLY_URL.'/core/assets/images/admin/sc-half.png'),
+			 array( 'label' => 'No', 'value' => 'none'),
+			 array( 'label' => 'Yes', 'value' => 'yes'),
 		)
 	);
 	
