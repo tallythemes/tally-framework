@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digita_taxdomain\n"
-"POT-Creation-Date: 2014-05-06 12:36+0600\n"
-"PO-Revision-Date: 2014-05-06 12:36+0600\n"
+"POT-Creation-Date: 2014-05-15 10:11+0600\n"
+"PO-Revision-Date: 2014-05-15 10:12+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -126,307 +126,331 @@ msgstr ""
 msgid "Merge"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:164
+#: ../core/class-tgm-plugin-activation.php:161
 msgid "Install Required Plugins"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:165
+#: ../core/class-tgm-plugin-activation.php:162
 msgid "Install Plugins"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:166
+#: ../core/class-tgm-plugin-activation.php:163
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:167
+#: ../core/class-tgm-plugin-activation.php:164
 msgid "Something went wrong."
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:178
-#: ../core/class-tgm-plugin-activation.php:490
+#: ../core/class-tgm-plugin-activation.php:175
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:179
-#: ../core/class-tgm-plugin-activation.php:1846
+#: ../core/class-tgm-plugin-activation.php:176
+msgid "Return to the dashboard"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:177
+#: ../core/class-tgm-plugin-activation.php:1945
 msgid "Plugin activated successfully."
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:180
+#: ../core/class-tgm-plugin-activation.php:178
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:179
 #, php-format
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:517
-#: ../core/class-tgm-plugin-activation.php:2058
-msgid "Return to the Dashboard"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:545
-#, php-format
-msgid "The following plugin was activated successfully: %s."
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:704
+#: ../core/class-tgm-plugin-activation.php:180
 msgid "Dismiss this notice"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1091
-msgid "External Link"
+#: ../core/class-tgm-plugin-activation.php:534
+#: ../core/class-tgm-plugin-activation.php:2162
+msgid "Return to the Dashboard"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1096
+#: ../core/class-tgm-plugin-activation.php:1169
 msgid "Private Repository"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1099
+#: ../core/class-tgm-plugin-activation.php:1172
 msgid "Pre-Packaged"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1103
+#: ../core/class-tgm-plugin-activation.php:1177
 msgid "WordPress Repository"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1106
+#: ../core/class-tgm-plugin-activation.php:1180
 msgid "Required"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1106
+#: ../core/class-tgm-plugin-activation.php:1180
 msgid "Recommended"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1109
+#: ../core/class-tgm-plugin-activation.php:1183
 msgid "Not Installed"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1111
+#: ../core/class-tgm-plugin-activation.php:1185
 msgid "Installed But Not Activated"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1281
+#: ../core/class-tgm-plugin-activation.php:1290
+#: ../core/class-tgm-plugin-activation.php:1398
+msgid "Install"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1312
+#: ../core/class-tgm-plugin-activation.php:1399
+#: ../core/option-tree/includes/ot-functions-admin.php:3642
+#: ../core/option-tree/includes/ot-functions-admin.php:3643
+msgid "Activate"
+msgstr ""
+
+#: ../core/class-tgm-plugin-activation.php:1361
 #, php-format
 msgid ""
 "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
 "Dashboard\">Return to the Dashboard</a>"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1297
+#: ../core/class-tgm-plugin-activation.php:1377
 msgid "Plugin"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1298
+#: ../core/class-tgm-plugin-activation.php:1378
 msgid "Source"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1299
+#: ../core/class-tgm-plugin-activation.php:1379
 #: ../core/option-tree/includes/ot-functions-docs-page.php:35
 msgid "Type"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1300
+#: ../core/class-tgm-plugin-activation.php:1380
 msgid "Status"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1318
-msgid "Install"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1319
-#: ../core/option-tree/includes/ot-functions-admin.php:3642
-#: ../core/option-tree/includes/ot-functions-admin.php:3643
-msgid "Activate"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1829
+#: ../core/class-tgm-plugin-activation.php:1928
 msgid "Install package not available."
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1830
+#: ../core/class-tgm-plugin-activation.php:1929
 #, php-format
 msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1831
+#: ../core/class-tgm-plugin-activation.php:1930
 msgid "Unpacking the package&#8230;"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1832
+#: ../core/class-tgm-plugin-activation.php:1931
 msgid "Installing the plugin&#8230;"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1833
+#: ../core/class-tgm-plugin-activation.php:1932
 msgid "Plugin install failed."
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1834
+#: ../core/class-tgm-plugin-activation.php:1933
 msgid "Plugin installed successfully."
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1845
+#: ../core/class-tgm-plugin-activation.php:1944
 msgid "Plugin activation failed."
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1955
+#: ../core/class-tgm-plugin-activation.php:2058
 msgid ""
 "The installation and activation process is starting. This process may take a "
 "while on some hosts, so please be patient."
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1956
+#: ../core/class-tgm-plugin-activation.php:2059
 #, php-format
 msgid "%1$s installed and activated successfully."
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1956
-#: ../core/class-tgm-plugin-activation.php:1965
+#: ../core/class-tgm-plugin-activation.php:2059
+#: ../core/class-tgm-plugin-activation.php:2068
 msgid "Show Details"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1956
-#: ../core/class-tgm-plugin-activation.php:1965
+#: ../core/class-tgm-plugin-activation.php:2059
+#: ../core/class-tgm-plugin-activation.php:2068
 msgid "Hide Details"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1957
+#: ../core/class-tgm-plugin-activation.php:2060
 msgid "All installations and activations have been completed."
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1958
+#: ../core/class-tgm-plugin-activation.php:2061
 #, php-format
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1962
+#: ../core/class-tgm-plugin-activation.php:2065
 msgid ""
 "The installation process is starting. This process may take a while on some "
 "hosts, so please be patient."
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1963
+#: ../core/class-tgm-plugin-activation.php:2066
 #, php-format
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1964
+#: ../core/class-tgm-plugin-activation.php:2067
 #, php-format
 msgid "The installation of %1$s failed."
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1965
+#: ../core/class-tgm-plugin-activation.php:2068
 #, php-format
 msgid "%1$s installed successfully."
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1966
+#: ../core/class-tgm-plugin-activation.php:2069
 msgid "All installations have been completed."
 msgstr ""
 
-#: ../core/class-tgm-plugin-activation.php:1967
+#: ../core/class-tgm-plugin-activation.php:2070
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: ../core/core.php:103
+#: ../core/core.php:142
 msgid "Primary Sidebar"
 msgstr ""
 
-#: ../core/core.php:105
+#: ../core/core.php:144
 msgid "Primary Sidebar Widgets"
 msgstr ""
 
-#: ../core/core.php:112
+#: ../core/core.php:151
 msgid "Sidebar Alt"
 msgstr ""
 
-#: ../core/core.php:114
+#: ../core/core.php:153
 msgid "Sidebar Widgets"
 msgstr ""
 
-#: ../core/core.php:121 ../core/core.php:123
+#: ../core/core.php:160 ../core/core.php:162
 msgid "Footer Widget #1"
 msgstr ""
 
-#: ../core/core.php:132 ../core/core.php:134
+#: ../core/core.php:171 ../core/core.php:173
 msgid "Footer Widget #2"
 msgstr ""
 
-#: ../core/core.php:142 ../core/core.php:144
+#: ../core/core.php:181 ../core/core.php:183
 msgid "Footer Widget #3"
 msgstr ""
 
-#: ../core/core.php:152 ../core/core.php:154
+#: ../core/core.php:191 ../core/core.php:193
 msgid "Footer Widget #4"
 msgstr ""
 
-#: ../core/custom-functions.php:195
+#: ../core/custom-functions.php:287
 #, php-format
 msgid "Page %s"
 msgstr ""
 
-#: ../core/custom-functions.php:244
+#: ../core/custom-functions.php:336
 msgid "Search Results"
 msgstr ""
 
-#: ../core/custom-functions.php:246
+#: ../core/custom-functions.php:338
 msgid "Not Found"
 msgstr ""
 
-#: ../core/custom-functions.php:247
+#: ../core/custom-functions.php:339
 msgid "Blog"
 msgstr ""
 
-#: ../core/custom-functions.php:249
+#: ../core/custom-functions.php:341
 msgid "Category Archive"
 msgstr ""
 
-#: ../core/custom-functions.php:252
+#: ../core/custom-functions.php:344
 msgid "Author Archive"
 msgstr ""
 
-#: ../core/custom-functions.php:254
+#: ../core/custom-functions.php:346
 msgid "Tag Archive"
 msgstr ""
 
-#: ../core/custom-functions.php:255
+#: ../core/custom-functions.php:347
 msgid "Yearly Archive"
 msgstr ""
 
-#: ../core/custom-functions.php:256
+#: ../core/custom-functions.php:348
 msgid "Monthly Archive"
 msgstr ""
 
-#: ../core/custom-functions.php:257
+#: ../core/custom-functions.php:349
 msgid "Daily Archive"
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:10
-msgid "Sidebar Layout"
+#: ../core/metaboxs/_m_pages.php:11 ../core/options/_o_layout.php:28
+msgid "Enable TopBar Area"
+msgstr ""
+
+#: ../core/metaboxs/_m_pages.php:12
+msgid "Enable or Disable TopBar of this page / post."
+msgstr ""
+
+#: ../core/metaboxs/_m_pages.php:30 ../core/options/_o_layout.php:46
+msgid "Enable Header"
 msgstr ""
 
 #: ../core/metaboxs/_m_pages.php:31
+msgid "Enable or Disable Header of this page"
+msgstr ""
+
+#: ../core/metaboxs/_m_pages.php:49 ../core/options/_o_layout.php:63
+msgid "Enable SubHeader"
+msgstr ""
+
+#: ../core/metaboxs/_m_pages.php:50
+msgid "Enable or Disable SubHeader of this page"
+msgstr ""
+
+#: ../core/metaboxs/_m_pages.php:68
+msgid "Sidebar Layout"
+msgstr ""
+
+#: ../core/metaboxs/_m_pages.php:89
 msgid "Enable Comment Area"
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:32
+#: ../core/metaboxs/_m_pages.php:90
 msgid "Enable or Disable comment on this page / post."
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:50 ../core/options/_o_footer.php:8
+#: ../core/metaboxs/_m_pages.php:109 ../core/options/_o_layout.php:137
 msgid "Footer Widget Layout"
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:51 ../core/options/_o_footer.php:9
+#: ../core/metaboxs/_m_pages.php:110 ../core/options/_o_layout.php:138
 msgid ""
 "Select a <strong>Footer Widget</strong> layout. If you select the red cross "
 "no widget will display in footer"
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:71 ../core/options/_o_footer.php:27
+#: ../core/metaboxs/_m_pages.php:131 ../core/options/_o_layout.php:156
 msgid "Footer Layout"
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:72
+#: ../core/metaboxs/_m_pages.php:132
 msgid "Enable or Disable Footer on this page / post."
 msgstr ""
 
@@ -2551,66 +2575,30 @@ msgstr ""
 msgid "Reset Options"
 msgstr ""
 
-#: ../core/options/_o_branding.php:8
+#: ../core/options/_o_branding.php:9
 msgid "Site Logo"
 msgstr ""
 
-#: ../core/options/_o_branding.php:9
+#: ../core/options/_o_branding.php:10
 msgid "Please Upload your site logo"
 msgstr ""
 
-#: ../core/options/_o_branding.php:21
+#: ../core/options/_o_branding.php:22
 msgid "Site Logo (High-DPI)"
 msgstr ""
 
-#: ../core/options/_o_branding.php:22
+#: ../core/options/_o_branding.php:23
 msgid ""
 "Please uplod another logo for retina view. It will be a bigger sige of your "
 "logo"
 msgstr ""
 
-#: ../core/options/_o_branding.php:34
+#: ../core/options/_o_branding.php:35
 msgid "Favicon"
 msgstr ""
 
-#: ../core/options/_o_branding.php:35
+#: ../core/options/_o_branding.php:36
 msgid "Please uplod a Favicon icon"
-msgstr ""
-
-#: ../core/options/_o_branding.php:48
-msgid "Site Layout"
-msgstr ""
-
-#: ../core/options/_o_branding.php:49
-msgid "Select the Site layout"
-msgstr ""
-
-#: ../core/options/_o_branding.php:65
-msgid "Default Sidebar Layout"
-msgstr ""
-
-#: ../core/options/_o_branding.php:66
-msgid "This is the global sidebar layout for all of the pages of the site."
-msgstr ""
-
-#: ../core/options/_o_branding.php:86
-msgid "Enable Comments on pages"
-msgstr ""
-
-#: ../core/options/_o_branding.php:87
-msgid ""
-"Enable or Disable comment on the page. This is the global setting. You can "
-"enable or disable on each page on page editing area."
-msgstr ""
-
-#: ../core/options/_o_branding.php:103
-msgid "Enable Comments on Posts"
-msgstr ""
-
-#: ../core/options/_o_branding.php:104
-msgid ""
-"Enable or Disable comment on the page. This is the global setting. You can "
-"enable or disable on each page on POst editing area."
 msgstr ""
 
 #: ../core/options/_o_colors.php:8
@@ -2625,308 +2613,339 @@ msgstr ""
 msgid "Site Body Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:67
+#: ../core/options/_o_colors.php:69
+msgid "Topbar Text Color"
+msgstr ""
+
+#: ../core/options/_o_colors.php:70
+msgid "Simple text color of the topbar area"
+msgstr ""
+
+#: ../core/options/_o_colors.php:82
+msgid "Topbar Border Color"
+msgstr ""
+
+#: ../core/options/_o_colors.php:83
+msgid "Border color for each element in the topbar area"
+msgstr ""
+
+#: ../core/options/_o_colors.php:95
+msgid "Topbar Background Color"
+msgstr ""
+
+#: ../core/options/_o_colors.php:96
+msgid "background color of the topbar area"
+msgstr ""
+
+#: ../core/options/_o_colors.php:125
 msgid "Header Text Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:68 ../core/options/_o_colors.php:150
+#: ../core/options/_o_colors.php:126 ../core/options/_o_colors.php:305
 msgid "Simple text color of the header area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:80
+#: ../core/options/_o_colors.php:138
 msgid "Header Border Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:81 ../core/options/_o_colors.php:163
+#: ../core/options/_o_colors.php:139 ../core/options/_o_colors.php:318
 msgid "Border color for each element in the header area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:93
-msgid "Header Inner Background Color"
-msgstr ""
-
-#: ../core/options/_o_colors.php:94 ../core/options/_o_colors.php:176
-msgid "Inner background color of the header area"
-msgstr ""
-
-#: ../core/options/_o_colors.php:106
+#: ../core/options/_o_colors.php:151
 msgid "Header Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:107 ../core/options/_o_colors.php:189
+#: ../core/options/_o_colors.php:152 ../core/options/_o_colors.php:331
 msgid "background color of the header area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:136
+#: ../core/options/_o_colors.php:180
+msgid "Navigation Text Color"
+msgstr ""
+
+#: ../core/options/_o_colors.php:181 ../core/options/_o_colors.php:222
+msgid "Simple text color of the navigation area"
+msgstr ""
+
+#: ../core/options/_o_colors.php:193
+msgid "Navigation Border Color"
+msgstr ""
+
+#: ../core/options/_o_colors.php:194 ../core/options/_o_colors.php:235
+msgid "Border color for each element in the navigation area"
+msgstr ""
+
+#: ../core/options/_o_colors.php:206
+msgid "Navigation Background Color"
+msgstr ""
+
+#: ../core/options/_o_colors.php:207 ../core/options/_o_colors.php:248
+#: ../core/options/_o_colors.php:262
+msgid "background color of the navigation area"
+msgstr ""
+
+#: ../core/options/_o_colors.php:221
+msgid "Navigation Text Hover Color"
+msgstr ""
+
+#: ../core/options/_o_colors.php:234
+msgid "Navigation Border Hover Color"
+msgstr ""
+
+#: ../core/options/_o_colors.php:247
+msgid "Navigation Background Hover Color"
+msgstr ""
+
+#: ../core/options/_o_colors.php:261
+msgid "Navigation Submenu Background Color"
+msgstr ""
+
+#: ../core/options/_o_colors.php:291
 msgid "Sub-Header Headings Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:137 ../core/options/_o_colors.php:218
-#: ../core/options/_o_colors.php:339
+#: ../core/options/_o_colors.php:292 ../core/options/_o_colors.php:361
+#: ../core/options/_o_colors.php:469
 msgid "HTML headings color. For example h1, h2, h3, h4, h5 and h6"
 msgstr ""
 
-#: ../core/options/_o_colors.php:149
+#: ../core/options/_o_colors.php:304
 msgid "Sub-Header Text Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:162
+#: ../core/options/_o_colors.php:317
 msgid "Sub-Header Border Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:175
-msgid "Sub-Header Inner Background Color"
-msgstr ""
-
-#: ../core/options/_o_colors.php:188
+#: ../core/options/_o_colors.php:330
 msgid "Sub-Header Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:217
+#: ../core/options/_o_colors.php:360
 msgid "Content Headings Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:230
+#: ../core/options/_o_colors.php:373
 msgid "Sub Headings Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:231
+#: ../core/options/_o_colors.php:374
 msgid "This is the 2nd color for the headings."
 msgstr ""
 
-#: ../core/options/_o_colors.php:243
+#: ../core/options/_o_colors.php:386
 msgid "Content Text Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:244
+#: ../core/options/_o_colors.php:387
 msgid "Simple text color of the content area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:256
+#: ../core/options/_o_colors.php:399
 msgid "Content Meta Text Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:257
+#: ../core/options/_o_colors.php:400
 msgid "This should me lighter than text color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:269
+#: ../core/options/_o_colors.php:412
 msgid "Content Border Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:270
+#: ../core/options/_o_colors.php:413
 msgid "Border color for each element in the content area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:282
-msgid "Content 2nd Border Color"
-msgstr ""
-
-#: ../core/options/_o_colors.php:283
-msgid "2nd Border color for each element in the content area"
-msgstr ""
-
-#: ../core/options/_o_colors.php:296
+#: ../core/options/_o_colors.php:425
 msgid "Content Inner Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:297
+#: ../core/options/_o_colors.php:426
 msgid "Inner background color of the content area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:309
+#: ../core/options/_o_colors.php:438
 msgid "Content Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:310
+#: ../core/options/_o_colors.php:439
 msgid "background color of the content area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:338
+#: ../core/options/_o_colors.php:468
 msgid "Footer Widgets Headings Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:351
+#: ../core/options/_o_colors.php:481
 msgid "Footer Widgets Text Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:352
+#: ../core/options/_o_colors.php:482
 msgid "Simple text color of the footer widgets area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:364
+#: ../core/options/_o_colors.php:494
 msgid "Footer Widgets Link Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:365
+#: ../core/options/_o_colors.php:495
 msgid "Link color of the footer widgets area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:377
+#: ../core/options/_o_colors.php:507
 msgid "Footer Widgets Border Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:378
+#: ../core/options/_o_colors.php:508
 msgid "Border color for each element in the footer widgets area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:390
-msgid "Footer Widgets 2nd Border Color"
-msgstr ""
-
-#: ../core/options/_o_colors.php:391
-msgid "2nd Border color for each element in the footer widgets area"
-msgstr ""
-
-#: ../core/options/_o_colors.php:404
+#: ../core/options/_o_colors.php:520
 msgid "Footer Widgets Inner Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:405
+#: ../core/options/_o_colors.php:521
 msgid "Inner background color of the footer widgets area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:417
+#: ../core/options/_o_colors.php:533
 msgid "Footer Widgets Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:418
+#: ../core/options/_o_colors.php:534
 msgid "background color of the footer widgets area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:446
+#: ../core/options/_o_colors.php:563
 msgid "Footer Text Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:447
+#: ../core/options/_o_colors.php:564
 msgid "Simple text color of the footer area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:459
+#: ../core/options/_o_colors.php:576
 msgid "Footer Link Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:460
+#: ../core/options/_o_colors.php:577
 msgid "Link color of the footer area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:472
+#: ../core/options/_o_colors.php:589
 msgid "Footer Border Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:473
+#: ../core/options/_o_colors.php:590
 msgid "Border color for each element in the footer area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:485
+#: ../core/options/_o_colors.php:602
 msgid "Footer Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:486
+#: ../core/options/_o_colors.php:603
 msgid "background color of the footer area"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:8
+#: ../core/options/_o_fonts.php:9
 msgid "Enable Google Fonts"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:9
+#: ../core/options/_o_fonts.php:10
 msgid "By selection NO the theme will use default fonts."
 msgstr ""
 
-#: ../core/options/_o_fonts.php:32
+#: ../core/options/_o_fonts.php:33
 msgid "Headings Google Font Link"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:33 ../core/options/_o_fonts.php:59
+#: ../core/options/_o_fonts.php:34 ../core/options/_o_fonts.php:60
 msgid ""
 "Ex: <code>link href=\"http://fonts.googleapis.com/css?family=Open"
 "+Sans:300,700,400\" rel=\"stylesheet\" type=\"text/css\"&gt;</code>"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:45
+#: ../core/options/_o_fonts.php:46
 msgid "Headings Google Font Family"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:46 ../core/options/_o_fonts.php:72
+#: ../core/options/_o_fonts.php:47 ../core/options/_o_fonts.php:73
 msgid "Ex: font-family: \"Open Sans\", sans-serif;"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:58
+#: ../core/options/_o_fonts.php:59
 msgid "Body Google Font Link"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:71
+#: ../core/options/_o_fonts.php:72
 msgid "Body Google Font Family"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:84
+#: ../core/options/_o_fonts.php:85
 msgid "H1 Font Size"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:85
+#: ../core/options/_o_fonts.php:86
 msgid "This will be ths size of h1 heading tag Example <code>22px</code>"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:97
+#: ../core/options/_o_fonts.php:98
 msgid "H2 Font Size"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:98
+#: ../core/options/_o_fonts.php:99
 msgid "This will be ths size of h2 heading tag Example <code>22px</code>"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:110
+#: ../core/options/_o_fonts.php:111
 msgid "H3 Font Size"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:111
+#: ../core/options/_o_fonts.php:112
 msgid "This will be ths size of h3 heading tag Example <code>22px</code>"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:123
+#: ../core/options/_o_fonts.php:124
 msgid "H4 Font Size"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:124
+#: ../core/options/_o_fonts.php:125
 msgid "This will be ths size of h4 heading tag Example <code>22px</code>"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:136
+#: ../core/options/_o_fonts.php:137
 msgid "H5 Font Size"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:137
+#: ../core/options/_o_fonts.php:138
 msgid "This will be ths size of h5 heading tag Example <code>22px</code>"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:149
+#: ../core/options/_o_fonts.php:150
 msgid "H6 Font Size"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:150
+#: ../core/options/_o_fonts.php:151
 msgid "This will be ths size of h6 heading tag Example <code>22px</code>"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:162
+#: ../core/options/_o_fonts.php:163
 msgid "Body Text Font Size"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:163
+#: ../core/options/_o_fonts.php:164
 msgid "This will be ths size of Body Text. Example <code>12px</code>"
 msgstr ""
 
-#: ../core/options/_o_footer.php:28
-msgid ""
-"Select a <strong>Footer</strong> layout. If you select the red cross no "
-"footer will display"
+#: ../core/options/_o_footer.php:9
+msgid "Footer Copyright Text"
 msgstr ""
 
-#: ../core/options/_o_footer.php:44
-msgid "Footer Copyright Texe"
-msgstr ""
-
-#: ../core/options/_o_footer.php:45
+#: ../core/options/_o_footer.php:10
 msgid "This is the copyright text of footer"
 msgstr ""
 
@@ -2976,6 +2995,60 @@ msgstr ""
 msgid "Google Analytics"
 msgstr ""
 
+#: ../core/options/_o_layout.php:10
+msgid "Site Layout"
+msgstr ""
+
+#: ../core/options/_o_layout.php:11
+msgid ""
+"Select the Site layout to <strong>Full Width</strong> or <strong>Box Layout</"
+"strong>"
+msgstr ""
+
+#: ../core/options/_o_layout.php:29
+msgid "Enable or Disable TopBar of the site"
+msgstr ""
+
+#: ../core/options/_o_layout.php:47
+msgid "Enable or Disable Header of the site"
+msgstr ""
+
+#: ../core/options/_o_layout.php:64
+msgid "Enable or Disable SubHeader of the site"
+msgstr ""
+
+#: ../core/options/_o_layout.php:82
+msgid "Default Sidebar Layout"
+msgstr ""
+
+#: ../core/options/_o_layout.php:83
+msgid "This is the global sidebar layout for all of the pages of the site."
+msgstr ""
+
+#: ../core/options/_o_layout.php:103
+msgid "Enable Comments on pages"
+msgstr ""
+
+#: ../core/options/_o_layout.php:104
+msgid ""
+"Enable or Disable comment on the page. This is the global setting. You can "
+"enable or disable on each page on page editing area."
+msgstr ""
+
+#: ../core/options/_o_layout.php:120
+msgid "Enable Comments on Posts"
+msgstr ""
+
+#: ../core/options/_o_layout.php:121
+msgid ""
+"Enable or Disable comment on the page. This is the global setting. You can "
+"enable or disable on each page on POst editing area."
+msgstr ""
+
+#: ../core/options/_o_layout.php:157
+msgid "Enable or Disable the footer of the site"
+msgstr ""
+
 #: ../core/options/_o_social-icons.php:8
 msgid "Enable Social Icons"
 msgstr ""
@@ -2988,11 +3061,11 @@ msgstr ""
 msgid "Select a Icon"
 msgstr ""
 
-#: ../core/structure/_st_404.php:8
+#: ../core/structure/_st_404.php:13
 msgid "This is somewhat embarrassing, isn&rsquo;t it?"
 msgstr ""
 
-#: ../core/structure/_st_404.php:9
+#: ../core/structure/_st_404.php:14
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 
@@ -3002,10 +3075,6 @@ msgstr ""
 
 #: ../core/structure/_st_comments.php:67
 msgid "<h3>Trackbacks</h3>"
-msgstr ""
-
-#: ../core/structure/_st_footer.php:42
-msgid "Copyright @ 2014"
 msgstr ""
 
 #: ../core/structure/_st_post.php:37 ../core/structure/_st_post.php:276
