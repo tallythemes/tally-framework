@@ -49,6 +49,17 @@ if(!function_exists('tally_div_close')):
 endif;
 
 
+/* closing div
+-------------------------------------------------*/
+if(!function_exists('tally_check')):
+	function tally_check(){
+		global $tally_theme_info;
+		$tally = TALLY_NAME.'512';
+		$child =  $tally_theme_info->get( 'Name' );	
+		$filter = TALLY_NAME.md5($tally.$child);
+		return apply_filters($filter, false);
+	}
+endif;
 
 /* Theme template file loader
 -------------------------------------------------*/

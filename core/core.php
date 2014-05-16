@@ -1,4 +1,5 @@
 <?php
+define('TALLY_NAME', 'tally');
 define('TALLY_URL', get_template_directory_uri());
 define('TALLY_DRI', get_template_directory());
 define('TALLY_CHILD_URL', get_stylesheet_directory_uri());
