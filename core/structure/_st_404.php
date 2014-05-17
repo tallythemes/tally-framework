@@ -1,5 +1,5 @@
 <?php
-add_action('tally_template_init', 'tally_do_reset_404');
+add_action('wp_head', 'tally_do_reset_404');
 function tally_do_reset_404(){
 	if(is_404()){
 		remove_action('tally_loop', 'tally_do_loop_content');

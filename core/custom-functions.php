@@ -53,7 +53,7 @@ endif;
 -------------------------------------------------*/
 if(!function_exists('tally_check')):
 	function tally_check(){
-		global $tally_theme_info;
+		$tally_theme_info = wp_get_theme();
 		$tally = TALLY_NAME.'512';
 		$child =  $tally_theme_info->get( 'Name' );	
 		$filter = TALLY_NAME.md5($tally.$child);
