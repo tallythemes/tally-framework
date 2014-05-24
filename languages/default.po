@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digita_taxdomain\n"
-"POT-Creation-Date: 2014-05-15 10:11+0600\n"
-"PO-Revision-Date: 2014-05-15 10:12+0600\n"
+"POT-Creation-Date: 2014-05-24 10:06+0600\n"
+"PO-Revision-Date: 2014-05-24 10:07+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -327,130 +327,130 @@ msgstr ""
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: ../core/core.php:142
+#: ../core/core.php:144
 msgid "Primary Sidebar"
 msgstr ""
 
-#: ../core/core.php:144
+#: ../core/core.php:146
 msgid "Primary Sidebar Widgets"
 msgstr ""
 
-#: ../core/core.php:151
+#: ../core/core.php:153
 msgid "Sidebar Alt"
 msgstr ""
 
-#: ../core/core.php:153
+#: ../core/core.php:155
 msgid "Sidebar Widgets"
 msgstr ""
 
-#: ../core/core.php:160 ../core/core.php:162
+#: ../core/core.php:162 ../core/core.php:164
 msgid "Footer Widget #1"
 msgstr ""
 
-#: ../core/core.php:171 ../core/core.php:173
+#: ../core/core.php:173 ../core/core.php:175
 msgid "Footer Widget #2"
 msgstr ""
 
-#: ../core/core.php:181 ../core/core.php:183
+#: ../core/core.php:183 ../core/core.php:185
 msgid "Footer Widget #3"
 msgstr ""
 
-#: ../core/core.php:191 ../core/core.php:193
+#: ../core/core.php:193 ../core/core.php:195
 msgid "Footer Widget #4"
 msgstr ""
 
-#: ../core/custom-functions.php:287
+#: ../core/custom-functions.php:299
 #, php-format
 msgid "Page %s"
 msgstr ""
 
-#: ../core/custom-functions.php:336
+#: ../core/custom-functions.php:348
 msgid "Search Results"
 msgstr ""
 
-#: ../core/custom-functions.php:338
+#: ../core/custom-functions.php:350
 msgid "Not Found"
 msgstr ""
 
-#: ../core/custom-functions.php:339
+#: ../core/custom-functions.php:351
 msgid "Blog"
 msgstr ""
 
-#: ../core/custom-functions.php:341
+#: ../core/custom-functions.php:353
 msgid "Category Archive"
 msgstr ""
 
-#: ../core/custom-functions.php:344
+#: ../core/custom-functions.php:356
 msgid "Author Archive"
 msgstr ""
 
-#: ../core/custom-functions.php:346
+#: ../core/custom-functions.php:358
 msgid "Tag Archive"
 msgstr ""
 
-#: ../core/custom-functions.php:347
+#: ../core/custom-functions.php:359
 msgid "Yearly Archive"
 msgstr ""
 
-#: ../core/custom-functions.php:348
+#: ../core/custom-functions.php:360
 msgid "Monthly Archive"
 msgstr ""
 
-#: ../core/custom-functions.php:349
+#: ../core/custom-functions.php:361
 msgid "Daily Archive"
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:11 ../core/options/_o_layout.php:28
+#: ../core/metaboxs/_m_pages.php:13 ../core/options/_o_layout.php:28
 msgid "Enable TopBar Area"
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:12
+#: ../core/metaboxs/_m_pages.php:14
 msgid "Enable or Disable TopBar of this page / post."
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:30 ../core/options/_o_layout.php:46
+#: ../core/metaboxs/_m_pages.php:32 ../core/options/_o_layout.php:46
 msgid "Enable Header"
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:31
+#: ../core/metaboxs/_m_pages.php:33
 msgid "Enable or Disable Header of this page"
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:49 ../core/options/_o_layout.php:63
+#: ../core/metaboxs/_m_pages.php:51 ../core/options/_o_layout.php:63
 msgid "Enable SubHeader"
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:50
+#: ../core/metaboxs/_m_pages.php:52
 msgid "Enable or Disable SubHeader of this page"
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:68
+#: ../core/metaboxs/_m_pages.php:70
 msgid "Sidebar Layout"
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:89
+#: ../core/metaboxs/_m_pages.php:91
 msgid "Enable Comment Area"
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:90
+#: ../core/metaboxs/_m_pages.php:92
 msgid "Enable or Disable comment on this page / post."
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:109 ../core/options/_o_layout.php:137
+#: ../core/metaboxs/_m_pages.php:111 ../core/options/_o_layout.php:138
 msgid "Footer Widget Layout"
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:110 ../core/options/_o_layout.php:138
+#: ../core/metaboxs/_m_pages.php:112 ../core/options/_o_layout.php:139
 msgid ""
 "Select a <strong>Footer Widget</strong> layout. If you select the red cross "
 "no widget will display in footer"
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:131 ../core/options/_o_layout.php:156
+#: ../core/metaboxs/_m_pages.php:133 ../core/options/_o_layout.php:157
 msgid "Footer Layout"
 msgstr ""
 
-#: ../core/metaboxs/_m_pages.php:132
+#: ../core/metaboxs/_m_pages.php:134
 msgid "Enable or Disable Footer on this page / post."
 msgstr ""
 
@@ -2583,415 +2583,415 @@ msgstr ""
 msgid "Please Upload your site logo"
 msgstr ""
 
-#: ../core/options/_o_branding.php:22
+#: ../core/options/_o_branding.php:23
 msgid "Site Logo (High-DPI)"
 msgstr ""
 
-#: ../core/options/_o_branding.php:23
+#: ../core/options/_o_branding.php:24
 msgid ""
 "Please uplod another logo for retina view. It will be a bigger sige of your "
 "logo"
 msgstr ""
 
-#: ../core/options/_o_branding.php:35
+#: ../core/options/_o_branding.php:36
 msgid "Favicon"
 msgstr ""
 
-#: ../core/options/_o_branding.php:36
+#: ../core/options/_o_branding.php:37
 msgid "Please uplod a Favicon icon"
 msgstr ""
 
-#: ../core/options/_o_colors.php:8
+#: ../core/options/_o_colors.php:10
 msgid "Choose Your Color Skin"
 msgstr ""
 
-#: ../core/options/_o_colors.php:25
+#: ../core/options/_o_colors.php:27
 msgid "Accent Color of The Site"
 msgstr ""
 
-#: ../core/options/_o_colors.php:39
+#: ../core/options/_o_colors.php:41
 msgid "Site Body Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:69
+#: ../core/options/_o_colors.php:71
 msgid "Topbar Text Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:70
+#: ../core/options/_o_colors.php:72
 msgid "Simple text color of the topbar area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:82
+#: ../core/options/_o_colors.php:84
 msgid "Topbar Border Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:83
+#: ../core/options/_o_colors.php:85
 msgid "Border color for each element in the topbar area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:95
+#: ../core/options/_o_colors.php:97
 msgid "Topbar Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:96
+#: ../core/options/_o_colors.php:98
 msgid "background color of the topbar area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:125
+#: ../core/options/_o_colors.php:127
 msgid "Header Text Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:126 ../core/options/_o_colors.php:305
+#: ../core/options/_o_colors.php:128 ../core/options/_o_colors.php:307
 msgid "Simple text color of the header area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:138
+#: ../core/options/_o_colors.php:140
 msgid "Header Border Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:139 ../core/options/_o_colors.php:318
+#: ../core/options/_o_colors.php:141 ../core/options/_o_colors.php:320
 msgid "Border color for each element in the header area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:151
+#: ../core/options/_o_colors.php:153
 msgid "Header Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:152 ../core/options/_o_colors.php:331
+#: ../core/options/_o_colors.php:154 ../core/options/_o_colors.php:333
 msgid "background color of the header area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:180
+#: ../core/options/_o_colors.php:182
 msgid "Navigation Text Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:181 ../core/options/_o_colors.php:222
+#: ../core/options/_o_colors.php:183 ../core/options/_o_colors.php:224
 msgid "Simple text color of the navigation area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:193
+#: ../core/options/_o_colors.php:195
 msgid "Navigation Border Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:194 ../core/options/_o_colors.php:235
+#: ../core/options/_o_colors.php:196 ../core/options/_o_colors.php:237
 msgid "Border color for each element in the navigation area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:206
+#: ../core/options/_o_colors.php:208
 msgid "Navigation Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:207 ../core/options/_o_colors.php:248
-#: ../core/options/_o_colors.php:262
+#: ../core/options/_o_colors.php:209 ../core/options/_o_colors.php:250
+#: ../core/options/_o_colors.php:264
 msgid "background color of the navigation area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:221
+#: ../core/options/_o_colors.php:223
 msgid "Navigation Text Hover Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:234
+#: ../core/options/_o_colors.php:236
 msgid "Navigation Border Hover Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:247
+#: ../core/options/_o_colors.php:249
 msgid "Navigation Background Hover Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:261
+#: ../core/options/_o_colors.php:263
 msgid "Navigation Submenu Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:291
+#: ../core/options/_o_colors.php:293
 msgid "Sub-Header Headings Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:292 ../core/options/_o_colors.php:361
-#: ../core/options/_o_colors.php:469
+#: ../core/options/_o_colors.php:294 ../core/options/_o_colors.php:363
+#: ../core/options/_o_colors.php:471
 msgid "HTML headings color. For example h1, h2, h3, h4, h5 and h6"
 msgstr ""
 
-#: ../core/options/_o_colors.php:304
+#: ../core/options/_o_colors.php:306
 msgid "Sub-Header Text Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:317
+#: ../core/options/_o_colors.php:319
 msgid "Sub-Header Border Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:330
+#: ../core/options/_o_colors.php:332
 msgid "Sub-Header Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:360
+#: ../core/options/_o_colors.php:362
 msgid "Content Headings Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:373
+#: ../core/options/_o_colors.php:375
 msgid "Sub Headings Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:374
+#: ../core/options/_o_colors.php:376
 msgid "This is the 2nd color for the headings."
 msgstr ""
 
-#: ../core/options/_o_colors.php:386
+#: ../core/options/_o_colors.php:388
 msgid "Content Text Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:387
+#: ../core/options/_o_colors.php:389
 msgid "Simple text color of the content area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:399
+#: ../core/options/_o_colors.php:401
 msgid "Content Meta Text Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:400
+#: ../core/options/_o_colors.php:402
 msgid "This should me lighter than text color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:412
+#: ../core/options/_o_colors.php:414
 msgid "Content Border Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:413
+#: ../core/options/_o_colors.php:415
 msgid "Border color for each element in the content area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:425
+#: ../core/options/_o_colors.php:427
 msgid "Content Inner Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:426
+#: ../core/options/_o_colors.php:428
 msgid "Inner background color of the content area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:438
+#: ../core/options/_o_colors.php:440
 msgid "Content Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:439
+#: ../core/options/_o_colors.php:441
 msgid "background color of the content area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:468
+#: ../core/options/_o_colors.php:470
 msgid "Footer Widgets Headings Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:481
+#: ../core/options/_o_colors.php:483
 msgid "Footer Widgets Text Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:482
+#: ../core/options/_o_colors.php:484
 msgid "Simple text color of the footer widgets area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:494
+#: ../core/options/_o_colors.php:496
 msgid "Footer Widgets Link Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:495
+#: ../core/options/_o_colors.php:497
 msgid "Link color of the footer widgets area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:507
+#: ../core/options/_o_colors.php:509
 msgid "Footer Widgets Border Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:508
+#: ../core/options/_o_colors.php:510
 msgid "Border color for each element in the footer widgets area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:520
+#: ../core/options/_o_colors.php:522
 msgid "Footer Widgets Inner Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:521
+#: ../core/options/_o_colors.php:523
 msgid "Inner background color of the footer widgets area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:533
+#: ../core/options/_o_colors.php:535
 msgid "Footer Widgets Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:534
+#: ../core/options/_o_colors.php:536
 msgid "background color of the footer widgets area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:563
+#: ../core/options/_o_colors.php:565
 msgid "Footer Text Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:564
+#: ../core/options/_o_colors.php:566
 msgid "Simple text color of the footer area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:576
+#: ../core/options/_o_colors.php:578
 msgid "Footer Link Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:577
+#: ../core/options/_o_colors.php:579
 msgid "Link color of the footer area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:589
+#: ../core/options/_o_colors.php:591
 msgid "Footer Border Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:590
+#: ../core/options/_o_colors.php:592
 msgid "Border color for each element in the footer area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:602
+#: ../core/options/_o_colors.php:604
 msgid "Footer Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:603
+#: ../core/options/_o_colors.php:605
 msgid "background color of the footer area"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:9
+#: ../core/options/_o_fonts.php:11
 msgid "Enable Google Fonts"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:10
+#: ../core/options/_o_fonts.php:12
 msgid "By selection NO the theme will use default fonts."
 msgstr ""
 
-#: ../core/options/_o_fonts.php:33
+#: ../core/options/_o_fonts.php:35
 msgid "Headings Google Font Link"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:34 ../core/options/_o_fonts.php:60
+#: ../core/options/_o_fonts.php:36 ../core/options/_o_fonts.php:62
 msgid ""
 "Ex: <code>link href=\"http://fonts.googleapis.com/css?family=Open"
 "+Sans:300,700,400\" rel=\"stylesheet\" type=\"text/css\"&gt;</code>"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:46
+#: ../core/options/_o_fonts.php:48
 msgid "Headings Google Font Family"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:47 ../core/options/_o_fonts.php:73
+#: ../core/options/_o_fonts.php:49 ../core/options/_o_fonts.php:75
 msgid "Ex: font-family: \"Open Sans\", sans-serif;"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:59
+#: ../core/options/_o_fonts.php:61
 msgid "Body Google Font Link"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:72
+#: ../core/options/_o_fonts.php:74
 msgid "Body Google Font Family"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:85
+#: ../core/options/_o_fonts.php:87
 msgid "H1 Font Size"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:86
+#: ../core/options/_o_fonts.php:88
 msgid "This will be ths size of h1 heading tag Example <code>22px</code>"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:98
+#: ../core/options/_o_fonts.php:100
 msgid "H2 Font Size"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:99
+#: ../core/options/_o_fonts.php:101
 msgid "This will be ths size of h2 heading tag Example <code>22px</code>"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:111
+#: ../core/options/_o_fonts.php:113
 msgid "H3 Font Size"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:112
+#: ../core/options/_o_fonts.php:114
 msgid "This will be ths size of h3 heading tag Example <code>22px</code>"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:124
+#: ../core/options/_o_fonts.php:126
 msgid "H4 Font Size"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:125
+#: ../core/options/_o_fonts.php:127
 msgid "This will be ths size of h4 heading tag Example <code>22px</code>"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:137
+#: ../core/options/_o_fonts.php:139
 msgid "H5 Font Size"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:138
+#: ../core/options/_o_fonts.php:140
 msgid "This will be ths size of h5 heading tag Example <code>22px</code>"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:150
+#: ../core/options/_o_fonts.php:152
 msgid "H6 Font Size"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:151
+#: ../core/options/_o_fonts.php:153
 msgid "This will be ths size of h6 heading tag Example <code>22px</code>"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:163
+#: ../core/options/_o_fonts.php:165
 msgid "Body Text Font Size"
 msgstr ""
 
-#: ../core/options/_o_fonts.php:164
+#: ../core/options/_o_fonts.php:166
 msgid "This will be ths size of Body Text. Example <code>12px</code>"
 msgstr ""
 
-#: ../core/options/_o_footer.php:9
+#: ../core/options/_o_footer.php:10
 msgid "Footer Copyright Text"
 msgstr ""
 
-#: ../core/options/_o_footer.php:10
+#: ../core/options/_o_footer.php:11
 msgid "This is the copyright text of footer"
 msgstr ""
 
-#: ../core/options/_o_header.php:8
+#: ../core/options/_o_header.php:10
 msgid "Enable Header sticky"
 msgstr ""
 
-#: ../core/options/_o_header.php:33
+#: ../core/options/_o_header.php:35
 msgid "Header height"
 msgstr ""
 
-#: ../core/options/_o_header.php:34
+#: ../core/options/_o_header.php:36
 msgid ""
 "This is the height of the site header <strong>Example: <code>52px</code></"
 "strong>"
 msgstr ""
 
-#: ../core/options/_o_header.php:46
+#: ../core/options/_o_header.php:48
 msgid "Top margin of the menu"
 msgstr ""
 
-#: ../core/options/_o_header.php:47
+#: ../core/options/_o_header.php:49
 msgid ""
 "This is the top margin of the header menu <strong>Example: <code>10px</"
 "code></strong>"
 msgstr ""
 
-#: ../core/options/_o_header.php:59
+#: ../core/options/_o_header.php:61
 msgid "Top margin of the Logo"
 msgstr ""
 
-#: ../core/options/_o_header.php:60
+#: ../core/options/_o_header.php:62
 msgid ""
 "This is the top margin of the header Logo <strong>Example: <code>52px</"
 "code></strong>"
 msgstr ""
 
-#: ../core/options/_o_integration.php:8
+#: ../core/options/_o_integration.php:9
 msgid "Custom CSS"
 msgstr ""
 
-#: ../core/options/_o_integration.php:21
+#: ../core/options/_o_integration.php:22
 msgid "Custom JavaScript"
 msgstr ""
 
-#: ../core/options/_o_integration.php:34
+#: ../core/options/_o_integration.php:35
 msgid "Google Analytics"
 msgstr ""
 
@@ -3025,27 +3025,27 @@ msgstr ""
 msgid "This is the global sidebar layout for all of the pages of the site."
 msgstr ""
 
-#: ../core/options/_o_layout.php:103
+#: ../core/options/_o_layout.php:104
 msgid "Enable Comments on pages"
 msgstr ""
 
-#: ../core/options/_o_layout.php:104
+#: ../core/options/_o_layout.php:105
 msgid ""
 "Enable or Disable comment on the page. This is the global setting. You can "
 "enable or disable on each page on page editing area."
 msgstr ""
 
-#: ../core/options/_o_layout.php:120
+#: ../core/options/_o_layout.php:121
 msgid "Enable Comments on Posts"
 msgstr ""
 
-#: ../core/options/_o_layout.php:121
+#: ../core/options/_o_layout.php:122
 msgid ""
 "Enable or Disable comment on the page. This is the global setting. You can "
 "enable or disable on each page on POst editing area."
 msgstr ""
 
-#: ../core/options/_o_layout.php:157
+#: ../core/options/_o_layout.php:158
 msgid "Enable or Disable the footer of the site"
 msgstr ""
 
