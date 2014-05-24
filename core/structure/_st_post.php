@@ -158,7 +158,7 @@ function tally_do_post_meta(){
 	?>
     <div class="entry-single-meta">
         <div class="tagmeta"><strong><?php _e('Categories:', 'tally_taxdomain'); ?>&nbsp;</strong><?php the_category(', '); ?></div>
-        <div class="tagmeta"><strong><?php _e('Tags:', 'tally_taxdomain'); ?>&nbsp;</strong><?php the_tags('',''); ?></div>
+        <div class="tagmeta"><strong><?php _e('Tags:', 'tally_taxdomain'); ?>&nbsp;</strong><?php the_tags('',', '); ?></div>
     </div>
 	<?php
 }

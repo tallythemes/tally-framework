@@ -4,6 +4,8 @@
 ---------------------------------------------------*/
 function tally_color($option_name, $rgba = '', $echo = true){
 	$light_colors = apply_filters('tally_light_colors', array(
+		'site_accent_color' => '#E43131',
+		
 		'color_topbar_text' => '#1f1f1f',
 		'color_topbar_border' => '#1f1f1f',
 		'color_topbar_bg' => '#1f1f1f',
@@ -47,6 +49,8 @@ function tally_color($option_name, $rgba = '', $echo = true){
 
 	
 	$dark_colors = apply_filters('tally_dark_colors', array(
+		'site_accent_color' => '#E43131',
+		
 		'color_topbar_text' => '#1f1f1f',
 		'color_topbar_border' => '#1f1f1f',
 		'color_topbar_bg' => '#1f1f1f',
@@ -102,6 +106,7 @@ function tally_color($option_name, $rgba = '', $echo = true){
 
 add_filter('tally_light_colors', 'tally_light_color_filter', 10);
 function tally_light_color_filter($light_color){
+	$light_color['site_accent_color'] = '#E43131';
 	
 	$light_color['color_topbar_text'] = '#757575'; 
 	$light_color['color_topbar_border'] = '#EBEBEB'; 
@@ -151,6 +156,7 @@ function tally_light_color_filter($light_color){
 
 add_filter('tally_dark_colors', 'tally_dark_color_filter', 10);
 function tally_dark_color_filter($dark_color){
+	$dark_color['site_accent_color'] = '#E43131';
 	
 	$dark_color['color_topbar_text'] = '#A5A5A5'; 
 	$dark_color['color_topbar_border'] = '#4D4D4D'; 

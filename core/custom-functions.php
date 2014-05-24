@@ -172,16 +172,17 @@ function tally_sitebar_layout_option(){
 -------------------------------------------------*/
 function tally_is_comment_template(){
 	global $wp_query;
+	$option = tally_option( 'enable_post_comment', 'yes' );
 
 	//* If viewing a singular page or post
 	if(is_page()){
 		$custom_field = get_post_meta( get_the_ID(), 'tally_is_comment', true );
-		$site_layout  = $custom_field ? $custom_field : tally_option( 'enable_page_comment' );
+		$site_layout  = $custom_field ? $custom_field : $option;
 	}elseif ( is_singular() ) {
 		$custom_field = get_post_meta( get_the_ID(), 'tally_is_comment', true );
-		$site_layout  = $custom_field ? $custom_field : tally_option( 'enable_post_comment' );
+		$site_layout  = $custom_field ? $custom_field : $option;
 	}else{
-		$site_layout  = tally_option( 'enable_post_comment', 'yes' );
+		$site_layout  = $option;
 	}
 	
 	return apply_filters('tally_is_comment_template', $site_layout);

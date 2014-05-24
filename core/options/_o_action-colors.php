@@ -17,7 +17,7 @@ function tally_op_header_color_option_action(){
 		#header *{ border-color:<?php tally_color('color_header_border'); ?>; color:<?php tally_color('color_header_text'); ?>; }
 		#header {background:<?php tally_color('color_header_bg'); ?>; border-color:<?php tally_color('color_header_border'); ?>; color:<?php tally_color('color_header_text'); ?>; }
 		#header .current-menu-item>a,
-		#header a:hover{ color:<?php echo tally_option('site_accent_color'); ?>; }
+		#header a:hover{ color:<?php echo tally_color('site_accent_color'); ?>; }
 		#header input[type="text"],
 		#header input[type="email"],
 		#header input[type="phone"],
@@ -66,13 +66,16 @@ function tally_op_content_color_option_action(){
 		/*main*/
 		#main *{ border-color:<?php tally_color('color_content_border'); ?>; color: <?php tally_color('color_content_text'); ?>; }
 		#main{ background: <?php tally_color('color_content_bg'); ?>; }
-		#main a{ color:<?php echo tally_option('site_accent_color'); ?>; }
+		#main a{ color:<?php echo tally_color('site_accent_color'); ?>; }
 		#main a:hover{ color:<?php tally_color('color_content_heading'); ?>; }
 		#main input,
 		#main textarea,
 		#main select{ background:<?php tally_color('color_content_inner_bg'); ?>; }
 		#main input[type="submit"]{ 
-			background-color:<?php echo tally_option('site_accent_color'); ?>; color:#FFF; border:solid 1px <?php echo tally_option('site_accent_color'); ?>; 
+			background-color:<?php echo tally_color('site_accent_color'); ?>; color:#FFF; border:solid 1px <?php echo tally_color('site_accent_color'); ?>; 
+		}
+		#main input[type="submit"]:hover{
+			background-color:<?php echo tally_color('color_content_heading'); ?>; color:#FFF; border:solid 1px <?php echo tally_color('color_content_heading'); ?>; 
 		}
 		
 		#main #comments li.comment,
@@ -92,14 +95,14 @@ function tally_op_content_color_option_action(){
 		#main .widget_recent_entries ul li a:hover,
 		#main .widget_archive ul li a:hover,
 		#main .widget_categories ul li a:hover,
-		#main .widget_recent_comments ul li a:hover{ color:<?php echo tally_option('site_accent_color'); ?>; }
+		#main .widget_recent_comments ul li a:hover{ color:<?php echo tally_color('site_accent_color'); ?>; }
 		#main .widget_calendar thead>tr>th{ color:<?php tally_color('color_content_text'); ?>; background:<?php tally_color('color_content_inner_bg'); ?>; }
 		
 		#main h1, #main h2, #main h3, #main h4,#main h5, #main h6{ color:<?php tally_color('color_content_heading'); ?>; }
 		
 		#main .blog_entry .entry-readmore a,
 		#main .blog_entry.format-aside,
-		#main .blog_entry.format-quote{ background-color:<?php echo tally_option('site_accent_color'); ?>; }
+		#main .blog_entry.format-quote{ background-color:<?php echo tally_color('site_accent_color'); ?>; }
 	</style>
     <?php
 }
@@ -112,7 +115,7 @@ function tally_op_fwidget_color_option_action(){
 		/*fwidget*/
 		#fwidget *{ border-color:<?php tally_color('color_fwidget_border'); ?>; color:<?php tally_color('color_fwidget_text'); ?>; }
 		#fwidget{ background: <?php tally_color('color_fwidget_bg'); ?>; }
-		#fwidget a:hover{ color:<?php echo tally_option('site_accent_color'); ?>; }
+		#fwidget a:hover{ color:<?php echo tally_color('site_accent_color'); ?>; }
 		#fwidget a{ color: <?php tally_color('color_fwidget_link'); ?>; }
 		#fwidget input[type="text"],
 		#fwidget input[type="email"],
@@ -120,7 +123,7 @@ function tally_op_fwidget_color_option_action(){
 		#fwidget input[type="url"],
 		#fwidget select{ background:<?php tally_color('color_fwidget_inner_bg'); ?>; }
 		#fwidget input[type="submit"]{ 
-			background-color:<?php echo tally_option('site_accent_color'); ?>; color:#FFF; border:solid 1px <?php echo tally_option('site_accent_color'); ?>; 
+			background-color:<?php echo tally_color('site_accent_color'); ?>; color:#FFF; border:solid 1px <?php echo tally_color('site_accent_color'); ?>; 
 		}
 		#fwidget .widget_calendar thead>tr>th{ color:<?php tally_color('color_fwidget_heading'); ?>; background:<?php tally_color('color_fwidget_inner_bg'); ?>; }
 		
@@ -141,7 +144,7 @@ function tally_op_footer_color_option_action(){
 		#footer{ background: <?php tally_color('color_footer_bg'); ?>; }
 		#footer a{ color:<?php tally_color('color_footer_link'); ?>; }
 		#footer .current-menu-item>a,
-		#footer a:hover{ color:<?php echo tally_option('site_accent_color'); ?>; }
+		#footer a:hover{ color:<?php echo tally_color('site_accent_color'); ?>; }
 	</style>
 	<?php
 }
