@@ -15,7 +15,7 @@ function tally_op_header_color_option_action(){
     <style type="text/css">
 		/*header*/
 		#header *{ border-color:<?php tally_color('color_header_border'); ?>; color:<?php tally_color('color_header_text'); ?>; }
-		#header {background:<?php tally_color('color_header_bg'); ?>; }
+		#header {background:<?php tally_color('color_header_bg'); ?>; border-color:<?php tally_color('color_header_border'); ?>; color:<?php tally_color('color_header_text'); ?>; }
 		#header .current-menu-item>a,
 		#header a:hover{ color:<?php echo tally_option('site_accent_color'); ?>; }
 		#header input[type="text"],

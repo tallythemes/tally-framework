@@ -4,7 +4,7 @@ Theme URI: https://github.com/tallythemes/tally
 Author: TallyThemes
 Author URI: https://github.com/tallythemes
 Description: Powerful Theme Framework for WordPress Dveloper
-Version: 0.3
+Version: 0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, left-sidebar, responsive-layout, custom-menu, featured-images, full-width-template
@@ -41,7 +41,7 @@ Text Domain: tally_textdomain
 
 /* HEADER
 ================================================== */
-	#header{ background:inherit; color:inherit; padding:40px 0 40px 0; }
+	#header{ background:inherit; color:inherit; padding:40px 0 40px 0; border-bottom:solid 1px; }
 	#header a{ color:inherit; }
 	#header a:hover{ color:inherit; }
 	#header #header-inner{ width:92%; margin:0 auto; max-width:960px; }
@@ -132,7 +132,7 @@ Text Domain: tally_textdomain
 
 /* SubHeader
 ================================================== */
-	#subheader{ color:inherit; background:inherit; border-bottom:solid 1px; border-top:solid 1px; }
+	#subheader{ color:inherit; background:inherit; border-bottom:solid 1px; }
 	#subheader a{ color:inherit; }
 	#subheader a:hover{ color:inherit; }
 	
@@ -348,7 +348,7 @@ Text Domain: tally_textdomain
 	
 	#footer a{ color:inherit; }
 	#footer a:hover{ color:inherit; }
-	#footer #footer-inner{ width:92%; margin:0 auto; max-width:960px; padding:20px 0; border-top:solid 1px; clear:both; overflow:hidden; }
+	#footer #footer-inner{ width:92%; margin:0 auto; max-width:960px; padding:20px 0; clear:both; overflow:hidden; }
 	#footer #footer-inner .col{ min-height:1px; }
 	#footer .powerd_text{ text-align:right; }
 	#footer .copy_text{ float:left; margin-top: 3px; font-weight:bold; }	

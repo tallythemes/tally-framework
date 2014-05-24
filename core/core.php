@@ -100,6 +100,7 @@ tally_file_dri('structure/_st_post.php');
 tally_file_dri('structure/_st_404.php');
 tally_file_dri('structure/_st_page.php');
 tally_file_dri('structure/_st_search.php');
+tally_file_dri('structure/_st_home.php');
 
 
 
