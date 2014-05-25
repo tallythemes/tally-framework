@@ -51,7 +51,7 @@ jQuery(document).ready(function($) {
 jQuery(document).ready(function($) {
 	$('#header').digita_stickyMenu();
 });
-
+/*
 
 jQuery(function($) {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -68,3 +68,4 @@ jQuery(function($) {
   });
 });
 
+*/
