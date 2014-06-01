@@ -10,7 +10,7 @@ $tally_theme_info = wp_get_theme();
 /*  Setup Default Option STD 
 ----------------------------------*/
 $tally_theme_option_std = apply_filters('tally_theme_option_std', array(
-	'sidebar_layout'    => 'full-width-content',
+	'sidebar_layout'    => 'content-sidebar',
 	'site_layout'       => 'full',
 	'heading_font_link' => "<link href='http://fonts.googleapis.com/css?family=Cherry+Swash:400,700' rel='stylesheet' type='text/css'>",
 	'heading_font_name' => "font-family: 'Cherry Swash', cursive;",
@@ -20,6 +20,15 @@ $tally_theme_option_std = apply_filters('tally_theme_option_std', array(
 	'site_logo2'        => TALLY_URL.'/assets/images/logo@2x.png',
 	'site_favicon'      => '',
 ), 10);
+
+
+/*  redirect after activation
+----------------------------------*/
+global $pagenow;
+if ( is_admin() && isset( $_GET['activated'] ) && $pagenow == 'themes.php' ){
+	wp_redirect( admin_url( 'themes.php?page=ot-theme-options' ) );
+	exit;
+}
 
 
 
