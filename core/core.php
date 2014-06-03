@@ -24,12 +24,12 @@ $tally_theme_option_std = apply_filters('tally_theme_option_std', array(
 
 /*  redirect after activation
 ----------------------------------*/
-global $pagenow;
+/*global $pagenow;
 if ( is_admin() && isset( $_GET['activated'] ) && $pagenow == 'themes.php' ){
 	wp_redirect( admin_url( 'themes.php?page=ot-theme-options' ) );
 	exit;
 }
-
+*/
 
 
 /*  Constant for remove or active 

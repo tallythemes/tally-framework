@@ -7,8 +7,10 @@
 <!--[if lt IE 9]>
 <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<title><?php global $page, $paged; wp_title( '|', true, 'right' ); ?></title>
+<title><?php wp_title( '|', true, 'right' ); ?></title>
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
+<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />	
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

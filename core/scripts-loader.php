@@ -22,7 +22,7 @@ function tally_script_loader(){
 	wp_enqueue_style('animate', tally_assets_file('css/animate.css'));
 	
 	wp_enqueue_style('base', tally_assets_file2('css', 'base.css'));
-	wp_enqueue_style('main-css', tally_assets_file2('css', 'style.css'));
+	//wp_enqueue_style('main-css', tally_assets_file2('css', 'style.css'));
 	wp_enqueue_style('responsive', tally_assets_file2('css', 'responsive.css'));
 }
 

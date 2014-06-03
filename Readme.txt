@@ -10,14 +10,31 @@ Tally Framework WordPress theme is licensed under the GPL.
 == License == 
 This theme, like WordPress, is licensed under the GPL 2.0.
 
-jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
+jQuery Easing - http://gsgd.co.uk/sandbox/jquery/easing/
+License: Open source under the BSD License.
+Copyright: George McGinley Smith, http://gsgd.co.uk
 
-FitVids 1.0 - http://fitvidsjs.com/
 
-flexslider - http://www.woothemes.com/flexslider/
+FitVids - http://fitvidsjs.com/
+License: Released under the WTFPL license - http://sam.zoy.org/wtfpl/
+Copyright: Chris Coyier - http://css-tricks.com + Dave Rupert - http://daverupert.com
+
+
+Flexslider - http://www.woothemes.com/flexslider/
+License: http://opensource.org/licenses/MIT
+Copyright: WooThemes - http://www.woothemes.com
+
 
 prettyPhoto - http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/
+License: Released the GPLv2 (http://www.gnu.org/licenses/gpl-2.0.html)
+Copyright: Stephane Caron - http://www.no-margin-for-errors.com/
 
-tinynav - http://tinynav.viljamis.com
+
+tinynav - http://tinynav.viljamis.com/
+License: http://opensource.org/licenses/MIT
+Copyright: Viljamis - viljamis.com
+
 
 WOW - https://github.com/matthieua/WOW
+License: http://opensource.org/licenses/MIT
+Copyright: Matthieu Aussaguel - http://mynameismatthieu.com/
