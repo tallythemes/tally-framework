@@ -100,16 +100,21 @@ tally_file_dri('structure/_st_header.php');
 tally_file_dri('structure/_st_subheader.php');
 tally_file_dri('structure/_st_footer-widgets.php');
 tally_file_dri('structure/_st_footer.php');
-tally_file_dri('structure/_st_loop.php');
-tally_file_dri('structure/_st_comments.php');
 tally_file_dri('structure/_st_sidebar.php');
 tally_file_dri('structure/_st_layout.php');
+
+tally_file_dri('structure/_st_loop.php');
+tally_file_dri('structure/_st_comments.php');
+
 
 tally_file_dri('structure/_st_post.php');
 tally_file_dri('structure/_st_404.php');
 tally_file_dri('structure/_st_page.php');
 tally_file_dri('structure/_st_search.php');
 tally_file_dri('structure/_st_home.php');
+tally_file_dri('structure/_st_single.php');
+tally_file_dri('structure/_st_archive.php');
+tally_file_dri('structure/_st_blog-template.php');
 
 
 

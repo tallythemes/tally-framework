@@ -2,6 +2,8 @@
 add_action('tally_reset_loops', 'tally_do_reset_page_content');
 function tally_do_reset_page_content(){
 	if(is_page()){
+		tally_defaults_reset_loops();
+		
 		remove_action( 'tally_entry_header', 'tally_do_post_media', 4 );
 		remove_action( 'tally_entry_header', 'tally_entry_header_markup_open', 5 );
 		remove_action( 'tally_entry_header', 'tally_entry_header_markup_close', 15 );

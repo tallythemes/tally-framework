@@ -1,14 +1,26 @@
 <?php
 add_action('tally_loop', 'tally_do_loop_content');
 function tally_do_loop_content(){
-	tally_reset_loops();
-	tally_standard_loop();
+	do_action( 'tally_reset_loops' );
+	
+	if(is_page_template( 'page-blog.php' )){
+		$paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+
+		//* Easter Egg
+		$query_args = array(
+			'paged' => $paged,
+		);
+		tally_custom_loop( $query_args );
+	}else{
+		tally_standard_loop();
+	}
 }
 
 
 
 
 function tally_standard_loop(){
+	
 	if ( have_posts() ) : while ( have_posts() ) : the_post();
 			do_action( 'tally_before_entry' );
 			$article_class = apply_filters('tally_article_class', 'blog_entry');
@@ -38,6 +50,27 @@ function tally_standard_loop(){
 
 
 
+function tally_custom_loop( $args = array() ) {
+
+	global $wp_query, $more;
+
+	$defaults = array(); //* For forward compatibility
+	$args     = apply_filters( 'tally_custom_loop_args', wp_parse_args( $args, $defaults ), $args, $defaults );
+
+	$wp_query = new WP_Query( $args );
+
+	//* Only set $more to 0 if we're on an archive
+	$more = is_singular() ? $more : 0;
+
+	tally_standard_loop();
+
+	//* Restore original query
+	wp_reset_query();
+
+}
+
+
+
 /**
  * Restore all default post loop output by re-hooking all default functions.
  *
@@ -50,7 +83,7 @@ function tally_standard_loop(){
  *
  * @global array $_tally_loop_args Associative array for grid loop configuration
  */
-function tally_reset_loops() {
+function tally_defaults_reset_loops() {
 	add_action( 'tally_entry_header', 'tally_do_post_media', 4 );
 	
 	add_action( 'tally_entry_header', 'tally_entry_header_markup_open', 5 );
@@ -73,10 +106,4 @@ function tally_reset_loops() {
 	//* Other
 	add_action( 'tally_loop_else', 'tally_do_noposts' );
 	add_action( 'tally_after_endwhile', 'tally_do_posts_nav' );
-
-	//* Reset loop args
-	global $_tally_loop_args;
-	$_tally_loop_args = array();
-
-	do_action( 'tally_reset_loops' );
 }
