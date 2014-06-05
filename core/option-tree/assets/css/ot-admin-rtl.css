@@ -290,7 +290,7 @@ div.option-tree-ui-media-wrap {
   background-image: url(../images/ot-select-hover-rtl.png);
 }
 .select-wrapper span {
-  padding-left: 0;
+  padding-left: 27px;
   padding-right: 7px;
 }
 .type-measurement .select-wrapper {
@@ -475,7 +475,7 @@ ul.ot-gallery-list li {
 .ui-datepicker-prev:before {
   border-right: 0px;
   border-left: 1px solid #555;
-  content: "\e774";
+  content: "\f105";
   float: left;
   width: 31px;
   height: 30px;
@@ -489,7 +489,7 @@ ul.ot-gallery-list li {
 .ui-datepicker-next:before {
   border-left: 0px;
   border-right: 1px solid #333;
-  content: "\e775";
+  content: "\f104";
   float: right;
   width: 30px;
   height: 30px;
