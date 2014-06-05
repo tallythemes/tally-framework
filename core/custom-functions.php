@@ -172,7 +172,12 @@ function tally_sitebar_layout_option(){
 -------------------------------------------------*/
 function tally_is_comment_template(){
 	global $wp_query;
-	$option = tally_option( 'enable_post_comment', 'yes' );
+	
+	if(is_page()){
+		$option = tally_option( 'enable_page_comment', 'yes' );
+	}else{
+		$option = tally_option( 'enable_post_comment', 'yes' );
+	}
 
 	//* If viewing a singular page or post
 	if(is_page()){
