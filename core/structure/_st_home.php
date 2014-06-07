@@ -8,3 +8,10 @@ function tally_do_home_template(){
 		remove_action('tally_after_header', 'tally_do_breadcrumb', 10);
 	}
 }
+
+add_action('tally_reset_loops', 'tally_do_home_template_loop');
+function tally_do_home_template_loop(){
+	if(is_home()){
+		tally_defaults_reset_loops();
+	}
+}
