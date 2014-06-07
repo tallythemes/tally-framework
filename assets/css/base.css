@@ -187,7 +187,7 @@ body.sidebar-sidebar-content #sidebar{ width:31%; float:left; }
 
 /* IMAGES
 ================================================== */
-    img{ max-width: 100%; height: auto; }
+    img{ max-width: 100%; height: auto; margin-bottom: -6px; }
     img.no-scale{ max-width: none; }
 
     img.alignleft{ margin-right: 25px; }
