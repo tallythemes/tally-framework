@@ -56,6 +56,7 @@ include('color-management.php');
 ----------------------------------*/
 add_filter( 'ot_theme_mode', '__return_true' );
 add_filter( 'ot_show_pages', '__return_false' );
+add_filter( 'ot_override_forced_textarea_simple', '__return_true' );
 
 if ( ! class_exists( 'OT_Loader' ) ) {
 add_filter( 'ot_header_version_text', 'tally_ot_header_version_text' );
