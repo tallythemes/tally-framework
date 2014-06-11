@@ -153,6 +153,48 @@ add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', '
 
 
 
+/* Make Responsive Video
+ * Modify embeds output
+ * Wrap the video embed in a container for scaling
+----------------------------------*/
+add_filter( 'embed_oembed_html', 'tally_embed_output', 1, 3 );
+function tally_embed_output( $html, $url, $attr ) {
+	// Only run this process for embeds that don't required fixed dimensions
+	$resize = false;
+	$accepted_providers = array(
+		'youtube',
+		'vimeo',
+		'slideshare',
+		'dailymotion',
+		'viddler.com',
+		'hulu.com',
+		'blip.tv',
+		'revision3.com',
+		'funnyordie.com',
+		'wordpress.tv',
+		'scribd.com',
+	);
+
+	// Check each provider
+	foreach ( $accepted_providers as $provider ) {
+		if ( strstr( $url, $provider ) ) {
+			$resize = true;
+			break;
+		}
+	}
+
+	// Cleanup output to avoid wpautop() conflicts
+	$embed = preg_replace( '/\s+/', '', $html ); // Clean-up whitespace
+	$embed = trim( $embed );
+	global $content_width;
+
+	$html = '<div class="rve" data-content-width="' . $content_width . '">' . $html . '</div>';
+
+	return $html;
+}
+
+
+
 /* Registering Sidebars
 ----------------------------------*/
 register_sidebar( array(
