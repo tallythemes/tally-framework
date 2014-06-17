@@ -11,7 +11,7 @@ function tally_layout(){
 		do_action( 'tally_header' );
 		do_action( 'tally_after_header' );
 		
-		echo '<div id="main">';
+		echo '<div id="main" class="'.apply_filters('tally_main_class', '').'">';
 			echo '<div id="main-inner">';
 			do_action( 'tally_before_content_sidebar_area' );
 				echo '<div id="content-sidebar-wrap">';

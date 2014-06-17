@@ -6,7 +6,7 @@ if('tally_do_footer_widget_open_warp'):
 	function tally_do_footer_widget_open_warp(){
 		if(tally_footer_widget_layout_option() == 'none') return;
 		
-		echo '<div id="fwidget">';
+		echo '<div id="fwidget" class="'.apply_filters('tally_fwidget_class', '').'">';
 			echo '<div id="fwidget-inner">';
 	}
 	add_action('tally_before_footer', 'tally_do_footer_widget_open_warp', 5);

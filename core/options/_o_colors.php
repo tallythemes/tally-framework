@@ -35,6 +35,19 @@ function tally_color_ot_options($custom_settings){
 			'class'       => '',
 			'choices'     => '',
 		);
+		$custom_settings['settings']['site_accent2_color'] = array(
+			'id'          => 'site_accent2_color',
+			'label'       => __('2nd Accent Color', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => '',
+		);
 		
 		$custom_settings['settings']['site_background'] = array(
 			'id'          => 'site_background',
@@ -51,12 +64,11 @@ function tally_color_ot_options($custom_settings){
 		);
 		
 		
-		/*-- Topbar Color --*/
-		if(TALLY_LAYOUT_TOPBAR_REMOVE == false):
-		$custom_settings['settings']['color_block_topbar'] = array(
-			'id'          => 'color_block_topbar',
+		/*-- Headings Color --*/
+		$custom_settings['settings']['color_block_headings'] = array(
+			'id'          => 'color_block_headings',
 			'label'       => '',
-			'desc'        => '<div class="tally-ot-section"><h2>Topbar Color Options</h2></div>',
+			'desc'        => '<div class="tally-ot-section"><h2>Headings Color</h2></div>',
 			'std'         => '',
 			'type'        => 'textblock',
 			'section'     => 'color',
@@ -66,10 +78,10 @@ function tally_color_ot_options($custom_settings){
 			'class'       => '',
 			'choices'     => ''
 		);
-		$custom_settings['settings']['color_topbar_text'] = array(
-			'id'          => 'color_topbar_text',
-			'label'       => __('Topbar Text Color', 'tally_taxdomain'),
-			'desc'        => __('Simple text color of the topbar area', 'tally_taxdomain'),
+		$custom_settings['settings']['color_headings_light'] = array(
+			'id'          => 'color_headings_light',
+			'label'       => __('Headings Light Color', 'tally_taxdomain'),
+			'desc'        => __('This font color will show on the dark background. For example your background color is balck and the text heading color need to be white', 'tally_taxdomain'),
 			'std'         => '',
 			'type'        => 'colorpicker',
 			'section'     => 'color',
@@ -79,10 +91,10 @@ function tally_color_ot_options($custom_settings){
 			'class'       => '',
 			'choices'     => ''
 		);
-		$custom_settings['settings']['color_topbar_border'] = array(
-			'id'          => 'color_topbar_border',
-			'label'       => __('Topbar Border Color', 'tally_taxdomain'),
-			'desc'        => __('Border color for each element in the topbar area', 'tally_taxdomain'),
+		$custom_settings['settings']['color_headings_dark'] = array(
+			'id'          => 'color_headings_dark',
+			'label'       => __('Headings Dark Color', 'tally_taxdomain'),
+			'desc'        => __('This font color will show on the light background. For example your background color is white and the text heading color need to be black', 'tally_taxdomain'),
 			'std'         => '',
 			'type'        => 'colorpicker',
 			'section'     => 'color',
@@ -91,13 +103,296 @@ function tally_color_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => ''
+		);
+		
+		
+		/*-- Headings Color --*/
+		$custom_settings['settings']['color_block_subheading'] = array(
+			'id'          => 'color_block_subheading',
+			'label'       => '',
+			'desc'        => '<div class="tally-ot-section"><h2>Sub-Headings Color</h2></div>',
+			'std'         => '',
+			'type'        => 'textblock',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_subheading_light'] = array(
+			'id'          => 'color_subheading_light',
+			'label'       => __('Sub-Headings Light Color', 'tally_taxdomain'),
+			'desc'        => __('This font color will show on the dark background. For example your background color is balck and the text heading color need to be white', 'tally_taxdomain'),
+			'std'         => '',
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_subheading_dark'] = array(
+			'id'          => 'color_subheading_dark',
+			'label'       => __('sub-Headings Dark Color', 'tally_taxdomain'),
+			'desc'        => __('This font color will show on the light background. For example your background color is white and the text heading color need to be black', 'tally_taxdomain'),
+			'std'         => '',
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		
+		
+		/*-- Text Color --*/
+		$custom_settings['settings']['color_block_text'] = array(
+			'id'          => 'color_block_text',
+			'label'       => '',
+			'desc'        => '<div class="tally-ot-section"><h2>Body Text Color</h2></div>',
+			'std'         => '',
+			'type'        => 'textblock',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_text_light'] = array(
+			'id'          => 'color_text_light',
+			'label'       => __('Light Text Color', 'tally_taxdomain'),
+			'desc'        => __('This font color will show on the dark background. For example your background color is balck and the text color need to be white', 'tally_taxdomain'),
+			'std'         => '',
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_text_dark'] = array(
+			'id'          => 'color_text_dark',
+			'label'       => __('Dark Text Color', 'tally_taxdomain'),
+			'desc'        => __('This font color will show on the light background. For example your background color is white and the text color need to be black', 'tally_taxdomain'),
+			'std'         => '',
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		
+		/*-- Meta Text Color --*/
+		$custom_settings['settings']['color_block_meta'] = array(
+			'id'          => 'color_block_meta',
+			'label'       => '',
+			'desc'        => '<div class="tally-ot-section"><h2>Meta Text Color</h2></div>',
+			'std'         => '',
+			'type'        => 'textblock',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_meta_light'] = array(
+			'id'          => 'color_meta_light',
+			'label'       => __('Light Meta Text Color', 'tally_taxdomain'),
+			'desc'        => __('This font color will show on the dark background. For example your background color is balck and the text color need to be white', 'tally_taxdomain'),
+			'std'         => '',
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_meta_dark'] = array(
+			'id'          => 'color_meta_dark',
+			'label'       => __('Dark Meta Text Color', 'tally_taxdomain'),
+			'desc'        => __('This font color will show on the light background. For example your background color is white and the text color need to be black', 'tally_taxdomain'),
+			'std'         => '',
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		
+		
+		/*-- Border Color --*/
+		$custom_settings['settings']['color_block_border'] = array(
+			'id'          => 'color_block_border',
+			'label'       => '',
+			'desc'        => '<div class="tally-ot-section"><h2>Border Color</h2></div>',
+			'std'         => '',
+			'type'        => 'textblock',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_border_light'] = array(
+			'id'          => 'color_border_light',
+			'label'       => __('Light Border Color', 'tally_taxdomain'),
+			'desc'        => __('This border color will show on the dark background. For example your background color is balck and the border color need to be white', 'tally_taxdomain'),
+			'std'         => '',
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_border_dark'] = array(
+			'id'          => 'color_border_dark',
+			'label'       => __('Dark Border Color', 'tally_taxdomain'),
+			'desc'        => __('This border color will show on the light background. For example your background color is white and the border color need to be black', 'tally_taxdomain'),
+			'std'         => '',
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		
+		
+		/*-- Background Color --*/
+		$custom_settings['settings']['color_block_bg'] = array(
+			'id'          => 'color_block_bg',
+			'label'       => '',
+			'desc'        => '<div class="tally-ot-section"><h2>Background Color</h2></div>',
+			'std'         => '',
+			'type'        => 'textblock',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_bg_light'] = array(
+			'id'          => 'color_bg_light',
+			'label'       => __('Light Background Color', 'tally_taxdomain'),
+			'desc'        => __('This will be a light color of background. Example: white (#ffffff)', 'tally_taxdomain'),
+			'std'         => '',
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_bg_dark'] = array(
+			'id'          => 'color_bg_dark',
+			'label'       => __('Dark Background Color', 'tally_taxdomain'),
+			'desc'        => __('This will be a bark color of background. Example: black (#000000)', 'tally_taxdomain'),
+			'std'         => '',
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		
+		/*-- Inner Background Color --*/
+		$custom_settings['settings']['color_block_inner_bg'] = array(
+			'id'          => 'color_block_inner_bg',
+			'label'       => '',
+			'desc'        => '<div class="tally-ot-section"><h2>Inner Background Color</h2></div>',
+			'std'         => '',
+			'type'        => 'textblock',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_inner_bg_light'] = array(
+			'id'          => 'color_inner_bg_light',
+			'label'       => __('Light Inner Background Color', 'tally_taxdomain'),
+			'desc'        => __('This will be a light color of inner background. Example: darker white (#f1f1f1)', 'tally_taxdomain'),
+			'std'         => '',
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_inner_bg_dark'] = array(
+			'id'          => 'color_inner_bg_dark',
+			'label'       => __('Dark Inner Background Color', 'tally_taxdomain'),
+			'desc'        => __('This will be a dark color of inner background. Example: whiter black (#eeeeee)', 'tally_taxdomain'),
+			'std'         => '',
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		
+		
+		/*-- Topbar Color --*/
+		if(TALLY_LAYOUT_TOPBAR_REMOVE == false):
+		$custom_settings['settings']['color_block_topbar'] = array(
+			'id'          => 'color_block_topbar',
+			'label'       => '',
+			'desc'        => '<div class="tally-ot-section"><h2>Topbar</h2></div>',
+			'std'         => '',
+			'type'        => 'textblock',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_topbar_mood'] = array(
+			'id'          => 'color_topbar_mood',
+			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
+			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
+			'std'         => 'light',
+			'type'        => 'select',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => array(
+				 array( 'label' => 'Light', 'value' => 'light'),
+				 array( 'label' => 'Dark', 'value' => 'dark'),
+			),
 		);
 		$custom_settings['settings']['color_topbar_bg'] = array(
 			'id'          => 'color_topbar_bg',
-			'label'       => __('Topbar Background Color', 'tally_taxdomain'),
-			'desc'        => __('background color of the topbar area', 'tally_taxdomain'),
+			'label'       => __('Topbar Background', 'tally_taxdomain'),
+			'desc'        => '',
 			'std'         => '',
-			'type'        => 'colorpicker',
+			'type'        => 'background',
 			'section'     => 'color',
 			'rows'        => '',
 			'post_type'   => '',
@@ -112,7 +407,7 @@ function tally_color_ot_options($custom_settings){
 		$custom_settings['settings']['color_block_header'] = array(
 			'id'          => 'color_block_header',
 			'label'       => '',
-			'desc'        => '<div class="tally-ot-section"><h2>Header Color Options</h2></div>',
+			'desc'        => '<div class="tally-ot-section"><h2>Header</h2></div>',
 			'std'         => '',
 			'type'        => 'textblock',
 			'section'     => 'color',
@@ -122,38 +417,28 @@ function tally_color_ot_options($custom_settings){
 			'class'       => '',
 			'choices'     => ''
 		);
-		$custom_settings['settings']['color_header_text'] = array(
-			'id'          => 'color_header_text',
-			'label'       => __('Header Text Color', 'tally_taxdomain'),
-			'desc'        => __('Simple text color of the header area', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
+		$custom_settings['settings']['color_header_mood'] = array(
+			'id'          => 'color_header_mood',
+			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
+			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
+			'std'         => 'light',
+			'type'        => 'select',
 			'section'     => 'color',
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
 			'class'       => '',
-			'choices'     => ''
-		);
-		$custom_settings['settings']['color_header_border'] = array(
-			'id'          => 'color_header_border',
-			'label'       => __('Header Border Color', 'tally_taxdomain'),
-			'desc'        => __('Border color for each element in the header area', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
+			'choices'     => array(
+				 array( 'label' => 'Light', 'value' => 'light'),
+				 array( 'label' => 'Dark', 'value' => 'dark'),
+			),
 		);
 		$custom_settings['settings']['color_header_bg'] = array(
 			'id'          => 'color_header_bg',
-			'label'       => __('Header Background Color', 'tally_taxdomain'),
-			'desc'        => __('background color of the header area', 'tally_taxdomain'),
+			'label'       => __('Header Background', 'tally_taxdomain'),
+			'desc'        => '',
 			'std'         => '',
-			'type'        => 'colorpicker',
+			'type'        => 'background',
 			'section'     => 'color',
 			'rows'        => '',
 			'post_type'   => '',
@@ -261,7 +546,7 @@ function tally_color_ot_options($custom_settings){
 		$custom_settings['settings']['color_navigation_submenu_bg'] = array(
 			'id'          => 'color_navigation_bg_hover',
 			'label'       => __('Navigation Submenu Background Color', 'tally_taxdomain'),
-			'desc'        => __('background color of the navigation area', 'tally_taxdomain'),
+			'desc'        => '',
 			'std'         => '',
 			'type'        => 'colorpicker',
 			'section'     => 'color',
@@ -278,7 +563,7 @@ function tally_color_ot_options($custom_settings){
 		$custom_settings['settings']['color_block_subheader'] = array(
 			'id'          => 'color_block_subheader',
 			'label'       => '',
-			'desc'        => '<div class="tally-ot-section"><h2>Sub Header Color Options</h2></div>',
+			'desc'        => '<div class="tally-ot-section"><h2>Sub Header</h2></div>',
 			'std'         => '',
 			'type'        => 'textblock',
 			'section'     => 'color',
@@ -288,51 +573,28 @@ function tally_color_ot_options($custom_settings){
 			'class'       => '',
 			'choices'     => ''
 		);
-		$custom_settings['settings']['color_subheader_heading'] = array(
-			'id'          => 'color_subheader_heading',
-			'label'       => __('Sub-Header Headings Color', 'tally_taxdomain'),
-			'desc'        => __('HTML headings color. For example h1, h2, h3, h4, h5 and h6', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
+		$custom_settings['settings']['color_subheader_mood'] = array(
+			'id'          => 'color_subheader_mood',
+			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
+			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
+			'std'         => 'light',
+			'type'        => 'select',
 			'section'     => 'color',
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
 			'class'       => '',
-			'choices'     => ''
-		);
-		$custom_settings['settings']['color_subheader_text'] = array(
-			'id'          => 'color_subheader_text',
-			'label'       => __('Sub-Header Text Color', 'tally_taxdomain'),
-			'desc'        => __('Simple text color of the header area', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
-		);
-		$custom_settings['settings']['color_subheader_border'] = array(
-			'id'          => 'color_subheader_border',
-			'label'       => __('Sub-Header Border Color', 'tally_taxdomain'),
-			'desc'        => __('Border color for each element in the header area', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
+			'choices'     => array(
+				 array( 'label' => 'Light', 'value' => 'light'),
+				 array( 'label' => 'Dark', 'value' => 'dark'),
+			),
 		);
 		$custom_settings['settings']['color_subheader_bg'] = array(
 			'id'          => 'color_subheader_bg',
-			'label'       => __('Sub-Header Background Color', 'tally_taxdomain'),
-			'desc'        => __('background color of the header area', 'tally_taxdomain'),
+			'label'       => __('Sub-Header Background', 'tally_taxdomain'),
+			'desc'        => '',
 			'std'         => '',
-			'type'        => 'colorpicker',
+			'type'        => 'background',
 			'section'     => 'color',
 			'rows'        => '',
 			'post_type'   => '',
@@ -347,7 +609,7 @@ function tally_color_ot_options($custom_settings){
 		$custom_settings['settings']['color_block_content'] = array(
 			'id'          => 'color_block_content',
 			'label'       => '',
-			'desc'        => '<div class="tally-ot-section"><h2>Main Content area Color Options</h2></div>',
+			'desc'        => '<div class="tally-ot-section"><h2>Main Content area</h2></div>',
 			'std'         => '',
 			'type'        => 'textblock',
 			'section'     => 'color',
@@ -357,90 +619,28 @@ function tally_color_ot_options($custom_settings){
 			'class'       => '',
 			'choices'     => ''
 		);
-		$custom_settings['settings']['color_content_heading'] = array(
-			'id'          => 'color_content_heading',
-			'label'       => __('Content Headings Color', 'tally_taxdomain'),
-			'desc'        => __('HTML headings color. For example h1, h2, h3, h4, h5 and h6', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
+		$custom_settings['settings']['color_content_mood'] = array(
+			'id'          => 'color_content_mood',
+			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
+			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
+			'std'         => 'light',
+			'type'        => 'select',
 			'section'     => 'color',
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
 			'class'       => '',
-			'choices'     => ''
-		);
-		$custom_settings['settings']['color_content_subheading'] = array(
-			'id'          => 'color_content_subheading',
-			'label'       => __('Sub Headings Color', 'tally_taxdomain'),
-			'desc'        => __('This is the 2nd color for the headings.', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
-		);
-		$custom_settings['settings']['color_content_text'] = array(
-			'id'          => 'color_content_text',
-			'label'       => __('Content Text Color', 'tally_taxdomain'),
-			'desc'        => __('Simple text color of the content area', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
-		);
-		$custom_settings['settings']['color_content_meta'] = array(
-			'id'          => 'color_content_meta',
-			'label'       => __('Content Meta Text Color', 'tally_taxdomain'),
-			'desc'        => __('This should me lighter than text color', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
-		);
-		$custom_settings['settings']['color_content_border'] = array(
-			'id'          => 'color_content_border',
-			'label'       => __('Content Border Color', 'tally_taxdomain'),
-			'desc'        => __('Border color for each element in the content area', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
-		);
-		$custom_settings['settings']['color_content_inner_bg'] = array(
-			'id'          => 'color_content_inner_bg',
-			'label'       => __('Content Inner Background Color', 'tally_taxdomain'),
-			'desc'        => __('Inner background color of the content area', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
+			'choices'     => array(
+				 array( 'label' => 'Light', 'value' => 'light'),
+				 array( 'label' => 'Dark', 'value' => 'dark'),
+			),
 		);
 		$custom_settings['settings']['color_content_bg'] = array(
 			'id'          => 'color_content_bg',
-			'label'       => __('Content Background Color', 'tally_taxdomain'),
-			'desc'        => __('background color of the content area', 'tally_taxdomain'),
+			'label'       => __('Content Background', 'tally_taxdomain'),
+			'desc'        => '',
 			'std'         => '',
-			'type'        => 'colorpicker',
+			'type'        => 'background',
 			'section'     => 'color',
 			'rows'        => '',
 			'post_type'   => '',
@@ -455,7 +655,7 @@ function tally_color_ot_options($custom_settings){
 		$custom_settings['settings']['color_block_fwidget'] = array(
 			'id'          => 'color_block_fwidget',
 			'label'       => '',
-			'desc'        => '<div class="tally-ot-section"><h2>Footer Widgets area Color Options</h2></div>',
+			'desc'        => '<div class="tally-ot-section"><h2>Footer Widgets area</h2></div>',
 			'std'         => '',
 			'type'        => 'textblock',
 			'section'     => 'color',
@@ -465,77 +665,28 @@ function tally_color_ot_options($custom_settings){
 			'class'       => '',
 			'choices'     => ''
 		);
-		$custom_settings['settings']['color_fwidget_heading'] = array(
-			'id'          => 'color_fwidget_heading',
-			'label'       => __('Footer Widgets Headings Color', 'tally_taxdomain'),
-			'desc'        => __('HTML headings color. For example h1, h2, h3, h4, h5 and h6', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
+		$custom_settings['settings']['color_fwidget_mood'] = array(
+			'id'          => 'color_fwidget_mood',
+			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
+			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
+			'std'         => 'light',
+			'type'        => 'select',
 			'section'     => 'color',
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
 			'class'       => '',
-			'choices'     => ''
-		);
-		$custom_settings['settings']['color_fwidget_text'] = array(
-			'id'          => 'color_fwidget_text',
-			'label'       => __('Footer Widgets Text Color', 'tally_taxdomain'),
-			'desc'        => __('Simple text color of the footer widgets area', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
-		);
-		$custom_settings['settings']['color_fwidget_link'] = array(
-			'id'          => 'color_fwidget_link',
-			'label'       => __('Footer Widgets Link Color', 'tally_taxdomain'),
-			'desc'        => __('Link color of the footer widgets area', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
-		);
-		$custom_settings['settings']['color_fwidget_border'] = array(
-			'id'          => 'color_fwidget_border',
-			'label'       => __('Footer Widgets Border Color', 'tally_taxdomain'),
-			'desc'        => __('Border color for each element in the footer widgets area', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
-		);
-		$custom_settings['settings']['color_fwidget_inner_bg'] = array(
-			'id'          => 'color_fwidget_inner_bg',
-			'label'       => __('Footer Widgets Inner Background Color', 'tally_taxdomain'),
-			'desc'        => __('Inner background color of the footer widgets area', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
+			'choices'     => array(
+				 array( 'label' => 'Light', 'value' => 'light'),
+				 array( 'label' => 'Dark', 'value' => 'dark'),
+			),
 		);
 		$custom_settings['settings']['color_fwidget_bg'] = array(
 			'id'          => 'color_fwidget_bg',
-			'label'       => __('Footer Widgets Background Color', 'tally_taxdomain'),
-			'desc'        => __('background color of the footer widgets area', 'tally_taxdomain'),
+			'label'       => __('Footer Widgets Background', 'tally_taxdomain'),
+			'desc'        => '',
 			'std'         => '',
-			'type'        => 'colorpicker',
+			'type'        => 'background',
 			'section'     => 'color',
 			'rows'        => '',
 			'post_type'   => '',
@@ -550,7 +701,7 @@ function tally_color_ot_options($custom_settings){
 		$custom_settings['settings']['color_block_footer'] = array(
 			'id'          => 'color_block_footer',
 			'label'       => '',
-			'desc'        => '<div class="tally-ot-section"><h2>Footer area Color Options</h2></div>',
+			'desc'        => '<div class="tally-ot-section"><h2>Footer area</h2></div>',
 			'std'         => '',
 			'type'        => 'textblock',
 			'section'     => 'color',
@@ -560,51 +711,29 @@ function tally_color_ot_options($custom_settings){
 			'class'       => '',
 			'choices'     => ''
 		);
-		$custom_settings['settings']['color_footer_text'] = array(
-			'id'          => 'color_footer_text',
-			'label'       => __('Footer Text Color', 'tally_taxdomain'),
-			'desc'        => __('Simple text color of the footer area', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
+		$custom_settings['settings']['color_footer_mood'] = array(
+			'id'          => 'color_footer_mood',
+			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
+			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
+			'std'         => 'light',
+			'type'        => 'select',
 			'section'     => 'color',
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
 			'class'       => '',
-			'choices'     => ''
+			'choices'     => array(
+				 array( 'label' => 'Light', 'value' => 'light'),
+				 array( 'label' => 'Dark', 'value' => 'dark'),
+			),
 		);
-		$custom_settings['settings']['color_footer_link'] = array(
-			'id'          => 'color_footer_link',
-			'label'       => __('Footer Link Color', 'tally_taxdomain'),
-			'desc'        => __('Link color of the footer area', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
-		);
-		$custom_settings['settings']['color_footer_border'] = array(
-			'id'          => 'color_footer_border',
-			'label'       => __('Footer Border Color', 'tally_taxdomain'),
-			'desc'        => __('Border color for each element in the footer area', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'colorpicker',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
-		);
+
 		$custom_settings['settings']['color_footer_bg'] = array(
 			'id'          => 'color_footer_bg',
-			'label'       => __('Footer Background Color', 'tally_taxdomain'),
-			'desc'        => __('background color of the footer area', 'tally_taxdomain'),
+			'label'       => __('Footer Background', 'tally_taxdomain'),
+			'desc'        => '',
 			'std'         => '',
-			'type'        => 'colorpicker',
+			'type'        => 'background',
 			'section'     => 'color',
 			'rows'        => '',
 			'post_type'   => '',

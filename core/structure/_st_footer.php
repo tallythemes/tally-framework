@@ -6,7 +6,7 @@ if('tally_do_footer_open_warp'):
 	function tally_do_footer_open_warp(){
 		if(tally_is_footer() == 'none') return;
 		
-		echo '<div id="footer">';
+		echo '<div id="footer" class="'.apply_filters('tally_footer_class', '').'">';
 			echo '<div id="footer-inner">';
 	}
 	add_action('tally_footer', 'tally_do_footer_open_warp', 5);

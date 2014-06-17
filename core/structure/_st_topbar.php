@@ -7,7 +7,7 @@ if('tally_do_topbar_open_warp'):
 		if(tally_is_topbar() == 'no') return;
 		
 		echo '<div id="topbar">';
-			echo '<div id="topbar-inner">';
+			echo '<div id="topbar-inner" class="'.apply_filters('tally_topbar_class', '').'">';
 	}
 	add_action('tally_before_header', 'tally_do_topbar_open_warp', 5);
 endif;

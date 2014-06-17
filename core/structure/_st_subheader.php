@@ -6,7 +6,7 @@ if('tally_do_subheader_open_warp'):
 	function tally_do_subheader_open_warp(){
 		if(tally_is_subheader() == 'no') return;
 		
-		echo '<div id="subheader">';
+		echo '<div id="subheader" class="'.apply_filters('tally_subheader_class', '').'">';
 			echo '<div id="subheader-inner">';
 	}
 	add_action('tally_after_header', 'tally_do_subheader_open_warp', 5);

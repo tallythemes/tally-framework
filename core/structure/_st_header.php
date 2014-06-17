@@ -6,7 +6,7 @@ if('tally_do_header_open_warp'):
 	function tally_do_header_open_warp(){
 		if(tally_is_header() == 'no') return;
 		
-		echo '<div id="header">';
+		echo '<div id="header" class="'.apply_filters('tally_header_class', '').'">';
 			echo '<div id="header-inner">';
 	}
 	add_action('tally_header', 'tally_do_header_open_warp', 5);
