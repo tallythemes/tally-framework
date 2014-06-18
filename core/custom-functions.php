@@ -135,7 +135,12 @@ endif;
 /* Option of the theme
 -------------------------------------------------*/
 if(!function_exists('tally_option')):
-function tally_option($name, $default = NULL){
+function tally_option($name, $default_data = NULL){
+	$all_default_filter_data = apply_filters('tally_option', array());
+	
+	if(isset($all_default_filter_data[$name]) && ($all_default_filter_data[$name] != NULL)){ $default = $all_default_filter_data[$name]; }
+	else{ $default = $default_data; }
+	
 	$output = $default;
 	if(function_exists('ot_get_option')){
 		$output = ot_get_option($name);

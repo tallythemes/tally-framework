@@ -9,7 +9,7 @@ function tally_color_ot_options($custom_settings){
 			'id'          => 'site_color_skin',
 			'label'       => __('Choose Your Color Skin', 'tally_taxdomain'),
 			'desc'        => '',
-			'std'         => 'light',
+			'std'         => '',
 			'type'        => 'select',
 			'section'     => 'color',
 			'rows'        => '',
@@ -80,7 +80,7 @@ function tally_color_ot_options($custom_settings){
 		);
 		$custom_settings['settings']['color_headings_light'] = array(
 			'id'          => 'color_headings_light',
-			'label'       => __('Headings Light Color', 'tally_taxdomain'),
+			'label'       => __('Headings color on Dark Background', 'tally_taxdomain'),
 			'desc'        => __('This font color will show on the dark background. For example your background color is balck and the text heading color need to be white', 'tally_taxdomain'),
 			'std'         => '',
 			'type'        => 'colorpicker',
@@ -93,7 +93,7 @@ function tally_color_ot_options($custom_settings){
 		);
 		$custom_settings['settings']['color_headings_dark'] = array(
 			'id'          => 'color_headings_dark',
-			'label'       => __('Headings Dark Color', 'tally_taxdomain'),
+			'label'       => __('Headings color on Light Background', 'tally_taxdomain'),
 			'desc'        => __('This font color will show on the light background. For example your background color is white and the text heading color need to be black', 'tally_taxdomain'),
 			'std'         => '',
 			'type'        => 'colorpicker',
@@ -122,7 +122,7 @@ function tally_color_ot_options($custom_settings){
 		);
 		$custom_settings['settings']['color_subheading_light'] = array(
 			'id'          => 'color_subheading_light',
-			'label'       => __('Sub-Headings Light Color', 'tally_taxdomain'),
+			'label'       => __('Sub-Headings color on Dark Background', 'tally_taxdomain'),
 			'desc'        => __('This font color will show on the dark background. For example your background color is balck and the text heading color need to be white', 'tally_taxdomain'),
 			'std'         => '',
 			'type'        => 'colorpicker',
@@ -135,7 +135,7 @@ function tally_color_ot_options($custom_settings){
 		);
 		$custom_settings['settings']['color_subheading_dark'] = array(
 			'id'          => 'color_subheading_dark',
-			'label'       => __('sub-Headings Dark Color', 'tally_taxdomain'),
+			'label'       => __('sub-Headings color on Light Background', 'tally_taxdomain'),
 			'desc'        => __('This font color will show on the light background. For example your background color is white and the text heading color need to be black', 'tally_taxdomain'),
 			'std'         => '',
 			'type'        => 'colorpicker',
@@ -164,7 +164,7 @@ function tally_color_ot_options($custom_settings){
 		);
 		$custom_settings['settings']['color_text_light'] = array(
 			'id'          => 'color_text_light',
-			'label'       => __('Light Text Color', 'tally_taxdomain'),
+			'label'       => __('Text color on Dark Background', 'tally_taxdomain'),
 			'desc'        => __('This font color will show on the dark background. For example your background color is balck and the text color need to be white', 'tally_taxdomain'),
 			'std'         => '',
 			'type'        => 'colorpicker',
@@ -177,7 +177,7 @@ function tally_color_ot_options($custom_settings){
 		);
 		$custom_settings['settings']['color_text_dark'] = array(
 			'id'          => 'color_text_dark',
-			'label'       => __('Dark Text Color', 'tally_taxdomain'),
+			'label'       => __('Text color on Light Background', 'tally_taxdomain'),
 			'desc'        => __('This font color will show on the light background. For example your background color is white and the text color need to be black', 'tally_taxdomain'),
 			'std'         => '',
 			'type'        => 'colorpicker',
@@ -205,7 +205,7 @@ function tally_color_ot_options($custom_settings){
 		);
 		$custom_settings['settings']['color_meta_light'] = array(
 			'id'          => 'color_meta_light',
-			'label'       => __('Light Meta Text Color', 'tally_taxdomain'),
+			'label'       => __('Meta Text color on Dark Background', 'tally_taxdomain'),
 			'desc'        => __('This font color will show on the dark background. For example your background color is balck and the text color need to be white', 'tally_taxdomain'),
 			'std'         => '',
 			'type'        => 'colorpicker',
@@ -218,7 +218,7 @@ function tally_color_ot_options($custom_settings){
 		);
 		$custom_settings['settings']['color_meta_dark'] = array(
 			'id'          => 'color_meta_dark',
-			'label'       => __('Dark Meta Text Color', 'tally_taxdomain'),
+			'label'       => __('Meta Text color on Light Background', 'tally_taxdomain'),
 			'desc'        => __('This font color will show on the light background. For example your background color is white and the text color need to be black', 'tally_taxdomain'),
 			'std'         => '',
 			'type'        => 'colorpicker',
@@ -247,7 +247,7 @@ function tally_color_ot_options($custom_settings){
 		);
 		$custom_settings['settings']['color_border_light'] = array(
 			'id'          => 'color_border_light',
-			'label'       => __('Light Border Color', 'tally_taxdomain'),
+			'label'       => __('Border color on Dark Background', 'tally_taxdomain'),
 			'desc'        => __('This border color will show on the dark background. For example your background color is balck and the border color need to be white', 'tally_taxdomain'),
 			'std'         => '',
 			'type'        => 'colorpicker',
@@ -260,7 +260,7 @@ function tally_color_ot_options($custom_settings){
 		);
 		$custom_settings['settings']['color_border_dark'] = array(
 			'id'          => 'color_border_dark',
-			'label'       => __('Dark Border Color', 'tally_taxdomain'),
+			'label'       => __('Border color on Light Background', 'tally_taxdomain'),
 			'desc'        => __('This border color will show on the light background. For example your background color is white and the border color need to be black', 'tally_taxdomain'),
 			'std'         => '',
 			'type'        => 'colorpicker',
@@ -330,7 +330,7 @@ function tally_color_ot_options($custom_settings){
 		);
 		$custom_settings['settings']['color_inner_bg_light'] = array(
 			'id'          => 'color_inner_bg_light',
-			'label'       => __('Light Inner Background Color', 'tally_taxdomain'),
+			'label'       => __('Inner Background color on Dark Background', 'tally_taxdomain'),
 			'desc'        => __('This will be a light color of inner background. Example: darker white (#f1f1f1)', 'tally_taxdomain'),
 			'std'         => '',
 			'type'        => 'colorpicker',
@@ -343,7 +343,7 @@ function tally_color_ot_options($custom_settings){
 		);
 		$custom_settings['settings']['color_inner_bg_dark'] = array(
 			'id'          => 'color_inner_bg_dark',
-			'label'       => __('Dark Inner Background Color', 'tally_taxdomain'),
+			'label'       => __('Inner Background color on Light Background', 'tally_taxdomain'),
 			'desc'        => __('This will be a dark color of inner background. Example: whiter black (#eeeeee)', 'tally_taxdomain'),
 			'std'         => '',
 			'type'        => 'colorpicker',
@@ -375,7 +375,7 @@ function tally_color_ot_options($custom_settings){
 			'id'          => 'color_topbar_mood',
 			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
 			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
-			'std'         => 'light',
+			'std'         => '',
 			'type'        => 'select',
 			'section'     => 'color',
 			'rows'        => '',
@@ -383,8 +383,9 @@ function tally_color_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => array(
-				 array( 'label' => 'Light', 'value' => 'light'),
-				 array( 'label' => 'Dark', 'value' => 'dark'),
+				array( 'label' => '--', 'value' => ''),
+				array( 'label' => 'Light', 'value' => 'light'),
+				array( 'label' => 'Dark', 'value' => 'dark'),
 			),
 		);
 		$custom_settings['settings']['color_topbar_bg'] = array(
@@ -421,7 +422,7 @@ function tally_color_ot_options($custom_settings){
 			'id'          => 'color_header_mood',
 			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
 			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
-			'std'         => 'light',
+			'std'         => '',
 			'type'        => 'select',
 			'section'     => 'color',
 			'rows'        => '',
@@ -429,8 +430,9 @@ function tally_color_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => array(
-				 array( 'label' => 'Light', 'value' => 'light'),
-				 array( 'label' => 'Dark', 'value' => 'dark'),
+				array( 'label' => '--', 'value' => ''),
+				array( 'label' => 'Light', 'value' => 'light'),
+				array( 'label' => 'Dark', 'value' => 'dark'),
 			),
 		);
 		$custom_settings['settings']['color_header_bg'] = array(
@@ -577,7 +579,7 @@ function tally_color_ot_options($custom_settings){
 			'id'          => 'color_subheader_mood',
 			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
 			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
-			'std'         => 'light',
+			'std'         => '',
 			'type'        => 'select',
 			'section'     => 'color',
 			'rows'        => '',
@@ -585,8 +587,9 @@ function tally_color_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => array(
-				 array( 'label' => 'Light', 'value' => 'light'),
-				 array( 'label' => 'Dark', 'value' => 'dark'),
+				array( 'label' => '--', 'value' => ''),
+				array( 'label' => 'Light', 'value' => 'light'),
+				array( 'label' => 'Dark', 'value' => 'dark'),
 			),
 		);
 		$custom_settings['settings']['color_subheader_bg'] = array(
@@ -623,7 +626,7 @@ function tally_color_ot_options($custom_settings){
 			'id'          => 'color_content_mood',
 			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
 			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
-			'std'         => 'light',
+			'std'         => '',
 			'type'        => 'select',
 			'section'     => 'color',
 			'rows'        => '',
@@ -631,8 +634,9 @@ function tally_color_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => array(
-				 array( 'label' => 'Light', 'value' => 'light'),
-				 array( 'label' => 'Dark', 'value' => 'dark'),
+				array( 'label' => '--', 'value' => ''),
+				array( 'label' => 'Light', 'value' => 'light'),
+				array( 'label' => 'Dark', 'value' => 'dark'),
 			),
 		);
 		$custom_settings['settings']['color_content_bg'] = array(
@@ -669,7 +673,7 @@ function tally_color_ot_options($custom_settings){
 			'id'          => 'color_fwidget_mood',
 			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
 			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
-			'std'         => 'light',
+			'std'         => '',
 			'type'        => 'select',
 			'section'     => 'color',
 			'rows'        => '',
@@ -677,8 +681,9 @@ function tally_color_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => array(
-				 array( 'label' => 'Light', 'value' => 'light'),
-				 array( 'label' => 'Dark', 'value' => 'dark'),
+				array( 'label' => '--', 'value' => ''),
+				array( 'label' => 'Light', 'value' => 'light'),
+				array( 'label' => 'Dark', 'value' => 'dark'),
 			),
 		);
 		$custom_settings['settings']['color_fwidget_bg'] = array(
@@ -715,7 +720,7 @@ function tally_color_ot_options($custom_settings){
 			'id'          => 'color_footer_mood',
 			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
 			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
-			'std'         => 'light',
+			'std'         => '',
 			'type'        => 'select',
 			'section'     => 'color',
 			'rows'        => '',
@@ -723,8 +728,9 @@ function tally_color_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => array(
-				 array( 'label' => 'Light', 'value' => 'light'),
-				 array( 'label' => 'Dark', 'value' => 'dark'),
+				array( 'label' => '--', 'value' => ''),
+				array( 'label' => 'Light', 'value' => 'light'),
+				array( 'label' => 'Dark', 'value' => 'dark'),
 			),
 		);
 

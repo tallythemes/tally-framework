@@ -69,6 +69,7 @@ function tally_op_content_color_option_action(){
 		
 		
 		
+		
 		/*------------------------ LIGHT ------------------------*/
 		.color_mood_light *{ border-color:<?php tally_color('color_border_light'); ?>; color: <?php tally_color('color_text_light'); ?>; }
 		.color_mood_light{ 
@@ -133,7 +134,9 @@ function tally_op_content_color_option_action(){
 		.color_mood_light .entry-meta-item{ color:<?php tally_color('color_headings_light'); ?>; }
 		
 		
-		/*Backgrounds*/
+		
+		
+		/*---------------------Backgrounds--------------------*/
 		#topbar.color_mood_dark,
 		#topbar.color_mood_light{
 			<?php
@@ -223,89 +226,16 @@ function tally_op_content_color_option_action(){
 			}
 			?>	
 		}
+		
+		
+		
+		
+		/*--------------------- Menu ------------------*/
+		.menu_area #nav *{ color:<?php tally_color('color_navigation_text'); ?>; border-color:<?php tally_color('color_navigation_border'); ?>; }
+		.menu_area #nav a{ color:<?php tally_color('color_navigation_text'); ?>; background-color:<?php tally_color('color_navigation_bg'); ?>; }
+		.menu_area #nav a:hover,
+		.menu_area #nav ul > .current-menu-item a{ color:<?php tally_color('color_navigation_text_hover'); ?>; background-color:<?php tally_color('color_navigation_bg_hover'); ?>; }
+		.menu_area #nav ul li ul.sub-menu li a{ background-color:<?php tally_color('color_navigation_submenu_bg'); ?>; }
 	</style>
     <?php
-}
-
-add_filter('tally_topbar_class', 'tally_topbar_class_filter');
-add_filter('tally_header_class', 'tally_header_class_filter');
-add_filter('tally_subheader_class', 'tally_subheader_class_filter');
-add_filter('tally_main_class', 'tally_main_class_filter');
-add_filter('tally_fwidget_class', 'tally_fwidget_class_filter');
-add_filter('tally_footer_class', 'tally_footer_class_filter');
-
-function tally_topbar_class_filter($class){
-	
-	$the_class = $class;
-	
-	if(tally_option('site_color_skin') == 'light'){$the_class = $class.' color_mood_light';}
-	elseif(tally_option('site_color_skin') == 'dark'){$the_class = $class.' color_mood_dark';}
-	
-	if( tally_option('color_topbar_mood') == 'light' ){ $the_class = $class.' color_mood_light'; }
-	elseif( tally_option('color_topbar_mood') == 'dark' ){ $the_class = $class.' color_mood_dark'; }	
-	
-	return $the_class;
-}
-
-function tally_header_class_filter($class){
-	
-	$the_class = $class;
-	
-	if(tally_option('site_color_skin') == 'light'){$the_class = $class.' color_mood_light';}
-	elseif(tally_option('site_color_skin') == 'dark'){$the_class = $class.' color_mood_dark';}
-	
-	if( tally_option('color_header_mood') == 'light' ){ $the_class = $class.' color_mood_light'; }
-	elseif( tally_option('color_header_mood') == 'dark' ){ $the_class = $class.' color_mood_dark'; }
-	
-	return $the_class;
-}
-
-function tally_subheader_class_filter($class){
-	
-	$the_class = $class;
-	
-	if(tally_option('site_color_skin') == 'light'){$the_class = $class.' color_mood_light';}
-	elseif(tally_option('site_color_skin') == 'dark'){$the_class = $class.' color_mood_dark';}
-	
-	if( tally_option('color_subheader_mood') == 'light' ){ $the_class = $class.' color_mood_light'; }
-	elseif( tally_option('color_subheader_mood') == 'dark' ){ $the_class = $class.' color_mood_dark'; }	
-	
-	return $the_class;
-}
-
-function tally_main_class_filter($class){
-	
-	$the_class = $class;
-	
-	if(tally_option('site_color_skin') == 'light'){$the_class = $class.' color_mood_light';}
-	elseif(tally_option('site_color_skin') == 'dark'){$the_class = $class.' color_mood_dark';}
-	
-	if( tally_option('color_content_mood') == 'light' ){ $the_class = $class.' color_mood_light'; }
-	elseif( tally_option('color_content_mood') == 'dark' ){ $the_class = $class.' color_mood_dark'; }
-	
-	return $the_class;
-}
-
-function tally_fwidget_class_filter($class){
-	
-	$the_class = $class;
-	
-	if(tally_option('site_color_skin') == 'light'){$the_class = $class.' color_mood_light';}
-	elseif(tally_option('site_color_skin') == 'dark'){$the_class = $class.' color_mood_dark';}
-	
-	if( tally_option('color_fwidget_mood') == 'light' ){ $the_class = $class.' color_mood_light'; }
-	elseif( tally_option('color_fwidget_mood') == 'dark' ){ $the_class = $class.' color_mood_dark'; }
-	
-	return $the_class;
-}
-
-function tally_footer_class_filter($class){
-	$the_class = $class;
-	if(tally_option('site_color_skin') == 'light'){$the_class = $class.' color_mood_light';}
-	elseif(tally_option('site_color_skin') == 'dark'){$the_class = $class.' color_mood_dark';}
-	
-	if( tally_option('color_footer_mood') == 'light' ){ $the_class = $class.' color_mood_light'; }
-	elseif( tally_option('color_footer_mood') == 'dark' ){ $the_class = $class.' color_mood_dark'; }
-	
-	return $the_class;
 }
