@@ -9,7 +9,7 @@ function tally_header_ot_options($custom_settings){
 			'id'          => 'enable_header_sticky',
 			'label'       => __('Enable Header sticky', 'tally_taxdomain'),
 			'desc'        => '',
-			'std'         => 'no',
+			'std'         => tally_option_std('enable_header_sticky'),
 			'type'        => 'select',
 			'section'     => 'header',
 			'rows'        => '',
@@ -17,16 +17,9 @@ function tally_header_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => array( 
-			  array(
-				'value'       => 'yes',
-				'label'       => 'Yes',
-				'src'         => ''
-			  ),
-			  array(
-				'value'       => 'no',
-				'label'       => 'No',
-				'src'         => ''
-			  )
+				array('value' => '', 'label' => '--','src' => ''),
+				array('value' => 'yes', 'label' => 'Yes','src' => ''),
+				array('value' => 'no','label' => 'No','src' => '')
 			),
 		);
 		
@@ -34,7 +27,7 @@ function tally_header_ot_options($custom_settings){
 			'id'          => 'header_height',
 			'label'       => __('Header height', 'tally_taxdomain'),
 			'desc'        => __('This is the height of the site header <strong>Example: <code>52px</code></strong>', 'tally_taxdomain'),
-			'std'         => '',
+			'std'         => tally_option_std('header_height'),
 			'type'        => 'text',
 			'section'     => 'header',
 			'rows'        => '',
@@ -47,7 +40,7 @@ function tally_header_ot_options($custom_settings){
 			'id'          => 'header_menu_top_margin',
 			'label'       => __('Top margin of the menu', 'tally_taxdomain'),
 			'desc'        => __('This is the top margin of the header menu <strong>Example: <code>10px</code></strong>', 'tally_taxdomain'),
-			'std'         => '',
+			'std'         => tally_option_std('header_menu_top_margin'),
 			'type'        => 'text',
 			'section'     => 'header',
 			'rows'        => '',
@@ -60,7 +53,7 @@ function tally_header_ot_options($custom_settings){
 			'id'          => 'header_logo_top_margin',
 			'label'       => __('Top margin of the Logo', 'tally_taxdomain'),
 			'desc'        => __('This is the top margin of the header Logo <strong>Example: <code>52px</code></strong>', 'tally_taxdomain'),
-			'std'         => '',
+			'std'         => tally_option_std('header_logo_top_margin'),
 			'type'        => 'text',
 			'section'     => 'header',
 			'rows'        => '',

@@ -9,7 +9,7 @@ function tally_footer_ot_options($custom_settings){
 			'id'          => 'footer_copyright',
 			'label'       => __('Footer Copyright Text', 'tally_taxdomain'),
 			'desc'        => __('This is the copyright text of footer', 'tally_taxdomain'),
-			'std'         => 'Copyright 2014 @ Tally Themes',
+			'std'         => tally_option_std('footer_copyright'),
 			'type'        => 'text',
 			'section'     => 'footer',
 			'rows'        => '',

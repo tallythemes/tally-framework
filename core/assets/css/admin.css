@@ -49,14 +49,7 @@
 
 /*---Topbar---*/
 #setting_color_block_topbar.format-settings .format-setting-wrap{ padding:0; background:#A1AA35; }
-#setting_color_topbar_accent.format-settings .format-setting-wrap,
-#setting_color_topbar_heading.format-settings .format-setting-wrap,
-#setting_color_topbar_subheading.format-settings .format-setting-wrap,
-#setting_color_topbar_text.format-settings .format-setting-wrap,
-#setting_color_topbar_meta.format-settings .format-setting-wrap,
-#setting_color_topbar_border.format-settings .format-setting-wrap,
-#setting_color_topbar_border2.format-settings .format-setting-wrap,
-#setting_color_topbar_inner_bg.format-settings .format-setting-wrap,
+#setting_color_topbar_mood.format-settings .format-setting-wrap,
 #setting_color_topbar_bg.format-settings .format-setting-wrap{ border-left:solid 5px #A1AA35; border-right:solid 5px #A1AA35; margin-bottom:0px; padding:20px; }
 #setting_color_topbar_bg.format-settings .format-setting-wrap{ border-bottom:solid 5px #A1AA35; margin-bottom:30px; }
 

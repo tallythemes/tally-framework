@@ -156,7 +156,6 @@ body.sidebar-sidebar-content #sidebar{ width:31%; float:left; }
 		border:solid 1px; 
 		max-width: 100%;
 		width: 100%;
-		box-shadow: 1px 1px 3px #eee inset;
 		
 		-webkit-border-radius: 3px; 
 		   -moz-border-radius: 3px; 
@@ -176,7 +175,6 @@ body.sidebar-sidebar-content #sidebar{ width:31%; float:left; }
 		font-size:1em;
 		width:auto;
 		cursor:pointer;
-		box-shadow: 1px 1px 3px #eee;
 		
 		-webkit-border-radius: 3px; 
 		   -moz-border-radius: 3px; 
@@ -457,6 +455,7 @@ body.sidebar-sidebar-content #sidebar{ width:31%; float:left; }
 		display: block;
 		margin-bottom: 0px;
 		height: 30px;
+		border-right:0;
 	}
 	.widget_search label{ display:none; }
 	.widget_search input[type="submit"]{
@@ -522,7 +521,7 @@ body.sidebar-sidebar-content #sidebar{ width:31%; float:left; }
 	.comment-respond,
 	.entry-pings {}
 	.comment-respond a,
-	.entry-comments a {border-bottom: 1px solid #ddd;}
+	.entry-comments a {}
 	.comment-content {clear: both;}
 	.entry-comments .comment-author {margin-bottom: 0;}
 	.comment-respond input[type="email"],

@@ -4,7 +4,7 @@ function tally_op_content_color_option_action(){
 	?>
     <style type="text/css">
 		/*------------------------ DARK ------------------------*/
-		.color_mood_dark *{ border-color:<?php tally_color('color_border_dark'); ?>; color: <?php tally_color('color_text_dark'); ?>; }
+		.color_mood_dark *{ border-color:<?php tally_color('color_border_dark'); ?>  !important; color: <?php tally_color('color_text_dark'); ?>; }
 		.color_mood_dark{ 
 			background: <?php tally_color('color_bg_light'); ?>; color: <?php tally_color('color_text_dark'); ?>; border-color:<?php tally_color('color_border_dark'); ?>; 
 		}
@@ -12,12 +12,12 @@ function tally_op_content_color_option_action(){
 		.color_mood_dark a:hover{ color:<?php tally_color('site_accent2_color'); ?>; }
 		.color_mood_dark input,
 		.color_mood_dark textarea,
-		.color_mood_dark select{ background:<?php tally_color('color_inner_bg_dark','1'); ?>; border-color:<?php tally_color('color_border_dark', '1'); ?>; }
+		.color_mood_dark select{ background:<?php tally_color('color_inner_bg_dark','1'); ?>; border-color:<?php tally_color('color_border_dark', '1'); ?>  !important; }
 		.color_mood_dark input[type="submit"]{ 
-			background-color:<?php echo tally_color('site_accent_color'); ?>; color:#FFF; border:solid 1px <?php echo tally_color('site_accent_color'); ?>; 
+			background-color:<?php echo tally_color('site_accent_color'); ?>; color:#FFF; border:solid 1px <?php echo tally_color('site_accent_color'); ?> !important; 
 		}
 		.color_mood_dark input[type="submit"]:hover{
-			background-color:<?php echo tally_color('site_accent2_color'); ?>; color:#FFF; border:solid 1px <?php echo tally_color('site_accent2_color'); ?>; 
+			background-color:<?php echo tally_color('site_accent2_color'); ?>; color:#FFF; border:solid 1px <?php echo tally_color('site_accent2_color'); ?> !important; 
 		}
 		
 		.color_mood_dark #comments li.comment,
@@ -67,11 +67,13 @@ function tally_op_content_color_option_action(){
 		.color_mood_dark .entry-meta-item a,
 		.color_mood_dark .entry-meta-item{ color:<?php tally_color('color_headings_dark'); ?>; }
 		
+		#fwidget.color_mood_dark{ color: <?php tally_color('color_text_dark'); ?>; border-color:<?php tally_color('color_border_dark'); ?>; }
+		
 		
 		
 		
 		/*------------------------ LIGHT ------------------------*/
-		.color_mood_light *{ border-color:<?php tally_color('color_border_light'); ?>; color: <?php tally_color('color_text_light'); ?>; }
+		.color_mood_light *{ border-color:<?php tally_color('color_border_light'); ?> !important; color: <?php tally_color('color_text_light'); ?>; }
 		.color_mood_light{ 
 			background: <?php tally_color('color_bg_dark'); ?>; color: <?php tally_color('color_text_light'); ?>; border-color:<?php tally_color('color_border_light'); ?>; 
 		}
@@ -79,12 +81,12 @@ function tally_op_content_color_option_action(){
 		.color_mood_light a:hover{ color:<?php tally_color('site_accent2_color'); ?>; }
 		.color_mood_light input,
 		.color_mood_light textarea,
-		.color_mood_light select{ background:<?php tally_color('color_inner_bg_light', '1'); ?>; border-color:<?php tally_color('color_border_light', '1'); ?>; }
+		.color_mood_light select{ background:<?php tally_color('color_inner_bg_light', '1'); ?>; border-color:<?php tally_color('color_border_light', '1'); ?>  !important; }
 		.color_mood_light input[type="submit"]{ 
-			background-color:<?php echo tally_color('site_accent_color'); ?>; color:#FFF; border:solid 1px <?php echo tally_color('site_accent_color'); ?>; 
+			background-color:<?php echo tally_color('site_accent_color'); ?>; color:#FFF; border:solid 1px <?php echo tally_color('site_accent_color'); ?> !important; 
 		}
 		.color_mood_light input[type="submit"]:hover{
-			background-color:<?php echo tally_color('site_accent2_color'); ?>; color:#FFF; border:solid 1px <?php echo tally_color('site_accent2_color'); ?>; 
+			background-color:<?php echo tally_color('site_accent2_color'); ?>; color:#FFF; border:solid 1px <?php echo tally_color('site_accent2_color'); ?> !important; 
 		}
 		
 		.color_mood_light #comments li.comment,
@@ -133,7 +135,7 @@ function tally_op_content_color_option_action(){
 		.color_mood_light .entry-meta-item a,
 		.color_mood_light .entry-meta-item{ color:<?php tally_color('color_headings_light'); ?>; }
 		
-		
+		#fwidget.color_mood_light{ color: <?php tally_color('color_text_light'); ?>; border-color:<?php tally_color('color_border_light'); ?>; }
 		
 		
 		/*---------------------Backgrounds--------------------*/

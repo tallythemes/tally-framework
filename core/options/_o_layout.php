@@ -1,7 +1,6 @@
 <?php
 add_filter('option_tree_settings_args', 'tally_layout_ot_options');
 function tally_layout_ot_options($custom_settings){
-	global $tally_theme_option_std;
 	$custom_settings['sections'][] = array( 'id' => 'layout','title' => 'Site Layout');
 	
 	if(tally_check() == true):
@@ -9,7 +8,7 @@ function tally_layout_ot_options($custom_settings){
 			'id'          => 'site_layout',
 			'label'       => __('Site Layout', 'tally_taxdomain'),
 			'desc'        => __('Select the Site layout to <strong>Full Width</strong> or <strong>Box Layout</strong>', 'tally_taxdomain'),
-			'std'         => $tally_theme_option_std['site_layout'],
+			'std'         => tally_option_std('site_layout'),
 			'type'        => 'radio-image',
 			'section'     => 'layout',
 			'rows'        => '',
@@ -27,7 +26,7 @@ function tally_layout_ot_options($custom_settings){
 				'id'          => 'is_topbar',
 				'label'       => __('Enable TopBar Area', 'tally_taxdomain'),
 				'desc'        => __('Enable or Disable TopBar of the site', 'tally_taxdomain'),
-				'std'         => 'no',
+				'std'         => tally_option_std('is_topbar'),
 				'type'        => 'select',
 				'section'     => 'layout',
 				'rows'        => '',
@@ -35,6 +34,7 @@ function tally_layout_ot_options($custom_settings){
 				'taxonomy'    => '',
 				'class'       => '',
 				'choices'     => array(
+					 array( 'label' => '--', 'value' => '' ),
 					 array( 'label' => 'Yes', 'value' => 'yes' ),
 					 array( 'label' => 'No', 'value' => 'no'),
 				)
@@ -45,7 +45,7 @@ function tally_layout_ot_options($custom_settings){
 			'id'          => 'is_header',
 			'label'       => __('Enable Header', 'tally_taxdomain'),
 			'desc'        => __('Enable or Disable Header of the site', 'tally_taxdomain'),
-			'std'         => 'yes',
+			'std'         => tally_option_std('is_header'),
 			'type'        => 'select',
 			'section'     => 'layout',
 			'rows'        => '',
@@ -53,8 +53,9 @@ function tally_layout_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => array(
-				 array( 'label' => 'Yes', 'value' => 'yes' ),
-				 array( 'label' => 'No', 'value' => 'no'),
+				array( 'label' => '--', 'value' => '' ),
+				array( 'label' => 'Yes', 'value' => 'yes' ),
+				array( 'label' => 'No', 'value' => 'no'),
 			)
 		);
 		
@@ -62,7 +63,7 @@ function tally_layout_ot_options($custom_settings){
 			'id'          => 'is_subheader',
 			'label'       => __('Enable SubHeader', 'tally_taxdomain'),
 			'desc'        => __('Enable or Disable SubHeader of the site', 'tally_taxdomain'),
-			'std'         => 'yes',
+			'std'         => tally_option_std('is_subheader'),
 			'type'        => 'select',
 			'section'     => 'layout',
 			'rows'        => '',
@@ -70,8 +71,9 @@ function tally_layout_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => array(
-				 array( 'label' => 'Yes', 'value' => 'yes' ),
-				 array( 'label' => 'No', 'value' => 'no'),
+				array( 'label' => '--', 'value' => '' ),
+				array( 'label' => 'Yes', 'value' => 'yes' ),
+				array( 'label' => 'No', 'value' => 'no'),
 			)
 		);
 	endif;
@@ -81,7 +83,7 @@ function tally_layout_ot_options($custom_settings){
 		'id'          => 'sidebar_layout',
         'label'       => __('Default Sidebar Layout', 'tally_taxdomain'),
         'desc'        => __('This is the global sidebar layout for all of the pages of the site.', 'tally_taxdomain'),
-        'std'         => $tally_theme_option_std['sidebar_layout'],
+        'std'         => tally_option_std('sidebar_layout'),
         'type'        => 'radio-image',
         'section'     => 'layout',
         'rows'        => '',
@@ -103,7 +105,7 @@ function tally_layout_ot_options($custom_settings){
 			'id'          => 'enable_page_comment',
 			'label'       => __('Enable Comments on pages', 'tally_taxdomain'),
 			'desc'        => __('Enable or Disable comment on the page. This is the global setting. You can enable or disable on each page on page editing area.', 'tally_taxdomain'),
-			'std'         => 'no',
+			'std'         => tally_option_std('enable_page_comment'),
 			'type'        => 'select',
 			'section'     => 'layout',
 			'rows'        => '',
@@ -111,8 +113,9 @@ function tally_layout_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => array(
-				 array( 'label' => 'Yes', 'value' => 'yes' ),
-				 array( 'label' => 'No', 'value' => 'no'),
+				array( 'label' => '--', 'value' => '' ),
+				array( 'label' => 'Yes', 'value' => 'yes' ),
+				array( 'label' => 'No', 'value' => 'no'),
 			)
 		);
 		
@@ -120,7 +123,7 @@ function tally_layout_ot_options($custom_settings){
 			'id'          => 'enable_post_comment',
 			'label'       => __('Enable Comments on Posts', 'tally_taxdomain'),
 			'desc'        => __('Enable or Disable comment on the page. This is the global setting. You can enable or disable on each page on POst editing area.', 'tally_taxdomain'),
-			'std'         => 'yes',
+			'std'         => tally_option_std('enable_post_comment'),
 			'type'        => 'select',
 			'section'     => 'layout',
 			'rows'        => '',
@@ -128,8 +131,9 @@ function tally_layout_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => array(
-				 array( 'label' => 'Yes', 'value' => 'yes' ),
-				 array( 'label' => 'No', 'value' => 'no'),
+				array( 'label' => '--', 'value' => '' ),
+				array( 'label' => 'Yes', 'value' => 'yes' ),
+				array( 'label' => 'No', 'value' => 'no'),
 			)
 		);
 		
@@ -137,7 +141,7 @@ function tally_layout_ot_options($custom_settings){
 			'id'          => 'footer_widget_layout',
 			'label'       => __('Footer Widget Layout', 'tally_taxdomain'),
 			'desc'        => __('Select a <strong>Footer Widget</strong> layout. If you select the red cross no widget will display in footer', 'tally_taxdomain'),
-			'std'         => 'none',
+			'std'         => tally_option_std('footer_widget_layout'),
 			'type'        => 'radio-image',
 			'section'     => 'layout',
 			'rows'        => '',
@@ -156,7 +160,7 @@ function tally_layout_ot_options($custom_settings){
 			'id'          => 'footer_layout',
 			'label'       => __('Footer Layout', 'tally_taxdomain'),
 			'desc'        => __('Enable or Disable the footer of the site', 'tally_taxdomain'),
-			'std'         => 'yes',
+			'std'         => tally_option_std('footer_layout'),
 			'type'        => 'select',
 			'section'     => 'layout',
 			'rows'        => '',
@@ -164,8 +168,9 @@ function tally_layout_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => array(
-				 array( 'label' => 'No', 'value' => 'none'),
-				 array( 'label' => 'Yes', 'value' => 'yes'),
+				array( 'label' => '--', 'value' => '' ),
+				array( 'label' => 'No', 'value' => 'none'),
+				array( 'label' => 'Yes', 'value' => 'yes'),
 			)
 		);
 	endif;

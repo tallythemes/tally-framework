@@ -136,18 +136,26 @@ endif;
 -------------------------------------------------*/
 if(!function_exists('tally_option')):
 function tally_option($name, $default_data = NULL){
-	$all_default_filter_data = apply_filters('tally_option', array());
+	$all_default_filter_data = apply_filters('tally_option_std', array());
 	
 	if(isset($all_default_filter_data[$name]) && ($all_default_filter_data[$name] != NULL)){ $default = $all_default_filter_data[$name]; }
 	else{ $default = $default_data; }
 	
-	$output = $default;
 	if(function_exists('ot_get_option')){
 		$output = ot_get_option($name);
 	}
 	
 	if( $output == NULL ){ $output = $default; }
 	
+	return $output;
+}
+endif;
+
+if(!function_exists('tally_option_std')):
+function tally_option_std($name, $default_data = NULL){
+	$all_default_filter_data = apply_filters('tally_option_std', array());
+	$output = $default_data;
+	if(isset($all_default_filter_data[$name]) && ($all_default_filter_data[$name] != NULL)){ $output = $all_default_filter_data[$name]; }
 	return $output;
 }
 endif;

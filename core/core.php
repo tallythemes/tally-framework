@@ -7,21 +7,6 @@ define('TALLY_CHILD_DRI', get_stylesheet_directory());
 $tally_theme_info = wp_get_theme();
 
 
-/*  Setup Default Option STD 
-----------------------------------*/
-$tally_theme_option_std = apply_filters('tally_theme_option_std', array(
-	'sidebar_layout'    => 'content-sidebar',
-	'site_layout'       => 'full',
-	'heading_font_link' => "<link href='http://fonts.googleapis.com/css?family=Cherry+Swash:400,700' rel='stylesheet' type='text/css'>",
-	'heading_font_name' => "font-family: 'Cherry Swash', cursive;",
-	'body_font_link'    => "<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>",
-	'body_font_name'    => "font-family: 'Open Sans', sans-serif;",
-	'site_logo'         => TALLY_URL.'/assets/images/logo.png',
-	'site_logo2'        => TALLY_URL.'/assets/images/logo@2x.png',
-	'site_favicon'      => '',
-), 10);
-
-
 /*  redirect after activation
 ----------------------------------*/
 /*global $pagenow;
@@ -49,6 +34,7 @@ include('scripts-loader.php');
 include('breadcrumb.php');
 include('class-tgm-plugin-activation.php');
 include('color-management.php');
+include('default-theme-options.php');
 
 
 

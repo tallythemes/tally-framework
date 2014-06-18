@@ -7,7 +7,7 @@ function tally_social_icons_ot_options($custom_settings){
         'id'          => 'enable_social_icons',
         'label'       => __('Enable Social Icons', 'tally_taxdomain'),
         'desc'        => '',
-        'std'         => 'yes',
+        'std'         => tally_option_std('enable_social_icons'),
         'type'        => 'select',
         'section'     => 'social_icons',
         'rows'        => '',
@@ -15,16 +15,9 @@ function tally_social_icons_ot_options($custom_settings){
         'taxonomy'    => '',
         'class'       => '',
         'choices'     => array( 
-          array(
-            'value'       => 'yes',
-            'label'       => 'Yes',
-            'src'         => ''
-          ),
-          array(
-            'value'       => 'no',
-            'label'       => 'No',
-            'src'         => ''
-          )
+			array('value' => '','label' => '--','src' => ''),
+			array('value' => 'yes','label' => 'Yes','src' => ''),
+			array('value' => 'no','label' => 'No','src' => '')
         ),
 	);
 	
@@ -32,12 +25,7 @@ function tally_social_icons_ot_options($custom_settings){
         'id'          => 'social_icons',
         'label'       => __('Social Icons', 'tally_taxdomain'),
         'desc'        => '',
-        'std'         => array(
-							array('title'=> 'Dribbble', 'link'=> '#', 'icon'=>'fa-dribbble'),
-							array('title'=> 'Twitter', 'link'=> '#', 'icon'=> 'fa-twitter'),
-							array('title'=> 'Facebook', 'link'=> '#', 'icon'=> 'fa-facebook'),
-							array('title'=> 'Google Plus', 'link'=> '#', 'icon'=> 'fa-google-plus'),
-						),
+        'std'         => tally_option_std('social_icons'),
         'type'        => 'list-item',
         'section'     => 'social_icons',
         'rows'        => '',
