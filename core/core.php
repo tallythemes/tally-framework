@@ -21,7 +21,7 @@ class tally_loader{
      * @since     0.7.3
 	*/
 	public function __construct() {
-      if ( ! isset( $content_width ) ){$content_width = 960; }
+      
 		$this->load_option_tree();
 		
 		add_filter( 'embed_oembed_html', array( $this, 'responsive_embed_output' ), 1, 3 );
@@ -41,7 +41,7 @@ class tally_loader{
      * @since     0.7.3
 	*/
 	public function load_tally(){
-		
+		if ( ! isset( $content_width ) ){$content_width = 960; }
 		$this->load_languages();	
 		$this->constants();
 		$this->theme_supports();
