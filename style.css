@@ -4,7 +4,7 @@ Theme URI: https://github.com/tallythemes/tally
 Author: TallyThemes
 Author URI: https://github.com/tallythemes
 Description: Powerful Theme Framework for WordPress Developer
-Version: 0.8
+Version: 0.7.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, left-sidebar, responsive-layout, custom-menu, featured-images, full-width-template
@@ -34,7 +34,7 @@ Tally Framework WordPress theme is licensed under the GPL.
 	
 /* SUB-HEADER
 ================================================== */
-	#topbar{ background:inherit; color:inherit; padding:10px 0 10px 0; border-bottom:solid 1px; }
+	#topbar{ background: ; color: ; padding:10px 0 10px 0; border-bottom:solid 1px; }
 	#topbar #topbar-inner{ width:92%; margin:0 auto; max-width:960px; }
 	
 	#topbar .topbar-info-text{ float:left; }
@@ -45,9 +45,9 @@ Tally Framework WordPress theme is licensed under the GPL.
 
 /* HEADER
 ================================================== */
-	#header{ background:inherit; color:inherit; padding:40px 0 40px 0; border-bottom:solid 1px; }
-	#header a{ color:inherit; }
-	#header a:hover{ color:inherit; }
+	#header{ background: ; color: ; padding:40px 0 40px 0; border-bottom:solid 1px; }
+	#header a{ color: ; }
+	#header a:hover{ color: ; }
 	#header #header-inner{ width:92%; margin:0 auto; max-width:960px; }
 	/* #header .hheaight{ height:70px; }*/
 	
@@ -56,7 +56,10 @@ Tally Framework WordPress theme is licensed under the GPL.
 	
 	
 	#logo{ margin-top: 0px; }
-	#logo h1{ margin-bottom:0; text-transform:capitalize; }
+	#logo h1{ margin-bottom:0; text-transform:uppercase; font-size:24px; line-height: 30px; font-weight: bold; }
+	#logo h1 a{ color:inherit; }
+	#logo h1 a:hover{ text-decoration:none; }
+	#logo span{ margin-left:4px; display:inline-block; opacity: 0.7; }
 	
 	
 	.header-sticky #header.stickyMenu{ position:fixed; top:0; left:0; width:100%; opacity:0.9; z-index:9999; }
@@ -66,7 +69,7 @@ Tally Framework WordPress theme is licensed under the GPL.
 	
 /* Nav
 ================================================== */	
-	#nav{ margin-top:0px; }
+	#nav{ margin-top:9px; }
 	#nav ul{ margin:0; padding:0; list-style-type:none; }
 	#nav ul li{ 
 		margin:0;
@@ -77,21 +80,22 @@ Tally Framework WordPress theme is licensed under the GPL.
 	}
 	#nav ul li a{ 
 		display:block;
-		padding:10px 13px;
+		padding:6px 14px;
 		text-decoration:none;
 		font-weight:400;
 		font-size:14px;
-		color:inherit;
+		color: ;
 		font-weight:bold;
 		margin-left:10px;
-		border-radius: 4px;
+		border-radius: 3px;
+		
 	}
 	#nav>ul>li:first-child a{
 		padding-left:3px;
 	}/*edit here*/
 	#nav ul li a:hover,
 	#nav ul .current-menu-item a,
-	#nav ul .current_page_item a{ color:inherit; } /*edit here*/
+	#nav ul .current_page_item a{ color: ; } /*edit here*/
 		
 	/*1st level dropdown an all level dropdown style*/
 	#nav ul li ul{ 
@@ -103,12 +107,12 @@ Tally Framework WordPress theme is licensed under the GPL.
 		z-index:99; 
 		display:none;
 		width:180px;
-		background-color: inherit;
+		background-color:  ;
 		padding-top:6px;
 	} /*edit here*/
 		
-	#nav ul li ul li{ float:none; border-top:solid 1px inherit; } /*edit here*/
-	#nav ul li ul li:hover{ background-color: inherit; }
+	#nav ul li ul li{ float:none; border-top:solid 1px  ; } /*edit here*/
+	#nav ul li ul li:hover{ background-color:  ; }
 	#nav ul li ul li a{ 
 		display:block;
 		border:none;
@@ -136,24 +140,24 @@ Tally Framework WordPress theme is licensed under the GPL.
 
 /* SubHeader
 ================================================== */
-	#subheader{ color:inherit; background:inherit; border-bottom:solid 1px; }
-	#subheader a{ color:inherit; }
-	#subheader a:hover{ color:inherit; }
+	#subheader{ color: ; background: ; border-bottom:solid 1px; }
+	#subheader a{ color: ; }
+	#subheader a:hover{ color: ; }
 	
-	#subheader h1, #subheader h2, #subheader h3, #subheader h4, #subheader h5, #subheader h6{ color:inherit; }
+	#subheader h1, #subheader h2, #subheader h3, #subheader h4, #subheader h5, #subheader h6{ color: ; }
 	#subheader  #subheader-inner{ width:92%; margin:0 auto; max-width:960px;  padding:30px 0; }
 	#subheader .col{ min-height:1px; }
 	
 	#subheader .page_title{ font-size: 30px; line-height: 40px; margin-bottom:0; width:60%; float:left; font-weight:bold; }
-	#subheader .page_title a{ color:inherit; }
+	#subheader .page_title a{ color: ; }
 	#subheader .page_title a:hover{ text-decoration:none; }
 	#subheader .page_title .button.bp-title-button{ display:none; }
-	#subheader .page_subtitle{ color:inherit; font-size:18px; width:60%;  float:left; }
+	#subheader .page_subtitle{ color: ; font-size:18px; width:60%;  float:left; }
 	
 	#subheader .breadcrumbs{ float:right; width:38%; text-align:right; margin-top:10px;  }
 	#subheader .breadcrumbs #crumbs{ }
 	#subheader .breadcrumbs span{ font-size:12px;text-transform:capitalize;	}
-	#subheader .breadcrumbs span a{	}
+	#subheader .breadcrumbs span a{	color: inherit; }
 	
 	
 	
@@ -163,29 +167,29 @@ Tally Framework WordPress theme is licensed under the GPL.
 	#main-inner:after, #main:after{ content:"  "; display: table; clear: both; }
 	#main-inner:before, #main:before{ content:"  "; display: table; }
 	
-	#main{ padding:50px 0 50px 0; color:inherit; background-color:inherit; border-color:inherit; }
-	#main a{ color:inherit; }
-	#main a:hover{ color:inherit; }
-	#main h1, #main h2, #main h3, #main h4, #main h5, #main h6{ color:inherit; }
-	#main .subheading{ color:inherit; }
-	#main .subtext{ color:inherit; }
-	#main .innerbg{ background-color:inherit; }
+	#main{ padding:50px 0 50px 0; color: ; background-color: ; border-color: ; }
+	#main a{ color: ; }
+	#main a:hover{ color: ; }
+	#main h1, #main h2, #main h3, #main h4, #main h5, #main h6{ color: ; }
+	#main .subheading{ color: ; }
+	#main .subtext{ color: ; }
+	#main .innerbg{ background-color: ; }
 	#main #main-inner{ width:92%; margin:0 auto; max-width:960px; }
 	
-	#main blockquote{ border-color:inherit; background-color:inherit; }
+	#main blockquote{ border-color: ; background-color: ; }
 	#main input[type="text"], 
     #main input[type="email"], 
     #main input[type="password"],
 	#main input[type="phone"],
 	#main input[type="tel"],
     #main textarea,
-    #main select{ border-color:inherit; background-color:inherit; color:inherit; }
-	#main input[type="submit"], #main button[type="submit"], #main input[type="button"]{ background-color:inherit; }
-	#main input[type="submit"]:hover, #main button[type="submit"]:hover, #main input:hover[type="button"]{ background-color:inherit; color:inherit; }
+    #main select{ border-color: ; background-color: ; color: ; }
+	#main input[type="submit"], #main button[type="submit"], #main input[type="button"]{  }
+	#main input[type="submit"]:hover, #main button[type="submit"]:hover, #main input:hover[type="button"]{  }
 	
 	#main .wp-caption, 
 	#main .wp-caption .wp-caption-text, 
-	#main .gallery-caption{ background-color:inherit; } 
+	#main .gallery-caption{ background-color: ; } 
 	
 	
 	
@@ -212,7 +216,7 @@ Tally Framework WordPress theme is licensed under the GPL.
 		font-weight:bold;
 	}
 	.blog_entry .entry-content{ margin-top:15px; }
-	.blog_entry .entry-title a{ color:inherit !important; }
+	.blog_entry .entry-title a{ color:  !important; }
 	.blog_entry .entry-title a:hover{ text-decoration:none; }
 	
 	.blog_entry .entry-readmore a{ text-align:center; padding:9px 20px; display:inline-block; color:#FFF !important; border-radius: 4px; background:#09C; }
@@ -220,7 +224,7 @@ Tally Framework WordPress theme is licensed under the GPL.
 	.blog_entry .entry-media{ margin-bottom:20px; }
 	
 	.blog_entry .entry-meta .entry-meta-item{ float:left; margin-right:12px; opacity: 0.7; }
-	.blog_entry .entry-meta .entry-meta-item a{ color:inherit !important; }
+	.blog_entry .entry-meta .entry-meta-item a{ color:  !important; }
 	.blog_entry .entry-meta .entry-meta-item i.fa{ margin-right:1px; }
 	
 	
@@ -319,7 +323,7 @@ Tally Framework WordPress theme is licensed under the GPL.
 	.search-warp{  }
 	.search-warp .blog-entry{ border-bottom:solid 1px; padding-bottom:30px; margin-bottom:30px; }
 	.search-warp .blog-entry .entry-title{ font-size:18px; font-weight:bold; line-height:1.7; margin-bottom:7px; }
-	.search-warp .blog-entry .entry-title a{ color:inherit; }
+	.search-warp .blog-entry .entry-title a{ color: ; }
 	.search-warp .blog-entry .entry-text{}
 	.search-warp .blog-entry a.entry-more{ margin-top:10px; display:inline-block;}
 	
@@ -334,13 +338,13 @@ Tally Framework WordPress theme is licensed under the GPL.
 
 /* FOOTER WIDGETS
 ================================================== */
-	#fwidget{ padding:40px 0 30px 0; color:inherit; background-color:inherit; border-top:1px solid inherit; }
-	#fwidget a{ color:inherit; }
-	#fwidget a:hover{ color:inherit; }
-	#fwidget h1, #fwidget h2, #fwidget h3, #fwidget h4, #fwidget h5, #fwidget h6{ color:inherit; }
-	#fwidget .subheading{ color:inherit; }
-	#fwidget .subtext{ color:inherit; }
-	#fwidget .innerbg{ background-color:inherit; }
+	#fwidget{ padding:40px 0 30px 0; color: ; background-color: ; border-top:1px solid  ; }
+	#fwidget a{ color: ; }
+	#fwidget a:hover{ color: ; }
+	#fwidget h1, #fwidget h2, #fwidget h3, #fwidget h4, #fwidget h5, #fwidget h6{ color: ; }
+	#fwidget .subheading{ color: ; }
+	#fwidget .subtext{ color: ; }
+	#fwidget .innerbg{ background-color: ; }
 	#fwidget #fwidget-inner{ width:92%; margin:0 auto; max-width:960px; }
 	
 	
@@ -348,10 +352,10 @@ Tally Framework WordPress theme is licensed under the GPL.
 
 /* FOOTER
 ================================================== */
-	#footer{  width:100%; color:inherit; background-color:inherit; }
+	#footer{  width:100%; color: ; background-color: ; }
 	
-	#footer a{ color:inherit; }
-	#footer a:hover{ color:inherit; }
+	#footer a{ color: ; }
+	#footer a:hover{ color: ; }
 	#footer #footer-inner{ width:92%; margin:0 auto; max-width:960px; padding:20px 0; clear:both; overflow:hidden; }
 	#footer #footer-inner .col{ min-height:1px; }
 	#footer .powerd_text{ text-align:right; }
@@ -368,7 +372,7 @@ Tally Framework WordPress theme is licensed under the GPL.
 	.footer_menu ul li{ float:left;}
 	.footer_menu ul li ul{ display:none; }
 	.footer_menu ul li:before{ content:"|"; }
-	.footer_menu ul li a{ padding-left:10px; padding-right:10px; font-weight:bold; }
+	.footer_menu ul li a{ padding-left:10px; padding-right:10px; font-weight:bold; color:inherit; }
 	.footer_menu ul li a:hover{ text-decoration:none; }
 	.footer_menu ul li:first-child:before{ content:""; }
 	.footer_menu ul li:last-child a{ padding-right:0; }

@@ -4,8 +4,8 @@ function tally_option_std_filter($option){
 	/*==========================================
 		Branding
 	===========================================*/
-	$option['site_logo'] = TALLY_URL.'/assets/images/logo.png';
-	$option['site_logo_retina'] = TALLY_URL.'/assets/images/logo@2x.png';
+	//$option['site_logo'] = TALLY_URL.'/assets/images/logo.png';
+	//$option['site_logo_retina'] = TALLY_URL.'/assets/images/logo@2x.png';
 	$option['favicon'] = TALLY_URL.'/assets/images/favicon.ico';
 	
 	
@@ -93,6 +93,15 @@ function tally_option_std_filter($option){
 	/*~~ footer ~~*/
 	$option['color_footer_mood'] = 'light';
 	$option['color_footer_bg'] = array('background-color' => '#1f1f1f', 'background-image' => '');
+	
+	/*~~ Nav ~~*/
+	$option['color_navigation_text']         = '#444444';
+	$option['color_navigation_border']       = '#444444';
+	$option['color_navigation_bg']           = '#ffffff';
+	$option['color_navigation_text_hover']   = '#E43131';
+	$option['color_navigation_border_hover'] = '#E43131';
+	$option['color_navigation_bg_hover']     = '#ffffff';
+	$option['color_navigation_submenu_bg']   = '#313131';
 	
 	
 	/*==========================================
