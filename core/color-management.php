@@ -3,41 +3,8 @@
 	Theme Color Output function
 ---------------------------------------------------*/
 function tally_color($option_name, $rgba = '', $echo = true){
-	$all_colors = apply_filters('tally_colors', array(
-		'site_accent_color' => '#E43131',
-		'site_accent2_color' => '#1f1f1f',
-		
-		'color_headings_light' => '#1f1f1f',
-		'color_headings_dark' => '#1f1f1f',
-		
-		'color_subheading_light' => '#1f1f1f',
-		'color_subheading_dark' => '#1f1f1f',
-		
-		'color_text_light' => '#1f1f1f',
-		'color_text_dark' => '#1f1f1f',
-		
-		'color_meta_light' => '#1f1f1f',
-		'color_meta_dark' => '#1f1f1f',
-		
-		'color_border_light' => '#1f1f1f',
-		'color_border_dark' => '#1f1f1f',
-		
-		'color_bg_light' => '#1f1f1f',
-		'color_bg_dark' => '#1f1f1f',
-		
-		'color_inner_bg_light' => '#1f1f1f',
-		'color_inner_bg_dark' => '#1f1f1f',
-		
-		'color_navigation_text' => '#1f1f1f',
-		'color_navigation_border' => '#1f1f1f',
-		'color_navigation_bg' => '#1f1f1f',
-		'color_navigation_text_hover' => '#1f1f1f',
-		'color_navigation_border_hover' => '#1f1f1f',
-		'color_navigation_bg_hover' => '#1f1f1f',
-		'color_navigation_submenu_bg' => '#1f1f1f',
-	));
 	
-	$get_color = tally_option($option_name, $all_colors[$option_name]);
+	$get_color = tally_option($option_name);
 	
 	if($rgba != ''){ $get_color = 'rgba('.tally_hex2rgb($get_color).','.$rgba.')'; }
 	
