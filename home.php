@@ -1,0 +1,2 @@
+<?php
+tally_layout();
