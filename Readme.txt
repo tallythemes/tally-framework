@@ -38,3 +38,12 @@ Copyright: Viljamis - viljamis.com
 WOW - https://github.com/matthieua/WOW
 License: http://opensource.org/licenses/MIT
 Copyright: Matthieu Aussaguel - http://mynameismatthieu.com/
+
+
+Option Tree- https://wordpress.org/plugins/option-tree/
+License: Released the GPLv2 (http://www.gnu.org/licenses/gpl-2.0.html)
+Copyright: Derek Herman - https://github.com/valendesigns
+
+
+Images -
+In the theme we don't use any images to display on frontend. There are some images with the javascript prettyPhoto. Othere images that show in the theme option are created by me. 

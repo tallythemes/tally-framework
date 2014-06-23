@@ -6,7 +6,7 @@ function tally_option_std_filter($option){
 	===========================================*/
 	//$option['site_logo'] = TALLY_URL.'/assets/images/logo.png';
 	//$option['site_logo_retina'] = TALLY_URL.'/assets/images/logo@2x.png';
-	$option['favicon'] = TALLY_URL.'/assets/images/favicon.ico';
+	//$option['favicon'] = TALLY_URL.'/assets/images/favicon.ico';
 	
 	
 	/*==========================================
@@ -101,7 +101,7 @@ function tally_option_std_filter($option){
 	$option['color_navigation_text_hover']   = '#E43131';
 	$option['color_navigation_border_hover'] = '#E43131';
 	$option['color_navigation_bg_hover']     = '#ffffff';
-	$option['color_navigation_submenu_bg']   = '#313131';
+	$option['color_navigation_submenu_bg']   = '#f1f1f1';
 	
 	
 	/*==========================================

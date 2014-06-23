@@ -71,6 +71,11 @@ function tally_op_content_color_option_action(){
 		#subheader.color_mood_dark,
 		#fwidget.color_mood_dark{ color: <?php tally_color('color_text_dark'); ?>; border-color:<?php tally_color('color_border_dark'); ?>; }
 		
+		.header-sticky #header.stickyMenu.color_mood_dark{
+			background: <?php tally_color('color_bg_light'); ?>;
+			box-shadow: 0px 0px 3px 0px <?php tally_color('color_border_dark'); ?>;
+		}
+		
 		
 		
 		
@@ -141,6 +146,11 @@ function tally_op_content_color_option_action(){
 		#subheader.color_mood_light,
 		#fwidget.color_mood_light{ color: <?php tally_color('color_text_light'); ?>; border-color:<?php tally_color('color_border_light'); ?>; }
 		
+		.header-sticky #header.stickyMenu.color_mood_light{
+			background: <?php tally_color('color_bg_light'); ?>;
+			box-shadow: 0px 0px 3px 0px <?php tally_color('color_border_light'); ?>;
+		}
+		
 		
 		/*---------------------Backgrounds--------------------*/
 		#topbar.color_mood_dark,
@@ -172,6 +182,27 @@ function tally_op_content_color_option_action(){
 			}
 			?>	
 		}
+		
+		.header-sticky #header.stickyMenu.color_mood_dark{
+			box-shadow: 0px 0px 3px 0px <?php tally_color('color_border_dark', '0.5'); ?>;
+			<?php
+			$header_bg = tally_option('color_header_bg');
+			if(is_array($header_bg) && !empty($header_bg)){
+				if( isset($header_bg['background-color']) && ($header_bg['background-color'] != '') ){echo 'background-color:'.$header_bg['background-color'].'!important;';}
+			}
+			?>	
+		}
+		
+		.header-sticky #header.stickyMenu.color_mood_light{
+			box-shadow: 0px 0px 3px 0px <?php tally_color('color_border_light', '0.5'); ?>;
+			<?php
+			$header_bg = tally_option('color_header_bg');
+			if(is_array($header_bg) && !empty($header_bg)){
+				if( isset($header_bg['background-color']) && ($header_bg['background-color'] != '') ){echo 'background-color:'.$header_bg['background-color'].' !important;';}
+			}
+			?>	
+		}
+		
 		
 		#subheader.color_mood_dark,
 		#subheader.color_mood_light{

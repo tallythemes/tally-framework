@@ -30,7 +30,7 @@ function tally_op_option_action(){
 		}
 		
 		/*Header*/
-		if(tally_option('header_height')){echo '#header .hheaight{ height:'.tally_option('header_height').'; }';}
+		if(tally_option('header_height')){echo '#header .hheaight, #header{ height:'.tally_option('header_height').'; }';}
 		if(tally_option('header_logo_top_margin')){echo '#header #logo{margin-top:'.tally_option('header_logo_top_margin').'; }';}
 		if(tally_option('header_menu_top_margin')){echo '#header #nav{margin-top:'.tally_option('header_menu_top_margin').'; }';}
 		if(tally_option('header_menu_top_margin')){echo 'ul.tally-wpml-language-switcher{margin-top:'.tally_option('header_menu_top_margin').'; }';}
@@ -69,4 +69,15 @@ function tally_ot_footer_action(){
 	echo '<script type="text/javascript">';
 		if(tally_option('custom_js')){ echo tally_option('custom_js'); }
 	echo '</script>';
+}
+
+
+/* Edit Body Class
+----------------------------*/
+add_filter('body_class', 'tally_ot_body_class_filter');
+function tally_ot_body_class_filter($class){
+	
+	if(tally_option('enable_header_sticky') == 'yes'){ $class[] = 'header-sticky'; }
+	
+	return $class;
 }
