@@ -9,6 +9,7 @@ function tally_do_loop_content(){
 		//* Easter Egg
 		$query_args = array(
 			'paged' => $paged,
+			'post_type' => 'post',
 		);
 		tally_custom_loop( $query_args );
 	}else{

@@ -546,7 +546,7 @@ function tally_color_ot_options($custom_settings){
 		);
 		
 		$custom_settings['settings']['color_navigation_submenu_bg'] = array(
-			'id'          => 'color_navigation_bg_hover',
+			'id'          => 'color_navigation_submenu_bg',
 			'label'       => __('Navigation Submenu Background Color', 'tally_taxdomain'),
 			'desc'        => '',
 			'std'         => tally_option_std('color_navigation_submenu_bg'),

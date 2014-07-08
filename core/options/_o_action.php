@@ -30,7 +30,7 @@ function tally_op_option_action(){
 		}
 		
 		/*Header*/
-		if(tally_option('header_height')){echo '#header .hheaight, #header{ height:'.tally_option('header_height').'; }';}
+		if(tally_option('header_height')){echo '#header .hheight , #header{ height:'.tally_option('header_height').' !important; }';}
 		if(tally_option('header_logo_top_margin')){echo '#header #logo{margin-top:'.tally_option('header_logo_top_margin').'; }';}
 		if(tally_option('header_menu_top_margin')){echo '#header #nav{margin-top:'.tally_option('header_menu_top_margin').'; }';}
 		if(tally_option('header_menu_top_margin')){echo 'ul.tally-wpml-language-switcher{margin-top:'.tally_option('header_menu_top_margin').'; }';}

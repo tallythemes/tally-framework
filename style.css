@@ -4,7 +4,7 @@ Theme URI: https://github.com/tallythemes/tally
 Author: TallyThemes
 Author URI: https://github.com/tallythemes
 Description: Powerful Theme Framework for WordPress Developer
-Version: 0.7.7
+Version: 0.7.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, left-sidebar, responsive-layout, custom-menu, featured-images, full-width-template
@@ -45,7 +45,7 @@ Tally Framework WordPress theme is licensed under the GPL.
 
 /* HEADER
 ================================================== */
-	#header{ background: ; color: ; padding:40px 0 40px 0; border-bottom:solid 1px; }
+	#header{ border-bottom:solid 1px; }
 	#header a{ color: ; }
 	#header a:hover{ color: ; }
 	#header #header-inner{ width:92%; margin:0 auto; max-width:960px; }
@@ -62,8 +62,14 @@ Tally Framework WordPress theme is licensed under the GPL.
 	#logo span{ margin-left:4px; display:inline-block; opacity: 0.7; }
 	
 	
-	.header-sticky #header.stickyMenu{ position:fixed; top:0; left:0; width:100%; opacity:0.9; z-index:9999; }
-	.logged-in.admin-bar .header-sticky #header.stickyMenu{ top:32px; }
+	.header-sticky #header.stickyMenu{ position:fixed; top:0; left:0; width:100%; opacity:1; z-index:9999;  }
+	.header-sticky #header.stickyMenu,
+	.header-sticky #header.stickyMenu .hheaight{ height:50px !important; }
+	.header-sticky #header.stickyMenu #logo,
+	.header-sticky #header.stickyMenu #nav{ margin-top:0 !important; }
+	.header-sticky #header.stickyMenu #nav{ margin-top:10px !important; }
+	.header-sticky #header.stickyMenu #logo img{ max-height:40px; margin-top:5px; }
+	.admin-bar.header-sticky #header.stickyMenu{ top:32px; }
 	
 
 	
@@ -111,7 +117,7 @@ Tally Framework WordPress theme is licensed under the GPL.
 		padding-top:6px;
 	} /*edit here*/
 		
-	#nav ul li ul li{ float:none; border-top:solid 1px  ; } /*edit here*/
+	#nav ul li ul li{ float:none; } /*edit here*/
 	#nav ul li ul li:hover{ background-color:  ; }
 	#nav ul li ul li a{ 
 		display:block;
@@ -154,6 +160,7 @@ Tally Framework WordPress theme is licensed under the GPL.
 	#subheader .page_title .button.bp-title-button{ display:none; }
 	#subheader .page_subtitle{ color: ; font-size:18px; width:60%;  float:left; }
 	
+
 	#subheader .breadcrumbs{ float:right; width:38%; text-align:right; margin-top:10px;  }
 	#subheader .breadcrumbs #crumbs{ }
 	#subheader .breadcrumbs span{ font-size:12px;text-transform:capitalize;	}

@@ -276,7 +276,7 @@ function tally_op_content_color_option_action(){
 			border-color:<?php tally_color('color_navigation_border_hover'); ?> !important;
 			background-color:<?php tally_color('color_navigation_bg_hover'); ?>; 
 		}
-		body .menu_area #nav ul li ul.sub-menu li a{ background-color:<?php tally_color('color_navigation_submenu_bg'); ?>; }
+		body .menu_area #nav ul li ul li a{ background-color:<?php tally_color('color_navigation_submenu_bg'); ?>; border-color:<?php tally_color('color_navigation_border', '0.14'); ?> !important; }
 	</style>
     <?php
 }
