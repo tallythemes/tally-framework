@@ -1,0 +1,13 @@
+*** Tally Framework Changelog ***
+
+
+2014-06-23 - Version 0.7.7
+  * Improve option color
+  * Bug fix for color option
+
+  * Bug fix for blog template query
+  * Improve Header CSS
+
+
+2014-06-23 - Version 0.7.7
+  * First Release!
