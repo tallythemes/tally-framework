@@ -151,7 +151,7 @@ function tally_page_metabox_register() {
 			'id'        => 'tally_ot_page_metabox',
 			'title'     => 'Page / Post Settings',
 			'desc'      => '',
-			'pages'     => array( 'post', 'page' ),
+			'pages'     => apply_filters('tally_ot_page_metabox', array( 'post', 'page' )),
 			'context'   => 'normal',
 			'priority'  => 'high',
 			'fields'    => $settings,
