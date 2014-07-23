@@ -47,17 +47,25 @@ if('tally_do_footer_widget_content'):
 			elseif( $footer_widget_layout == '3' ){ $widget_column = '4'; }
 			elseif( $footer_widget_layout == '2' ){ $widget_column = '6'; }
 			elseif( $footer_widget_layout == '1' ){ $widget_column = '12'; }
+			elseif( $footer_widget_layout == '5' ){ $widget_column = 'one_5'; }
+			elseif( $footer_widget_layout == '6' ){ $widget_column = '2'; }
 				
 			echo '<div class="col col_'.$widget_column.'">'; dynamic_sidebar('footer_widget_1'); echo '</div>';
 			
-			if(($footer_widget_layout == '2') || ($footer_widget_layout == '3') || ($footer_widget_layout == '4')):
+			if(($footer_widget_layout=='2') || ($footer_widget_layout=='3') || ($footer_widget_layout=='4') || ($footer_widget_layout == '5')  || ($footer_widget_layout == '6')):
 				echo '<div class="col col_'.$widget_column.'">'; dynamic_sidebar('footer_widget_2'); echo '</div>';
 			endif;
-			if(($footer_widget_layout == '3') || ($footer_widget_layout == '4')):
+			if(($footer_widget_layout == '3') || ($footer_widget_layout == '4') || ($footer_widget_layout == '5') || ($footer_widget_layout == '6')):
 				echo '<div class="col col_'.$widget_column.'">'; dynamic_sidebar('footer_widget_3'); echo '</div>';
 			endif;
-			if($footer_widget_layout == '4'):
+			if(($footer_widget_layout == '4') || ($footer_widget_layout == '5') || ($footer_widget_layout == '6')):
 				echo '<div class="col col_'.$widget_column.'">'; dynamic_sidebar('footer_widget_4'); echo '</div>';
+			endif;
+			if(($footer_widget_layout == '5') || ($footer_widget_layout == '6')):
+				echo '<div class="col col_'.$widget_column.'">'; dynamic_sidebar('footer_widget_5'); echo '</div>';
+			endif;
+			if($footer_widget_layout == '6'):
+				echo '<div class="col col_'.$widget_column.'">'; dynamic_sidebar('footer_widget_6'); echo '</div>';
 			endif;
 		echo '</div>';
 	}

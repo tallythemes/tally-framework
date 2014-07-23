@@ -31,7 +31,7 @@ function tally_layout(){
 		
 		do_action( 'tally_before_footer' );
 		do_action( 'tally_footer' );
-		do_action( 'tally_after_fwidget' );
+		do_action( 'tally_after_footer' );
 	
 	echo '</div>';
 	get_footer();

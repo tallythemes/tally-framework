@@ -149,12 +149,27 @@ function tally_layout_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => array(
-				 array( 'label' => 'none', 'value' => 'none', 'src' => TALLY_URL.'/core/assets/images/admin/sc-nonel.png'),
-				 array( 'label' => 'One Column', 'value' => '1', 'src' => TALLY_URL.'/core/assets/images/admin/sc-full.png'),
-				 array( 'label' => 'Two Column', 'value' => '2', 'src' => TALLY_URL.'/core/assets/images/admin/sc-half.png'),
-				 array( 'label' => 'Three Column', 'value' => '3', 'src' => TALLY_URL.'/core/assets/images/admin/sc-third.png'),
-				 array( 'label' => 'Four Column', 'value' => '4', 'src' => TALLY_URL.'/core/assets/images/admin/sc-fourth.png'),
+				 array( 'label' => 'none', 'value' => 'none', 'src' => TALLY_URL.'/core/assets/images/admin/fwc-none.png'),
+				 array( 'label' => 'One Column', 'value' => '1', 'src' => TALLY_URL.'/core/assets/images/admin/fwc-one.png'),
+				 array( 'label' => 'Two Column', 'value' => '2', 'src' => TALLY_URL.'/core/assets/images/admin/fwc-two.png'),
+				 array( 'label' => 'Three Column', 'value' => '3', 'src' => TALLY_URL.'/core/assets/images/admin/fwc-three.png'),
+				 array( 'label' => 'Four Column', 'value' => '4', 'src' => TALLY_URL.'/core/assets/images/admin/fwc-foure.png'),
+				 array( 'label' => 'Five Column', 'value' => '5', 'src' => TALLY_URL.'/core/assets/images/admin/fwc-five.png'),
+				 array( 'label' => 'Six Column', 'value' => '6', 'src' => TALLY_URL.'/core/assets/images/admin/fwc-six.png'),
 			)
+		);
+		$custom_settings['settings']['footer_widget_1_column_width'] = array(
+			'id'          => 'footer_widget_1_column_width',
+			'label'       => __('Footer Widget 1 Width', 'tally_taxdomain'),
+			'desc'        => __('Enable or Disable the footer of the site', 'tally_taxdomain'),
+			'std'         => tally_option_std('footer_widget_1_column_width'),
+			'type'        => 'numeric-slider',
+			'section'     => 'layout',
+			'min_max_step'=> '1,12,1',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
 		);
 		$custom_settings['settings']['footer_layout'] = array(
 			'id'          => 'footer_layout',

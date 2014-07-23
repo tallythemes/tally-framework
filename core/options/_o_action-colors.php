@@ -30,7 +30,7 @@ function tally_op_content_color_option_action(){
 		.color_mood_dark .widget_recent_entries ul li, 
 		.color_mood_dark .widget_archive ul li, 
 		.color_mood_dark .widget_categories ul li, 
-		.color_mood_dark .widget_recent_comments ul li { border-color:<?php tally_color('color_border_dark'); ?>; }
+		.color_mood_dark .widget_recent_comments ul li { border-color:<?php tally_color('color_border_dark', '0.4'); ?> !important; }
 		
 		.color_mood_dark .widget_meta ul li a,
 		.color_mood_dark .widget_pages ul li a,
@@ -106,7 +106,7 @@ function tally_op_content_color_option_action(){
 		.color_mood_light .widget_recent_entries ul li, 
 		.color_mood_light .widget_archive ul li, 
 		.color_mood_light .widget_categories ul li, 
-		.color_mood_light .widget_recent_comments ul li { border-color:<?php tally_color('color_border_light'); ?>; }
+		.color_mood_light .widget_recent_comments ul li { border-color:<?php tally_color('color_border_light', '0.4'); ?> !important; }
 		
 		.color_mood_light .widget_meta ul li a,
 		.color_mood_light .widget_pages ul li a,
