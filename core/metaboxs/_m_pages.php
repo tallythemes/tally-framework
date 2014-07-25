@@ -118,19 +118,123 @@ function tally_page_metabox_register() {
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => array(
-				 array( 'label' => 'none', 'value' => 'none', 'src' => TALLY_URL.'/core/assets/images/admin/sc-nonel.png'),
-				 array( 'label' => 'One Column', 'value' => '1', 'src' => TALLY_URL.'/core/assets/images/admin/sc-full.png'),
-				 array( 'label' => 'Two Column', 'value' => '2', 'src' => TALLY_URL.'/core/assets/images/admin/sc-half.png'),
-				 array( 'label' => 'Three Column', 'value' => '3', 'src' => TALLY_URL.'/core/assets/images/admin/sc-third.png'),
-				 array( 'label' => 'Four Column', 'value' => '4', 'src' => TALLY_URL.'/core/assets/images/admin/sc-fourth.png'),
+				array( 'label' => 'none', 'value' => 'none', 'src' => TALLY_URL.'/core/assets/images/admin/fwc-none.png'),
+				array( 'label' => 'One Column', 'value' => '1', 'src' => TALLY_URL.'/core/assets/images/admin/fwc-one.png'),
+				array( 'label' => 'Two Column', 'value' => '2', 'src' => TALLY_URL.'/core/assets/images/admin/fwc-two.png'),
+				array( 'label' => 'Three Column', 'value' => '3', 'src' => TALLY_URL.'/core/assets/images/admin/fwc-three.png'),
+				array( 'label' => 'Four Column', 'value' => '4', 'src' => TALLY_URL.'/core/assets/images/admin/fwc-foure.png'),
+				array( 'label' => 'Five Column', 'value' => '5', 'src' => TALLY_URL.'/core/assets/images/admin/fwc-five.png'),
+				array( 'label' => 'Six Column', 'value' => '6', 'src' => TALLY_URL.'/core/assets/images/admin/fwc-six.png'),
 			)
+		);
+		$settings[] = array(
+			'id'          => 'tally_footer_widget_custom_width',
+			'label'       => __('Enable Custom Width', 'tally_taxdomain'),
+			'desc'        => __('Enable custom width for each footer widget column.', 'tally_taxdomain'),
+			'std'         => 'off',
+			'type'        => 'on_off',
+			'section'     => 'layout',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
+		$settings[] = array(
+			'id'          => 'tally_footer_widget_1_column_width',
+			'label'       => __('Footer 1st Widget Width', 'tally_taxdomain'),
+			'desc'        => __('width of the 1st widget column', 'tally_taxdomain'),
+			'std'         => '',
+			'type'        => 'numeric-slider',
+			'section'     => 'layout',
+			'min_max_step'=> '0,24,1',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'condition'   => 'tally_footer_widget_custom_width:is(on)',
+			'operator'    => 'or'
+		);
+		$settings[] = array(
+			'id'          => 'tally_footer_widget_2_column_width',
+			'label'       => __('Footer 2nd Widget Width', 'tally_taxdomain'),
+			'desc'        => __('width of the 2st widget column', 'tally_taxdomain'),
+			'std'         => '',
+			'type'        => 'numeric-slider',
+			'section'     => 'layout',
+			'min_max_step'=> '0,24,1',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'condition'   => 'tally_footer_widget_custom_width:is(on)',
+			'operator'    => 'or'
+		);
+		$settings[] = array(
+			'id'          => 'tally_footer_widget_3_column_width',
+			'label'       => __('Footer 3rd Widget Width', 'tally_taxdomain'),
+			'desc'        => __('width of the 3rd widget column', 'tally_taxdomain'),
+			'std'         => '',
+			'type'        => 'numeric-slider',
+			'section'     => 'layout',
+			'min_max_step'=> '0,24,1',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'condition'   => 'tally_footer_widget_custom_width:is(on)',
+			'operator'    => 'or'
+		);
+		$settings[] = array(
+			'id'          => 'tally_footer_widget_4_column_width',
+			'label'       => __('Footer 4th Widget Width', 'tally_taxdomain'),
+			'desc'        => __('width of the 4th widget column', 'tally_taxdomain'),
+			'std'         => '',
+			'type'        => 'numeric-slider',
+			'section'     => 'layout',
+			'min_max_step'=> '0,24,1',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'condition'   => 'tally_footer_widget_custom_width:is(on)',
+			'operator'    => 'or'
+		);
+		$settings[] = array(
+			'id'          => 'tally_footer_widget_5_column_width',
+			'label'       => __('Footer 5th Widget Width', 'tally_taxdomain'),
+			'desc'        => __('width of the 5th widget column', 'tally_taxdomain'),
+			'std'         => '',
+			'type'        => 'numeric-slider',
+			'section'     => 'layout',
+			'min_max_step'=> '0,24,1',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'condition'   => 'tally_footer_widget_custom_width:is(on)',
+			'operator'    => 'or'
+		);
+		$settings[] = array(
+			'id'          => 'tally_footer_widget_6_column_width',
+			'label'       => __('Footer 6th Widget Width', 'tally_taxdomain'),
+			'desc'        => __('width of the 6th widget column', 'tally_taxdomain'),
+			'std'         => '',
+			'type'        => 'numeric-slider',
+			'section'     => 'layout',
+			'min_max_step'=> '0,24,1',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'condition'   => 'tally_footer_widget_custom_width:is(on))',
+			'operator'    => 'or'
 		);
 		endif;
 		
 		if(TALLY_LAYOUT_FOOTER_REMOVE == false):
 		$settings[] = array(
 			'id'          => 'tally_footer_layout',
-			'label'       => __('Footer Layout', 'tally_taxdomain'),
+			'label'       => __('Footer', 'tally_taxdomain'),
 			'desc'        => __('Enable or Disable Footer on this page / post.', 'tally_taxdomain'),
 			'std'         => '',
 			'type'        => 'select',

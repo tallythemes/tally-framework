@@ -40,38 +40,23 @@ if('tally_do_footer_widget_content'):
 		if(tally_footer_widget_layout_option() == 'none') return;
 		
 		echo '<div class="cl24-holder nomargin">';
-			$footer_widget_layout = tally_footer_widget_layout_option();
-			$widget_column = '24';
-						
-			if( $footer_widget_layout == '4' ){ $widget_column = '6'; }
-			elseif( $footer_widget_layout == '3' ){ $widget_column = '8'; }
-			elseif( $footer_widget_layout == '2' ){ $widget_column = '12'; }
-			elseif( $footer_widget_layout == '1' ){ $widget_column = '24'; }
-			elseif( $footer_widget_layout == '5' ){ $widget_column = 'one_5'; }
-			elseif( $footer_widget_layout == '6' ){ $widget_column = '4'; }
+			$footer_widget_layout = tally_footer_widget_layout_option();			
 			
-			if( (tally_option('footer_widget_1_column_width')!='0') && (tally_option('footer_widget_custom_width')=='on') ){ $widget_column = tally_option('footer_widget_1_column_width'); }
-			echo '<div class="col col_'.$widget_column.'">'; dynamic_sidebar('footer_widget_1'); echo '</div>';
-			
+				echo '<div class="col col_'.tally_footer_widget_columns_option(1).'">'; dynamic_sidebar('footer_widget_1'); echo '</div>';
 			if(($footer_widget_layout=='2') || ($footer_widget_layout=='3') || ($footer_widget_layout=='4') || ($footer_widget_layout == '5')  || ($footer_widget_layout == '6')):
-				if( (tally_option('footer_widget_2_column_width')!='0') && (tally_option('footer_widget_custom_width')=='on') ){ $widget_column = tally_option('footer_widget_2_column_width'); }
-				echo '<div class="col col_'.$widget_column.'">'; dynamic_sidebar('footer_widget_2'); echo '</div>';
+				echo '<div class="col col_'.tally_footer_widget_columns_option(2).'">'; dynamic_sidebar('footer_widget_2'); echo '</div>';
 			endif;
 			if(($footer_widget_layout == '3') || ($footer_widget_layout == '4') || ($footer_widget_layout == '5') || ($footer_widget_layout == '6')):
-				if( (tally_option('footer_widget_3_column_width')!='0') && (tally_option('footer_widget_custom_width')=='on') ){ $widget_column = tally_option('footer_widget_3_column_width'); }
-				echo '<div class="col col_'.$widget_column.'">'; dynamic_sidebar('footer_widget_3'); echo '</div>';
+				echo '<div class="col col_'.tally_footer_widget_columns_option(3).'">'; dynamic_sidebar('footer_widget_3'); echo '</div>';
 			endif;
 			if(($footer_widget_layout == '4') || ($footer_widget_layout == '5') || ($footer_widget_layout == '6')):
-				if( (tally_option('footer_widget_4_column_width')!='0') && (tally_option('footer_widget_custom_width')=='on') ){ $widget_column = tally_option('footer_widget_4_column_width'); }
-				echo '<div class="col col_'.$widget_column.'">'; dynamic_sidebar('footer_widget_4'); echo '</div>';
+				echo '<div class="col col_'.tally_footer_widget_columns_option(4).'">'; dynamic_sidebar('footer_widget_4'); echo '</div>';
 			endif;
 			if(($footer_widget_layout == '5') || ($footer_widget_layout == '6')):
-				if( (tally_option('footer_widget_5_column_width')!='0') && (tally_option('footer_widget_custom_width')=='on') ){ $widget_column = tally_option('footer_widget_5_column_width'); }
-				echo '<div class="col col_'.$widget_column.'">'; dynamic_sidebar('footer_widget_5'); echo '</div>';
+				echo '<div class="col col_'.tally_footer_widget_columns_option(5).'">'; dynamic_sidebar('footer_widget_5'); echo '</div>';
 			endif;
 			if($footer_widget_layout == '6'):
-				if( (tally_option('footer_widget_6_column_width')!='0') && (tally_option('footer_widget_custom_width')=='on') ){ $widget_column = tally_option('footer_widget_6_column_width'); }
-				echo '<div class="col col_'.$widget_column.'">'; dynamic_sidebar('footer_widget_6'); echo '</div>';
+				echo '<div class="col col_'.tally_footer_widget_columns_option(6).'">'; dynamic_sidebar('footer_widget_6'); echo '</div>';
 			endif;
 		echo '</div>';
 	}
