@@ -1,7 +1,15 @@
 *** Tally Framework Changelog ***
 
+2014-07-08 - Version 0.7.9
+  * CSS fix: remove line height form ul, ol and dl
+  * Add filter on page metabox pages.
+  * ADD two new footer widget columns.
+  * FIX a small css issue on admin.css
+  * Fix a "do_action" name
+  * Fix read more button issue and improve css
 
-2014-06-23 - Version 0.7.7
+
+2014-07-08 - Version 0.7.8
   * Improve option color
   * Bug fix for color option
 
