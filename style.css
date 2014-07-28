@@ -226,6 +226,7 @@ Tally Framework WordPress theme is licensed under the GPL.
 	.blog_entry .entry-title a{ color:  !important; }
 	.blog_entry .entry-title a:hover{ text-decoration:none; }
 	
+	.blog_entry .entry-readmore{ margin-top:20px; }
 	.blog_entry .entry-readmore a{ text-align:center; padding:9px 20px; display:inline-block; color:#FFF !important; border-radius: 4px; background:#09C; }
 	.blog_entry .entry-readmore a:hover{ color:#FFF !important; text-decoration:none; }
 	.blog_entry .entry-media{ margin-bottom:20px; }
@@ -353,6 +354,8 @@ Tally Framework WordPress theme is licensed under the GPL.
 	#fwidget .subtext{ color: ; }
 	#fwidget .innerbg{ background-color: ; }
 	#fwidget #fwidget-inner{ width:92%; margin:0 auto; max-width:960px; }
+	
+	#fwidget .widget{ margin-bottom:30px; }
 	
 	
 

@@ -68,9 +68,15 @@ function tally_do_post_content(){
 		the_excerpt();
 		echo '<div class="entry-readmore"><a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'tally_textdomain') . '</a></div>';
 	}else{
-		$more = apply_filters('tally_content_more', __( '<div class="entry-readmore">Read More</div>', 'tally_textdomain' ));
-		the_content($more);
+		//$more = apply_filters('tally_content_more', __( '<div class="entry-readmore">Read More</div>', 'tally_textdomain' ));
+		the_content();
 	}
+}
+
+add_filter( 'the_content_more_link', 'tally_modify_read_more_link' );
+function tally_modify_read_more_link() {
+	$text = __('Read More', 'tally_textdomain');
+	return '<div class="entry-readmore"><a class="more-link" href="' . get_permalink() . '">'.$text.'</a></div>';
 }
 
 
