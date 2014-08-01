@@ -1,6 +1,10 @@
 *** Tally Framework Changelog ***
 
-2014-07-08 - Version 0.7.9
+2014-08-01 - Version 0.8
+  * Remove index.html (as theme reviewer requested)
+  * Update the screenshot.png to 880x660 (as theme reviewer requested)
+
+2014-07-28 - Version 0.7.9
   * CSS fix: remove line height form ul, ol and dl
   * Add filter on page metabox pages.
   * ADD two new footer widget columns.
