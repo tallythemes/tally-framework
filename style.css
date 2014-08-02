@@ -202,81 +202,81 @@ Tally Framework WordPress theme is licensed under the GPL.
 	
 /* Blog 
 ================================================== */
-	.blog_entry{
+	.post.type-post{
 		display: block;
 		position: relative;
 		margin-bottom: 100px;
 	}
-	.blog_entry.last{ margin-bottom:50px; }
-	#post-single .blog_entry{
+	.post.type-post.last{ margin-bottom:50px; }
+	#post-single .post.type-post{
 		display: block;
 		margin-bottom: 30px;
 		position: relative;
 		padding-bottom:30px;
 		border-bottom:solid 1px;
 	}
-	.blog_entry .entry-title{
+	.post.type-post .entry-title{
 		font-size: 28px;
 		word-wrap: break-word;
 		margin-bottom:5px;
 		margin-top:0;
 		font-weight:bold;
 	}
-	.blog_entry .entry-content{ margin-top:15px; }
-	.blog_entry .entry-title a{ color:  !important; }
-	.blog_entry .entry-title a:hover{ text-decoration:none; }
+	.post.type-post .entry-content{ margin-top:15px; }
+	.post.type-post .entry-title a{ color:  !important; }
+	.post.type-post .entry-title a:hover{ text-decoration:none; }
 	
-	.blog_entry .entry-readmore{ margin-top:20px; }
-	.blog_entry .entry-readmore a{ text-align:center; padding:9px 20px; display:inline-block; color:#FFF !important; border-radius: 4px; background:#09C; }
-	.blog_entry .entry-readmore a:hover{ color:#FFF !important; text-decoration:none; }
-	.blog_entry .entry-media{ margin-bottom:20px; }
+	.post.type-post .entry-readmore{ margin-top:20px; }
+	.post.type-post .entry-readmore a{ text-align:center; padding:9px 20px; display:inline-block; color:#FFF !important; border-radius: 4px; background:#09C; }
+	.post.type-post .entry-readmore a:hover{ color:#FFF !important; text-decoration:none; }
+	.post.type-post .entry-media{ margin-bottom:20px; }
 	
-	.blog_entry .entry-meta .entry-meta-item{ float:left; margin-right:12px; opacity: 0.7; }
-	.blog_entry .entry-meta .entry-meta-item a{ color:  !important; }
-	.blog_entry .entry-meta .entry-meta-item i.fa{ margin-right:1px; }
+	.post.type-post .entry-meta .entry-meta-item{ float:left; margin-right:12px; opacity: 0.7; }
+	.post.type-post .entry-meta .entry-meta-item a{ color:  !important; }
+	.post.type-post .entry-meta .entry-meta-item i.fa{ margin-right:1px; }
 	
 	
 	/*video*/
-	.blog_entry .entry-video-om{ position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px;	height: 0; }
-	.blog_entry .entry-video-om iframe{ position: absolute; top: 0;left: 0;width: 100%;height: 100%; }
+	.post.type-post .entry-video-om{ position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px;	height: 0; }
+	.post.type-post .entry-video-om iframe{ position: absolute; top: 0;left: 0;width: 100%;height: 100%; }
 	
-	.blog_entry .entry-video .wp-video,
-	.blog_entry .entry-video .wp-video .wp-video-shortcode,
-	.blog_entry .entry-video .wp-video .wp-video-shortcode .mejs-poster,
-	.blog_entry .entry-video .wp-video .wp-video-shortcode .mejs-poster .mejs-overlay.mejs-layer,
-	.blog_entry .entry-video .wp-video .wp-video-shortcode .mejs-overlay.mejs-layer.mejs-overlay-play{
+	.post.type-post .entry-video .wp-video,
+	.post.type-post .entry-video .wp-video .wp-video-shortcode,
+	.post.type-post .entry-video .wp-video .wp-video-shortcode .mejs-poster,
+	.post.type-post .entry-video .wp-video .wp-video-shortcode .mejs-poster .mejs-overlay.mejs-layer,
+	.post.type-post .entry-video .wp-video .wp-video-shortcode .mejs-overlay.mejs-layer.mejs-overlay-play{
 		width:100% !important;
 	}
 	
 	
 	/*Audio*/
-	.blog_entry.format-audio .audio-embed{ position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px;	height: 0; }
-	.blog_entry.format-audio .audio-embed iframe{ position: absolute; top: 0;left: 0;width: 100%;height: 100%; }	 
-	.blog_entry.format-audio .audio-poster-image{ margin-bottom:-6px; }
+	.post.type-post.format-audio .audio-embed{ position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px;	height: 0; }
+	.post.type-post.format-audio .audio-embed iframe{ position: absolute; top: 0;left: 0;width: 100%;height: 100%; }	 
+	.post.type-post.format-audio .audio-poster-image{ margin-bottom:-6px; }
 	
 	/*Gallery*/
-	.blog_entry.format-gallery .entry-gallery.flexslider-gallery ul.slides li,
-	.blog_entry.format-gallery .entry-gallery.flexslider-gallery .flex-control-nav{ z-index:0 !important; }
+	.post.type-post.format-gallery .entry-gallery.flexslider-gallery ul.slides li,
+	.post.type-post.format-gallery .entry-gallery.flexslider-gallery .flex-control-nav{ z-index:0 !important; }
 	
 	/*Link*/
-	.blog_entry .entry-link{ font-weight:bold; margin-bottom:10px; }
-	.blog_entry.format-link { padding-top:0; position:relative; overflow:hidden; }
-	.blog_entry.format-link .entry-title{ margin-top:0; }
-	.blog_entry.format-link .entry-title a .fa{ margin-top:0; font-family:90%; }
+	.post.type-post .entry-link{ font-weight:bold; margin-bottom:10px; }
+	.post.type-post.format-link { padding-top:0; position:relative; overflow:hidden; }
+	.post.type-post.format-link .entry-title{ margin-top:0; }
+	.post.type-post.format-link .entry-title a .fa{ margin-top:0; font-family:90%; }
 	
 	/*format-standard*/
-	.blog_entry.format-standard { padding-top:0; }
-	.blog_entry.format-standard .entry-title{ margin-top:0; }
+	.post.type-post.format-standard { padding-top:0; }
+	.post.type-post.format-standard .entry-title{ margin-top:0; }
 	
 	
 	/*format-chat*/
-	.blog_entry.format-chat { padding-top:0; }
-	.blog_entry.format-chat .entry-title{ margin-top:0; }
+	.post.type-post.format-chat { padding-top:0; }
+	.post.type-post.format-chat .entry-title{ margin-top:0; }
 	
 	
 	/*format-quote*/
-	.blog_entry.format-quote{  border:0; background:#093; padding:40px 40px; position:relative; border-radius: 4px; }
-	.blog_entry.format-quote:before{
+	.post.type-post.format-quote{  border:0; background:#093; padding:40px 40px; position:relative; border-radius: 4px; }
+	.post.type-post.format-quote:before{
 		display: inline-block;
 		font-family: FontAwesome;
 		font-style: normal;
@@ -292,14 +292,14 @@ Tally Framework WordPress theme is licensed under the GPL.
 		left:5px;
 		top:0;
 	}
-	.blog_entry.format-quote .entry-content{ color:#FFF !important; font-size:110%; line-height:1.7; }
-	#wrapper #main .blog_entry.format-quote .entry-content *{ color:#FFF !important; }
-	.blog_entry.format-quote .entry-content .entry-source{ font-size:110%; font-weight:bold; color:#FFF !important; position:absolute; right:25px; bottom:20px; }
+	.post.type-post.format-quote .entry-content{ color:#FFF !important; font-size:110%; line-height:1.7; }
+	#wrapper #main .post.type-post.format-quote .entry-content *{ color:#FFF !important; }
+	.post.type-post.format-quote .entry-content .entry-source{ font-size:110%; font-weight:bold; color:#FFF !important; position:absolute; right:25px; bottom:20px; }
 	
 	
 	/*format-aside*/
-	.blog_entry.format-aside{ border:0; background:#093; padding:40px 40px; position:relative; border-radius: 4px; }
-	.blog_entry.format-aside .entry-content:before{
+	.post.type-post.format-aside{ border:0; background:#093; padding:40px 40px; position:relative; border-radius: 4px; }
+	.post.type-post.format-aside .entry-content:before{
 		display: inline-block;
 		font-family: FontAwesome;
 		font-style: normal;
@@ -315,13 +315,13 @@ Tally Framework WordPress theme is licensed under the GPL.
 		margin-right:15px;
 		margin-top:-5px;
 	}
-	.blog_entry.format-aside .entry-content{ margin-top:0; }
-	#wrapper #main .blog_entry.format-aside *{ color:#FFF !important; }
-	.blog_entry.format-aside i.fa{ float:left; margin-right:20px; font-size:60px; margin-top:-10px; opacity: 0.7; }
+	.post.type-post.format-aside .entry-content{ margin-top:0; }
+	#wrapper #main .post.type-post.format-aside *{ color:#FFF !important; }
+	.post.type-post.format-aside i.fa{ float:left; margin-right:20px; font-size:60px; margin-top:-10px; opacity: 0.7; }
 	
 	
 	/*.sticky*/
-	.blog_entry.sticky{ padding-top:30px; }
+	.post.type-post.sticky{ padding-top:30px; }
 	
 	.entry-single-meta{ margin-top:30px; padding-top:30px; border-top:1px dashed;  }
 

@@ -24,8 +24,8 @@ function tally_standard_loop(){
 	
 	if ( have_posts() ) : while ( have_posts() ) : the_post();
 			do_action( 'tally_before_entry' );
-			$article_class = apply_filters('tally_article_class', 'blog_entry');
-			echo '<article '; post_class($article_class); echo '>';
+			
+			echo '<article '; post_class(); echo '>';
 
 				do_action( 'tally_entry_header' );
 

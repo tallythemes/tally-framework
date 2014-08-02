@@ -58,11 +58,11 @@ function tally_op_content_color_option_action(){
 		.color_mood_dark .subheading{ color:<?php tally_color('color_subheading_dark'); ?>;  }
 		.color_mood_dark .metatext{ color:<?php tally_color('color_meta_dark'); ?>;  }
 		
-		.color_mood_dark .blog_entry .entry-readmore a,
-		.color_mood_dark .blog_entry.format-aside,
-		.color_mood_dark .blog_entry.format-quote{ background-color:<?php echo tally_color('site_accent_color'); ?>; }
+		.color_mood_dark .post.type-post .entry-readmore a,
+		.color_mood_dark .post.type-post.format-aside,
+		.color_mood_dark .post.type-post.format-quote{ background-color:<?php echo tally_color('site_accent_color'); ?>; }
 		
-		.color_mood_dark .blog_entry .entry-title a{ color:<?php tally_color('color_headings_dark'); ?>; }
+		.color_mood_dark .post.type-post .entry-title a{ color:<?php tally_color('color_headings_dark'); ?>; }
 		
 		.color_mood_dark .entry-meta-item a,
 		.color_mood_dark .entry-meta-item{ color:<?php tally_color('color_headings_dark'); ?>; }
@@ -134,11 +134,11 @@ function tally_op_content_color_option_action(){
 		.color_mood_light .subheading{ color:<?php tally_color('color_subheading_light'); ?>;  }
 		.color_mood_light .metatext{ color:<?php tally_color('color_meta_light'); ?>;  }
 		
-		.color_mood_light .blog_entry .entry-readmore a,
-		.color_mood_light .blog_entry.format-aside,
-		.color_mood_light .blog_entry.format-quote{ background-color:<?php echo tally_color('site_accent_color'); ?>; }
+		.color_mood_light .post.type-post .entry-readmore a,
+		.color_mood_light .post.type-post.format-aside,
+		.color_mood_light .post.type-post.format-quote{ background-color:<?php echo tally_color('site_accent_color'); ?>; }
 		
-		.color_mood_light .blog_entry .entry-title a{ color:<?php tally_color('color_headings_light'); ?>; }
+		.color_mood_light .post.type-post .entry-title a{ color:<?php tally_color('color_headings_light'); ?>; }
 		.color_mood_light .entry-meta-item a,
 		.color_mood_light .entry-meta-item{ color:<?php tally_color('color_headings_light'); ?>; }
 		

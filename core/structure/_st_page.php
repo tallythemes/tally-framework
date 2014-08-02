@@ -19,12 +19,3 @@ function tally_do_reset_page_content(){
 		remove_action( 'tally_after_endwhile', 'tally_do_posts_nav' );
 	}
 }
-
-add_filter('tally_article_class', 'tally_filter_loop_class_for_page');
-function tally_filter_loop_class_for_page($class){
-	if(is_page()){
-		$class = 'page_entry';
-	}
-	
-	return $class;
-}
