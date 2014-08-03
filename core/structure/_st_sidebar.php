@@ -2,7 +2,11 @@
 
 add_action( 'tally_sidebar', 'tally_do_sidebar' );
 function tally_do_sidebar() {
-
+	
+	$active = apply_filters('tally_sidebar_active', true);
+	
+	if($active == false) return;
+	
 	if ( ! dynamic_sidebar( 'sidebar' ) && current_user_can( 'edit_theme_options' )  ) {
 		tally_default_widget_area_content( __( 'Primary Sidebar Widget Area', 'tally_textdomain' ) );
 	}
@@ -11,6 +15,10 @@ function tally_do_sidebar() {
 
 add_action( 'tally_sidebar_alt', 'tally_do_sidebar_alt' );
 function tally_do_sidebar_alt() {
+	
+	$active = apply_filters('tally_sidebar_alt_active', true);
+	
+	if($active == false) return;
 
 	if ( ! dynamic_sidebar( 'sidebar-alt' ) && current_user_can( 'edit_theme_options' ) ) {
 		tally_default_widget_area_content( __( 'Secondary Sidebar Widget Area', 'tally_textdomain' ) );
