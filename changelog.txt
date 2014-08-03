@@ -1,8 +1,16 @@
 *** Tally Framework Changelog ***
 
+2014-08-03 - Version 0.8.1
+  * Change CLASS name of post entry.
+  * Remove "tally_article_class" filter, wordpress already have a filter for "post_class".
+  * Update color action with new class name.
+  * Add two new filters for enable or disable sidebar and sidebar alt.
+
+
 2014-08-01 - Version 0.8
   * Remove index.html (as theme reviewer requested)
   * Update the screenshot.png to 880x660 (as theme reviewer requested)
+
 
 2014-07-28 - Version 0.7.9
   * CSS fix: remove line height form ul, ol and dl
