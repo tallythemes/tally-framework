@@ -181,6 +181,10 @@ body.sidebar-sidebar-content #sidebar{ width:31%; float:left; }
 			    border-radius: 3px;
 	}
 
+	input[type="checkbox"],
+	input[type="radio"]{
+		width:auto; display:inline-block;
+	}
 
 
 /* IMAGES
