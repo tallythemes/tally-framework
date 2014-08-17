@@ -62,7 +62,7 @@ Tally Framework WordPress theme is licensed under the GPL.
 	#logo span{ margin-left:4px; display:inline-block; opacity: 0.7; }
 	
 	
-	.header-sticky #header.stickyMenu{ position:fixed; top:0; left:0; width:100%; opacity:1; z-index:9999;  }
+	.header-sticky #header.stickyMenu{ position:fixed; top:0; left:0; width:100%; opacity:1; z-index:20;  }
 	.header-sticky #header.stickyMenu,
 	.header-sticky #header.stickyMenu .hheaight{ height:50px !important; }
 	.header-sticky #header.stickyMenu #logo,

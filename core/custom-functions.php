@@ -177,7 +177,7 @@ endif;
 -------------------------------------------------*/
 function tally_sitebar_layout_option(){
 	global $wp_query;
-
+	
 	//* If viewing a singular page or post
 	if ( is_singular() ) {
 		$custom_field = get_post_meta( get_the_ID(), 'tally_sidebar_layout', true );
@@ -225,7 +225,7 @@ function tally_footer_widget_layout_option(){
 	global $wp_query;
 	$widget_layout  = tally_option( 'footer_widget_layout', 3);
 	
-	if(!is_404()){
+	if(!is_404() && get_post()){
 		$custom_field = get_post_meta( get_the_ID(), 'tally_footer_widget_layout', true );
 		$widget_layout  = $custom_field ? $custom_field : $widget_layout;
 	}
@@ -265,7 +265,7 @@ function tally_footer_widget_columns_option($widget_number){
 		elseif( $footer_widget_meta_layout == '6' ){ $widget_column = '4'; }
 	}
 	
-	if(!is_404()){
+	if(!is_404() && get_post()){
 		if((get_post_meta( get_the_ID(), 'tally_footer_widget_'.$widget_number.'_column_width', true )!='0') && (get_post_meta( get_the_ID(),'tally_footer_widget_custom_width',true)=='on') ){
 			$widget_column = get_post_meta( get_the_ID(), 'tally_footer_widget_'.$widget_number.'_column_width', true ); 
 		}
@@ -282,7 +282,7 @@ function tally_is_footer(){
 	global $wp_query;
 	$footer_layout = tally_option( 'footer_layout', 'yes');
 	
-	if(!is_404()){
+	if(!is_404() && get_post()){
 		$custom_field = get_post_meta( get_the_ID(), 'tally_footer_layout', true );
 		$footer_layout  = $custom_field ? $custom_field : $footer_layout;
 	}
@@ -300,7 +300,7 @@ function tally_is_topbar(){
 	global $wp_query;
 	$topbar  = tally_option( 'is_topbar', 'no');
 	
-	if(!is_404()){
+	if(!is_404() && get_post()){
 		$custom_field = get_post_meta( get_the_ID(), 'tally_is_topbar', true );
 		$topbar  = $custom_field ? $custom_field : $topbar;
 	}
@@ -317,7 +317,7 @@ function tally_is_subheader(){
 	global $wp_query;
 	$subheader  = tally_option( 'is_subheader', 'yes');
 	
-	if(!is_404()){
+	if(!is_404() && get_post()){
 		$custom_field = get_post_meta( get_the_ID(), 'tally_is_subheader', true );
 		$subheader  = $custom_field ? $custom_field : $subheader;
 	}
@@ -334,7 +334,7 @@ function tally_is_header(){
 	global $wp_query;
 	$header  = tally_option( 'is_header', 'yes');
 	
-	if(!is_404()){
+	if(!is_404() && get_post()){
 		$custom_field = get_post_meta( get_the_ID(), 'tally_is_header', true );
 		$header  = $custom_field ? $custom_field : $header;
 	}
@@ -408,7 +408,7 @@ function tallyfn_logo($logo = '', $des = true){
 function tallyfn_title($tally_custom_page_title = NULL) {
 	
 	global $wp_query;
-	$output = '';
+	$output = the_title('', '', false);
 	
 	if (is_tax()) $output = single_term_title( "", false );
 	elseif ((get_post_type() == 'product') && is_archive()) $output =  get_the_title( woocommerce_get_page_id( 'shop' ) );
@@ -427,7 +427,7 @@ function tallyfn_title($tally_custom_page_title = NULL) {
 		if (is_month()) $output = __('Monthly Archive', 'tally_taxdomain') . ' &raquo; ' . get_the_date('F Y');
 		if (is_day()) $output = __('Daily Archive', 'tally_taxdomain') . ' &raquo; ' . get_the_date('d F Y');
 	}
-	else $output = get_the_title();
+	else $output = the_title('', '', false);
 	
 	if( $tally_custom_page_title != NULL ){ echo $tally_custom_page_title; }else{ echo $output; }
 }
