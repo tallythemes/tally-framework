@@ -36,6 +36,34 @@
 	.col-holder .col_12{ width: 100%; *width: 99.94680851063829%; margin-bottom:30px; }
 	
 	
+	.cl24-holder .col{ margin:0; }
+	.cl24-holder .col_1,
+    .cl24-holder .col_2,
+    .cl24-holder .col_3,
+    .cl24-holder .col_4,
+    .cl24-holder .col_5,
+	.cl24-holder .col_one_5,
+    .cl24-holder .col_6,
+    .cl24-holder .col_7,
+    .cl24-holder .col_8,
+    .cl24-holder .col_9,
+    .cl24-holder .col_10,
+    .cl24-holder .col_11,
+    .cl24-holder .col_12,
+    .cl24-holder .col_13,
+    .cl24-holder .col_14 ,
+    .cl24-holder .col_15,
+    .cl24-holder .col_16,
+    .cl24-holder .col_17,
+    .cl24-holder .col_18,
+    .cl24-holder .col_19,
+    .cl24-holder .col_20,
+    .cl24-holder .col_21,
+    .cl24-holder .col_22,
+    .cl24-holder .col_23,
+    .cl24-holder .col_24{ width: 100%; *width: 99.94680851063829%; margin-bottom:30px; }
+	
+	
 	.cl_holder{ margin-left:0; }
 	.cl{ margin-left:0; float:left; margin-bottom:30px; }
 	.cl_1,
@@ -62,6 +90,15 @@
 	#subheader .page_title{ float:none; width:100%; text-align:center; }
 	#subheader .page_subtitle{ float:none; width:100%; text-align:center; }
 	#subheader .breadcrumbs{ float:none; width:100%; text-align:center; }
+	
+	
+	/*--Main--*/
+	#main #content{ float:none; margin:0; width:100%; }
+	#main #sidebar{ float:none; margin:0; width:100%; }
+	#main #sidebar-alt{ float:none; margin:0; width:100%; }
+	
+	
+	/*--Footer Widgets--*/
 	
 	
 	/*--Footer--*/
