@@ -206,7 +206,8 @@ function tally_do_post_media(){
 			echo '</div>';
 		}else{
 			echo '<div class="audio-hosted entry-media">';
-				echo get_the_post_thumbnail(get_the_ID(), 'image_format', array('class'	=> "audio-poster-image"));
+				$thumb_data = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' ); // Get post by ID
+				echo '<img src="'.tally_image_size($thumb_data[0], TALLY_BLOG_IMG_W, TALLY_BLOG_IMG_H).'" class="audio-poster-image" alt="'.get_the_title().'">';
 				echo do_shortcode('[audio mp3="'.$m4a_url.'" ogg="'.$ogg_url.'"]');
 			echo '</div>';
 		}
@@ -219,11 +220,9 @@ function tally_do_post_media(){
 				$attachments = explode(",", get_post_meta(get_the_ID(), 'tally_postformat_gallery', true));
 				if ( $attachments ) {
 					foreach ( $attachments as $attachment ) {
-						$image = wp_get_attachment_image_src($attachment, 'gallery_format');
-						$imagefull = wp_get_attachment_image_src($attachment, 'full');
-						
+						$image = wp_get_attachment_image_src($attachment, 'full');						
 						echo '<li>';
-							echo '<a href="'.$imagefull[0].'" rel="prettyPhoto[g_'.get_the_ID().']"><img src="' . $image[0] . '" height="960" width="400" alt="" /></a>';
+							echo '<a href="'.$image[0].'" rel="prettyPhoto[g_'.get_the_ID().']"><img src="' . tally_image_size($image[0], TALLY_BLOG_G_IMG_W, TALLY_BLOG_G_IMG_H) . '" alt="'.get_the_title().'" /></a>';
 						echo '</li>';
 					}
 				}
@@ -249,7 +248,8 @@ function tally_do_post_media(){
 		echo '<div class="entry-image entry-media">';
 			$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
 			echo '<a href="'.$large_image_url[0].'" rel="prettyPhoto">';
-				echo get_the_post_thumbnail(get_the_ID(), 'image_format');
+				$thumb_data = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' ); // Get post by ID
+				echo '<img src="'.tally_image_size($thumb_data[0], TALLY_BLOG_IMG_W, TALLY_BLOG_IMG_H).'" class="audio-poster-image" alt="'.get_the_title().'">';
 			echo '</a>';
 		echo '</div>';
 	}

@@ -39,6 +39,30 @@ function tally_layout(){
 }
 
 
+/* Resize image
+-------------------------------------------------*/
+if(!function_exists('tally_image_size')):
+function tally_image_size($url, $width = '', $height = '', $crop = true, $align = '', $retina = TALLY_IMAGE_RETINA_SUPPORT){
+	global $wpdb;
+	
+    $query = "SELECT ID FROM {$wpdb->posts} WHERE guid='$url'";
+    $id = $wpdb->get_var($query);
+	
+	$url = ( $url == "" ) ? 'http://placehold.it/'.$width.'x'.$height.'' : $url;
+	
+	if(function_exists('mr_image_resize')){
+		if($id == false){
+			return $url;
+		}else{
+			return mr_image_resize($url, $width, $height, $crop, $align, $retina);
+		}
+	}else{
+		return $url;
+	}
+}
+endif;
+
+
 
 /* closing div
 -------------------------------------------------*/

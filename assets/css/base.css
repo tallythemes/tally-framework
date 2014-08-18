@@ -568,10 +568,16 @@ body.sidebar-sidebar-content #sidebar{ width:31%; float:left; }
 	.entry-comments a {}
 	.comment-content {clear: both;}
 	.entry-comments .comment-author {margin-bottom: 0;}
+	
+	.comment-respond .comment-form-author{ width:31.3333%; margin-right:3%; float:left; clear:left; }
+	.comment-respond .comment-form-email{  width:31.3333%; margin-right:3%; float:left; }
+	.comment-respond .comment-form-url{  width:31.3333%; float:left; clear:right; }
 	.comment-respond input[type="email"],
 	.comment-respond input[type="text"],
-	.comment-respond input[type="url"] {width: 50%}
+	.comment-respond input[type="url"] {width: 100% !important; }
+	.comment-respond textarea{ width:100% !important; }
 	.comment-respond label {display: block;margin-right: 12px;}
+	
 	.comment-list{ margin-left:0; overflow:hidden; }
 	.comment-list li,
 	.ping-list li {list-style-type: none;}

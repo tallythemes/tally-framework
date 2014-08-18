@@ -80,6 +80,12 @@ class tally_loader{
 		define('TALLY_CHILD_URL', get_stylesheet_directory_uri());
 		define('TALLY_CHILD_DRI', get_stylesheet_directory());
 		
+		if(!defined('TALLY_BLOG_IMG_W')){ define('TALLY_BLOG_IMG_W', 960); }
+		if(!defined('TALLY_BLOG_IMG_H')){ define('TALLY_BLOG_IMG_H', 500); }
+		if(!defined('TALLY_BLOG_G_IMG_W')){ define('TALLY_BLOG_G_IMG_W', 960); }
+		if(!defined('TALLY_BLOG_G_IMG_H')){ define('TALLY_BLOG_G_IMG_H', 500); }
+		if(!defined('TALLY_IMAGE_RETINA_SUPPORT')){ define('TALLY_IMAGE_RETINA_SUPPORT', false); }
+		
 		/*  Constant for remove or active 
 			some part of the theme
 		----------------------------------*/
@@ -98,10 +104,7 @@ class tally_loader{
      * @access    public
      * @since     0.7.3
 	*/
-	public function theme_supports() {
-		add_image_size('image_format', 960, 500, true);
-		add_image_size('gallery_format', 960, 500, true);
-		
+	public function theme_supports() {		
 		add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio', 'chat' ) );
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'post-thumbnails' );
@@ -247,12 +250,14 @@ class tally_loader{
 		
 		/* Loading ROOT files
 		----------------------------------*/
+		if(!function_exists('mr_image_resize')){ include('mr-image-resize.php'); }
 		include('custom-functions.php');
 		include('scripts-loader.php');
 		include('breadcrumb.php');
 		include('class-tgm-plugin-activation.php');
 		include('color-management.php');
 		include('default-theme-options.php');
+		
 		
 		
 		/* Loading the Metaboxes
