@@ -1,5 +1,15 @@
 *** Tally Framework Changelog ***
 
+2014-08-03 - Version 0.8.2
+  * Improve CSS design
+  * Added Blog Template
+  * Added Full width Template
+  * Improve Responsive Display 
+  * Added MR Image Resizer
+
+  * Added new function for image resizing
+  * Update languages .po file
+
 2014-08-03 - Version 0.8.1
   * Change CLASS name of post entry.
   * Remove "tally_article_class" filter, wordpress already have a filter for "post_class".
