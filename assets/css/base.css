@@ -368,6 +368,22 @@ body.sidebar-sidebar-content #sidebar{ width:31%; float:left; }
 	.widget_categories ul,
 	.widget_recent_comments ul{ margin-left:0px !important; list-style-type:none; }
 	
+	.widget_meta ul ul.children,
+	.widget_pages ul ul.children,
+	.widget_nav_menu ul ul.children,
+	.widget_recent_entries ul ul.children,
+	.widget_archive ul ul.children,
+	.widget_categories ul ul.children,
+	.widget_recent_comments ul ul.children{ margin-left:20px !important; }
+	
+	.widget_meta ul ul.children li:last-child,
+	.widget_pages ul ul.children li:last-child,
+	.widget_nav_menu ul ul.children li:last-child,
+	.widget_recent_entries ul ul.children li:last-child,
+	.widget_archive ul ul.children li:last-child,
+	.widget_categories ul ul.children li:last-child,
+	.widget_recent_comments ul ul.children li:last-child{ border-bottom:0; }
+	
 	.widget_recent_comments ul#recentcomments{ margin-left:0px !important;}
 	
 	.widget_meta ul li,

@@ -179,10 +179,11 @@ function tally_do_post_media(){
 	
 	//video
 	if(get_post_format() == 'video'){
+		$thumb_data = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' ); // Get post by ID
 		$video_mp4 = get_post_meta(get_the_ID(), 'tally_postformat_video_mp4', true);
 		$video_ogv = get_post_meta(get_the_ID(), 'tally_postformat_video_ogv', true);
 		$video_mov = get_post_meta(get_the_ID(), 'tally_postformat_video_mov', true);
-		$video_poster = get_post_meta(get_the_ID(), 'tally_postformat_video_poster', true);
+		$video_poster = $thumb_data[0];
 		$embed = get_post_meta(get_the_ID(), 'tally_postformat_video_embed', true);
 		if($embed){
 			echo '<div class="entry-video-om entry-media">';

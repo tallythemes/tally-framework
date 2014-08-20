@@ -88,16 +88,6 @@ function tally_postformat_metabox_register() {
         'class'       => '',
         'choices'     => array()
 	);
-	$settings[] = array(
-		'id'          => $prefix.'video_poster',
-        'label'       => __('Upload a Poster', 'tally_textdomain'),
-        'desc'        => __('This is for hosted HTML5 video.', 'tally_textdomain'),
-        'std'         => '',
-		'rows'         => '3',
-        'type'        => 'upload',
-        'class'       => '',
-        'choices'     => array()
-	);
 	$metabox = array(
 		'id'        => 'tally_ot_postFormat_video_metabox',
 		'title'     => 'Video: Post Format',
@@ -114,16 +104,6 @@ function tally_postformat_metabox_register() {
 	$settings[] = array(
 		'id'          =>  $prefix.'quote_source_url',
         'label'       => __('Source URL', 'tally_textdomain'),
-        'desc'        => '',
-        'std'         => '',
-		'rows'         => '3',
-        'type'        => 'text',
-        'class'       => '',
-        'choices'     => array()
-	);
-	$settings[] = array(
-		'id'          =>  $prefix.'quote_source_name',
-        'label'       => __('Source Name', 'tally_textdomain'),
         'desc'        => '',
         'std'         => '',
 		'rows'         => '3',
