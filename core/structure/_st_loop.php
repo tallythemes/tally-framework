@@ -10,7 +10,11 @@ function tally_do_loop_content(){
 		$query_args = array(
 			'paged' => $paged,
 			'post_type' => 'post',
+			'posts_per_page' => get_post_meta(get_the_ID(), 'tally_blog_limit', true),
 		);
+		if(get_post_meta(get_the_ID(), 'tally_blog_category', true) != ''){
+			$query_args['cat'] = get_post_meta(get_the_ID(), 'tally_blog_category', true);
+		}
 		tally_custom_loop( $query_args );
 	}else{
 		tally_standard_loop();
