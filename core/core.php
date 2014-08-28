@@ -304,7 +304,7 @@ class tally_loader{
 		tally_file_dri('structure/_st_single.php');
 		tally_file_dri('structure/_st_archive.php');
 		tally_file_dri('structure/_st_blog-template.php');
-		tally_file_dri('structure/_st_full-width-template.php');
+		tally_file_dri('structure/_st_page-full-width.php');
 	}
 	
 	

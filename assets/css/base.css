@@ -38,7 +38,8 @@
 		font-family:Arial, Helvetica, sans-serif;
 		line-height:21px;
 	}
-	body.page-template-full-width-template-php #main{ padding:0; }
+	body.page-template-page-full-width-php #main{ padding:0; }
+	body.page-template-page-full-width-php #main #main-inner{ width:100%; max-width:100%; }
 
 
 
