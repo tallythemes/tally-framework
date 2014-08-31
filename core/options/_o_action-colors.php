@@ -7,6 +7,11 @@ function tally_op_content_color_option_action(){
 		background: <?php echo tally_color('site_accent_color'); ?>;
 		color: #fff;
 		}
+		.tally_woocommerce_cart a .tally_woo_items{ background: <?php echo tally_color('site_accent_color'); ?>;  }
+		.tally_wpml_language_switcher .lan-menu:hover{ color:<?php tally_color('color_navigation_text_hover'); ?>;  }
+        .tally_wpml_language_switcher .flag-list{ background:<?php tally_color('color_navigation_submenu_bg','1'); ?>;  }
+        .tally_wpml_language_switcher .flag-list li a{ border-color:<?php tally_color('color_navigation_border','1'); ?>;  }
+		
 		
 		/*------------------------ DARK ------------------------*/
 		.color_mood_dark *{ border-color:<?php tally_color('color_border_dark'); ?>  !important; color: <?php tally_color('color_text_dark'); ?>; }
@@ -79,7 +84,13 @@ function tally_op_content_color_option_action(){
 		.header-sticky #header.stickyMenu.color_mood_dark{
 			background: <?php tally_color('color_bg_light'); ?>;
 			box-shadow: 0px 0px 3px 0px <?php tally_color('color_border_dark'); ?>;
+			border-color:<?php tally_color('color_border_dark', 0.4); ?>;
 		}
+		
+		
+		.color_mood_dark .tally_icon_search_bar .search-form-inner{ background:<?php tally_color('color_inner_bg_dark','1'); ?>;  }
+		.color_mood_dark .tally_icon_search_bar .search-form-inner:after{ border-bottom-color:<?php tally_color('color_inner_bg_dark','1'); ?>;  }
+		.color_mood_light .tally_icon_search_bar .search-form-inner:before{ border-bottom-color:<?php tally_color('color_border_light','1'); ?>;  }
 		
 		
 		
@@ -154,7 +165,13 @@ function tally_op_content_color_option_action(){
 		.header-sticky #header.stickyMenu.color_mood_light{
 			background: <?php tally_color('color_bg_light'); ?>;
 			box-shadow: 0px 0px 3px 0px <?php tally_color('color_border_light'); ?>;
+			border-color:<?php tally_color('color_border_light', 0.4); ?>;
 		}
+		
+		.color_mood_light .tally_icon_search_bar .search-form-inner{ background:<?php tally_color('color_inner_bg_light','1'); ?>;  }
+        .color_mood_light .tally_icon_search_bar .search-form-inner:after{ border-bottom-color:<?php tally_color('color_inner_bg_light','1'); ?>;  }
+        .color_mood_dark .tally_icon_search_bar .search-form-inner:before{ border-bottom-color:<?php tally_color('color_border_dark','1'); ?>;  }
+		
 		
 		
 		/*---------------------Backgrounds--------------------*/

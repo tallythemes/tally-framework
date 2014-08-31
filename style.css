@@ -72,6 +72,105 @@ Tally Framework WordPress theme is licensed under the GPL.
 	.admin-bar.header-sticky #header.stickyMenu{ top:32px; }
 	
 
+
+
+/* Search bar With Icon
+================================================== */
+	.header-search { float:right; margin-left:12px; margin-right:12px; }
+	.header-search:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+	.tally_icon_search_bar{ position:relative; display: inline-block; vertical-align: middle;  height: auto;  }
+	.tally_icon_search_bar a{ display:block; }
+	.tally_icon_search_bar #searchform{ position:absolute; width:400px;z-index:3; bottom:-74px; left:-330px; border:solid 1px; display:none; }
+	.tally_icon_search_bar #searchform .search-form-inner{ padding:10px; overflow:hidden; }
+	.tally_icon_search_bar #searchform input[type="text"]{ width:78%; padding:0; margin-left:2%; float:left; height:30px; line-height:30px; border:0; }
+	.tally_icon_search_bar #searchform input[type="submit"]{ width:19%; margin:0; margin-left:1%; padding:0; float:left; height:30px; line-height:29px; }
+	
+	.tally_icon_search_bar .search-form-inner:after, 
+	.tally_icon_search_bar .search-form-inner:before {
+		bottom: 100%;
+		right: 53px;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+	.tally_icon_search_bar .search-form-inner:after {
+		border-color: rgba(136, 183, 213, 0);
+		border-bottom-color: #88b7d5;
+		border-width: 10px;
+		margin-left: -10px;
+	}
+	.tally_icon_search_bar .search-form-inner:before {
+		border-color: rgba(194, 225, 245, 0);
+		border-bottom-color: #c2e1f5;
+		border-width: 11px;
+		margin-left: -11px;
+	}
+	
+	
+/*  WPML language switcher
+================================================== */	
+	.header-wpml{ float:right; margin-left:12px; margin-right:12px; }
+	.header-wpml:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+	.tally_wpml_language_switcher{ display: inline-block; vertical-align: middle;  height: auto; }
+	.tally_wpml_language_switcher ul{ list-style-type:none; margin:0; padding:0; }
+	.tally_wpml_language_switcher > ul{  }
+	.tally_wpml_language_switcher ul li{ list-style-type:none; margin:0; padding:0; }
+	.tally_wpml_language_switcher > ul > li{ position:relative; }
+	
+	.tally_wpml_language_switcher .lan-menu{ font-size:12px; text-transform:uppercase; }
+	.tally_wpml_language_switcher .lan-menu a{  }
+	.tally_wpml_language_switcher .lan-menu i.fa{ margin-left:4px; font-size:14px; }
+	.tally_wpml_language_switcher .lan-menu:hover{ text-decoration:none; }
+
+	.tally_wpml_language_switcher .flag-list{ display:none; position:absolute; left:0; z-index:3; width:150px; top:36px; }
+	.tally_wpml_language_switcher .flag-list li img{ float:left; margin-top:5px; margin-right:3px; }
+	.tally_wpml_language_switcher .flag-list li a:hover{ text-decoration:none; }
+	.tally_wpml_language_switcher .flag-list li a{ padding:6px 10px; display:block; border-bottom:solid 1px; }
+	.tally_wpml_language_switcher .flag-list li:last-child a{ border-bottom:0; }
+	
+	
+	
+/* WooCommerce cart
+================================================== */
+	.header-woocommerce{ float:right; margin-left:12px; margin-right:12px; }
+	.header-woocommerce:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+	.tally_woocommerce_cart{ position:relative; display: inline-block; vertical-align: middle;  height: auto; padding-top:3px; }
+	.tally_woocommerce_cart a{  }
+	.tally_woocommerce_cart a:hover{ text-decoration:none; }
+	.tally_woocommerce_cart a i.fa{ font-size:14px; }
+	.tally_woocommerce_cart a .tally_woo_items{ 
+		position:absolute; 
+		border-radius: 50%; 
+		height: 15px;
+		width: 15px;
+		text-align: center;
+		line-height: 15px;
+		font-size: 10px;
+		top: -6px;
+		right: -8px;
+		background: #000;
+		color:#FFF !important;
+	}
+	
+
 	
 /* Nav
 ================================================== */	

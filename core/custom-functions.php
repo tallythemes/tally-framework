@@ -782,3 +782,94 @@ function tally_decode( $value ) {
   return $func( $value );
   
 }
+
+
+
+/* Search bar with icon
+-------------------------------------------------*/
+function tally_icon_search_bar($class = ''){
+?>
+<div class="tally_icon_search_bar <?php echo $class; ?>">
+	<a href="#" class="the_search_icon"><i class="fa fa-search"></i></a>
+	<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+		<div class="search-form-inner">
+			<input type="text" value="" name="s" id="s" placeholder="<?php _e('Search', 'tally_child_textdomain'); ?>" />
+			<input type="submit" id="searchsubmit" value="<?php _e('Search', 'tally_child_textdomain'); ?>" />
+		</div>
+	</form>
+</div>
+<?php	
+}
+
+
+
+/*
+   WPML language switcher
+-----------------------------------*/
+function tally_wpml_language_switcher( $class = '' ){
+	if(function_exists('icl_get_languages')){
+		echo '<div class="tally_wpml_language_switcher '.$class.'">';
+			$items = icl_get_languages('skip_missing=1&orderby=id&order=asc&link_empty_to=empty');
+			if(is_array($items) && !empty($items)){
+				echo '<ul class="main-ul-holder">';
+					echo '<li>';
+						foreach( $items as $item ){
+							if($item['active'] == 1){
+								echo '<a href="#" class="lan-menu"><span>'.$item['language_code'].'</span><i class="fa fa-angle-down"></i></a>';
+							}
+						}
+						echo '<ul class="flag-list">';
+							foreach( $items as $item ){
+								echo '<li>';
+									echo '<a href="'.$item['url'].'" class="active_'.$item['active'].'" title="'.$item['translated_name'].'">';
+										echo '<img src="'.$item['country_flag_url'].'" alt="'.$item['translated_name'].'" /> <span>'.$item['native_name'].'</span>';
+									echo '</a>';
+								echo '</li>';
+							}
+						echo '</ul>';
+					echo '</li>';
+				echo '</ul>';
+			}
+		echo '</div>';
+	}
+}
+
+
+/*
+  Woocommerce Cart
+-----------------------------------*/
+function tally_woocommerce_cart($class = ''){
+	/** Fail silently if WooCommerce is not activated */
+	if ( ! in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) return;
+	global $woocommerce;
+	echo '<div class="tally_woocommerce_cart '.$class.'">';
+		echo tally_woocommerce_cart_content();
+	echo '</div>';
+	
+}
+add_filter('add_to_cart_fragments', 'tally_woocommerce_add_to_cart_fragment');
+function tally_woocommerce_add_to_cart_fragment( $fragments ) {
+	global $woocommerce;
+	
+	ob_start();
+	
+	echo tally_woocommerce_cart_content();
+	
+	$fragments['a.tally-woo-cart-contents'] = ob_get_clean();
+	
+	return $fragments;
+}
+
+if(!function_exists('tally_woocommerce_cart_content')){
+	function tally_woocommerce_cart_content(){
+		global $woocommerce;
+		?>
+		<a class="tally-woo-cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'tally_child_textdomain'); ?>">
+			<i class="fa fa-shopping-cart"></i>
+			<span class="tally_woo_items">
+				<?php echo sprintf(_n('%d', '%d', $woocommerce->cart->cart_contents_count, 'tally_child_textdomain'), $woocommerce->cart->cart_contents_count);?>
+			</span>
+		</a>
+		<?php
+	}
+}

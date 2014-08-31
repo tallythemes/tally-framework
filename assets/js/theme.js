@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 	
-	 $("#nav>div>ul").tinyNav();
+	 $("#nav>div>ul").tinyNav({  active: 'current-menu-item' });
 	 
 	 if(jQuery().fitVids) {
 		$(".digita-video").fitVids();
@@ -11,6 +11,32 @@ jQuery(document).ready(function($) {
 	}
 	
 	$(".blog_entry:last").addClass("last");
+	
+	/* Search Bar with Icon*/
+	$('.tally_icon_search_bar a.the_search_icon').click(function() {
+		var search_form_holder = $(".tally_icon_search_bar #searchform");
+		if(search_form_holder.hasClass('active')){
+			search_form_holder.hide();
+			search_form_holder.removeClass('active');
+		}else{
+			search_form_holder.show();
+			search_form_holder.addClass('active');
+		}
+		return false;
+	})
+	
+	/*  WPML language switcher */
+	$('.tally_wpml_language_switcher .lan-menu').click(function() {
+		var tally_wpml_language_switcher = $(".tally_wpml_language_switcher .flag-list");
+		if(tally_wpml_language_switcher.hasClass('active')){
+			tally_wpml_language_switcher.hide();
+			tally_wpml_language_switcher.removeClass('active');
+		}else{
+			tally_wpml_language_switcher.show();
+			tally_wpml_language_switcher.addClass('active');
+		}
+		return false;
+	})
 });
 
 
