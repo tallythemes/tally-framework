@@ -43,12 +43,23 @@ function tally_layout(){
 -------------------------------------------------*/
 if(!function_exists('tally_image_size')):
 function tally_image_size($url, $width = '', $height = '', $crop = true, $align = '', $retina = TALLY_IMAGE_RETINA_SUPPORT){
-	global $wpdb;
+	global $wpdb, $blog_id;
 	
     $query = "SELECT ID FROM {$wpdb->posts} WHERE guid='$url'";
     $id = $wpdb->get_var($query);
 	
-	$url = ( $url == "" ) ? 'http://placehold.it/'.$width.'x'.$height.'' : $url;
+	/*	
+	$site_url = get_blog_option($blog_id,'siteurl');
+	$absulate_url = str_replace($site_url,'',$url);
+	if(!file_exists($absulate_url)){
+		$url == "";
+	}
+	*/
+	
+	if($url == NULL){ 
+		$url = 'http://placehold.it/'.$width.'x'.$height; 
+		return $url;
+	}
 	
 	if(function_exists('mr_image_resize')){
 		if($id == false){
@@ -193,6 +204,21 @@ function tally_option_std($name, $default_data = NULL){
 	return $output;
 }
 endif;
+
+
+if(!function_exists('tally_get_serialize_option_data')):
+function tally_get_serialize_option_data(){
+	$output = '';
+	
+	if( function_exists('ot_options_id') ){
+		$field_settings = get_option( ot_options_id());
+		$output = tally_encode( serialize( $field_settings ));
+	}
+	
+	return $output;
+}
+endif;
+
 
 
 
@@ -724,4 +750,35 @@ function tally_css_rule($selector, $style, $value, $display = true){
 	}else{
 		return $css;
 	}
+}
+
+
+/**
+ * Helper function to return encoded strings
+ *
+ * @return    string
+ *
+ * @access    public
+ * @since     0.8.3
+ */
+function tally_encode( $value ) {
+
+  $func = 'base64' . '_encode';
+  return $func( $value );
+  
+}
+
+/**
+ * Helper function to return decoded strings
+ *
+ * @return    string
+ *
+ * @access    public
+ * @since     0.8.3
+ */
+function tally_decode( $value ) {
+
+  $func = 'base64' . '_decode';
+  return $func( $value );
+  
 }

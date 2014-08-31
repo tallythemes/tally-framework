@@ -3,6 +3,11 @@ add_action('wp_head', 'tally_op_content_color_option_action');
 function tally_op_content_color_option_action(){
 	?>
     <style type="text/css">
+		::selection {
+		background: <?php echo tally_color('site_accent_color'); ?>;
+		color: #fff;
+		}
+		
 		/*------------------------ DARK ------------------------*/
 		.color_mood_dark *{ border-color:<?php tally_color('color_border_dark'); ?>  !important; color: <?php tally_color('color_text_dark'); ?>; }
 		.color_mood_dark{ 
