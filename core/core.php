@@ -248,15 +248,20 @@ class tally_loader{
 	*/
 	public function inludes(){
 		
-		/* Loading ROOT files
+		/* Loading vandors files
 		----------------------------------*/
-		if(!function_exists('mr_image_resize')){ include('mr-image-resize.php'); }
-		include('custom-functions.php');
-		include('scripts-loader.php');
-		include('breadcrumb.php');
-		include('class-tgm-plugin-activation.php');
-		include('color-management.php');
-		include('default-theme-options.php');
+		if(!function_exists('mr_image_resize')){ include('vandors/mr-image-resize.php'); }
+		if(!class_exists( 'TGM_Plugin_Activation')){ include('vandors/class-tgm-plugin-activation.php'); }
+		
+		
+		
+		/* Loading Includes files
+		----------------------------------*/
+		include('includes/custom-functions.php');
+		include('includes/breadcrumb.php');
+		include('includes/scripts-loader.php');
+		include('includes/color-management.php');
+		include('includes/default-theme-options.php');
 		
 		
 		
@@ -284,7 +289,7 @@ class tally_loader{
 		
 		
 		/* Loading Structure
-		----------------------------------*/
+		----------------------------------*/		
 		tally_file_dri('structure/_st_topbar.php');
 		tally_file_dri('structure/_st_header.php');
 		tally_file_dri('structure/_st_subheader.php');
