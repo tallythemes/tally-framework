@@ -55,40 +55,40 @@
 
 /* Sidebar Layout
 ================================================== */
-#content-sidebar-wrap:before{ content:"  "; display: table; }
-#content-sidebar-wrap:after{ content:"  "; display: table;}
-
-/*- sidebar-content-sidebar -*/
-body.sidebar-content-sidebar #content-sidebar-wrap{ width:80%; float:right }
-body.sidebar-content-sidebar #sidebar-alt{ width:17%; float:left; }
-body.sidebar-content-sidebar #content{ width:65%; margin-right:4%; float:left; }
-body.sidebar-content-sidebar #sidebar{ width:31%; float:left; }
-
-
-/*- content-sidebar -*/
-body.content-sidebar  #content-sidebar-wrap{  }
-body.content-sidebar  #content{ width:65%; margin-right:4%; float:left; }
-body.content-sidebar  #sidebar{ width:31%; float:left; }
-
-
-/*- content-sidebar-sidebar -*/
-body.content-sidebar-sidebar #content-sidebar-wrap{ width:80%; float:left; }
-body.content-sidebar-sidebar #sidebar-alt{ width:17%; float:right; }
-body.content-sidebar-sidebar #content{ width:65%; margin-right:4%; float:left; }
-body.content-sidebar-sidebar #sidebar{ width:31%; float:left; }
-
-
-/*- sidebar-content -*/
-body.sidebar-content  #content-sidebar-wrap{  }
-body.sidebar-content  #content{ width:65%; float:right; }
-body.sidebar-content  #sidebar{ width:31%; float:left; }
-
-
-/*- sidebar-sidebar-content -*/
-body.sidebar-sidebar-content #content-sidebar-wrap{ width:80%; float:right }
-body.sidebar-sidebar-content #sidebar-alt{ width:17%; float:left; }
-body.sidebar-sidebar-content #content{ width:65%; float:right; }
-body.sidebar-sidebar-content #sidebar{ width:31%; float:left; }
+	#content-sidebar-wrap:before{ content:"  "; display: table; }
+	#content-sidebar-wrap:after{ content:"  "; display: table;}
+	
+	/*- sidebar-content-sidebar -*/
+	body.sidebar-content-sidebar #content-sidebar-wrap{ width:80%; float:right }
+	body.sidebar-content-sidebar #sidebar-alt{ width:17%; float:left; }
+	body.sidebar-content-sidebar #content{ width:65%; margin-right:4%; float:left; }
+	body.sidebar-content-sidebar #sidebar{ width:31%; float:left; }
+	
+	
+	/*- content-sidebar -*/
+	body.content-sidebar  #content-sidebar-wrap{  }
+	body.content-sidebar  #content{ width:65%; margin-right:4%; float:left; }
+	body.content-sidebar  #sidebar{ width:31%; float:left; }
+	
+	
+	/*- content-sidebar-sidebar -*/
+	body.content-sidebar-sidebar #content-sidebar-wrap{ width:80%; float:left; }
+	body.content-sidebar-sidebar #sidebar-alt{ width:17%; float:right; }
+	body.content-sidebar-sidebar #content{ width:65%; margin-right:4%; float:left; }
+	body.content-sidebar-sidebar #sidebar{ width:31%; float:left; }
+	
+	
+	/*- sidebar-content -*/
+	body.sidebar-content  #content-sidebar-wrap{  }
+	body.sidebar-content  #content{ width:65%; float:right; }
+	body.sidebar-content  #sidebar{ width:31%; float:left; }
+	
+	
+	/*- sidebar-sidebar-content -*/
+	body.sidebar-sidebar-content #content-sidebar-wrap{ width:80%; float:right }
+	body.sidebar-sidebar-content #sidebar-alt{ width:17%; float:left; }
+	body.sidebar-sidebar-content #content{ width:65%; float:right; }
+	body.sidebar-sidebar-content #sidebar{ width:31%; float:left; }
 
 
 /* TYPOGRAPHY
