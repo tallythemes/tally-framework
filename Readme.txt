@@ -50,5 +50,15 @@ License:  Under SIL OFL 1.1  (http://scripts.sil.org/cms/scripts/page.php?site_i
 Copyright:  Dave Gandy - http://twitter.com/davegandy
 
 
+Animate.css - http://daneden.me/animate
+License:  Licensed under the MIT license - http://opensource.org/licenses/MIT
+Copyright:  Daniel Eden - http://daneden.me
+
+
+SmoothScroll for websites - http://daneden.me/animate
+License:  Licensed under the MIT license - http://opensource.org/licenses/MIT
+Copyright:  Balazs Galambosi AND Michael Herf
+
+
 Images -
-In the theme we don't use any images to display on frontend. There are some images with the javascript prettyPhoto. Othere images that show in the theme option are created by me. 
+In the theme we don't use any images to display on frontend. There are some images with the javascript prettyPhoto. Othere images that show in the theme option are created by Us.
