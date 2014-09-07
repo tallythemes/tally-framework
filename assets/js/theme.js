@@ -51,6 +51,11 @@ jQuery(document).ready(function($) {
 		}
 		return false;
 	})
+	
+	if(WOW){
+		new WOW().init();
+	}
+	
 });
 
 

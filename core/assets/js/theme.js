@@ -11,6 +11,8 @@ jQuery(document).ready(function($) {
 	}
 	
 	$(".blog_entry:last").addClass("last");
+	
+	new WOW().init();
 });
 
 
