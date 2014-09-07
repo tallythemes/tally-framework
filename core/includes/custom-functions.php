@@ -325,6 +325,12 @@ function tally_footer_widget_columns_option($widget_number){
 }
 
 
+function tally_is_preloader(){
+	$preloader = tally_option( 'preloader', 'yes');
+	return apply_filters('tally_is_preloader', $preloader);
+}
+
+
 
 /* Footer Layour Option
 -------------------------------------------------*/

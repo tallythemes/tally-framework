@@ -1,3 +1,17 @@
+/*jQuery(window).load(function(){
+  jQuery('#tally_preloader_div').fadeOut(2000);
+});*/
+
+jQuery(window).load( function(){
+	var mainDiv = jQuery('#wrapper'),
+	preloader = jQuery('#tally_preloader');
+
+	preloader.fadeOut(400, function(){
+		mainDiv.delay(400).addClass('active');
+	});
+});
+
+
 jQuery(document).ready(function($) {
 	
 	 $("#nav>div>ul").tinyNav({  active: 'current-menu-item' });
