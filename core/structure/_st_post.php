@@ -24,6 +24,44 @@ function tally_entry_footer_markup_close(){
 }
 
 
+function tally_deafult_page_content(){
+	if ( have_posts() ) : 
+		while ( have_posts() ) : the_post();
+			echo '<article '; post_class(); echo '>';
+				echo '<div class="entry-content">';
+					the_content();
+				echo '</div>';
+			echo '</article>';
+		endwhile;
+	else :
+		tally_do_noposts();
+	endif;
+}
+function tally_deafult_post_content(){
+	if ( have_posts() ) : 
+		while ( have_posts() ) : the_post();
+			echo '<article '; post_class(); echo '>';
+				echo '<div class="entry-header">';
+					tally_do_post_media();
+					tally_do_post_title();
+					tally_do_post_info();
+				echo '</div>';
+				echo '<div class="entry-content">';
+					tally_do_post_content();
+					tally_do_post_content_nav();
+				echo '</div>';
+				echo '<div class="entry-footer">';
+				
+				echo '</div>';
+			echo '</article>';
+		endwhile;
+		tally_do_posts_nav();
+	else :
+		tally_do_noposts();
+	endif;
+}
+
+
 
 /***
 	Add post Title 

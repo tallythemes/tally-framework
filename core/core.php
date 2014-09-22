@@ -298,7 +298,6 @@ class tally_loader{
 		tally_file_dri('structure/_st_sidebar.php');
 		tally_file_dri('structure/_st_layout.php');
 		
-		tally_file_dri('structure/_st_loop.php');
 		tally_file_dri('structure/_st_comments.php');
 		
 		tally_file_dri('structure/_st_post.php');
