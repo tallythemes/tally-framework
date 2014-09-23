@@ -37,6 +37,8 @@ function tally_deafult_page_content(){
 		tally_do_noposts();
 	endif;
 }
+
+add_action('tally_deafult_post_content', 'tally_deafult_post_content');
 function tally_deafult_post_content(){
 	if ( have_posts() ) : 
 		while ( have_posts() ) : the_post();
@@ -176,7 +178,7 @@ function tally_do_author_box_single(){
 	global $authordata;
 	 $context = '';
 	$authordata    = is_object( $authordata ) ? $authordata : get_userdata( get_query_var( 'author' ) );
-	$gravatar_size = apply_filters( 'genesis_author_box_gravatar_size', 70, $context );
+	$gravatar_size = apply_filters( 'tally_author_box_gravatar_size', 70, $context );
 	$gravatar      = get_avatar( get_the_author_meta( 'email' ), $gravatar_size );
 	$description   = wpautop( get_the_author_meta( 'description' ) );
 
