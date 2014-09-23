@@ -1,5 +1,20 @@
 *** Tally Framework Changelog ***
 
+2014-09-23 - Version 0.8.4
+  * Improve Color option
+  * improve admin images
+  * Add WooCommerce Cat function
+  * Add WPML function
+  * Add Search bar function
+  * Improve file system of core
+  * Added preloader
+  * Update  Font Awesome
+  * Update Animate.css
+  * Update WOW JS
+  * Added  SmoothScroll
+  * Improve content output hook and make the system more simple
+
+
 2014-08-28 - Version 0.8.3
   * Rename Full Width Template
 
