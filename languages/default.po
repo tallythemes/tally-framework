@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digita_taxdomain\n"
-"POT-Creation-Date: 2014-08-20 10:40+0600\n"
-"PO-Revision-Date: 2014-08-20 10:40+0600\n"
+"POT-Creation-Date: 2014-09-23 09:21+0600\n"
+"PO-Revision-Date: 2014-09-23 09:21+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -17,316 +17,6 @@ msgstr ""
 
 #: ../comments.php:6
 msgid "This post is password protected. Enter the password to view comments."
-msgstr ""
-
-#: ../core/breadcrumb.php:24
-msgid "Home"
-msgstr ""
-
-#: ../core/breadcrumb.php:399
-msgid "g:i a"
-msgstr ""
-
-#: ../core/breadcrumb.php:402
-#, php-format
-msgid "Minute %1$s"
-msgstr ""
-
-#: ../core/breadcrumb.php:402
-msgid "i"
-msgstr ""
-
-#: ../core/breadcrumb.php:405
-msgid "g a"
-msgstr ""
-
-#: ../core/breadcrumb.php:416 ../core/breadcrumb.php:426
-#: ../core/breadcrumb.php:435 ../core/breadcrumb.php:446
-#: ../core/breadcrumb.php:448 ../core/breadcrumb.php:734
-msgid "Y"
-msgstr ""
-
-#: ../core/breadcrumb.php:417 ../core/breadcrumb.php:438
-#: ../core/breadcrumb.php:440 ../core/breadcrumb.php:738
-msgid "F"
-msgstr ""
-
-#: ../core/breadcrumb.php:420 ../core/breadcrumb.php:422
-#: ../core/breadcrumb.php:742
-msgid "d"
-msgstr ""
-
-#: ../core/breadcrumb.php:429 ../core/breadcrumb.php:431
-#, php-format
-msgid "Week %1$s"
-msgstr ""
-
-#: ../core/breadcrumb.php:457 ../core/breadcrumb.php:459
-#, php-format
-msgid "Search results for &quot;%1$s&quot;"
-msgstr ""
-
-#: ../core/breadcrumb.php:464
-msgid "404 Not Found"
-msgstr ""
-
-#: ../core/breadcrumb.php:471 ../core/breadcrumb.php:473
-#, php-format
-msgid "Page %d"
-msgstr ""
-
-#: ../core/breadcrumb.php:496
-msgid "Members"
-msgstr ""
-
-#: ../core/breadcrumb.php:505
-msgid "Personal"
-msgstr ""
-
-#: ../core/breadcrumb.php:537 ../core/breadcrumb.php:539
-#, php-format
-msgid "%s Directory"
-msgstr ""
-
-#: ../core/breadcrumb.php:541
-msgid "Create an Account"
-msgstr ""
-
-#: ../core/breadcrumb.php:543
-msgid "Activate your Account"
-msgstr ""
-
-#: ../core/breadcrumb.php:547 ../core/breadcrumb.php:550
-msgid "Create a Group"
-msgstr ""
-
-#: ../core/breadcrumb.php:554
-msgid "Create a Blog"
-msgstr ""
-
-#: ../core/breadcrumb.php:602 ../core/breadcrumb.php:635
-#: ../core/breadcrumb.php:650 ../core/breadcrumb.php:678
-#: ../core/option-tree/includes/ot-functions-admin.php:3422
-#: ../core/option-tree/includes/ot-functions-admin.php:3490
-#: ../core/option-tree/includes/ot-functions-admin.php:3491
-#: ../core/option-tree/includes/ot-functions-admin.php:3653
-#: ../core/option-tree/includes/ot-functions-admin.php:3654
-#: ../core/option-tree/includes/ot-functions-admin.php:3719
-#: ../core/option-tree/includes/ot-functions-admin.php:3720
-#: ../core/option-tree/includes/ot-functions-admin.php:3847
-#: ../core/option-tree/includes/ot-functions-admin.php:3848
-#: ../core/option-tree/includes/ot-functions-admin.php:3981
-#: ../core/option-tree/includes/ot-functions-admin.php:3982
-msgid "Edit"
-msgstr ""
-
-#: ../core/breadcrumb.php:627
-msgid "Split"
-msgstr ""
-
-#: ../core/breadcrumb.php:631
-msgid "Merge"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:161
-msgid "Install Required Plugins"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:162
-msgid "Install Plugins"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:163
-#, php-format
-msgid "Installing Plugin: %s"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:164
-msgid "Something went wrong."
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:175
-msgid "Return to Required Plugins Installer"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:176
-msgid "Return to the dashboard"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:177
-#: ../core/class-tgm-plugin-activation.php:1945
-msgid "Plugin activated successfully."
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:178
-msgid "The following plugin was activated successfully:"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:179
-#, php-format
-msgid "All plugins installed and activated successfully. %1$s"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:180
-msgid "Dismiss this notice"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:534
-#: ../core/class-tgm-plugin-activation.php:2162
-msgid "Return to the Dashboard"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1169
-msgid "Private Repository"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1172
-msgid "Pre-Packaged"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1177
-msgid "WordPress Repository"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1180
-msgid "Required"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1180
-msgid "Recommended"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1183
-msgid "Not Installed"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1185
-msgid "Installed But Not Activated"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1290
-#: ../core/class-tgm-plugin-activation.php:1398
-msgid "Install"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1312
-#: ../core/class-tgm-plugin-activation.php:1399
-#: ../core/option-tree/includes/ot-functions-admin.php:3778
-#: ../core/option-tree/includes/ot-functions-admin.php:3779
-msgid "Activate"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1361
-#, php-format
-msgid ""
-"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
-"Dashboard\">Return to the Dashboard</a>"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1377
-msgid "Plugin"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1378
-msgid "Source"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1379
-#: ../core/option-tree/includes/ot-functions-docs-page.php:35
-msgid "Type"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1380
-msgid "Status"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1928
-msgid "Install package not available."
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1929
-#, php-format
-msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1930
-msgid "Unpacking the package&#8230;"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1931
-msgid "Installing the plugin&#8230;"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1932
-msgid "Plugin install failed."
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1933
-msgid "Plugin installed successfully."
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:1944
-msgid "Plugin activation failed."
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:2058
-msgid ""
-"The installation and activation process is starting. This process may take a "
-"while on some hosts, so please be patient."
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:2059
-#, php-format
-msgid "%1$s installed and activated successfully."
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:2059
-#: ../core/class-tgm-plugin-activation.php:2068
-msgid "Show Details"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:2059
-#: ../core/class-tgm-plugin-activation.php:2068
-msgid "Hide Details"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:2060
-msgid "All installations and activations have been completed."
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:2061
-#, php-format
-msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:2065
-msgid ""
-"The installation process is starting. This process may take a while on some "
-"hosts, so please be patient."
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:2066
-#, php-format
-msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:2067
-#, php-format
-msgid "The installation of %1$s failed."
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:2068
-#, php-format
-msgid "%1$s installed successfully."
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:2069
-msgid "All installations have been completed."
-msgstr ""
-
-#: ../core/class-tgm-plugin-activation.php:2070
-#, php-format
-msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #: ../core/core.php:141
@@ -369,45 +59,163 @@ msgstr ""
 msgid "Footer Widget #6"
 msgstr ""
 
-#: ../core/custom-functions.php:390
+#: ../core/includes/breadcrumb.php:24
+msgid "Home"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:399
+msgid "g:i a"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:402
+#, php-format
+msgid "Minute %1$s"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:402
+msgid "i"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:405
+msgid "g a"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:416 ../core/includes/breadcrumb.php:426
+#: ../core/includes/breadcrumb.php:435 ../core/includes/breadcrumb.php:446
+#: ../core/includes/breadcrumb.php:448 ../core/includes/breadcrumb.php:734
+msgid "Y"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:417 ../core/includes/breadcrumb.php:438
+#: ../core/includes/breadcrumb.php:440 ../core/includes/breadcrumb.php:738
+msgid "F"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:420 ../core/includes/breadcrumb.php:422
+#: ../core/includes/breadcrumb.php:742
+msgid "d"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:429 ../core/includes/breadcrumb.php:431
+#, php-format
+msgid "Week %1$s"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:457 ../core/includes/breadcrumb.php:459
+#, php-format
+msgid "Search results for &quot;%1$s&quot;"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:464
+msgid "404 Not Found"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:471 ../core/includes/breadcrumb.php:473
+#, php-format
+msgid "Page %d"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:496
+msgid "Members"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:505
+msgid "Personal"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:537 ../core/includes/breadcrumb.php:539
+#, php-format
+msgid "%s Directory"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:541
+msgid "Create an Account"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:543
+msgid "Activate your Account"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:547 ../core/includes/breadcrumb.php:550
+msgid "Create a Group"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:554
+msgid "Create a Blog"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:602 ../core/includes/breadcrumb.php:635
+#: ../core/includes/breadcrumb.php:650 ../core/includes/breadcrumb.php:678
+#: ../core/option-tree/includes/ot-functions-admin.php:3422
+#: ../core/option-tree/includes/ot-functions-admin.php:3490
+#: ../core/option-tree/includes/ot-functions-admin.php:3491
+#: ../core/option-tree/includes/ot-functions-admin.php:3653
+#: ../core/option-tree/includes/ot-functions-admin.php:3654
+#: ../core/option-tree/includes/ot-functions-admin.php:3719
+#: ../core/option-tree/includes/ot-functions-admin.php:3720
+#: ../core/option-tree/includes/ot-functions-admin.php:3847
+#: ../core/option-tree/includes/ot-functions-admin.php:3848
+#: ../core/option-tree/includes/ot-functions-admin.php:3981
+#: ../core/option-tree/includes/ot-functions-admin.php:3982
+msgid "Edit"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:627
+msgid "Split"
+msgstr ""
+
+#: ../core/includes/breadcrumb.php:631
+msgid "Merge"
+msgstr ""
+
+#: ../core/includes/custom-functions.php:422
 #, php-format
 msgid "Page %s"
 msgstr ""
 
-#: ../core/custom-functions.php:439
+#: ../core/includes/custom-functions.php:471
 msgid "Search Results"
 msgstr ""
 
-#: ../core/custom-functions.php:441
+#: ../core/includes/custom-functions.php:473
 msgid "Not Found"
 msgstr ""
 
-#: ../core/custom-functions.php:442
+#: ../core/includes/custom-functions.php:474
 msgid "Blog"
 msgstr ""
 
-#: ../core/custom-functions.php:444
+#: ../core/includes/custom-functions.php:476
 msgid "Category Archive"
 msgstr ""
 
-#: ../core/custom-functions.php:447
+#: ../core/includes/custom-functions.php:479
 msgid "Author Archive"
 msgstr ""
 
-#: ../core/custom-functions.php:449
+#: ../core/includes/custom-functions.php:481
 msgid "Tag Archive"
 msgstr ""
 
-#: ../core/custom-functions.php:450
+#: ../core/includes/custom-functions.php:482
 msgid "Yearly Archive"
 msgstr ""
 
-#: ../core/custom-functions.php:451
+#: ../core/includes/custom-functions.php:483
 msgid "Monthly Archive"
 msgstr ""
 
-#: ../core/custom-functions.php:452
+#: ../core/includes/custom-functions.php:484
 msgid "Daily Archive"
+msgstr ""
+
+#: ../core/includes/custom-functions.php:802
+#: ../core/includes/custom-functions.php:803
+msgid "Search"
+msgstr ""
+
+#: ../core/includes/custom-functions.php:873
+msgid "View your shopping cart"
 msgstr ""
 
 #: ../core/metaboxs/_m_blog-template.php:11
@@ -1769,6 +1577,13 @@ msgstr ""
 msgid "Layout"
 msgstr ""
 
+#: ../core/option-tree/includes/ot-functions-admin.php:3778
+#: ../core/option-tree/includes/ot-functions-admin.php:3779
+#: ../core/vandors/class-tgm-plugin-activation.php:1312
+#: ../core/vandors/class-tgm-plugin-activation.php:1399
+msgid "Activate"
+msgstr ""
+
 #: ../core/option-tree/includes/ot-functions-admin.php:3815
 #: ../core/option-tree/includes/ot-meta-box-api.php:223
 #: ../core/option-tree/includes/ot-settings-api.php:595
@@ -1848,6 +1663,11 @@ msgid ""
 "option (underscores are acceptable). Also, the plugin will change all text "
 "you write in this field to lowercase and replace spaces and special "
 "characters with an underscore automatically."
+msgstr ""
+
+#: ../core/option-tree/includes/ot-functions-docs-page.php:35
+#: ../core/vandors/class-tgm-plugin-activation.php:1379
+msgid "Type"
 msgstr ""
 
 #: ../core/option-tree/includes/ot-functions-docs-page.php:36
@@ -3326,11 +3146,11 @@ msgstr ""
 msgid "Select a Icon"
 msgstr ""
 
-#: ../core/structure/_st_404.php:13
+#: ../core/structure/_st_404.php:8
 msgid "This is somewhat embarrassing, isn&rsquo;t it?"
 msgstr ""
 
-#: ../core/structure/_st_404.php:14
+#: ../core/structure/_st_404.php:9
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 
@@ -3342,39 +3162,38 @@ msgstr ""
 msgid "<h3>Trackbacks</h3>"
 msgstr ""
 
-#: ../core/structure/_st_post.php:37 ../core/structure/_st_post.php:283
+#: ../core/structure/_st_post.php:77 ../core/structure/_st_post.php:323
 #, php-format
 msgid "Permalink to %s"
 msgstr ""
 
-#: ../core/structure/_st_post.php:69 ../core/structure/_st_post.php:78
-#: ../core/structure/_st_search.php:32
+#: ../core/structure/_st_post.php:109 ../core/structure/_st_post.php:118
 msgid "Read More"
 msgstr ""
 
-#: ../core/structure/_st_post.php:89
+#: ../core/structure/_st_post.php:129
 msgid "Pages:"
 msgstr ""
 
-#: ../core/structure/_st_post.php:110
+#: ../core/structure/_st_post.php:150
 msgid "Nothing Found"
 msgstr ""
 
-#: ../core/structure/_st_post.php:111
+#: ../core/structure/_st_post.php:151
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
 
-#: ../core/structure/_st_post.php:147
+#: ../core/structure/_st_post.php:187
 msgid "About"
 msgstr ""
 
-#: ../core/structure/_st_post.php:166
+#: ../core/structure/_st_post.php:206
 msgid "Categories:"
 msgstr ""
 
-#: ../core/structure/_st_post.php:167
+#: ../core/structure/_st_post.php:207
 msgid "Tags:"
 msgstr ""
 
@@ -3391,4 +3210,193 @@ msgstr ""
 msgid ""
 "This is the %s. You can add content to this area by visiting your <a href="
 "\"%s\">Widgets Panel</a> and adding new widgets to this area."
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:161
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:162
+msgid "Install Plugins"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:163
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:164
+msgid "Something went wrong."
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:175
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:176
+msgid "Return to the dashboard"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:177
+#: ../core/vandors/class-tgm-plugin-activation.php:1945
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:178
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:179
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:180
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:534
+#: ../core/vandors/class-tgm-plugin-activation.php:2162
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1169
+msgid "Private Repository"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1172
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1177
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1180
+msgid "Required"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1180
+msgid "Recommended"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1183
+msgid "Not Installed"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1185
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1290
+#: ../core/vandors/class-tgm-plugin-activation.php:1398
+msgid "Install"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1361
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1377
+msgid "Plugin"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1378
+msgid "Source"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1380
+msgid "Status"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1928
+msgid "Install package not available."
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1929
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1930
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1931
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1932
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1933
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:1944
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:2058
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:2059
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:2059
+#: ../core/vandors/class-tgm-plugin-activation.php:2068
+msgid "Show Details"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:2059
+#: ../core/vandors/class-tgm-plugin-activation.php:2068
+msgid "Hide Details"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:2060
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:2061
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:2065
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:2066
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:2068
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:2069
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../core/vandors/class-tgm-plugin-activation.php:2070
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
