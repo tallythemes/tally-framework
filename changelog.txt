@@ -13,6 +13,7 @@
   * Update WOW JS
   * Added  SmoothScroll
   * Improve content output hook and make the system more simple
+  * Improve Code
 
 
 2014-08-28 - Version 0.8.3

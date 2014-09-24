@@ -53,9 +53,9 @@ if('tally_do_breadcrumb'):
 	function tally_do_breadcrumb(){
 		if(tally_is_subheader() == 'no') return;
 		
-		echo '<span class="breadcrumbs">';
+		echo '<div class="breadcrumbs">';
 			echo  apply_filters('tally_breadcrumb', tally_breadcrumb2());
-		echo '</span>';
+		echo '</div>';
 	}
 	add_action('tally_after_header', 'tally_do_breadcrumb', 10);
 endif;

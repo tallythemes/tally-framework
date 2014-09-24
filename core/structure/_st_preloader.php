@@ -2,9 +2,9 @@
 /*
  	topbar Open Div
 --------------------------------------------*/
-add_action('wp_head', 'tally_do_preloader');
+add_action('tally_before_header', 'tally_do_preloader', 1);
 function tally_do_preloader(){
-	//if(tally_is_preloader() == 'no') return;
+	if(tally_is_preloader() == 'no') return;
 	
 	$content = '<div id="tally_preloader">';
 		$content .= '<div class="tally-spinner">';

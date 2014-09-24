@@ -44,6 +44,24 @@ function tally_branding_ot_options($custom_settings){
 			'class'       => '',
 			'choices'     => '',
 		);
+		
+		$custom_settings['settings']['preloader'] = array(
+			'id'          => 'preloader',
+			'label'       => __('Site PreLoader', 'tally_taxdomain'),
+			'desc'        => __('Enable or Disable Site PreLoader', 'tally_taxdomain'),
+			'std'         => tally_option_std('preloader'),
+			'type'        => 'select',
+			'section'     => 'branding',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => array(
+				 array( 'label' => '--', 'value' => '' ),
+				 array( 'label' => 'Yes', 'value' => 'yes' ),
+				 array( 'label' => 'No', 'value' => 'no'),
+			)
+		);
 	endif;
 	
 	return $custom_settings;

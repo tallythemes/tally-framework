@@ -184,11 +184,11 @@ function tally_do_author_box_single(){
 
 	//* The author box markup, contextual
 
-	$title = apply_filters( 'genesis_author_box_title', sprintf( '%s <span itemprop="name">%s</span>', __( 'About', 'genesis' ), get_the_author() ), $context );
+	$title = apply_filters( 'tally_author_box_title', sprintf( '%s <span>%s</span>', __( 'About', 'tally_taxdomain' ), get_the_author() ), $context );
 
 	$pattern  = '<section class="author-box">';
 	$pattern .= $gravatar.'<h1 class="author-box-title">'.$title.'</h1>';
-	$pattern .= '<div class="author-box-content" itemprop="description">'.$description.'</div>';
+	$pattern .= '<div class="author-box-content">'.$description.'</div>';
 	$pattern .= '<div class="clear"></div>';
 	$pattern .= '</section>';
 	
