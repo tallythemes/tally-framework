@@ -1,6 +1,6 @@
 *** Tally Framework Changelog ***
 
-2014-09-23 - Version 0.8.4
+2014-09-28 - Version 0.8.5.1
   * Improve Color option
   * improve admin images
   * Add WooCommerce Cat function

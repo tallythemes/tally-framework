@@ -60,5 +60,10 @@ License:  Licensed under the MIT license - http://opensource.org/licenses/MIT
 Copyright:  Balazs Galambosi AND Michael Herf
 
 
+html5.js - https://code.google.com/p/html5shiv/
+License:  Dual licensed under the MIT or GPL Version 2 licenses
+Copyright:  @afarkas @jdalton @jon_neal @rem
+
+
 Images -
 In the theme we don't use any images to display on frontend. There are some images with the javascript prettyPhoto. Othere images that show in the theme option are created by Us.
