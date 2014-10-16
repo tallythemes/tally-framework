@@ -1,3 +1,12 @@
+body #option-tree-settings-api > .ui-tabs{  
+-webkit-box-shadow: inset 205px 0 0 #f1f1f1, inset 206px 0 0 #ccc, 0 1px 3px rgba(0,0,0,0.05);
+-moz-box-shadow: inset 205px 0 0 #f1f1f1, inset 206px 0 0 #ccc, 0 1px 3px rgba(0,0,0,0.05);
+box-shadow: inset 205px 0 0 #f1f1f1, inset 206px 0 0 #ccc, 0 1px 3px rgba(0,0,0,0.05);
+}
+body .wrap.settings-wrap .ui-tabs-nav{
+	width:210px;
+}
+
 .tally-ot-section{  padding:5px 20px; display:block; text-align:center; margin-bottom:0px; }
 .tally-ot-section h2{ color:#FFF; }
 .ot-background-group { padding-top: 5px; }
