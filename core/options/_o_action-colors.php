@@ -1,5 +1,5 @@
 <?php
-add_action('wp_head', 'tally_op_content_color_option_action');
+//add_action('wp_head', 'tally_op_content_color_option_action');
 function tally_op_content_color_option_action(){
 	?>
     <style type="text/css">
