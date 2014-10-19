@@ -284,7 +284,6 @@ class tally_loader{
 		tally_file_dri('options/_o_social-icons.php');
 		tally_file_dri('options/_o_footer.php');
 		tally_file_dri('options/_o_integration.php');
-		tally_file_dri('options/_o_action-colors.php');
 		tally_file_dri('options/_o_action.php');
 		
 		
