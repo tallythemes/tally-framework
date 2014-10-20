@@ -50,7 +50,7 @@ $color_footer_bg = tally_option('color_footer_bg');
 <?php
 /*Branding*/
 if(tally_option('site_layout') == 'box'){
-	echo '#wrapper{max-width: 1100px; margin: 30px auto; 
+	echo '#wrapper{max-width: 1050px; margin: 30px auto; 
 	-webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.40);
 	-moz-box-shadow:    0px 0px 12px rgba(0, 0, 0, 0.40);
 	box-shadow:         0px 0px 12px rgba(0, 0, 0, 0.40);}';
