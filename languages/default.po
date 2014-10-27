@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digita_taxdomain\n"
-"POT-Creation-Date: 2014-09-23 09:21+0600\n"
-"PO-Revision-Date: 2014-09-23 09:21+0600\n"
+"POT-Creation-Date: 2014-10-27 09:49+0600\n"
+"PO-Revision-Date: 2014-10-27 09:49+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.3\n"
+"X-Generator: Poedit 1.6.10\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -410,21 +410,6 @@ msgstr ""
 
 #: ../core/metaboxs/_m_post-formats.php:200
 msgid "Status URL (OEMBED) OR EMBED CODE"
-msgstr ""
-
-#: ../core/option-tree/ot-loader.php:21
-msgid ""
-"OptionTree is installed as a plugin and also embedded in your current theme. "
-"Please deactivate the plugin to load the theme dependent version of "
-"OptionTree, and remove this warning."
-msgstr ""
-
-#: ../core/option-tree/ot-loader.php:744
-#: ../core/option-tree/assets/theme-mode/demo-theme-options.php:639
-#: ../core/option-tree/includes/ot-functions-admin.php:652
-#: ../core/option-tree/includes/ot-functions-docs-page.php:374
-#: ../core/option-tree/includes/ot-functions-settings-page.php:170
-msgid "Send to OptionTree"
 msgstr ""
 
 #: ../core/option-tree/assets/theme-mode/demo-meta-boxes.php:23
@@ -1054,6 +1039,14 @@ msgid ""
 "feature. If you import the theme options and have uploaded media on one site "
 "the old URI will not reflect the URI of your new site. You will have to re-"
 "upload or %s any media to your new server and change the URIs if necessary."
+msgstr ""
+
+#: ../core/option-tree/assets/theme-mode/demo-theme-options.php:639
+#: ../core/option-tree/includes/ot-functions-admin.php:652
+#: ../core/option-tree/includes/ot-functions-docs-page.php:374
+#: ../core/option-tree/includes/ot-functions-settings-page.php:170
+#: ../core/option-tree/ot-loader.php:744
+msgid "Send to OptionTree"
 msgstr ""
 
 #: ../core/option-tree/assets/theme-mode/demo-theme-options.php:653
@@ -2700,6 +2693,13 @@ msgstr ""
 msgid "Reset Options"
 msgstr ""
 
+#: ../core/option-tree/ot-loader.php:21
+msgid ""
+"OptionTree is installed as a plugin and also embedded in your current theme. "
+"Please deactivate the plugin to load the theme dependent version of "
+"OptionTree, and remove this warning."
+msgstr ""
+
 #: ../core/options/_o_branding.php:9
 msgid "Site Logo"
 msgstr ""
@@ -2724,6 +2724,14 @@ msgstr ""
 
 #: ../core/options/_o_branding.php:37
 msgid "Please uplod a Favicon icon"
+msgstr ""
+
+#: ../core/options/_o_branding.php:50
+msgid "Site PreLoader"
+msgstr ""
+
+#: ../core/options/_o_branding.php:51
+msgid "Enable or Disable Site PreLoader"
 msgstr ""
 
 #: ../core/options/_o_colors.php:10
