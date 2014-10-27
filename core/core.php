@@ -46,7 +46,7 @@ class tally_loader{
 		$this->constants();
 		$this->theme_supports();
 		$this->theme_menu();
-		$this->register_sidebar();
+		add_action('widgets_init', array($this, 'register_sidebar'));
 		$this->inludes();
 	}
 	

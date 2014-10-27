@@ -276,11 +276,11 @@ if(tally_option('body_font_size')){ echo 'body{ font-size:'.tally_option('body_f
 	$topbar_bg = tally_option('color_topbar_bg');
 	if(is_array($topbar_bg) && !empty($topbar_bg)){
 		if( isset($topbar_bg['background-color']) && ($topbar_bg['background-color'] != '') ){ echo 'background-color:'.$topbar_bg['background-color'].';'; }
-		if( isset($topbar_bg['background-repeat']) && ($topbar_bg['background-repeat'] != '') ){ echo 'background-color:'.$topbar_bg['background-repeat'].';'; }
+		if( isset($topbar_bg['background-repeat']) && ($topbar_bg['background-repeat'] != '') ){ echo 'background-repeat:'.$topbar_bg['background-repeat'].';'; }
 		if( isset($topbar_bg['background-attachment'])&&($topbar_bg['background-attachment'] !='')){echo'background-attachment:'.$topbar_bg['background-attachment'].';'; }
 		if( isset($topbar_bg['background-position']) && ($topbar_bg['background-position'] != '') ){ echo 'background-position:'.$topbar_bg['background-position'].';'; }
 		if( isset($topbar_bg['background-size']) && ($topbar_bg['background-size'] != '') ){ echo 'background-size:'.$topbar_bg['background-size'].';'; }
-		if( isset($topbar_bg['background-image']) && ($topbar_bg['background-image'] != '') ){ echo 'background-image:'.$topbar_bg['background-image'].';'; }
+		if( isset($topbar_bg['background-image']) && ($topbar_bg['background-image'] != '') ){ echo 'background-image:url('.$topbar_bg['background-image'].');'; }
 	}
 	?>	
 }
@@ -291,11 +291,11 @@ if(tally_option('body_font_size')){ echo 'body{ font-size:'.tally_option('body_f
 	$header_bg = tally_option('color_header_bg');
 	if(is_array($header_bg) && !empty($header_bg)){
 		if( isset($header_bg['background-color']) && ($header_bg['background-color'] != '') ){ echo 'background-color:'.$header_bg['background-color'].';'; }
-		if( isset($header_bg['background-repeat']) && ($header_bg['background-repeat'] != '') ){ echo 'background-color:'.$header_bg['background-repeat'].';'; }
+		if( isset($header_bg['background-repeat']) && ($header_bg['background-repeat'] != '') ){ echo 'background-repeat:'.$header_bg['background-repeat'].';'; }
 		if( isset($header_bg['background-attachment'])&&($header_bg['background-attachment'] !='')){echo'background-attachment:'.$header_bg['background-attachment'].';'; }
 		if( isset($header_bg['background-position']) && ($header_bg['background-position'] != '') ){ echo 'background-position:'.$header_bg['background-position'].';'; }
 		if( isset($header_bg['background-size']) && ($header_bg['background-size'] != '') ){ echo 'background-size:'.$header_bg['background-size'].';'; }
-		if( isset($header_bg['background-image']) && ($header_bg['background-image'] != '') ){ echo 'background-image:'.$header_bg['background-image'].';'; }
+		if( isset($header_bg['background-image']) && ($header_bg['background-image'] != '') ){ echo 'background-image:url('.$header_bg['background-image'].');'; }
 	}
 	?>	
 }
@@ -327,11 +327,11 @@ if(tally_option('body_font_size')){ echo 'body{ font-size:'.tally_option('body_f
 	$subheader_bg = tally_option('color_subheader_bg');
 	if(is_array($subheader_bg) && !empty($subheader_bg)){
 		if( isset($subheader_bg['background-color']) && ($subheader_bg['background-color'] != '') ){ echo 'background-color:'.$subheader_bg['background-color'].';'; }
-		if( isset($subheader_bg['background-repeat']) && ($subheader_bg['background-repeat'] != '') ){ echo 'background-color:'.$subheader_bg['background-repeat'].';'; }
+		if( isset($subheader_bg['background-repeat']) && ($subheader_bg['background-repeat'] != '') ){ echo 'background-repeat:'.$subheader_bg['background-repeat'].';'; }
 		if( isset($subheader_bg['background-attachment'])&&($subheader_bg['background-attachment']!='')){echo 'background-attachment:'.$subheader_bg['background-attachment'].';';}
 		if( isset($subheader_bg['background-position']) && ($subheader_bg['background-position'] != '') ){ echo 'background-position:'.$subheader_bg['background-position'].';'; }
 		if( isset($subheader_bg['background-size']) && ($subheader_bg['background-size'] != '') ){ echo 'background-size:'.$subheader_bg['background-size'].';'; }
-		if( isset($subheader_bg['background-image']) && ($subheader_bg['background-image'] != '') ){ echo 'background-image:'.$subheader_bg['background-image'].';'; }
+		if( isset($subheader_bg['background-image']) && ($subheader_bg['background-image'] != '') ){ echo 'background-image:url('.$subheader_bg['background-image'].');'; }
 	}
 	?>	
 }
@@ -342,11 +342,11 @@ if(tally_option('body_font_size')){ echo 'body{ font-size:'.tally_option('body_f
 	$main_bg = tally_option('color_content_bg');
 	if(is_array($main_bg) && !empty($main_bg)){
 		if( isset($main_bg['background-color']) && ($main_bg['background-color'] != '') ){ echo 'background-color:'.$main_bg['background-color'].';'; }
-		if( isset($main_bg['background-repeat']) && ($main_bg['background-repeat'] != '') ){ echo 'background-color:'.$main_bg['background-repeat'].';'; }
+		if( isset($main_bg['background-repeat']) && ($main_bg['background-repeat'] != '') ){ echo 'background-repeat:'.$main_bg['background-repeat'].';'; }
 		if( isset($main_bg['background-attachment'])&&($main_bg['background-attachment'] !='')){echo'background-attachment:'.$main_bg['background-attachment'].';'; }
 		if( isset($main_bg['background-position']) && ($main_bg['background-position'] != '') ){ echo 'background-position:'.$main_bg['background-position'].';'; }
 		if( isset($main_bg['background-size']) && ($main_bg['background-size'] != '') ){ echo 'background-size:'.$main_bg['background-size'].';'; }
-		if( isset($main_bg['background-image']) && ($main_bg['background-image'] != '') ){ echo 'background-image:'.$main_bg['background-image'].';'; }
+		if( isset($main_bg['background-image']) && ($main_bg['background-image'] != '') ){ echo 'background-image:url('.$main_bg['background-image'].');'; }
 	}
 	?>	
 }
@@ -357,11 +357,11 @@ if(tally_option('body_font_size')){ echo 'body{ font-size:'.tally_option('body_f
 	$fwidget_bg = tally_option('color_fwidget_bg');
 	if(is_array($fwidget_bg) && !empty($fwidget_bg)){
 		if( isset($fwidget_bg['background-color']) && ($fwidget_bg['background-color'] != '') ){ echo 'background-color:'.$fwidget_bg['background-color'].';'; }
-		if( isset($fwidget_bg['background-repeat']) && ($fwidget_bg['background-repeat'] != '') ){ echo 'background-color:'.$fwidget_bg['background-repeat'].';'; }
+		if( isset($fwidget_bg['background-repeat']) && ($fwidget_bg['background-repeat'] != '') ){ echo 'background-repeat:'.$fwidget_bg['background-repeat'].';'; }
 		if( isset($fwidget_bg['background-attachment'])&&($fwidget_bg['background-attachment']!='')){echo'background-attachment:'.$fwidget_bg['background-attachment'].';';}
 		if( isset($fwidget_bg['background-position']) && ($fwidget_bg['background-position'] != '')){echo 'background-position:'.$fwidget_bg['background-position'].';'; }
 		if( isset($fwidget_bg['background-size']) && ($fwidget_bg['background-size'] != '') ){ echo 'background-size:'.$fwidget_bg['background-size'].';'; }
-		if( isset($fwidget_bg['background-image']) && ($fwidget_bg['background-image'] != '') ){ echo 'background-image:'.$fwidget_bg['background-image'].';'; }
+		if( isset($fwidget_bg['background-image']) && ($fwidget_bg['background-image'] != '') ){ echo 'background-image:url('.$fwidget_bg['background-image'].');'; }
 	}
 	?>	
 }
@@ -372,11 +372,11 @@ if(tally_option('body_font_size')){ echo 'body{ font-size:'.tally_option('body_f
 	$footer_bg = tally_option('color_footer_bg');
 	if(is_array($footer_bg) && !empty($footer_bg)){
 		if( isset($footer_bg['background-color']) && ($footer_bg['background-color'] != '') ){ echo 'background-color:'.$footer_bg['background-color'].';'; }
-		if( isset($footer_bg['background-repeat']) && ($footer_bg['background-repeat'] != '') ){ echo 'background-color:'.$footer_bg['background-repeat'].';'; }
+		if( isset($footer_bg['background-repeat']) && ($footer_bg['background-repeat'] != '') ){ echo 'background-repeat:'.$footer_bg['background-repeat'].';'; }
 		if(isset($footer_bg['background-attachment'])&&($footer_bg['background-attachment']!='')){echo'background-attachment:'.$footer_bg['background-attachment'].';';}
 		if( isset($footer_bg['background-position']) && ($footer_bg['background-position'] != '')){echo 'background-position:'.$footer_bg['background-position'].';'; }
 		if( isset($footer_bg['background-size']) && ($footer_bg['background-size'] != '') ){ echo 'background-size:'.$footer_bg['background-size'].';'; }
-		if( isset($footer_bg['background-image']) && ($footer_bg['background-image'] != '') ){ echo 'background-image:'.$footer_bg['background-image'].';'; }
+		if( isset($footer_bg['background-image']) && ($footer_bg['background-image'] != '') ){ echo 'background-image:url('.$footer_bg['background-image'].');'; }
 	}
 	?>	
 }
@@ -393,6 +393,8 @@ body .menu_area #nav ul > .current-menu-item a{
 }
 
 <?php 
+do_action('tally_dynamic_css');
+
 /*-Integration-*/
 if(tally_option('custom_css')){ echo tally_option('custom_css'); }
 ?>
