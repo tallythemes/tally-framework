@@ -1,4 +1,12 @@
 <?php
+/**
+     * Default Theme Options loader
+     *
+     * @return    void
+     *
+     * @access    public
+     * @since     0.8.6
+-------------------------------------------------------*/
 add_filter('tally_option_std', 'tally_option_std_filter');
 function tally_option_std_filter($option){
 	$dri = '';

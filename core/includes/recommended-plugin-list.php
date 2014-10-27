@@ -1,5 +1,11 @@
 <?php
-/*  TGM Plugin
+/**
+     * TGM Plugin Activation
+     *
+     * @return    void
+     *
+     * @access    public
+     * @since     0.8.6
 -------------------------------------------------------*/
 add_action( 'tgmpa_register', 'tally_register_required_plugins_list' );
 function tally_register_required_plugins_list() {
