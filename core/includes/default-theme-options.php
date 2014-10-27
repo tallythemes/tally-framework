@@ -10,15 +10,19 @@
 add_filter('tally_option_std', 'tally_option_std_filter');
 function tally_option_std_filter($option){
 	$dri = '';
-	if(file_exists(TALLY_CHILD_DRI . '/demo/theme-options.txt')){
-		$dri = TALLY_CHILD_DRI . '/demo/theme-options.txt';
-	}elseif(file_exists(TALLY_DRI . '/demo/theme-options.txt')){
-		$dri = TALLY_DRI . '/demo/theme-options.txt';
+	if(file_exists(TALLY_CHILD_DRI . '/demo/theme-options.php')){
+		$dri = TALLY_CHILD_DRI . '/demo/theme-options.php';
+	}elseif(file_exists(TALLY_DRI . '/demo/theme-options.php')){
+		$dri = TALLY_DRI . '/demo/theme-options.php';
 	}
 		
 	
 	if(file_exists($dri)){
-		$default_options_file = file_get_contents( $dri);
+		ob_start();
+			include($dri);
+			$default_options_file = ob_get_contents();
+		ob_end_clean();
+		
 		$default_options = unserialize( tally_decode( $default_options_file ) );
 		
 		if(is_array($default_options)){
