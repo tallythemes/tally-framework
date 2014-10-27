@@ -165,6 +165,20 @@ function tally_typography_ot_options($custom_settings){
 			'class'       => '',
 			'choices'     => '',
 		);
+	elseif( (tally_check() != true ) && ( TALLY_THEME_STORE_URL != '') ):
+		$custom_settings['sections'][] = array( 'id' => 'typography','title' => 'Typography');
+		$custom_settings['settings']['option_typography_image_'] = array(
+			'id'          => 'option_typography_image_',
+			'label'       => '',
+			'desc'        => '<a href="'.TALLY_THEME_STORE_URL.'" target="_blank"><img src="'.TALLY_URL.'/core/assets/images/admin/option-typography.png" /></a>',
+			'std'         => '',
+			'type'        => 'textblock',
+			'section'     => 'typography',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
 	endif;
 	
 	return $custom_settings;

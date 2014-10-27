@@ -27,7 +27,7 @@ class tally_loader{
 		add_filter( 'embed_oembed_html', array( $this, 'responsive_embed_output' ), 1, 3 );
       
 		/* load Theme */
-		add_action( 'after_setup_theme', array( $this, 'load_tally' ), 2 );
+		add_action( 'after_setup_theme', array( $this, 'load_tally' ), 3 );
       
     }
 	
@@ -85,6 +85,7 @@ class tally_loader{
 		if(!defined('TALLY_BLOG_G_IMG_W')){ define('TALLY_BLOG_G_IMG_W', 960); }
 		if(!defined('TALLY_BLOG_G_IMG_H')){ define('TALLY_BLOG_G_IMG_H', 500); }
 		if(!defined('TALLY_IMAGE_RETINA_SUPPORT')){ define('TALLY_IMAGE_RETINA_SUPPORT', false); }
+		if(!defined('TALLY_THEME_STORE_URL')){ define('TALLY_THEME_STORE_URL', ''); }
 		
 		/*  Constant for remove or active 
 			some part of the theme

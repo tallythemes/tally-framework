@@ -279,5 +279,20 @@ function tally_layout_ot_options($custom_settings){
 		);
 	endif;
 	
+	if( (tally_check() != true ) && ( TALLY_THEME_STORE_URL != '') ):
+		$custom_settings['settings']['option_layout_image_'] = array(
+			'id'          => 'option_layout_image_',
+			'label'       => '',
+			'desc'        => '<a href="'.TALLY_THEME_STORE_URL.'" target="_blank"><img src="'.TALLY_URL.'/core/assets/images/admin/option-layout.png" /></a>',
+			'std'         => '',
+			'type'        => 'textblock',
+			'section'     => 'layout',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
+	endif;
+	
 	return $custom_settings;
 }

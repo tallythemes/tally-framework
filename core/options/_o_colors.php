@@ -748,6 +748,21 @@ function tally_color_ot_options($custom_settings){
 			'choices'     => ''
 		);
 		endif;
+		
+	elseif( (tally_check() != true ) && ( TALLY_THEME_STORE_URL != '') ):
+		$custom_settings['sections'][] = array( 'id' => 'color','title' => 'Color Option');
+		$custom_settings['settings']['option_color_image_'] = array(
+			'id'          => 'option_color_image_',
+			'label'       => '',
+			'desc'        => '<a href="'.TALLY_THEME_STORE_URL.'" target="_blank"><img src="'.TALLY_URL.'/core/assets/images/admin/option-color.png" /></a>',
+			'std'         => '',
+			'type'        => 'textblock',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
 	endif;
 	
 	return $custom_settings;

@@ -62,6 +62,20 @@ function tally_branding_ot_options($custom_settings){
 				 array( 'label' => 'No', 'value' => 'no'),
 			)
 		);
+		
+	elseif( (tally_check() != true ) && ( TALLY_THEME_STORE_URL != '') ):
+		$custom_settings['settings']['option_branding_image_'] = array(
+			'id'          => 'option_branding_image_',
+			'label'       => '',
+			'desc'        => '<a href="'.TALLY_THEME_STORE_URL.'" target="_blank"><img src="'.TALLY_URL.'/core/assets/images/admin/option-branding.png" /></a>',
+			'std'         => '',
+			'type'        => 'textblock',
+			'section'     => 'branding',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
 	endif;
 	
 	return $custom_settings;
