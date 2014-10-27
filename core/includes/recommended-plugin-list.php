@@ -11,6 +11,11 @@ add_action( 'tgmpa_register', 'tally_register_required_plugins_list' );
 function tally_register_required_plugins_list() {
 	$dafults = array(
 		array(
+            'name'      => 'Option Tree',
+            'slug'      => 'option-tree',
+            'required'  => true,
+		),
+		array(
             'name'      => 'Contact Form 7',
             'slug'      => 'contact-form-7',
             'required'  => true,

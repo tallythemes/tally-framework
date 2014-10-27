@@ -228,14 +228,9 @@ class tally_loader{
 	public function load_option_tree(){
 		/* Loading the Option Tree
 		----------------------------------*/
-		add_filter( 'ot_theme_mode', '__return_true' );
 		add_filter( 'ot_show_pages', '__return_false' );
 		add_filter( 'ot_override_forced_textarea_simple', '__return_true' );
-		
-		if ( ! class_exists( 'OT_Loader' ) ) {
-			add_filter( 'ot_header_version_text', '__return_false' );
-			load_template( trailingslashit( get_template_directory() ) . 'core/option-tree/ot-loader.php' );
-		}	
+		add_filter( 'ot_header_version_text', '__return_false' );
 	}
 	
 	
@@ -269,10 +264,12 @@ class tally_loader{
 		
 		/* Loading the Metaboxes
 		----------------------------------*/
-		tally_file_dri('metaboxs/_m_post-formats.php');
-		tally_file_dri('metaboxs/_m_blog-template.php');
-		tally_file_dri('metaboxs/_m_pages.php');
-		tally_file_dri('metaboxs/_m_action.php');
+		if(function_exists('ot_register_meta_box()')){
+			tally_file_dri('metaboxs/_m_post-formats.php');
+			tally_file_dri('metaboxs/_m_blog-template.php');
+			tally_file_dri('metaboxs/_m_pages.php');
+			tally_file_dri('metaboxs/_m_action.php');
+		}
 		
 		
 		/* Loading the Options
