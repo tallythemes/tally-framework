@@ -1,0 +1,8 @@
+body{ direction: rtl;unicode-bidi: embed;}
+caption,
+th,
+td {text-align: right;}
+#nav li {float: right; }
+.commentlist > li.comment {margin-right:60px; width: 90%;}
+.commentlist .avatar {right: -60px;}
+#comments #respond input[type="submit"] {float: right;}
