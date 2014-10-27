@@ -306,8 +306,8 @@ class tally_loader{
 		tally_file_dri('structure/_st_home.php');
 		tally_file_dri('structure/_st_single.php');
 		tally_file_dri('structure/_st_archive.php');
-		tally_file_dri('structure/_st_blog-template.php');
-		tally_file_dri('structure/_st_page-full-width.php');
+		tally_file_dri('structure/_st_template-blog.php');
+		tally_file_dri('structure/_st_template-full-width.php');
 		
 		tally_file_dri('structure/_st_preloader.php');
 	}
