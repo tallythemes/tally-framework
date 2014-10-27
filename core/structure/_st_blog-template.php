@@ -2,7 +2,7 @@
 add_action('tally_loop', 'tally_do_blog_page_template_content');
 function tally_do_blog_page_template_content(){
 	
-	if(is_page_template( 'page-blog.php' )){
+	if(is_page_template( 'template-blog.php' )){
 		global $wp_query, $more;
 		$paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 		$args = array(
