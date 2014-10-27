@@ -263,6 +263,7 @@ class tally_loader{
 		include('includes/scripts-loader.php');
 		include('includes/color-management.php');
 		include('includes/default-theme-options.php');
+		if(class_exists( 'TGM_Plugin_Activation')){ include('includes/recommended-plugin-list.php'); }
 		
 		
 		
