@@ -1,5 +1,20 @@
 *** Tally Framework Changelog ***
 
+2014-18-28 - Version 0.8.5.1
+  * Added option images
+  * Added option data loader
+  * Option Tree is now out side of the theme.
+  * TGM class is now active in the theme
+  * Update .PO file
+  * Improve code queality
+  * Improve Admin CSS
+  * Add all Custom CSS to dynamic.css.php file
+  * Remove Unused files
+  * Improve Load Speed
+  * Add RTL css
+  * change custom template name "template-" form "page-"
+	
+
 2014-09-28 - Version 0.8.5.1
   * Improve Color option
   * improve admin images

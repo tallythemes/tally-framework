@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digita_taxdomain\n"
-"POT-Creation-Date: 2014-10-27 16:02+0600\n"
-"PO-Revision-Date: 2014-10-27 16:02+0600\n"
+"POT-Creation-Date: 2014-10-28 22:35+0600\n"
+"PO-Revision-Date: 2014-10-28 22:35+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -19,43 +19,43 @@ msgstr ""
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
 
-#: ../core/core.php:142
+#: ../core/core.php:141
 msgid "Primary Sidebar"
 msgstr ""
 
-#: ../core/core.php:144
+#: ../core/core.php:143
 msgid "Primary Sidebar Widgets"
 msgstr ""
 
-#: ../core/core.php:151
+#: ../core/core.php:150
 msgid "Sidebar Alt"
 msgstr ""
 
-#: ../core/core.php:153
+#: ../core/core.php:152
 msgid "Sidebar Widgets"
 msgstr ""
 
-#: ../core/core.php:160 ../core/core.php:162
+#: ../core/core.php:159 ../core/core.php:161
 msgid "Footer Widget #1"
 msgstr ""
 
-#: ../core/core.php:171 ../core/core.php:173
+#: ../core/core.php:170 ../core/core.php:172
 msgid "Footer Widget #2"
 msgstr ""
 
-#: ../core/core.php:181 ../core/core.php:183
+#: ../core/core.php:180 ../core/core.php:182
 msgid "Footer Widget #3"
 msgstr ""
 
-#: ../core/core.php:191 ../core/core.php:193
+#: ../core/core.php:190 ../core/core.php:192
 msgid "Footer Widget #4"
 msgstr ""
 
-#: ../core/core.php:200 ../core/core.php:202
+#: ../core/core.php:199 ../core/core.php:201
 msgid "Footer Widget #5"
 msgstr ""
 
-#: ../core/core.php:209 ../core/core.php:211
+#: ../core/core.php:208 ../core/core.php:210
 msgid "Footer Widget #6"
 msgstr ""
 
@@ -207,38 +207,38 @@ msgstr ""
 msgid "View your shopping cart"
 msgstr ""
 
-#: ../core/includes/recommended-plugin-list.php:40
+#: ../core/includes/recommended-plugin-list.php:41
 #: ../core/vandors/class-tgm-plugin-activation.php:161
 msgid "Install Required Plugins"
 msgstr ""
 
-#: ../core/includes/recommended-plugin-list.php:41
+#: ../core/includes/recommended-plugin-list.php:42
 #: ../core/vandors/class-tgm-plugin-activation.php:162
 msgid "Install Plugins"
 msgstr ""
 
-#: ../core/includes/recommended-plugin-list.php:42
+#: ../core/includes/recommended-plugin-list.php:43
 #: ../core/vandors/class-tgm-plugin-activation.php:163
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr ""
 
-#: ../core/includes/recommended-plugin-list.php:43
+#: ../core/includes/recommended-plugin-list.php:44
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: ../core/includes/recommended-plugin-list.php:54
+#: ../core/includes/recommended-plugin-list.php:55
 #: ../core/vandors/class-tgm-plugin-activation.php:175
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
-#: ../core/includes/recommended-plugin-list.php:55
+#: ../core/includes/recommended-plugin-list.php:56
 #: ../core/vandors/class-tgm-plugin-activation.php:177
 #: ../core/vandors/class-tgm-plugin-activation.php:1945
 msgid "Plugin activated successfully."
 msgstr ""
 
-#: ../core/includes/recommended-plugin-list.php:56
+#: ../core/includes/recommended-plugin-list.php:57
 #, php-format
 msgid "All plugins installed and activated successfully. %s"
 msgstr ""
