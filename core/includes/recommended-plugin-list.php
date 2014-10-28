@@ -14,6 +14,7 @@ function tally_register_required_plugins_list() {
             'name'      => 'Option Tree',
             'slug'      => 'option-tree',
             'required'  => true,
+			'force_activation' => true,
 		),
 		array(
             'name'      => 'Contact Form 7',
