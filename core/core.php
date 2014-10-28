@@ -27,8 +27,7 @@ class tally_loader{
 		add_filter( 'embed_oembed_html', array( $this, 'responsive_embed_output' ), 1, 3 );
       
 		/* load Theme */
-		add_action( 'after_setup_theme', array( $this, 'load_tally' ), 3 );
-      
+		add_action( 'after_setup_theme', array( $this, 'load_tally' ), 3);
     }
 	
 	
@@ -360,5 +359,3 @@ class tally_loader{
 }
 
 endif;
-
-new tally_loader;
