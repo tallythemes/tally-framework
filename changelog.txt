@@ -1,6 +1,9 @@
 *** Tally Framework Changelog ***
 
-2014-18-28 - Version 0.8.5.1
+2014-18-28 - Version 0.8.6.1
+  * Fix a Small Bug.
+
+2014-18-28 - Version 0.8.6
   * Added option images
   * Added option data loader
   * Option Tree is now out side of the theme.
