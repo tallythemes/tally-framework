@@ -88,9 +88,8 @@ endif;
 -------------------------------------------------*/
 if(!function_exists('tally_check')):
 	function tally_check(){
-		$tally_theme_info = wp_get_theme();
 		$tally = TALLY_NAME.'512';
-		$child =  $tally_theme_info->get( 'Name' );	
+		$child =  TALLY_THEME_NAME;	
 		$filter = TALLY_NAME.md5($tally.$child);
 		return apply_filters($filter, false);
 	}
@@ -98,9 +97,8 @@ endif;
 
 if(!function_exists('tally_check_see')):
 	function tally_check_see(){
-		$tally_theme_info = wp_get_theme();
 		$tally = TALLY_NAME.'512';
-		$child =  $tally_theme_info->get( 'Name' );	
+		$child =  TALLY_THEME_NAME;	
 		$filter = TALLY_NAME.md5($tally.$child);
 		return $filter;
 	}

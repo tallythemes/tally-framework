@@ -85,6 +85,7 @@ class tally_loader{
 		if(!defined('TALLY_BLOG_G_IMG_H')){ define('TALLY_BLOG_G_IMG_H', 500); }
 		if(!defined('TALLY_IMAGE_RETINA_SUPPORT')){ define('TALLY_IMAGE_RETINA_SUPPORT', false); }
 		if(!defined('TALLY_THEME_STORE_URL')){ define('TALLY_THEME_STORE_URL', ''); }
+		if(!defined('TALLY_THEME_NAME')){ define('TALLY_THEME_NAME', ''); }
 		
 		/*  Constant for remove or active 
 			some part of the theme
@@ -263,7 +264,7 @@ class tally_loader{
 		
 		/* Loading the Metaboxes
 		----------------------------------*/
-		if(function_exists('ot_register_meta_box()')){
+		if(function_exists('ot_register_meta_box')){
 			tally_file_dri('metaboxs/_m_post-formats.php');
 			tally_file_dri('metaboxs/_m_blog-template.php');
 			tally_file_dri('metaboxs/_m_pages.php');
