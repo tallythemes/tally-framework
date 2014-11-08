@@ -1,10 +1,22 @@
 <?php
 function tally_st_header_menu(){
-	
+	?>
+	<div class="menu_area hheight">
+		<nav id="nav" class="main-navigation" role="navigation">
+			<?php wp_nav_menu( array('theme_location'=>'main_menu') ); ?>
+		</nav><!-- #site-navigation -->
+	</div>
+	<?php
 }
 
 function tally_st_header_menu_alt(){
-	
+	?>
+	<div class="menu_alt_area hheight">
+		<nav id="nav_alt" role="navigation">
+			<?php wp_nav_menu( array('theme_location'=>'main_menu_alt') ); ?>
+		</nav><!-- #site-navigation -->
+	</div>
+	<?php
 }
 
 function tally_st_header_info(){
@@ -20,11 +32,13 @@ function tally_st_header_email(){
 }
 
 function tally_st_header_logo(){
-	
+	?>
+    <div class="logo_area hheight"><?php tallyfn_logo(tally_option('site_logo')); ?></div>
+    <?php
 }
 
 function tally_st_header_social_icons(){
-	
+	tally_social_icons($class = '');
 }
 
 function tally_st_header_woocommerce_cart(){
@@ -32,7 +46,7 @@ function tally_st_header_woocommerce_cart(){
 }
 
 function tally_st_header_wpml_menu(){
-	
+	tally_wpml_language_switcher( $class = '' );
 }
 
 function tally_st_header_advertisment(){
@@ -40,7 +54,7 @@ function tally_st_header_advertisment(){
 }
 
 function tally_st_header_serch(){
-	
+	tally_icon_search_bar($class = '');
 }
 
 function tally_st_header_login(){
@@ -48,7 +62,7 @@ function tally_st_header_login(){
 }
 
 $header_layout = tally_option('header_layout');
-if($header_layout != ''):
+if($header_layout != ''){
 	add_filter('tally_st_header_info', '__return_false');
 	add_filter('tally_st_header_menu_alt', '__return_false');
 	add_filter('tally_st_header_phone', '__return_false');
@@ -60,9 +74,25 @@ if($header_layout != ''):
 	add_filter('tally_st_header_serch', '__return_false');
 	add_filter('tally_st_header_login', '__return_false');
 	
+	$header_file_url = '';
 	
+	if( file_exists(TALLY_CHILD_DRI . '/_st_header/' . $header_layout . '/' . $header_layout . '.php') ){
+		$header_file_url = TALLY_CHILD_DRI . '/_st_header/' . $header_layout . '/';
+	}elseif(file_exists(TALLY_DRI . '/_st_header/' . $header_layout . '/' . $header_layout . '.php')){
+		$header_file_url = TALLY_DRI . '/_st_header/' . $header_layout . '/';
+	}elseif(file_exists(TALLY_DRI . '/core/structure/_st_header/' . $header_layout . '/' . $header_layout . '.php')){
+		$header_file_url = TALLY_DRI . '/core/structure/_st_header/' . $header_layout . '/';
+	}
 	
-else:
+	if(file_exists( $header_file_url )){
+		include($header_file_url.'options-filters.php');
+		add_action('tally_header', 'tally_st_custom_header_do');
+		function tally_st_custom_header_do(){
+			include($header_file_url.'header-layout.php');
+		}
+	}
+	
+}else{
 	/*
 		Header Open Div
 	--------------------------------------------*/
@@ -125,4 +155,4 @@ else:
 		}
 		add_action('tally_header', 'tally_do_header_menu', 10);
 	endif;
-endif;
+}

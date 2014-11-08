@@ -445,7 +445,7 @@ function tallyfn_logo($logo = '', $des = true){
 	?>
     <div id="logo">
 		<?php if($logo != ''): ?>
-			<a href="<?php echo home_url(); ?>"><img src="<?php echo $logo; ?>" alt="logo"></a>
+			<a href="<?php echo home_url(); ?>"><img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?>"></a>
 		<?php else: ?>
 			<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
 			<?php if($des == true){ ?><span><?php bloginfo( 'description' ); ?></span><?php } ?>
@@ -876,4 +876,24 @@ if(!function_exists('tally_woocommerce_cart_content')){
 		</a>
 		<?php
 	}
+}
+
+
+/*
+  Social Icons
+-----------------------------------*/
+function tally_social_icons($class = ''){
+	?>
+	<?php if(tally_option('enable_social_icons', 'yes') == 'yes'): ?>
+		<?php if(is_array(tally_option('social_icons'))): ?>
+			<div class="tally-social-icons <?php echo $class; ?>">
+				<?php foreach(tally_option('social_icons') as $social_icon): ?>
+					<a href="<?php echo $social_icon['link']; ?>" class="" title="<?php echo $social_icon['title']; ?>" rel="nofollow" target="_blank">
+						<i class="fa <?php echo $social_icon['icon']; ?>"></i>
+					</a>
+				<?php endforeach; ?>
+			</div>
+		<?php endif; ?>
+	<?php endif; ?>
+	<?php	
 }
