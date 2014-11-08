@@ -1,6 +1,5 @@
 <?php
 add_filter('tally_st_header_info', '__return_true');
-add_filter('tally_st_header_menu_alt', '__return_true');
 add_filter('tally_st_header_phone', '__return_true');
 add_filter('tally_st_header_email', '__return_true');
 add_filter('tally_st_header_social_icons', '__return_true');

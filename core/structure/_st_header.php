@@ -20,35 +20,41 @@ function tally_st_header_menu_alt($class = ''){
 }
 
 function tally_st_header_info($class = ''){
-	?>
-    <div class="header-info <?php echo $class; ?>">
-    	<div class="header-info-inner">
-			<?php echo tally_option('header_info_text'); ?>
-        </div>
-    </div>
-    <?php
+	if(tally_option('header_info_text') != ''){
+		?>
+		<div class="header-info <?php echo $class; ?>">
+			<div class="header-info-inner">
+				<?php echo tally_option('header_info_text'); ?>
+			</div>
+		</div>
+		<?php
+	}
 }
 
 function tally_st_header_phone($class = '', $icon = '<i class="fa fa-phone"></i>'){
-	?>
-    <div class="header-phone <?php echo $class; ?>">
-    	<div class="header-phone-inner">
-			<?php echo $icon; ?>
-       	 <a href="tel:<?php tally_option('header_phone_number'); ?>"><?php echo tally_option('header_phone_number'); ?></a>
-        </div>
-    </div>
-    <?php
+	if(tally_option('header_phone_number') != ''){
+		?>
+		<div class="header-phone <?php echo $class; ?>">
+			<div class="header-phone-inner">
+				<?php echo $icon; ?>
+			 <a href="tel:<?php tally_option('header_phone_number'); ?>"><?php echo tally_option('header_phone_number'); ?></a>
+			</div>
+		</div>
+		<?php
+	}
 }
 
 function tally_st_header_email($class = '', $icon = '<i class="fa fa-envelope"></i>'){
-	?>
-    <div class="header-email <?php echo $class; ?>">
-    	<div class="header-email-inner">
-			<?php echo $icon; ?>
-        	<a href="mailto:<?php tally_option('header_email_address'); ?>"><?php echo tally_option('header_email_address'); ?></a>
-        </div>
-    </div>
-    <?php
+	if(tally_option('header_email_address') != ''){
+		?>
+		<div class="header-email <?php echo $class; ?>">
+			<div class="header-email-inner">
+				<?php echo $icon; ?>
+				<a href="mailto:<?php tally_option('header_email_address'); ?>"><?php echo tally_option('header_email_address'); ?></a>
+			</div>
+		</div>
+		<?php
+	}
 }
 
 function tally_st_header_logo($class = ''){
@@ -58,31 +64,41 @@ function tally_st_header_logo($class = ''){
 }
 
 function tally_st_header_social_icons($class = ''){
-	tally_social_icons($class);
+	if(tally_option('header_social_icons') == 'on'){
+		tally_social_icons($class);
+	}
 }
 
 function tally_st_header_woocommerce_cart($class = ''){
-	
+	if(tally_option('header_woocommerce_cart') == 'on'){
+		
+	}
 }
 
 function tally_st_header_wpml_menu($class = ''){
-	tally_wpml_language_switcher( $class);
+	if(tally_option('header_wpml_menu') == 'on'){
+		tally_wpml_language_switcher( $class);
+	}
 }
 
 function tally_st_header_advertisment($class = ''){
-	
+	if(tally_option('header_advertisment_code') != ''){
+		
+	}
 }
 
 function tally_st_header_serch($class = ''){
-	tally_icon_search_bar($class);
+	if(tally_option('header_search_bar') == 'on'){
+		tally_icon_search_bar($class);
+	}
 }
 
 function tally_st_header_login($class = '', $login = '<i class="fa fa-lock"></i> Login', $register = '<i class="fa fa-plus-square"></i> Register'){
 	?>
     <div class="header-logins-area <?php echo $class; ?>">
     	<div class="header-logins-inner">
-        	<?php if($login != ''){ ?><a class="header-login" href="<?php tally_option('header_login_url'); ?>"><?php echo $login; ?></a> <?php } ?>
-        	<?php if($register != ''){ ?><a class="header-register" href="<?php tally_option('header_login_url'); ?>"><?php echo $register; ?></a> <?php } ?>
+        	<?php if($login != ''){ ?><a class="header-login" href="<?php echo tally_option('header_login_url'); ?>"><?php echo $login; ?></a> <?php } ?>
+        	<?php if($register != ''){ ?><a class="header-register" href="<?php echo tally_option('header_register_url'); ?>"><?php echo $register; ?></a> <?php } ?>
         </div>
     </div>
     <?php
@@ -106,7 +122,6 @@ function tally_get_custom_header_dri(){
 $tally_header_layout = tally_option('header_layout');
 if($tally_header_layout != ''){
 	add_filter('tally_st_header_info', '__return_false');
-	add_filter('tally_st_header_menu_alt', '__return_false');
 	add_filter('tally_st_header_phone', '__return_false');
 	add_filter('tally_st_header_email', '__return_false');
 	add_filter('tally_st_header_social_icons', '__return_false');
