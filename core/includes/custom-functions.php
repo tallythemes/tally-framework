@@ -797,8 +797,8 @@ function tally_icon_search_bar($class = ''){
 	<a href="#" class="the_search_icon"><i class="fa fa-search"></i></a>
 	<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
 		<div class="search-form-inner">
-			<input type="text" value="" name="s" id="s" placeholder="<?php _e('Search', 'tally_child_textdomain'); ?>" />
-			<input type="submit" id="searchsubmit" value="<?php _e('Search', 'tally_child_textdomain'); ?>" />
+			<input type="text" value="" name="s" id="s" placeholder="<?php _e('Search', 'tally_textdomain'); ?>" />
+			<input type="submit" id="searchsubmit" value="<?php _e('Search', 'tally_textdomain'); ?>" />
 		</div>
 	</form>
 </div>

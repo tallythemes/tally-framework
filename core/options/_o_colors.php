@@ -464,6 +464,19 @@ function tally_color_ot_options($custom_settings){
 			'class'       => '',
 			'choices'     => ''
 		);
+		$custom_settings['settings']['color_navigation_area_background_color'] = array(
+			'id'          => 'color_navigation_area_background_color',
+			'label'       => __('Navigation area Background Color', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => tally_option_std('color_navigation_area_background_color'),
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
 		$custom_settings['settings']['color_navigation_text'] = array(
 			'id'          => 'color_navigation_text',
 			'label'       => __('Navigation Text Color', 'tally_taxdomain'),
@@ -545,11 +558,78 @@ function tally_color_ot_options($custom_settings){
 			'choices'     => ''
 		);
 		
+		
+		$custom_settings['settings']['color_navigation_submenu_text'] = array(
+			'id'          => 'color_navigation_submenu_text',
+			'label'       => __('Navigation Submenu Text Color', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => tally_option_std('color_navigation_submenu_text'),
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_navigation_submenu_border'] = array(
+			'id'          => 'color_navigation_submenu_border',
+			'label'       => __('Navigation Submenu Border Color', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => tally_option_std('color_navigation_submenu_border'),
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
 		$custom_settings['settings']['color_navigation_submenu_bg'] = array(
 			'id'          => 'color_navigation_submenu_bg',
 			'label'       => __('Navigation Submenu Background Color', 'tally_taxdomain'),
 			'desc'        => '',
 			'std'         => tally_option_std('color_navigation_submenu_bg'),
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		
+		$custom_settings['settings']['color_navigation_submenu_hover_text'] = array(
+			'id'          => 'color_navigation_submenu_hover_text',
+			'label'       => __('Navigation Submenu Hover Text Color', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => tally_option_std('color_navigation_submenu_hover_text'),
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_navigation_submenu_hover_border'] = array(
+			'id'          => 'color_navigation_submenu_hover_border',
+			'label'       => __('Navigation Submenu Hover Border Color', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => tally_option_std('color_navigation_submenu_hover_border'),
+			'type'        => 'colorpicker',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_navigation_submenu_hover_bg'] = array(
+			'id'          => 'color_navigation_submenu_hover_bg',
+			'label'       => __('Navigation Submenu Hover Background Color', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => tally_option_std('color_navigation_submenu_hover_bg'),
 			'type'        => 'colorpicker',
 			'section'     => 'color',
 			'rows'        => '',

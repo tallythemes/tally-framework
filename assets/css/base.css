@@ -1,4 +1,4 @@
- html, body, div, span, applet, object, iframe,
+	html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
     del, dfn, em, font, img, ins, kbd, q, s, samp,
@@ -31,6 +31,8 @@
 	.bypostauthor{}
 
 
+
+
 /* Body Style
 ================================================== */
 	body{
@@ -43,6 +45,8 @@
 
 
 
+
+
 /* OTHER
 ================================================== */
 	.clear{ height:1px; width:100%; margin:0; padding:0; clear:both; }
@@ -51,6 +55,8 @@
 		height: auto;
 		overflow-x: auto;
 	}
+
+
 
 
 /* Sidebar Layout
@@ -89,6 +95,10 @@
 	body.sidebar-sidebar-content #sidebar-alt{ width:17%; float:left; }
 	body.sidebar-sidebar-content #content{ width:65%; float:right; }
 	body.sidebar-sidebar-content #sidebar{ width:31%; float:left; }
+
+
+
+
 
 
 /* TYPOGRAPHY
@@ -148,6 +158,9 @@
 
 
 
+
+
+
 /* FORM
 ================================================== */
     input, select, textarea{
@@ -189,6 +202,9 @@
 	}
 
 
+
+
+
 /* IMAGES
 ================================================== */
     img{ max-width: 100%; height: auto; margin-bottom: -6px; }
@@ -199,6 +215,8 @@
     img.aligncenter{ margin-bottom: 25px; }
 
     iframe{ display: block; }
+
+
 
 
 
@@ -226,6 +244,8 @@
 	
 	
 	
+	
+	
 /* MEDIA
 ================================================== */
     [class*="flexible"]{ position: relative; overflow: hidden; height: 0; }
@@ -235,6 +255,8 @@
     [class*="flexible"] iframe, 
     [class*="flexible"] object, 
     [class*="flexible"] embed{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
 
 
 
@@ -251,6 +273,8 @@
              -o-transition: all 0.2s ease-in-out;
                 transition: all 0.2s ease-in-out;
     }
+	
+	
 	
 	
 	
@@ -342,6 +366,8 @@
 	
 	
 	
+	
+	
 /*----------------------------------------------------------
    ## wordpress require
 ----------------------------------------------------------*/
@@ -356,6 +382,9 @@
 	.wp-caption .wp-caption-text {margin-bottom: 0.6em;padding: 10px 0 5px 40px;position: relative;}
 	.wp-caption .wp-caption-text:before {color: #666;content: '\2014';font-size: 14px;font-style: normal;font-weight: bold;margin-right: 5px;position: absolute;left: 10px; top: 7px; }
 	.sticky{ background:#f1f1f1; padding:25px;  -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}	
+
+
+
 
 
 /*----------------------------------------------------------
@@ -467,76 +496,79 @@
 	}
 
 
-/*--Tags
-----------------------------------------------*/
-	.tagcloud a {
-		padding:2px 9px 2px 9px; 
-		font-weight:400; 
-		margin: 0px -2px 2px 0px; 
-		display:inline-block;  
-		-moz-transition:.8s linear; 
-		-webkit-transition:.8s ease-out; 
-		transition:.8s linear; 
-		font-size:12px !important;
-	}
-	.tagcloud a:hover {
-		-moz-transition:.01s linear; 
-		-webkit-transition:.01s ease-out; 
-		transition:.01s linear;
-	}
-
-
-/*--calendar
-----------------------------------------------*/
-	.widget_calendar table#wp-calendar { width:100%;}
-	.widget_calendar table td {border:none}
-	.widget_calendar table#wp-calendar>tbody>tr>td>a {}
-	.widget_calendar table#wp-calendar>tbody>tr>td>a:hover {background:none;}
-	.widget_calendar table#wp-calendar caption {font-size:14px; text-align:left;}
-	.widget_calendar thead>tr>th {width:14.2857%; padding:5px 0px 6px 0px; text-align:center; border:1px solid;	 font-weight:bold; color:inherit;}
-	.widget_calendar tbody>tr>td {width:14.2857%; padding:5px 0px 6px 0px; text-align:center;	border:1px solid; }
-	.widget_calendar tfoot>tr>td>a, tfoot>tr>td>a:link, tfoot>tr>td>a:visited, tfoot>tr>td>a:hover, tfoot>tr>td>a:active {height:20px;}
-	.widget_calendar tfoot>tr>td#prev {width:58px;	height:20px;	text-align:left; border:none;	background:none;}
-	.widget_calendar tfoot>tr>td#next {width:58px; height:20px;	text-align:right; border:none;	background:none;}
-	.widget_calendar tfoot>tr>td#prev a:hover, tfoot>tr>td#next a:hover {background:none;}
-
-
-/*--Search Form
-----------------------------------------------*/
-	.widget_search{ clear:both; }
-	.widget_search input[type="text"]{ 
-		-moz-border-radius:    4px 0px 0px 4px; 
-		-webkit-border-radius: 4px 0px 0px 4px; 
-		border-radius:         4px 0px 0px 4px;
-		float:left;
-		padding: 6px 4px;
-		outline: none;
-		margin: 0;
-		width: 65% !important;
-		display: block;
-		margin-bottom: 0px;
-		height: 30px;
-		border-right:0;
-	}
-	.widget_search label{ display:none; }
-	.widget_search input[type="submit"]{
-		-moz-border-radius:    0px 4px 4px 0px; 
-		-webkit-border-radius: 0px 4px 4px 0px; 
-		border-radius:         0px 4px 4px 0px; 
-		float:left;
-		border:none;
-		width:30%;
-		margin:0;
-		padding:0;
-		padding: 6px 4px;
-		cursor:pointer;
-	}
-	.widget_search input[type="submit"]:hover {
-		opacity:0.7;
-		-moz-transition:.8s linear; 
-		-webkit-transition:.8s ease-out; 
-		transition:.8s linear; 
-	}
+	/*--Tags
+	----------------------------------------------*/
+		.tagcloud a {
+			padding:2px 9px 2px 9px; 
+			font-weight:400; 
+			margin: 0px -2px 2px 0px; 
+			display:inline-block;  
+			-moz-transition:.8s linear; 
+			-webkit-transition:.8s ease-out; 
+			transition:.8s linear; 
+			font-size:12px !important;
+		}
+		.tagcloud a:hover {
+			-moz-transition:.01s linear; 
+			-webkit-transition:.01s ease-out; 
+			transition:.01s linear;
+		}
+	
+	
+	/*--calendar
+	----------------------------------------------*/
+		.widget_calendar table#wp-calendar { width:100%;}
+		.widget_calendar table td {border:none}
+		.widget_calendar table#wp-calendar>tbody>tr>td>a {}
+		.widget_calendar table#wp-calendar>tbody>tr>td>a:hover {background:none;}
+		.widget_calendar table#wp-calendar caption {font-size:14px; text-align:left;}
+		.widget_calendar thead>tr>th {width:14.2857%; padding:5px 0px 6px 0px; text-align:center; border:1px solid;	 font-weight:bold; color:inherit;}
+		.widget_calendar tbody>tr>td {width:14.2857%; padding:5px 0px 6px 0px; text-align:center;	border:1px solid; }
+		.widget_calendar tfoot>tr>td>a, tfoot>tr>td>a:link, tfoot>tr>td>a:visited, tfoot>tr>td>a:hover, tfoot>tr>td>a:active {height:20px;}
+		.widget_calendar tfoot>tr>td#prev {width:58px;	height:20px;	text-align:left; border:none;	background:none;}
+		.widget_calendar tfoot>tr>td#next {width:58px; height:20px;	text-align:right; border:none;	background:none;}
+		.widget_calendar tfoot>tr>td#prev a:hover, tfoot>tr>td#next a:hover {background:none;}
+	
+	
+	/*--Search Form
+	----------------------------------------------*/
+		.widget_search{ clear:both; }
+		.widget_search input[type="text"]{ 
+			-moz-border-radius:    4px 0px 0px 4px; 
+			-webkit-border-radius: 4px 0px 0px 4px; 
+			border-radius:         4px 0px 0px 4px;
+			float:left;
+			padding: 6px 4px;
+			outline: none;
+			margin: 0;
+			width: 65% !important;
+			display: block;
+			margin-bottom: 0px;
+			height: 30px;
+			border-right:0;
+		}
+		.widget_search label{ display:none; }
+		.widget_search input[type="submit"]{
+			-moz-border-radius:    0px 4px 4px 0px; 
+			-webkit-border-radius: 0px 4px 4px 0px; 
+			border-radius:         0px 4px 4px 0px; 
+			float:left;
+			border:none;
+			width:30%;
+			margin:0;
+			padding:0;
+			padding: 6px 4px;
+			cursor:pointer;
+		}
+		.widget_search input[type="submit"]:hover {
+			opacity:0.7;
+			-moz-transition:.8s linear; 
+			-webkit-transition:.8s ease-out; 
+			transition:.8s linear; 
+		}
+	
+	
+	
 
 /*----------------------------------------------------------
    ## Pagination
@@ -560,6 +592,7 @@
 
 
 
+
 /*----------------------------------------------------------
    ## Author bio
 ----------------------------------------------------------*/
@@ -569,6 +602,9 @@
 	.author-box p {margin-bottom: 0;}
 	.author-box .avatar {margin-right: 24px; float:left;}
 	.author-box .author-box-content{ overflow:hidden; }
+
+
+
 
 
 /*----------------------------------------------------------
@@ -609,66 +645,318 @@
 	
 	
 	
-/* Preloader
----------------------------------------*/
-#tally_preloader{
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	margin-top: 0;
-	margin-left: 0;
-	-webkit-backface-visibility: hidden;
-	transition: all 0.17s ease-in-out;
-	-moz-transition: all 0.17s ease-in-out;
-	-webkit-transition: all 0.17s ease-in-out;
-	-o-transition: all 0.17s ease-in-out;
-	z-index: 99999;
-	background-color: white;	
-}
-#tally_preloader .tally-spinner {
-  margin: 0 auto;
-  width: 70px;
-  text-align: center;
-  margin-top:300px;
-}
+	
+	
+/*----------------------------------------------------------
+   ## Preloader
+----------------------------------------------------------*/
+	#tally_preloader{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin-top: 0;
+		margin-left: 0;
+		-webkit-backface-visibility: hidden;
+		transition: all 0.17s ease-in-out;
+		-moz-transition: all 0.17s ease-in-out;
+		-webkit-transition: all 0.17s ease-in-out;
+		-o-transition: all 0.17s ease-in-out;
+		z-index: 99999;
+		background-color: white;	
+	}
+	#tally_preloader .tally-spinner {
+	  margin: 0 auto;
+	  width: 70px;
+	  text-align: center;
+	  margin-top:300px;
+	}
+	
+	#tally_preloader .tally-spinner > div {
+	  width: 18px;
+	  height: 18px;
+	  background-color: #333;
+	
+	  border-radius: 100%;
+	  display: inline-block;
+	  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+	  animation: bouncedelay 1.4s infinite ease-in-out;
+	  /* Prevent first frame from flickering when animation starts */
+	  -webkit-animation-fill-mode: both;
+	  animation-fill-mode: both;
+	}
+	
+	#tally_preloader .tally-spinner .bounce1 {
+	  -webkit-animation-delay: -0.32s;
+	  animation-delay: -0.32s;
+	}
+	
+	#tally_preloader .tally-spinner .bounce2 {
+	  -webkit-animation-delay: -0.16s;
+	  animation-delay: -0.16s;
+	}
+	
+	@-webkit-keyframes bouncedelay {
+	  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+	  40% { -webkit-transform: scale(1.0) }
+	}
+	
+	@keyframes bouncedelay {
+	  0%, 80%, 100% { 
+		transform: scale(0.0);
+		-webkit-transform: scale(0.0);
+	  } 40% { 
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	  }
+	}
+	
+	
+	
+/*----------------------------------------------------------
+   ## Custom Header
+----------------------------------------------------------*/
 
-#tally_preloader .tally-spinner > div {
-  width: 18px;
-  height: 18px;
-  background-color: #333;
+	.align-left{ float:left; }
+	.align-right{ float:right; }
+	.align-center{ margin-left:auto; margin-right:auto; }
+	
 
-  border-radius: 100%;
-  display: inline-block;
-  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
-  animation: bouncedelay 1.4s infinite ease-in-out;
-  /* Prevent first frame from flickering when animation starts */
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
+	
+	/*
+	 	Main Menu
+	------------------------------------*/
+	#navigation-area{ width:100%; }
+	#navigation-area-inner{ max-width:960px; width:90%; margin:0 auto; }
+	#navigation{  }
+	#navigation ul{ margin:0; padding:0; list-style-type:none; }
+	#navigation ul li{ 
+		margin:0;
+		padding:0;
+		float:left;		
+		display:block;
+		position:relative;
+	}
+	#navigation ul li a{ 
+		display:block;
+		text-decoration:none;
+		font-weight:400;
+		font-size:14px;
+		font-weight:bold;		
+	}
+	#navigation>ul>li:first-child a{
+		padding-left:3px;
+	}/*edit here*/
+	#navigation ul li a:hover,
+	#navigation ul .current-menu-item a,
+	#navigation ul .current_page_item a{ color: ; } /*edit here*/
+		
+	/*1st level dropdown an all level dropdown style*/
+	#navigation ul li ul{ 
+		margin:0; 
+		padding:0; 
+		position:absolute; 
+		list-style-type:none; 
+		left:10px;
+		z-index:99; 
+		display:none;
+		width:180px;
+		padding-top:6px;
+	} /*edit here*/
+		
+	#navigation ul li ul li{ float:none; } /*edit here*/
+	#navigation ul li ul li:hover{ background-color:  ; }
+	#navigation ul li ul li a{ 
+		display:block;
+		padding:11px 15px;
+		text-decoration:none;
+		font-size:12px;
+		font-weight:400;
+		text-transform:capitalize;
+		margin-left:0;
+		border:0;
+		border-bottom:solid 1px;
+	} /*edit here*/
+	#navigation ul li ul li:last-child a{ border-bottom:0; }
+	
+	#navigation div ul li ul li a:hover{ text-decoration:none; } /*edit here*/
+	#navigation div ul li ul li ul{ position:absolute; left:180px; top:-2px; }
+	#navigation div ul li:hover ul ul, #nav li:hover ul ul ul, #nav li:hover ul ul ul ul{display:none;}
+	
+	#navigation div ul>li:hover>ul,
+	#navigation div ul>li>ul>li:hover ul,
+	#navigation div ul>li>ul>li>ul>li:hover ul{display:block;}
+	
+	
+	#navigation.border_full ul li a{ 
+		border-left:solid 1px;
+		line-height:50px;
+		padding-left:15px;
+		padding-right:15px;
+	}
+	#navigation.border_full ul li ul li a{ 
+		border-left:0;
+		line-height:13px;
+	} /*edit here*/
+	
+	
+	
+	/*
+		Menu Alt
+	------------------------------------*/
+	.nav_alt-area{  }
+	#nav_alt{  }
+	#nav_alt ul{ margin:0; padding:0; list-style-type:none; }
+	#nav_alt ul li{ 
+		margin:0;
+		padding:0;
+		float:left;		
+		display:block;
+		position:relative;
+	}
+	#nav_alt ul li a{ 
+		display:block;
+		padding:6px 14px;
+		text-decoration:none;
+		font-weight:400;
+		font-size:14px;
+		color: ;
+		font-weight:bold;
+		margin-left:10px;
+		border-radius: 3px;
+		
+	}
+	#nav_alt>ul>li:first-child a{
+		padding-left:3px;
+	}/*edit here*/
+	#nav_alt ul li a:hover,
+	#nav_alt ul .current-menu-item a,
+	#nav_alt ul .current_page_item a{ color: ; } /*edit here*/
+		
+	/*1st level dropdown an all level dropdown style*/
+	#nav_alt ul li ul{ 
+		margin:0; 
+		padding:0; 
+		position:absolute; 
+		list-style-type:none; 
+		left:10px;
+		z-index:99; 
+		display:none;
+		width:180px;
+		background-color:  ;
+		padding-top:6px;
+	} /*edit here*/
+		
+	#nav_alt ul li ul li{ float:none; } /*edit here*/
+	#nav_alt ul li ul li:hover{ background-color:  ; }
+	#nav_alt ul li ul li a{ 
+		display:block;
+		border:none;
+		padding:8px 15px;
+		text-decoration:none;
+		font-size:12px;
+		font-weight:400;
+		text-transform:capitalize;
+		margin-left:0;
+		border-radius: 0px;
+		border-bottom:solid 1px;
+	} /*edit here*/
+	
+	#nav_alt div ul li ul li a:hover{ text-decoration:none; } /*edit here*/
+	#nav_alt div ul li ul li ul{ position:absolute; left:180px; top:-2px; }
+	#nav_alt div ul li:hover ul ul, #nav li:hover ul ul ul, #nav li:hover ul ul ul ul{display:none;}
+	
+	#nav_alt div ul>li:hover>ul,
+	#nav_alt div ul>li>ul>li:hover ul,
+	#nav_alt div ul>li>ul>li>ul>li:hover ul{display:block;}
+	
+	
+	
+	
+	
+	
+	/*
+	 	Scoal Icons
+	------------------------------------*/
+	
 
-#tally_preloader .tally-spinner .bounce1 {
-  -webkit-animation-delay: -0.32s;
-  animation-delay: -0.32s;
-}
 
-#tally_preloader .tally-spinner .bounce2 {
-  -webkit-animation-delay: -0.16s;
-  animation-delay: -0.16s;
-}
 
-@-webkit-keyframes bouncedelay {
-  0%, 80%, 100% { -webkit-transform: scale(0.0) }
-  40% { -webkit-transform: scale(1.0) }
-}
-
-@keyframes bouncedelay {
-  0%, 80%, 100% { 
-    transform: scale(0.0);
-    -webkit-transform: scale(0.0);
-  } 40% { 
-    transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-  }
-}
+	
+	
+	/*
+	 	Logins
+	------------------------------------*/
+	
+	
+	
+	
+	
+	
+	/*
+	 	Advertisement
+	------------------------------------*/
+	
+	
+	
+	
+	
+	
+	/*
+	 	Logo
+	------------------------------------*/
+	
+	
+	
+	
+	
+	
+	/*
+	 	Email
+	------------------------------------*/
+	
+	
+	
+	
+	
+	
+	/*
+	 	Phone
+	------------------------------------*/
+	
+	
+	
+	
+	
+	
+	/*
+	 	Info
+	------------------------------------*/
+	
+	
+	
+	
+	
+	
+	/*
+	 	Woocommerce
+	------------------------------------*/
+	
+	
+	
+	
+	
+	
+	/*
+	 	WPML
+	------------------------------------*/
+	
+	
+	
+	
+	
+		
+	/*
+	 	Search
+	------------------------------------*/

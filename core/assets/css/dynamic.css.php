@@ -70,10 +70,13 @@ if(is_array(tally_option('site_background'))){
 }
 		
 /*Header*/
-if(tally_option('header_height')){echo '#header .hheight , #header{ height:'.tally_option('header_height').' !important; }';}
+if(tally_option('header_height')){echo '#header .hheight , #header, #header #header-inner{ height:'.tally_option('header_height').' !important; }';}
 if(tally_option('header_logo_top_margin')){echo '#header #logo{margin-top:'.tally_option('header_logo_top_margin').'; }';}
 if(tally_option('header_menu_top_margin')){echo '#header #nav{margin-top:'.tally_option('header_menu_top_margin').'; }';}
 if(tally_option('header_menu_top_margin')){echo 'ul.tally-wpml-language-switcher{margin-top:'.tally_option('header_menu_top_margin').'; }';}
+
+if(tally_option('topbar_height')){echo '#topbar-inner{ height:'.tally_option('topbar_height').' !important; }';}
+if(tally_option('menu_height')){echo '#navigation-area-inner{ height:'.tally_option('menu_height').' !important; }';}
 		
 /*subHeader*/
 if(tally_option('subheader_bottom_padding')){echo '#subheader{ padding-bottom:'.tally_option('subheader_bottom_padding').'; }';}
@@ -390,6 +393,26 @@ body .menu_area #nav ul > .current-menu-item a{
 	color:<?php tally_color('color_navigation_text_hover'); ?>;
 	border-color:<?php tally_color('color_navigation_border_hover'); ?> !important;
 	background-color:<?php tally_color('color_navigation_bg_hover'); ?>; 
+}
+
+
+/*--------------------- Custom Header Styling------------------*/
+#navigation-area{ background-color:<?php tally_color('color_navigation_area_background_color'); ?>; border-color:<?php tally_color('color_navigation_border'); ?> !important; }
+#navigation { color:<?php tally_color('color_navigation_text'); ?>; border-color:<?php tally_color('color_navigation_border'); ?> !important; }
+#navigation a{ color:<?php tally_color('color_navigation_text'); ?>; background-color:<?php tally_color('color_navigation_bg'); ?>; border-color:<?php tally_color('color_navigation_border'); ?> !important; }
+#navigation a:hover,
+#navigation .current-menu-item a{ 
+	color:<?php tally_color('color_navigation_text_hover'); ?>;
+	border-color:<?php tally_color('color_navigation_border_hover'); ?> !important;
+	background-color:<?php tally_color('color_navigation_bg_hover'); ?>; 
+}
+#navigation ul.sub-menu { color:<?php tally_color('color_navigation_submenu_text'); ?>; border-color:<?php tally_color('color_navigation_submenu_border'); ?> !important; }
+#navigation ul.sub-menu a{ color:<?php tally_color('color_navigation_submenu_text'); ?>; background-color:<?php tally_color('color_navigation_submenu_bg'); ?>; border-color:<?php tally_color('color_navigation_submenu_border'); ?> !important; }
+#navigation ul.sub-menu a:hover,
+#navigation ul.sub-menu .current-menu-item a{ 
+	color:<?php tally_color('color_navigation_submenu_hover_text'); ?>;
+	border-color:<?php tally_color('color_navigation_submenu_hover_border'); ?> !important;
+	background-color:<?php tally_color('color_navigation_submenu_hover_bg'); ?>; 
 }
 
 <?php 

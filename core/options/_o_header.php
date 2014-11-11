@@ -63,6 +63,34 @@ function tally_header_ot_options($custom_settings){
 			'choices'     => '',
 		);
 		
+		$custom_settings['settings']['topbar_height'] = array(
+			'id'          => 'topbar_height',
+			'label'       => __('Topbar height', 'tally_taxdomain'),
+			'desc'        => __('This is the height of the site topbar <strong>Example: <code>52px</code></strong>', 'tally_taxdomain'),
+			'std'         => tally_option_std('topbar_height'),
+			'type'        => 'text',
+			'section'     => 'header',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => '',
+		);
+		
+		$custom_settings['settings']['menu_height'] = array(
+			'id'          => 'menu_height',
+			'label'       => __('Navigation height', 'tally_taxdomain'),
+			'desc'        => __('This is the height of the site Navigation <strong>Example: <code>40px</code></strong>', 'tally_taxdomain'),
+			'std'         => tally_option_std('menu_height'),
+			'type'        => 'text',
+			'section'     => 'header',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => '',
+		);
+		
 		
 		
 	elseif( (tally_check() != true ) && ( TALLY_THEME_STORE_URL != '') ):

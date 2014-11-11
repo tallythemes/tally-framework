@@ -1,19 +1,17 @@
 <?php
 function tally_st_header_menu($class = ''){
 	?>
-	<div class="menu_area <?php echo $class; ?>">
-		<nav id="nav" class="main-navigation" role="navigation">
-			<?php wp_nav_menu( array('theme_location'=>'main_menu') ); ?>
-		</nav><!-- #site-navigation -->
-	</div>
+	<nav id="navigation" class="<?php echo $class; ?>" role="navigation">
+		<?php wp_nav_menu( array('theme_location'=>'main_menu') ); ?>
+	</nav><!-- #site-navigation -->
 	<?php
 }
 
 function tally_st_header_menu_alt($class = ''){
 	?>
-	<div class="menu_alt_area <?php echo $class; ?>">
+	<div class="nav_alt-area <?php echo $class; ?>">
 		<nav id="nav_alt" role="navigation">
-			<?php wp_nav_menu( array('theme_location'=>'main_menu_alt') ); ?>
+			<?php wp_nav_menu( array('theme_location'=>'alt_menu') ); ?>
 		</nav><!-- #site-navigation -->
 	</div>
 	<?php
@@ -71,7 +69,7 @@ function tally_st_header_social_icons($class = ''){
 
 function tally_st_header_woocommerce_cart($class = ''){
 	if(tally_option('header_woocommerce_cart') == 'on'){
-		
+		tally_woocommerce_cart($class);
 	}
 }
 
@@ -83,7 +81,7 @@ function tally_st_header_wpml_menu($class = ''){
 
 function tally_st_header_advertisment($class = ''){
 	if(tally_option('header_advertisment_code') != ''){
-		
+		echo tally_option('header_advertisment_code');
 	}
 }
 
@@ -124,6 +122,7 @@ if($tally_header_layout != ''){
 	add_filter('tally_st_header_info', '__return_false');
 	add_filter('tally_st_header_phone', '__return_false');
 	add_filter('tally_st_header_email', '__return_false');
+	add_filter('tally_st_header_alt_menu', '__return_false');
 	add_filter('tally_st_header_social_icons', '__return_false');
 	add_filter('tally_st_header_woocommerce_cart', '__return_false');
 	add_filter('tally_st_header_wpml_menu', '__return_false');

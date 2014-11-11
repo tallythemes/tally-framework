@@ -122,11 +122,16 @@ class tally_loader{
      * @since     0.7.3
 	*/
 	public function theme_menu() {
-		register_nav_menus( array(
-			'main_menu' => 'Main Menu',
-			'footer_menu' => 'Footer Menu',
-		) );
+		$menus = array();
+		
+		$menus['main_menu'] =  'Main Menu';
+		$menus['footer_menu'] =  'Footer Menu';
+		$menus['alt_menu'] =  'Header Alt Menu';
+		
+		register_nav_menus($menus);	
 	}
+		
+		
 	
 	
 	/**
