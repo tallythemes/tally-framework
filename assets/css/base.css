@@ -729,6 +729,8 @@
 	.margin-right-15px{ margin-right:15px; }
 	.margin-left-20px{ margin-left:20px; }
 	.margin-right-20px{ margin-right:20px; }
+	.border-bottom{ border-bottom:solid 1px; }
+	.border-top{ border-top:solid 1px; }
 	
 
 	

@@ -84,6 +84,7 @@ body .wrap.settings-wrap .ui-tabs-nav{
 #setting_color_navigation_submenu_border.format-settings .format-setting-wrap,
 #setting_color_navigation_submenu_text.format-settings .format-setting-wrap,
 #setting_color_navigation_area_background_color.format-settings .format-setting-wrap,
+#setting_color_navigation_area_mood.format-settings .format-setting-wrap,
 #setting_color_navigation_submenu_hover_border.format-settings .format-setting-wrap{ border-left:solid 5px #3BCED5; border-right:solid 5px #3BCED5; margin-bottom:0px; padding:20px; }
 #setting_color_navigation_submenu_hover_bg.format-settings .format-setting-wrap{ border-bottom:solid 5px #3BCED5; margin-bottom:30px; }
 

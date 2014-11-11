@@ -464,6 +464,23 @@ function tally_color_ot_options($custom_settings){
 			'class'       => '',
 			'choices'     => ''
 		);
+		$custom_settings['settings']['color_navigation_area_mood'] = array(
+			'id'          => 'color_navigation_area_mood',
+			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
+			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
+			'std'         => tally_option_std('color_navigation_area_mood'),
+			'type'        => 'select',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => array(
+				array( 'label' => '--', 'value' => ''),
+				array( 'label' => 'Light', 'value' => 'light'),
+				array( 'label' => 'Dark', 'value' => 'dark'),
+			),
+		);
 		$custom_settings['settings']['color_navigation_area_background_color'] = array(
 			'id'          => 'color_navigation_area_background_color',
 			'label'       => __('Navigation area Background Color', 'tally_taxdomain'),

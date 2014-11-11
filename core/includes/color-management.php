@@ -19,6 +19,7 @@ add_filter('tally_subheader_class', 'tally_subheader_class_filter');
 add_filter('tally_main_class', 'tally_main_class_filter');
 add_filter('tally_fwidget_class', 'tally_fwidget_class_filter');
 add_filter('tally_footer_class', 'tally_footer_class_filter');
+add_filter('tally_navigation_area_class', 'tally_navigation_area_class_filter');
 
 function tally_topbar_class_filter($class){
 	$the_class = $class;
@@ -60,6 +61,15 @@ function tally_footer_class_filter($class){
 		
 	if( tally_option('color_footer_mood') == 'light' ){ $the_class = 'color_mood_light'; }
 	elseif( tally_option('color_footer_mood') == 'dark' ){ $the_class = 'color_mood_dark'; }
+	
+	return $the_class;
+}
+
+function tally_navigation_area_class_filter($class){
+	$the_class = $class;
+		
+	if( tally_option('color_navigation_area_mood') == 'light' ){ $the_class = 'color_mood_light'; }
+	elseif( tally_option('color_navigation_area_mood') == 'dark' ){ $the_class = 'color_mood_dark'; }
 	
 	return $the_class;
 }

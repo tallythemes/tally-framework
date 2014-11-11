@@ -9,7 +9,7 @@
 <?php } ?>
 
 <?php if(tally_is_header() != 'no'){ ?>
-    <div id="header" class="<?php echo apply_filters('tally_header_class', ''); ?>">
+    <div id="header" class="<?php echo apply_filters('tally_header_class', ''); ?> border-bottom">
         <div id="header-inner">
             <?php tally_st_header_logo('align-left vertical-align-center'); ?>
             
@@ -23,7 +23,7 @@
         </div>
     </div>
     
-    <div id="navigation-area" class="<?php echo apply_filters('tally_site_nav_class', 'color_mood_light'); ?>">
+    <div id="navigation-area" class="<?php echo apply_filters('tally_navigation_area_class', ''); ?> border-bottom">
         <div id="navigation-area-inner">
             <?php tally_st_header_menu('align-left vertical-align-center border_full'); ?>
             <?php tally_st_header_woocommerce_cart('align-right vertical-align-center margin-left-10px'); ?>
