@@ -466,6 +466,16 @@ body .menu_area #nav ul > .current-menu-item a{
 /*--- Email ---*/
 .color_mood_light .header-email.style_simple a{ color: <?php tally_color('color_text_light'); ?> !important; }
 .color_mood_dark .header-email.style_simple a{ color: <?php tally_color('color_text_dark'); ?> !important; }
+
+
+/*--- Woocommerce Cart ---*/
+.color_mood_light .tally_woocommerce_cart i.fa{ color: <?php tally_color('color_headings_light'); ?> !important; }
+.color_mood_dark .tally_woocommerce_cart i.fa{ color: <?php tally_color('color_headings_dark'); ?> !important; }
+
+
+/*--- Search Bar ---*/
+.color_mood_light .tally_icon_search_bar .the_search_icon i.fa{ color: <?php tally_color('color_headings_light'); ?> !important; }
+.color_mood_dark .tally_icon_search_bar .the_search_icon i.fa{ color: <?php tally_color('color_headings_dark'); ?> !important; }
 <?php 
 do_action('tally_dynamic_css');
 

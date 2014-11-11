@@ -23,12 +23,12 @@
         </div>
     </div>
     
-    <div id="navigation-area" class="<?php echo apply_filters('tally_site_nav_class', ''); ?>">
+    <div id="navigation-area" class="<?php echo apply_filters('tally_site_nav_class', 'color_mood_light'); ?>">
         <div id="navigation-area-inner">
             <?php tally_st_header_menu('align-left vertical-align-center border_full'); ?>
-            <?php tally_st_header_woocommerce_cart('align-right vertical-align-center'); ?>
-            <?php tally_st_header_wpml_menu('align-right vertical-align-center'); ?>
-            <?php tally_st_header_serch('align-right vertical-align-center'); ?>
+            <?php tally_st_header_woocommerce_cart('align-right vertical-align-center margin-left-10px'); ?>
+            <?php tally_st_header_wpml_menu('align-right vertical-align-center margin-left-10px'); ?>
+            <?php tally_st_header_serch('align-right vertical-align-center margin-left-10px'); ?>
             <div class="clear"></div>
         </div>
     </div>
