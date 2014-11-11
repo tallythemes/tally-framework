@@ -397,6 +397,8 @@ body .menu_area #nav ul > .current-menu-item a{
 
 
 /*--------------------- Custom Header Styling------------------*/
+
+/*--- Main Menu ---*/
 #navigation-area{ background-color:<?php tally_color('color_navigation_area_background_color'); ?>; border-color:<?php tally_color('color_navigation_border'); ?> !important; }
 #navigation { color:<?php tally_color('color_navigation_text'); ?>; border-color:<?php tally_color('color_navigation_border'); ?> !important; }
 #navigation a{ color:<?php tally_color('color_navigation_text'); ?>; background-color:<?php tally_color('color_navigation_bg'); ?>; border-color:<?php tally_color('color_navigation_border'); ?> !important; }
@@ -415,6 +417,33 @@ body .menu_area #nav ul > .current-menu-item a{
 	background-color:<?php tally_color('color_navigation_submenu_hover_bg'); ?>; 
 }
 
+
+/*- Social Icons -*/
+.color_mood_light .tally-social-icons.style_border_round a{ border-color:<?php tally_color('color_text_light'); ?> !important; }
+.color_mood_light .tally-social-icons.style_border_round a i.fa{ color: <?php tally_color('color_text_light'); ?> !important; }
+.color_mood_light .tally-social-icons.style_border_round a:hover{ border-color:<?php tally_color('site_accent2_color'); ?> !important; }
+.color_mood_light .tally-social-icons.style_border_round a:hover i.fa{ color: <?php tally_color('site_accent2_color'); ?> !important; }
+
+.color_mood_dark .tally-social-icons.style_border_round a{ border-color:<?php tally_color('color_text_dark'); ?> !important; }
+.color_mood_dark .tally-social-icons.style_border_round a i.fa{ color: <?php tally_color('color_text_dark'); ?> !important; }
+.color_mood_dark .tally-social-icons.style_border_round a:hover{ border-color:<?php tally_color('site_accent2_color'); ?> !important; }
+.color_mood_dark .tally-social-icons.style_border_round a:hover i.fa{ color: <?php tally_color('site_accent2_color'); ?> !important; }
+
+
+/*- Logins -*/
+.color_mood_light .header-logins-area.style_simple .header-login{ color: <?php tally_color('color_text_light'); ?> !important; }
+.color_mood_light .header-logins-area.style_simple .header-register{ color: <?php tally_color('color_text_light'); ?> !important; }
+
+.color_mood_dark .header-logins-area.style_simple .header-login{ color: <?php tally_color('color_text_dark'); ?> !important; }
+.color_mood_dark .header-logins-area.style_simple .header-register{ color: <?php tally_color('color_text_dark'); ?> !important; }
+
+/*- Phone -*/
+.color_mood_light .header-phone.style_simple a{ color: <?php tally_color('color_text_light'); ?> !important; }
+.color_mood_dark .header-phone.style_simple a{ color: <?php tally_color('color_text_dark'); ?> !important; }
+
+/*- Email -*/
+.color_mood_light .header-email.style_simple a{ color: <?php tally_color('color_text_light'); ?> !important; }
+.color_mood_dark .header-email.style_simple a{ color: <?php tally_color('color_text_dark'); ?> !important; }
 <?php 
 do_action('tally_dynamic_css');
 

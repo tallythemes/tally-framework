@@ -789,6 +789,7 @@
 	#navigation div ul>li>ul>li>ul>li:hover ul{display:block;}
 	
 	
+	/** border_full **/
 	#navigation.border_full ul li a{ 
 		border-left:solid 1px;
 		line-height:50px;
@@ -798,7 +799,7 @@
 	#navigation.border_full ul li ul li a{ 
 		border-left:0;
 		line-height:13px;
-	} /*edit here*/
+	}
 	
 	
 	
@@ -840,7 +841,7 @@
 		padding:0; 
 		position:absolute; 
 		list-style-type:none; 
-		left:10px;
+		left:0;
 		z-index:99; 
 		display:none;
 		width:180px;
@@ -879,7 +880,7 @@
 	/*
 	 	Scoal Icons
 	------------------------------------*/
-	
+	.tally-social-icons.style_border_round a{ font-size:14px; height:24px; width:24px; text-align:center; line-height:24px; border:2px solid; display:inline-block; border-radius: 100%; }
 
 
 
@@ -888,8 +889,12 @@
 	/*
 	 	Logins
 	------------------------------------*/
-	
-	
+	.header-logins-area.style_simple{  }
+	.header-logins-area.style_simple .header-logins-inner{  }
+	.header-logins-area.style_simple .header-login{ display:inline-block; margin-left:5px; margin-right:5px; }
+	.header-logins-area.style_simple .header-register{ display:inline-block; margin-left:5px; margin-right:5px; }
+	.header-logins-area.style_simple .header-login:hover,
+	.header-logins-area.style_simple .header-register:hover{ text-decoration:none; }
 	
 	
 	
@@ -915,7 +920,10 @@
 	/*
 	 	Email
 	------------------------------------*/
-	
+	.header-phone.style_simple{ margin-left:5px; margin-right:5px; } 
+	.header-phone.style_simple i.fa{ }
+	.header-phone.style_simple a{ }
+	.header-phone.style_simple a:hover{ text-decoration:none; }
 	
 	
 	
@@ -924,6 +932,10 @@
 	/*
 	 	Phone
 	------------------------------------*/
+	.header-email.style_simple{ margin-left:5px; margin-right:5px; } 
+	.header-email.style_simple i.fa{ }
+	.header-email.style_simple a{ }
+	.header-email.style_simple a:hover{ text-decoration:none; }
 	
 	
 	

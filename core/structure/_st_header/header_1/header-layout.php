@@ -2,7 +2,7 @@
     <div id="topbar" class="<?php echo apply_filters('tally_topbar_class', ''); ?>">
         <div id="topbar-inner">
             <?php tally_st_header_menu_alt('align-left vertical-align-center'); ?>
-            <?php tally_st_header_login('align-right vertical-align-center'); ?>
+            <?php tally_st_header_login('align-right vertical-align-center style_simple'); ?>
             <div class="clear"></div>
         </div>
     </div>
@@ -14,10 +14,10 @@
             <?php tally_st_header_logo('align-left vertical-align-center'); ?>
             
             <div class="align-right vertical-align-center">
-				<?php tally_st_header_phone('align-right'); ?>
-                <?php tally_st_header_email('align-right'); ?>
-                <div class="clear"></div>
-                <?php tally_st_header_social_icons('align-right'); ?>
+				<?php tally_st_header_phone('align-right style_simple'); ?>
+                <?php tally_st_header_email('align-right style_simple'); ?>
+                <div class="clear" style="height:5px;"></div>
+                <?php tally_st_header_social_icons('align-right style_border_round'); ?>
             </div>
             <div class="clear"></div>
         </div>
