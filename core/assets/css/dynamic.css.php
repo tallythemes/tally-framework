@@ -111,6 +111,7 @@ if(tally_option('body_font_size')){ echo 'body{ font-size:'.tally_option('body_f
 		
 		
 /*------------------------ DARK ------------------------*/
+.color_mood_dark{ border-color:<?php tally_color('color_border_dark'); ?>  !important; color: <?php tally_color('color_text_dark'); ?>; }
 .color_mood_dark *{ border-color:<?php tally_color('color_border_dark'); ?>  !important; color: <?php tally_color('color_text_dark'); ?>; }
 .color_mood_dark{ 
 			background: <?php tally_color('color_bg_light'); ?>; color: <?php tally_color('color_text_dark'); ?>; border-color:<?php tally_color('color_border_dark'); ?>; 
@@ -193,6 +194,7 @@ if(tally_option('body_font_size')){ echo 'body{ font-size:'.tally_option('body_f
 
 
 /*------------------------ LIGHT ------------------------*/
+.color_mood_light{ border-color:<?php tally_color('color_border_light'); ?> !important; color: <?php tally_color('color_text_light'); ?>; }
 .color_mood_light *{ border-color:<?php tally_color('color_border_light'); ?> !important; color: <?php tally_color('color_text_light'); ?>; }
 .color_mood_light{ 
 	background: <?php tally_color('color_bg_dark'); ?>; color: <?php tally_color('color_text_light'); ?>; border-color:<?php tally_color('color_border_light'); ?>; 
@@ -418,7 +420,27 @@ body .menu_area #nav ul > .current-menu-item a{
 }
 
 
-/*- Social Icons -*/
+/*--- Menu Alt ---*/
+.color_mood_dark #nav_alt { color:<?php tally_color('color_text_dark'); ?>; }
+.color_mood_dark #nav_alt a{ color:<?php tally_color('color_text_dark', 0.9); ?>; }
+.color_mood_dark #nav_alt a:hover,
+.color_mood_dark #nav_alt .current-menu-item a{ color:<?php tally_color('color_headings_dark'); ?>;}
+.color_mood_dark #nav_alt ul.sub-menu { color:<?php tally_color('color_text_dark'); ?>; border-color:<?php tally_color('color_border_dark'); ?> !important; }
+.color_mood_dark #nav_alt ul.sub-menu a{ color:<?php tally_color('color_text_dark'); ?>; background-color:#fff; border-color:<?php tally_color('color_border_dark'); ?> !important; }
+.color_mood_dark #nav_alt ul.sub-menu a:hover,
+.color_mood_dark #nav_alt ul.sub-menu .current-menu-item a{ color:<?php tally_color('color_headings_dark'); ?>;}
+
+.color_mood_light #nav_alt { color:<?php tally_color('color_text_light'); ?>; }
+.color_mood_light #nav_alt a{ color:<?php tally_color('color_text_light', 0.9); ?>; }
+.color_mood_light #nav_alt a:hover,
+.color_mood_light #nav_alt .current-menu-item a{ color:<?php tally_color('color_headings_light'); ?>;}
+.color_mood_light #nav_alt ul.sub-menu { color:<?php tally_color('color_text_light'); ?>; border-color:<?php tally_color('color_border_dark'); ?> !important; }
+.color_mood_light #nav_alt ul.sub-menu a{ color:<?php tally_color('color_text_light'); ?>; background-color:#fff; border-color:<?php tally_color('color_border_light'); ?> !important; }
+.color_mood_light #nav_alt ul.sub-menu a:hover,
+.color_mood_light #nav_alt ul.sub-menu .current-menu-item a{ color:<?php tally_color('color_headings_light'); ?>;}
+
+
+/*--- Social Icons ---*/
 .color_mood_light .tally-social-icons.style_border_round a{ border-color:<?php tally_color('color_text_light'); ?> !important; }
 .color_mood_light .tally-social-icons.style_border_round a i.fa{ color: <?php tally_color('color_text_light'); ?> !important; }
 .color_mood_light .tally-social-icons.style_border_round a:hover{ border-color:<?php tally_color('site_accent2_color'); ?> !important; }
@@ -430,18 +452,18 @@ body .menu_area #nav ul > .current-menu-item a{
 .color_mood_dark .tally-social-icons.style_border_round a:hover i.fa{ color: <?php tally_color('site_accent2_color'); ?> !important; }
 
 
-/*- Logins -*/
+/*--- Logins ---*/
 .color_mood_light .header-logins-area.style_simple .header-login{ color: <?php tally_color('color_text_light'); ?> !important; }
 .color_mood_light .header-logins-area.style_simple .header-register{ color: <?php tally_color('color_text_light'); ?> !important; }
 
 .color_mood_dark .header-logins-area.style_simple .header-login{ color: <?php tally_color('color_text_dark'); ?> !important; }
 .color_mood_dark .header-logins-area.style_simple .header-register{ color: <?php tally_color('color_text_dark'); ?> !important; }
 
-/*- Phone -*/
+/*--- Phone ---*/
 .color_mood_light .header-phone.style_simple a{ color: <?php tally_color('color_text_light'); ?> !important; }
 .color_mood_dark .header-phone.style_simple a{ color: <?php tally_color('color_text_dark'); ?> !important; }
 
-/*- Email -*/
+/*--- Email ---*/
 .color_mood_light .header-email.style_simple a{ color: <?php tally_color('color_text_light'); ?> !important; }
 .color_mood_dark .header-email.style_simple a{ color: <?php tally_color('color_text_dark'); ?> !important; }
 <?php 

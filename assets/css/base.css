@@ -818,15 +818,11 @@
 	}
 	#nav_alt ul li a{ 
 		display:block;
-		padding:6px 14px;
+		padding:6px 10px;
 		text-decoration:none;
 		font-weight:400;
-		font-size:14px;
-		color: ;
-		font-weight:bold;
-		margin-left:10px;
+		font-size:12px;
 		border-radius: 3px;
-		
 	}
 	#nav_alt>ul>li:first-child a{
 		padding-left:3px;
