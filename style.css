@@ -35,7 +35,7 @@ Tally Framework WordPress theme is licensed under the GPL.
 /* SUB-HEADER
 ================================================== */
 	#topbar{  }
-	#topbar #topbar-inner{ width:92%; margin:0 auto; max-width:960px; }
+	#topbar #topbar-inner{ width:92%; margin:0 auto; max-width:1100px; }
 	
 	#topbar .topbar-info-text{ float:left; }
 	#topbar .topbar-info-text .topbar-phone{ float:left; margin-right:15px; }
@@ -48,7 +48,7 @@ Tally Framework WordPress theme is licensed under the GPL.
 	#header{  }
 	#header a{ color: ; }
 	#header a:hover{ color: ; }
-	#header #header-inner{ width:92%; margin:0 auto; max-width:960px; height:100px; }
+	#header #header-inner{ width:92%; margin:0 auto; max-width:1100px; height:100px; }
 	/* #header .hheaight{ height:70px; }*/
 	
 	#header .logo_area{  float:left;  padding-right:22px;  }
@@ -250,7 +250,7 @@ Tally Framework WordPress theme is licensed under the GPL.
 	#subheader a:hover{ color: ; }
 	
 	#subheader h1, #subheader h2, #subheader h3, #subheader h4, #subheader h5, #subheader h6{ color: ; }
-	#subheader  #subheader-inner{ width:92%; margin:0 auto; max-width:960px;  padding:30px 0; }
+	#subheader  #subheader-inner{ width:92%; margin:0 auto; max-width:1100px;  padding:30px 0; }
 	#subheader .col{ min-height:1px; }
 	
 	#subheader .page_title{ font-size: 30px; line-height: 40px; margin-bottom:0; width:60%; float:left; font-weight:bold; }
@@ -280,7 +280,7 @@ Tally Framework WordPress theme is licensed under the GPL.
 	#main .subheading{ color: ; }
 	#main .subtext{ color: ; }
 	#main .innerbg{ background-color: ; }
-	#main #main-inner{ width:92%; margin:0 auto; max-width:960px; }
+	#main #main-inner{ width:92%; margin:0 auto; max-width:1100px; }
 	
 	#main blockquote{ border-color: ; background-color: ; }
 	#main input[type="text"], 
@@ -452,7 +452,7 @@ Tally Framework WordPress theme is licensed under the GPL.
 	#fwidget .subheading{ color: ; }
 	#fwidget .subtext{ color: ; }
 	#fwidget .innerbg{ background-color: ; }
-	#fwidget #fwidget-inner{ width:92%; margin:0 auto; max-width:960px; }
+	#fwidget #fwidget-inner{ width:92%; margin:0 auto; max-width:1100px; }
 	
 	#fwidget .widget{ margin-bottom:30px; }
 	
@@ -465,7 +465,7 @@ Tally Framework WordPress theme is licensed under the GPL.
 	
 	#footer a{ color: ; }
 	#footer a:hover{ color: ; }
-	#footer #footer-inner{ width:92%; margin:0 auto; max-width:960px; padding:20px 0; clear:both; overflow:hidden; }
+	#footer #footer-inner{ width:92%; margin:0 auto; max-width:1100px; padding:20px 0; clear:both; overflow:hidden; }
 	#footer #footer-inner .col{ min-height:1px; }
 	#footer .powerd_text{ text-align:right; }
 	#footer .copy_text{ float:left; margin-top: 3px; font-weight:bold; }	
