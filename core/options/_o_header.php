@@ -297,6 +297,152 @@ function tally_header_ot_options($custom_settings){
 				),
 			)
 		);
+		
+		$custom_settings['settings']['header_layout_navigation_style'] = array(
+			'id'          => 'header_layout_navigation_style',
+			'label'       => 'Navigation Layout Style',
+			'desc'        => '',
+			'std'         => tally_option_std('header_layout_navigation_style'),
+			'type'        => 'select',
+			'section'     => 'header',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => array(
+				array('value' => 'style_border_full', 'label' => 'style_border_full'),
+				array('value' => 'style_border_round', 'label' => 'style_border_round'),
+				array('value' => 'style_border_square', 'label' => 'style_border_square'),
+				array('value' => 'style_bg_round', 'label' => 'style_bg_round'),
+				array('value' => 'style_bg_square', 'label' => 'style_bg_square'),
+				array('value' => 'style_simple', 'label' => 'style_simple'),
+			)
+		);
+		$custom_settings['settings']['header_layout_social_icon_style'] = array(
+			'id'          => 'header_layout_social_icon_style',
+			'label'       => 'Social Icons Layout Style',
+			'desc'        => '',
+			'std'         => tally_option_std('header_layout_social_icon_style'),
+			'type'        => 'select',
+			'section'     => 'header',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => array(
+				array('value' => 'style_border_circle', 'label' => 'style_border_circle'),
+				array('value' => 'style_border_round', 'label' => 'style_border_round'),
+				array('value' => 'style_border_square', 'label' => 'style_border_square'),
+				array('value' => 'style_simple', 'label' => 'style_simple'),
+				array('value' => 'style_bg_circle', 'label' => 'style_bg_circle'),
+				array('value' => 'style_bg_round', 'label' => 'style_bg_round'),
+				array('value' => 'style_bg_square', 'label' => 'style_bg_square'),
+			)
+		);
+		$custom_settings['settings']['header_layout_logins_style'] = array(
+			'id'          => 'header_layout_logins_style',
+			'label'       => 'Logins Layout Style',
+			'desc'        => '',
+			'std'         => tally_option_std('header_layout_logins_style'),
+			'type'        => 'select',
+			'section'     => 'header',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => array(
+				array('value' => 'style_simple', 'label' => 'style_simple'),
+				array('value' => 'style_border_round', 'label' => 'style_border_round'),
+				array('value' => 'style_border_square', 'label' => 'style_border_square'),
+				array('value' => 'style_bg_round', 'label' => 'style_bg_round'),
+				array('value' => 'style_bg_square', 'label' => 'style_bg_square'),
+				array('value' => 'style_lr_border_round', 'label' => 'style_lr_border_round'),
+				array('value' => 'style_lr_border_square', 'label' => 'style_lr_border_square'),
+				array('value' => 'style_lr_bg_round', 'label' => 'style_lr_bg_round'),
+				array('value' => 'style_lr_bg_square', 'label' => 'style_lr_bg_square'),
+			)
+		);
+		
+		
+		
+		$custom_settings['settings']['header_layout_topbar_border'] = array(
+			'id'          => 'header_layout_topbar_border',
+			'label'       => 'Topbar Border',
+			'desc'        => '',
+			'std'         => tally_option_std('header_layout_topbar_border'),
+			'type'        => 'select',
+			'section'     => 'header',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => array(
+				array('value' => 'none',		'label' => 'none'),
+				array('value' => 'all',			'label' => 'all'),
+				array('value' => 'top',			'label' => 'top'),
+				array('value' => 'bottom',		'label' => 'bottom'),
+				array('value' => 'left',		'label' => 'left'),
+				array('value' => 'right',		'label' => 'right'),
+				array('value' => 'top-bottom',	'label' => 'top-bottom'),
+				array('value' => 'left-right',	'label' => 'left-right'),
+				array('value' => 'top-left',	'label' => 'top-left'),
+				array('value' => 'top-right',	'label' => 'top-right'),
+				array('value' => 'bottom-left', 'label' => 'bottom-left'),
+				array('value' => 'bottom-right','label' => 'bottom-right'),
+			)
+		);
+		$custom_settings['settings']['header_layout_header_border'] = array(
+			'id'          => 'header_layout_header_border',
+			'label'       => 'Header Border',
+			'desc'        => '',
+			'std'         => tally_option_std('header_layout_header_border'),
+			'type'        => 'select',
+			'section'     => 'header',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => array(
+				array('value' => 'none',		'label' => 'none'),
+				array('value' => 'all',			'label' => 'all'),
+				array('value' => 'top',			'label' => 'top'),
+				array('value' => 'bottom',		'label' => 'bottom'),
+				array('value' => 'left',		'label' => 'left'),
+				array('value' => 'right',		'label' => 'right'),
+				array('value' => 'top-bottom',	'label' => 'top-bottom'),
+				array('value' => 'left-right',	'label' => 'left-right'),
+				array('value' => 'top-left',	'label' => 'top-left'),
+				array('value' => 'top-right',	'label' => 'top-right'),
+				array('value' => 'bottom-left', 'label' => 'bottom-left'),
+				array('value' => 'bottom-right','label' => 'bottom-right'),
+			)
+		);
+		$custom_settings['settings']['header_layout_menu_border'] = array(
+			'id'          => 'header_layout_menu_border',
+			'label'       => 'Menu Border',
+			'desc'        => '',
+			'std'         => tally_option_std('header_layout_menu_border'),
+			'type'        => 'select',
+			'section'     => 'header',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => array(
+				array('value' => 'none',		'label' => 'none'),
+				array('value' => 'all',			'label' => 'all'),
+				array('value' => 'top',			'label' => 'top'),
+				array('value' => 'bottom',		'label' => 'bottom'),
+				array('value' => 'left',		'label' => 'left'),
+				array('value' => 'right',		'label' => 'right'),
+				array('value' => 'top-bottom',	'label' => 'top-bottom'),
+				array('value' => 'left-right',	'label' => 'left-right'),
+				array('value' => 'top-left',	'label' => 'top-left'),
+				array('value' => 'top-right',	'label' => 'top-right'),
+				array('value' => 'bottom-left', 'label' => 'bottom-left'),
+				array('value' => 'bottom-right','label' => 'bottom-right'),
+			)
+		);
 	endif;
 	
 	return $custom_settings;
