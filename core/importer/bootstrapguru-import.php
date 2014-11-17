@@ -5,4 +5,8 @@ class bootstrapguru_import extends WP_Import
     {
     //you can add any extra custom functions after the importing of demo coment is done
     }
+	
+	function mp_request_timeout(){
+		return 120;	
+	}
 }
