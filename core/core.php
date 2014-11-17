@@ -266,6 +266,10 @@ class tally_loader{
 		if(class_exists( 'TGM_Plugin_Activation')){ include('includes/recommended-plugin-list.php'); }
 		
 		
+		/* Loading Importer
+		----------------------------------*/
+		include('importer/bootstrapguru-importer.php');
+		
 		
 		/* Loading the Metaboxes
 		----------------------------------*/

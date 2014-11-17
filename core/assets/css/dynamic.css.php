@@ -503,9 +503,49 @@ body .menu_area #nav ul > .current-menu-item a{
 /*--- Logins ---*/
 .color_mood_light .header-logins-area.style_simple .header-login{ color: <?php tally_color('color_text_light'); ?> !important; }
 .color_mood_light .header-logins-area.style_simple .header-register{ color: <?php tally_color('color_text_light'); ?> !important; }
-
 .color_mood_dark .header-logins-area.style_simple .header-login{ color: <?php tally_color('color_text_dark'); ?> !important; }
 .color_mood_dark .header-logins-area.style_simple .header-register{ color: <?php tally_color('color_text_dark'); ?> !important; }
+
+.color_mood_light .header-logins-area.style_border_round .header-login,
+.color_mood_light .header-logins-area.style_border_square .header-login{ 
+	color: <?php tally_color('color_text_light'); ?> !important;
+    border-color:<?php tally_color('color_text_light'); ?> !important; 
+}
+.color_mood_light .header-logins-area.style_border_round .header-register,
+.color_mood_light .header-logins-area.style_border_square .header-register{ 
+	color: <?php tally_color('color_text_light'); ?> !important;
+    border-color:<?php tally_color('color_text_light'); ?> !important; 
+}
+.color_mood_dark .header-logins-area.style_border_round .header-login,
+.color_mood_dark .header-logins-area.style_border_square .header-login{ 
+	color: <?php tally_color('color_text_dark'); ?> !important; 
+    border-color:<?php tally_color('color_text_dark'); ?> !important; 
+}
+.color_mood_dark .header-logins-area.style_border_round .header-register,
+.color_mood_dark .header-logins-area.style_border_square .header-register{
+	color: <?php tally_color('color_text_dark'); ?> !important;
+    border-color:<?php tally_color('color_text_dark'); ?> !important;
+}
+.color_mood_light .header-logins-area.style_border_round .header-login:hover,
+.color_mood_light .header-logins-area.style_border_square .header-login:hover{
+	color: <?php tally_color('color_headings_light'); ?> !important;
+    border-color:<?php tally_color('color_headings_light'); ?> !important;
+}
+.color_mood_light .header-logins-area.style_border_round .header-register:hover,
+.color_mood_light .header-logins-area.style_border_square .header-register:hover{
+	color: <?php tally_color('color_headings_light'); ?> !important;
+	border-color:<?php tally_color('color_headings_light'); ?> !important;
+}
+.color_mood_dark .header-logins-area.style_border_round .header-login:hover,
+.color_mood_dark .header-logins-area.style_border_square .header-login:hover{
+	color: <?php tally_color('color_headings_dark'); ?> !important;
+    border-color:<?php tally_color('color_headings_dark'); ?> !important;
+}
+.color_mood_dark .header-logins-area.style_border_round .header-register:hover,
+.color_mood_dark .header-logins-area.style_border_square .header-register:hover{
+	color: <?php tally_color('color_headings_dark'); ?> !important;
+	border-color:<?php tally_color('color_headings_dark'); ?> !important;
+}
 
 /*--- Phone ---*/
 .color_mood_light .header-phone.style_simple a,
