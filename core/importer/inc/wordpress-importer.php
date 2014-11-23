@@ -26,8 +26,9 @@ if ( ! class_exists( 'WP_Importer' ) ) {
 }
 
 // include WXR file parsers
-require dirname( __FILE__ ) . '/parsers.php';
-
+if ( ! class_exists( 'WXR_Parser' ) ) {
+	require dirname( __FILE__ ) . '/parsers.php';
+}
 /**
  * WordPress Importer class for managing the import process of a WXR file
  *
@@ -35,7 +36,7 @@ require dirname( __FILE__ ) . '/parsers.php';
  * @subpackage Importer
  */
 if ( class_exists( 'WP_Importer' ) ) {
-class WP_Import extends WP_Importer {
+class tally_WP_Import extends WP_Importer {
 	var $max_wxr_version = 1.2; // max. supported WXR version
 
 	var $id; // WXR attachment ID
@@ -1118,15 +1119,3 @@ class WP_Import extends WP_Importer {
 }
 
 } // class_exists( 'WP_Importer' )
-
-function wordpress_importer_init() {
-	load_plugin_textdomain( 'wordpress-importer', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-
-	/**
-	 * WordPress Importer object for registering the import callback
-	 * @global WP_Import $wp_import
-	 */
-	$GLOBALS['wp_import'] = new WP_Import();
-	register_importer( 'wordpress', 'WordPress', __('Import <strong>posts, pages, comments, custom fields, categories, and tags</strong> from a WordPress export file.', 'wordpress-importer'), array( $GLOBALS['wp_import'], 'dispatch' ) );
-}
-add_action( 'admin_init', 'wordpress_importer_init' );

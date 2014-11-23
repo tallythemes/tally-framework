@@ -1,34 +1,16 @@
 <?php
 add_action( 'wp_ajax_tally_demo_import', 'tally_demo_import' );
-function tally_demo_import() 
-{
-    global $wpdb;
-	deactivate_plugins( 'wordpress-importer/wordpress-importer.php' );
+function tally_demo_import(){
 
+ 	/*
+		1. XML importer
+	------------------------------------------------------------------*/
     if ( !defined('WP_LOAD_IMPORTERS') ) define('WP_LOAD_IMPORTERS', true);
-	
-	remove_action( 'admin_init', 'wordpress_importer_init' );
 
     // Load Importer API
-    require_once ABSPATH . 'wp-admin/includes/import.php';
+    require_once ('inc/wordpress-importer.php');	
 
-    if ( ! class_exists( 'WP_Importer' ) ) {
-        $class_wp_importer = ABSPATH . 'wp-admin/includes/class-wp-importer.php';
-        if ( file_exists( $class_wp_importer ) )
-        {
-            require $class_wp_importer;
-        }
-    }
-
-    if ( ! class_exists( 'WP_Import' ) ) {
-        $class_wp_importer = ABSPATH ."wp-content/plugins/wordpress-importer/wordpress-importer.php";
-        if ( file_exists( $class_wp_importer ) ){
-            require $class_wp_importer;
-		}
-    }
-
-
-    if ( class_exists( 'WP_Import' ) ){ 
+    if ( class_exists( 'WP_Importer' ) ){ 
         
 		if(file_exists(TALLY_CHILD_DRI ."/demo/sample-data.xml")){
 			$import_filepath = TALLY_CHILD_DRI ."/demo/sample-data.xml";
@@ -38,9 +20,11 @@ function tally_demo_import()
 		
 		if(file_exists($import_filepath)){
 			include_once('bootstrapguru-import.php');
-	
+
 			$wp_import = new bootstrapguru_import();
-			$wp_import->fetch_attachments = false;
+			$wp_import->fetch_attachments = true;
+			
+			set_time_limit(0);
 			$wp_import->import($import_filepath);
 	
 			$wp_import->check();
@@ -50,6 +34,28 @@ function tally_demo_import()
 
     }else{
 		echo 'Please install "wordpress-importer" plugin';	
+	}
+	
+	
+	/*
+		2. Widget importer
+	------------------------------------------------------------------*/
+	if ( !function_exists( 'tally_import_widget_data' ) ){ 
+		require_once ('inc/widgets-importer.php');	
+	}
+	
+	if(function_exists( 'tally_import_widget_data' )){
+		if(file_exists(TALLY_CHILD_DRI ."/demo/sample-widgets.wie")){
+			$wie_filepath = TALLY_CHILD_DRI ."/demo/sample-widgets.wie";
+		}else{
+			$wie_filepath = TALLY_DRI ."/demo/sample-widgets.wie";
+		}
+		
+		if(file_exists($wie_filepath)){
+			tally_process_import_widget_file( $wie_filepath );
+		}else{
+			echo 'sample-widgets.wie file is not here.';	
+		}
 	}
    
    die(); // this is required to return a proper result

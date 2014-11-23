@@ -1,5 +1,5 @@
 <?php
-class bootstrapguru_import extends WP_Import
+class bootstrapguru_import extends tally_WP_Import
 {
     function check()
     {
