@@ -23,7 +23,7 @@ function tally_demo_import(){
 				include_once('bootstrapguru-import.php');
 	
 				$wp_import = new bootstrapguru_import();
-				$wp_import->fetch_attachments = true;
+				$wp_import->fetch_attachments = false;
 				
 				set_time_limit(0);
 				ob_start();
