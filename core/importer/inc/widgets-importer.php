@@ -30,8 +30,7 @@ function tally_process_import_widget_file( $file ) {
 	// Get file contents and decode
 	$data = file_get_contents( $file );
 	$data = json_decode( $data );
-	// Delete import file
-	unlink( $file );
+
 	// Import the widget data
 	// Make results available for display on import/export page
 	$wie_import_results = tally_import_widget_data( $data );
