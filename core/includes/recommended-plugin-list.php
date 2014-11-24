@@ -20,6 +20,7 @@ function tally_register_required_plugins_list() {
             'name'      => 'Contact Form 7',
             'slug'      => 'contact-form-7',
             'required'  => true,
+			'force_activation'   => true,
 		),
 		array(
             'name'      => 'WordPress SEO by Yoast',
