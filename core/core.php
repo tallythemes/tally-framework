@@ -268,7 +268,7 @@ class tally_loader{
 		
 		/* Loading Importer
 		----------------------------------*/
-		include('importer/bootstrapguru-importer.php');
+		//include('importer/bootstrapguru-importer.php');
 		
 		
 		/* Loading the Metaboxes
