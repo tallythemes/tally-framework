@@ -1,7 +1,10 @@
 <?php
 function tally_setup_admin_notice() {
 	if( isset($_GET['page']) && ($_GET['page'] == 'tallykit_importer-demo-importer') ) return;
-	if(get_option('tallykit_importer_all_data_imported') == 'yes') return;
+	if((get_option('tallykit_importer_is_xml') == 'yes') 
+		&& (get_option('tallykit_importer_is_widget') == 'yes') 
+		&& (get_option('tallykit_importer_is_menu') == 'yes') 
+		&& (get_option('tallykit_importer_is_home') == 'yes')) return;
 	$theme = wp_get_theme();
     ?>
     <style type="text/css">
