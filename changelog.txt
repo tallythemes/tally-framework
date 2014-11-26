@@ -1,9 +1,13 @@
 *** Tally Framework Changelog ***
+2014-11-26 - Version 0.8.7
+  * Fix a Small CSS
+  * Change content width to 1100px
+  * Added theme setup norice
 
-2014-18-28 - Version 0.8.6.1
+2014-10-28 - Version 0.8.6.1
   * Fix a Small Bug.
 
-2014-18-28 - Version 0.8.6
+2014-10-28 - Version 0.8.6
   * Added option images
   * Added option data loader
   * Option Tree is now out side of the theme.
