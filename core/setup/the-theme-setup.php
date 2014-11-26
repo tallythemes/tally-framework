@@ -1,5 +1,7 @@
 <?php
 function tally_setup_admin_notice() {
+	if(apply_filters('tally_impoter_notice_display', false) == false) return;
+	
 	if ( isset( $_GET['tallykit_importer_dismiss_notice'] ) ) {
 		update_user_meta( get_current_user_id(), 'tallykit_importer_dismiss_notice', 'yes' );
 	}
@@ -32,12 +34,20 @@ function tally_setup_admin_notice() {
 		-webkit-box-shadow: inset 0 1px 0 #755B98,0 1px 0 rgba(0,0,0,.08);
     	box-shadow: inset 0 1px 0 #755B98,0 1px 0 rgba(0,0,0,.08);
 	}
+	.tally_setup_notic .button.button-hero:hover{
+		background:#dd823b;
+		border-color:#BD6B2B; 
+		-webkit-box-shadow: inset 0 1px 0 #F5A261,0 1px 0 rgba(0,0,0,.08);
+    	box-shadow: inset 0 1px 0 #F5A261,0 1px 0 rgba(0,0,0,.08);
+	}
+	.tally_setup_notic .tally-dismiss{ color:#FFF; line-height: 43px; margin-left: 15px; }
+	.tally_setup_notic .tally-dismiss:hover{ color:#dd823b; }
 	</style>
     <div class="tally_setup_notic">
 		<h2>You have success fully  installed "<strong><?php echo $theme->get( 'Name' ); ?></strong>" theme.</h2>
 		<h3>Do you want to make your site like our demo site? If yes, please click the button below.</h3>
 		<a href="<?php echo admin_url( 'themes.php?page=tallykit_importer-demo-importer'); ?>" class="button button-hero" >Make the Site like the Demo</a>
-        <a href="<?php echo add_query_arg( 'tallykit_importer_dismiss_notice', 'yes' ); ?>">Dismiss This notice</a>
+        <a class="tally-dismiss" href="<?php echo add_query_arg( 'tallykit_importer_dismiss_notice', 'yes' ); ?>">Dismiss This notice</a>
     </div>
     <?php
 }
