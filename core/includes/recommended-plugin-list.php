@@ -13,14 +13,14 @@ function tally_register_required_plugins_list() {
 		array(
             'name'      => 'Option Tree',
             'slug'      => 'option-tree',
-            'required'  => true,
-			'force_activation' => true,
+            'required'  => apply_filters('tally_plugin_list_optiontree_required', true),
+			'force_activation' => apply_filters('tally_plugin_list_optiontree_force_activation', false),
 		),
 		array(
             'name'      => 'Contact Form 7',
             'slug'      => 'contact-form-7',
-            'required'  => true,
-			'force_activation'   => true,
+            'required'  => apply_filters('tally_plugin_list_contactform7_required', false),
+			'force_activation'   => apply_filters('tally_plugin_list_contactform7_force_activation', false),
 		),
 		array(
             'name'      => 'WordPress SEO by Yoast',
