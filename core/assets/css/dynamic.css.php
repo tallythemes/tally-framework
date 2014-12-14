@@ -120,8 +120,9 @@ if(tally_option('body_font_size')){ echo 'body{ font-size:'.tally_option('body_f
 .color_mood_dark a:hover{ color:<?php tally_color('site_accent2_color'); ?>; }
 .color_mood_dark input,
 .color_mood_dark textarea,
-.color_mood_dark select{ background:<?php tally_color('color_inner_bg_dark','1'); ?>; border-color:<?php tally_color('color_border_dark', '1'); ?>  !important; }
-.color_mood_dark input[type="submit"]{ 
+.color_mood_dark select{ background:<?php tally_color('color_inner_bg_dark','0.1'); ?>; border-color:<?php tally_color('color_headings_dark', '0.3'); ?>  !important; }
+.color_mood_dark input[type="submit"],
+.color_mood_dark button[type="submit"]{ 
 			background-color:<?php echo tally_color('site_accent_color'); ?>; color:#FFF; border:solid 1px <?php echo tally_color('site_accent_color'); ?> !important; 
 }
 .color_mood_dark input[type="submit"]:hover{
@@ -203,8 +204,9 @@ if(tally_option('body_font_size')){ echo 'body{ font-size:'.tally_option('body_f
 .color_mood_light a:hover{ color:<?php tally_color('site_accent2_color'); ?>; }
 .color_mood_light input,
 .color_mood_light textarea,
-.color_mood_light select{ background:<?php tally_color('color_inner_bg_light', '1'); ?>; border-color:<?php tally_color('color_border_light', '1'); ?>  !important; }
-.color_mood_light input[type="submit"]{ 
+.color_mood_light select{ background:<?php tally_color('color_inner_bg_light', '0.4'); ?>; border-color:<?php tally_color('color_border_light', '1'); ?>  !important; }
+.color_mood_light input[type="submit"],
+.color_mood_light button[type="submit"]{ 
 	background-color:<?php echo tally_color('site_accent_color'); ?>; color:#FFF; border:solid 1px <?php echo tally_color('site_accent_color'); ?> !important; 
 }
 .color_mood_light input[type="submit"]:hover{
@@ -391,7 +393,8 @@ if(tally_option('body_font_size')){ echo 'body{ font-size:'.tally_option('body_f
 body .menu_area #nav *{ color:<?php tally_color('color_navigation_text'); ?>; border-color:<?php tally_color('color_navigation_border'); ?> !important; }
 body .menu_area #nav a{ color:<?php tally_color('color_navigation_text'); ?>; background-color:<?php tally_color('color_navigation_bg'); ?>; }
 body .menu_area #nav a:hover,
-body .menu_area #nav ul > .current-menu-item a{ 
+body .menu_area #nav ul > .current-menu-item > a,
+body .menu_area #nav ul > .current-menu-parent > a{ 
 	color:<?php tally_color('color_navigation_text_hover'); ?>;
 	border-color:<?php tally_color('color_navigation_border_hover'); ?> !important;
 	background-color:<?php tally_color('color_navigation_bg_hover'); ?>; 
