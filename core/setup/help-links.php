@@ -1,6 +1,7 @@
 <?php
 function tally_setup_admin_help_notice(){
 	if(apply_filters('tally_help_notice_display', true) == false) return;
+	if(TALLY_THEME_STORE_URL == '') return;
 	if(isset($_GET['page']) && ($_GET['page'] == 'ot-theme-options')){
     ?>
     <style type="text/css">
@@ -14,7 +15,9 @@ function tally_setup_admin_help_notice(){
 	.tally_setup_help_notic .button{ margin-right:15px; }
 	</style>
     <div class="tally_setup_help_notic">
-        <a href="<?php echo TALLY_THEME_STORE_URL; ?>" target="_blank" class="button button-primary button-large">Visit <?php echo TALLY_THEME_NAME; ?> PRO</a>
+    	<?php if(TALLY_THEME_STORE_URL != ''): ?>
+        	<a href="<?php echo TALLY_THEME_STORE_URL; ?>" target="_blank" class="button button-primary button-large">Visit <?php echo TALLY_THEME_NAME; ?> PRO</a>
+        <?php endif; ?>
         <?php if(TALLY_THEME_DOC_URL != ''): ?>
             <a href="<?php echo TALLY_THEME_DOC_URL; ?>" target="_blank" class="button button-primary button-large">Documentation</a>
         <?php endif; ?>

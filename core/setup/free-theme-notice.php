@@ -1,6 +1,7 @@
 <?php
 function tally_setup_admin_free_notice(){
 	if(apply_filters('tally_free_notice_display', true) == false) return;
+	if(TALLY_THEME_STORE_URL == '') return;
 	if(isset($_GET['page']) && ($_GET['page'] == 'ot-theme-options')){
     ?>
     <style type="text/css">
