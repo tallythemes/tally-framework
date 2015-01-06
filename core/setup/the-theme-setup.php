@@ -18,8 +18,6 @@ function tally_setup_admin_notice(){
 	if( !current_user_can( 'install_plugins') ) return;
 	if ( get_user_meta( get_current_user_id(), 'tallykit_importer_dismiss_notice', true ) == 'yes' ) return;
 	if( isset($_GET['page']) && ($_GET['page'] == 'tallykit_importer-demo-importer') ) return;
-	
-	
     ?>
     <style type="text/css">
 	.tally_setup_notic{

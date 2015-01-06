@@ -270,6 +270,7 @@ class tally_loader{
 		/* Loading Setup files
 		----------------------------------*/
 		include('setup/the-theme-setup.php');
+		include('setup/free-theme-notice.php');
 		
 		
 		
