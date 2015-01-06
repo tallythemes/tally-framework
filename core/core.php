@@ -84,7 +84,12 @@ class tally_loader{
 		if(!defined('TALLY_BLOG_G_IMG_W')){ define('TALLY_BLOG_G_IMG_W', 960); }
 		if(!defined('TALLY_BLOG_G_IMG_H')){ define('TALLY_BLOG_G_IMG_H', 500); }
 		if(!defined('TALLY_IMAGE_RETINA_SUPPORT')){ define('TALLY_IMAGE_RETINA_SUPPORT', false); }
+		
 		if(!defined('TALLY_THEME_STORE_URL')){ define('TALLY_THEME_STORE_URL', ''); }
+		if(!defined('TALLY_THEME_DEMO_URL')){ define('TALLY_THEME_DEMO_URL', ''); }
+		if(!defined('TALLY_THEME_ORG_URL')){ define('TALLY_THEME_ORG_URL', ''); }
+		if(!defined('TALLY_THEME_DOC_URL')){ define('TALLY_THEME_DOC_URL', ''); }
+		if(!defined('TALLY_THEME_SUPPORT_URL')){ define('TALLY_THEME_SUPPORT_URL', ''); }
 		if(!defined('TALLY_THEME_NAME')){ define('TALLY_THEME_NAME', ''); }
 		
 		/*  Constant for remove or active 

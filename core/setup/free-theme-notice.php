@@ -1,6 +1,7 @@
 <?php
 function tally_setup_admin_free_notice(){
 	if(apply_filters('tally_free_notice_display', true) == false) return;
+	if(isset($_GET['page']) && ($_GET['page'] == 'ot-theme-options')){
     ?>
     <style type="text/css">
 	.tally_setup_free_notic{
@@ -24,5 +25,6 @@ function tally_setup_admin_free_notice(){
         <p><a href="<?php echo TALLY_THEME_STORE_URL; ?>" target="_blank" class="button button-primary button-large">Visit <?php echo TALLY_THEME_NAME; ?> PRO</a></p>
     </div>    
     <?php
+	}
 }
 add_action( 'admin_notices', 'tally_setup_admin_free_notice' );
