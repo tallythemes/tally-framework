@@ -1,5 +1,10 @@
 <?php
-function tally_setup_admin_notice() {
+function tally_setup_admin_notice(){
+	$theme = wp_get_theme();
+	$title = 'You have success fully  installed "<strong>'.$theme->get( 'Name' ).'</strong>" theme.';
+	$text = 'Do you want to make your site like our demo site? If yes, please click the button below.';
+	$button = '<a href="'.admin_url( 'themes.php?page=tallykit_importer-demo-importer').'" class="button button-hero" >Make the Site like the Demo</a>';
+	
 	if(apply_filters('tally_impoter_notice_display', false) == false) return;
 	
 	if ( isset( $_GET['tallykit_importer_dismiss_notice'] ) ) {
@@ -13,8 +18,8 @@ function tally_setup_admin_notice() {
 	if( !current_user_can( 'install_plugins') ) return;
 	if ( get_user_meta( get_current_user_id(), 'tallykit_importer_dismiss_notice', true ) == 'yes' ) return;
 	if( isset($_GET['page']) && ($_GET['page'] == 'tallykit_importer-demo-importer') ) return;
-	echo get_user_meta( get_current_user_id(), 'tallykit_importer_dismiss_notice', true );
-	$theme = wp_get_theme();
+	
+	
     ?>
     <style type="text/css">
 	.tally_setup_notic{
@@ -26,6 +31,7 @@ function tally_setup_admin_notice() {
 		margin: 40px 20px 0 2px;
 	}
 	.tally_setup_notic h2, .tally_setup_notic h3{ color:#FFF; }
+	.tally_setup_notic h3{ font-weight:normal; }
 	.tally_setup_notic .button.button-hero{
 		font-weight:bold; 
 		background:#523f6d; 
@@ -44,11 +50,32 @@ function tally_setup_admin_notice() {
 	.tally_setup_notic .tally-dismiss:hover{ color:#dd823b; }
 	</style>
     <div class="tally_setup_notic">
-		<h2>You have success fully  installed "<strong><?php echo $theme->get( 'Name' ); ?></strong>" theme.</h2>
-		<h3>Do you want to make your site like our demo site? If yes, please click the button below.</h3>
-		<a href="<?php echo admin_url( 'themes.php?page=tallykit_importer-demo-importer'); ?>" class="button button-hero" >Make the Site like the Demo</a>
+        
+        <?php 
+		if(!in_array( 'tallykit/tallykit.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) && in_array( 'option-tree/ot-loader.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) )){
+			$button = '<a href="'.admin_url( 'themes.php?page=tgmpa-install-plugins').'" class="button button-hero" >Make the Site like the Demo</a>';
+		}
+		if(isset($_GET['page']) && ($_GET['page'] == 'tgmpa-install-plugins') ){
+			$title = 'One More Step.';
+			$text = 'Before we import sample data we need to install & active <strong>TallyKit</strong> and <strong>Option Tree</strong> plugins. Also you will see the list of recommended plugins below. You should install all plugins to make the theme fully functional.';
+			$button = '';
+		}
+		if(in_array( 'tallykit/tallykit.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) && in_array( 'option-tree/ot-loader.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) )){
+			$title = 'Plugins are installed now Import Sample Data';
+			$text = 'Now it is time to make the site look like the orginal demo of the theme please click on the button below and it will take you to the impoter page.';
+			$button = '<a href="'.admin_url( 'themes.php?page=tallykit_importer-demo-importer').'" class="button button-hero" >Make the Site like the Demo</a>';
+		}
+		?>
+        <script language="javascript" type="text/javascript">
+			function submitDetailsForm() {
+			   $("#tgmpa-plugins").submit();
+			}
+		</script>
+        <h2><?php echo $title; ?></h2>
+		<h3><?php echo $text; ?></h3>
+        <?php echo $button; ?>
         <a class="tally-dismiss" href="<?php echo add_query_arg( 'tallykit_importer_dismiss_notice', 'yes' ); ?>">Dismiss This notice</a>
-    </div>
+    </div>    
     <?php
 }
 add_action( 'admin_notices', 'tally_setup_admin_notice' );

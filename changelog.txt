@@ -1,4 +1,9 @@
 *** Tally Framework Changelog ***
+
+2015-01-06 - Version 0.8.8
+  * Improve Admin Notice
+  * Add Free Theme Notice
+
 2014-11-26 - Version 0.8.7
   * Fix a Small CSS
   * Change content width to 1100px
