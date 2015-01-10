@@ -50,7 +50,7 @@ function tally_setup_admin_notice(){
     <div class="tally_setup_notic">
         
         <?php 
-		if(!in_array( 'tallykit/tallykit.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) && in_array( 'option-tree/ot-loader.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) )){
+		if(!in_array( 'tallykit/tallykit.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) || !in_array( 'option-tree/ot-loader.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) )){
 			$button = '<a href="'.admin_url( 'themes.php?page=tgmpa-install-plugins').'" class="button button-hero" >Make the Site like the Demo</a>';
 		}
 		if(isset($_GET['page']) && ($_GET['page'] == 'tgmpa-install-plugins') ){

@@ -5,23 +5,6 @@ function tally_color_ot_options($custom_settings){
 	if(tally_check() == true):
 		$custom_settings['sections'][] = array( 'id' => 'color','title' => 'Color Option');
 		
-		$custom_settings['settings']['site_color_skin'] = array(
-			'id'          => 'site_color_skin',
-			'label'       => __('Choose Your Color Skin', 'tally_taxdomain'),
-			'desc'        => '',
-			'std'         => tally_option_std('site_color_skin'),
-			'type'        => 'select',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => array(
-				 array( 'label' => 'Light', 'value' => 'light'),
-				 array( 'label' => 'Dark', 'value' => 'dark'),
-			),
-		);
-		
 		$custom_settings['settings']['site_accent_color'] = array(
 			'id'          => 'site_accent_color',
 			'label'       => __('Accent Color of The Site', 'tally_taxdomain'),

@@ -57,7 +57,7 @@ function tally_branding_ot_options($custom_settings){
 			'taxonomy'    => '',
 			'class'       => '',
 			'choices'     => array(
-				 array( 'label' => '--', 'value' => '' ),
+				 array( 'label' => '--', 'value' => 'n/a' ),
 				 array( 'label' => 'Yes', 'value' => 'yes' ),
 				 array( 'label' => 'No', 'value' => 'no'),
 			)
