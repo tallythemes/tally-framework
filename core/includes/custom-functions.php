@@ -218,6 +218,19 @@ function tally_get_serialize_option_data(){
 endif;
 
 
+if(!function_exists('tally_get_serialize_option_data_alt')):
+function tally_get_serialize_option_data_alt(){
+	$output = '';
+	
+	if( function_exists('ot_options_id') ){
+		$field_settings = get_option( ot_options_id());
+		$output = maybe_serialize( $field_settings);
+	}
+	
+	return $output;
+}
+endif;
+
 
 
 
