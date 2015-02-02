@@ -457,7 +457,7 @@ add_filter( 'wp_page_menu_args', 'tally_page_menu_args' );
 function tallyfn_logo($logo = '', $des = true){
 	?>
     <div id="logo">
-		<?php if($logo != ''): ?>
+		<?php if($logo != 'none'): ?>
 			<a href="<?php echo home_url(); ?>"><img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?>"></a>
 		<?php else: ?>
 			<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
