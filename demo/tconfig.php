@@ -1,7 +1,7 @@
 <?php
 $tally_config = array(
-'site_logo' => 'http://localhost/ttf/wp-content/themes/tally-framework-child/images/logo.png',
-'site_logo_retina' => 'http://localhost/ttf/wp-content/themes/tally-framework-child/images/logo@2x.png',
+'site_logo' => 'none',
+'site_logo_retina' => 'none',
 'favicon' => '',
 'preloader' => '',
 'site_layout' => 'full',
