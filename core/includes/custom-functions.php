@@ -32,7 +32,6 @@ function tally_layout(){
 		do_action( 'tally_before_footer' );
 		do_action( 'tally_footer' );
 		do_action( 'tally_after_footer' );
-	
 	echo '</div>';
 	get_footer();
 	do_action( 'html_footer' );
@@ -216,21 +215,6 @@ function tally_get_serialize_option_data(){
 	return $output;
 }
 endif;
-
-
-if(!function_exists('tally_get_serialize_option_data_alt')):
-function tally_get_serialize_option_data_alt(){
-	$output = '';
-	
-	if( function_exists('ot_options_id') ){
-		$field_settings = get_option( ot_options_id());
-		$output = maybe_serialize( $field_settings);
-	}
-	
-	return $output;
-}
-endif;
-
 
 
 
@@ -909,4 +893,74 @@ function tally_social_icons($class = ''){
 		<?php endif; ?>
 	<?php endif; ?>
 	<?php	
+}
+
+
+function tally_creat_config_xml(){
+	//$options = get_option( 'option_tree' );
+	$options = apply_filters('tally_option_std', array());
+	$output = '';
+	$output .= '<tally-config>'. "\n";
+		foreach($options as $key => $option){
+			$first_line_br = '';
+			$first_line_br_s = '';
+			if(is_array($option)){ $first_line_br = "\n"; }
+			$output .= "\t".'<key name="'.$key.'">'.$first_line_br;
+				if(is_array($option)){
+					foreach($option as $key_s => $option_s){
+						if(is_array($option_s)){ $first_line_br_s = "\n"; }
+						$output .= "\t"."\t".'<key name="'.$key_s.'">'.$first_line_br_s;
+							if(is_array($option_s)){
+								foreach($option_s as $key_s_s => $option_s_s){
+									$output .= "\t"."\t"."\t".'<key name="'.$key_s_s.'">';
+										//$output .= $option_s_s;
+										$output .=trim(preg_replace('/\t+/', '', $option_s_s));
+									$output .= '</key>'."\n";
+								}
+							}else{
+								$output .= $option_s;
+							}
+						$output .= '</key>'."\n";
+					}
+				}else{
+					$output .= $option;
+				}
+			$output .= '</key>'. "\n";
+		}
+	$output .= '</tally-config>';
+	
+	return $output;
+}
+
+
+
+function tally_creat_config_array(){
+	$options = get_option( 'option_tree' );
+	//$options = apply_filters('tally_option_std', array());
+	$output = '';
+	if(is_array($options )){
+	$output .= '<?php'."\n" . '$tally_config = array('. "\n";
+		foreach($options as $key => $option){
+			if(is_array($option)){
+				$output .= "'".$key."' => array(" . "\n";
+					foreach($option as $key_1 => $option_1){
+						if(is_array($option_1)){
+							$output .= "\t" . "array(" . "\n";
+								foreach($option_1 as $key_2 => $option_2){
+									$output .= "\t" . "\t" . "'".$key_2."' => '".str_replace("'","\'",$option_2)."'," . "\n";	
+								}
+							$output .= "\t" . ")," . "\n";
+						}else{
+							$output .= "\t" . "'".$key_1."' => '".str_replace("'","\'",$option_1)."'," . "\n";
+						}
+					}
+				$output .= ")," . "\n";
+			}else{
+				$output .= "'".$key."' => '".str_replace("'","\'",$option)."'," . "\n";
+			}
+		}
+	$output .= ');';
+	}
+	
+	return $output;
 }

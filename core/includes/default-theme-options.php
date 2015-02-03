@@ -12,13 +12,13 @@ function tally_option_std_filter($option){
 	$dri = '';
 	$alt_ok = false;
 	
-	if(file_exists(TALLY_CHILD_DRI . '/demo/theme-options-alt.php')){
+	if(file_exists(TALLY_CHILD_DRI . '/demo/tconfig.php')){
 		$alt_ok = true;
-		$dri = TALLY_CHILD_DRI . '/demo/theme-options-alt.php';
+		$dri = TALLY_CHILD_DRI . '/demo/tconfig.php';
 	}elseif(file_exists(TALLY_CHILD_DRI . '/demo/theme-options.php')){
 		$dri = TALLY_CHILD_DRI . '/demo/theme-options.php';
-	}elseif(file_exists(TALLY_DRI . '/demo/theme-options-alt.php')){
-		$dri = TALLY_DRI . '/demo/theme-options-alt.php';
+	}elseif(file_exists(TALLY_DRI . '/demo/tconfig.php')){
+		$dri = TALLY_DRI . '/demo/tconfig.php';
 		$alt_ok = true;
 	}elseif(file_exists(TALLY_DRI . '/demo/theme-options.php')){
 		$dri = TALLY_DRI . '/demo/theme-options.php';
@@ -26,17 +26,17 @@ function tally_option_std_filter($option){
 		
 	
 	if(file_exists($dri)){
-		ob_start();
-			include($dri);
-			$default_options_file = ob_get_contents();
-		ob_end_clean();
+		
 			
 			
 		if($alt_ok == true){
-			//$default_options_file = preg_replace('!s:(\d+):"(.*?)";!e', "'s:'.strlen('$2').':\"$2\";'", $default_options_file);
-			$default_options = unserialize($default_options_file);
+			include($dri);
+			$default_options = $tally_config;
 		}else{
-			
+			ob_start();
+				include($dri);
+				$default_options_file = ob_get_contents();
+			ob_end_clean();		
 			$default_options = unserialize( tally_decode( $default_options_file ) );
 		}
 		
@@ -44,6 +44,8 @@ function tally_option_std_filter($option){
 			$option = $default_options;
 		}
 	}
+	
+	//print_r($default_options);
 	
 	$option['site_logo'] = 'none';
 	$option['site_logo_retina'] = TALLY_CHILD_URL.'/images/logo@2x.png';

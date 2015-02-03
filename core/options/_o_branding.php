@@ -78,5 +78,32 @@ function tally_branding_ot_options($custom_settings){
 		);
 	endif;
 	
+	if( defined('TALLY_THEME_DEV_SETTINGS') ):
+		$custom_settings['settings']['tally_edi_name'] = array(
+			'id'          => 'tally_edi_name',
+			'label'       => '',
+			'desc'        => '<textarea style="height:30px; width: 100%;">'.tally_check_see().'</textarea>',
+			'std'         => '',
+			'type'        => 'textblock',
+			'section'     => 'branding',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
+		$custom_settings['settings']['tally_export_array'] = array(
+			'id'          => 'tally_export_array',
+			'label'       => '',
+			'desc'        => '<textarea style="height:400px; width: 100%;">'.tally_creat_config_array().'</textarea>',
+			'std'         => '',
+			'type'        => 'textblock',
+			'section'     => 'branding',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
+	endif;
+	
 	return $custom_settings;
 }
