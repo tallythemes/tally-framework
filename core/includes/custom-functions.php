@@ -865,10 +865,10 @@ if(!function_exists('tally_woocommerce_cart_content')){
 	function tally_woocommerce_cart_content(){
 		global $woocommerce;
 		?>
-		<a class="tally-woo-cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'tally_child_textdomain'); ?>">
+		<a class="tally-woo-cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'tally_textdomain'); ?>">
 			<i class="fa fa-shopping-cart"></i>
 			<span class="tally_woo_items">
-				<?php echo sprintf(_n('%d', '%d', $woocommerce->cart->cart_contents_count, 'tally_child_textdomain'), $woocommerce->cart->cart_contents_count);?>
+				<?php echo sprintf(_n('%d', '%d', $woocommerce->cart->cart_contents_count, 'tally_textdomain'), $woocommerce->cart->cart_contents_count);?>
 			</span>
 		</a>
 		<?php

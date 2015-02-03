@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digita_taxdomain\n"
-"POT-Creation-Date: 2014-10-28 22:35+0600\n"
-"PO-Revision-Date: 2014-10-28 22:35+0600\n"
+"POT-Creation-Date: 2015-02-03 17:13+0600\n"
+"PO-Revision-Date: 2015-02-03 17:13+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -19,43 +19,43 @@ msgstr ""
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
 
-#: ../core/core.php:141
+#: ../core/core.php:153
 msgid "Primary Sidebar"
 msgstr ""
 
-#: ../core/core.php:143
+#: ../core/core.php:155
 msgid "Primary Sidebar Widgets"
 msgstr ""
 
-#: ../core/core.php:150
+#: ../core/core.php:162
 msgid "Sidebar Alt"
 msgstr ""
 
-#: ../core/core.php:152
+#: ../core/core.php:164
 msgid "Sidebar Widgets"
 msgstr ""
 
-#: ../core/core.php:159 ../core/core.php:161
+#: ../core/core.php:171 ../core/core.php:173
 msgid "Footer Widget #1"
 msgstr ""
 
-#: ../core/core.php:170 ../core/core.php:172
+#: ../core/core.php:182 ../core/core.php:184
 msgid "Footer Widget #2"
 msgstr ""
 
-#: ../core/core.php:180 ../core/core.php:182
+#: ../core/core.php:192 ../core/core.php:194
 msgid "Footer Widget #3"
 msgstr ""
 
-#: ../core/core.php:190 ../core/core.php:192
+#: ../core/core.php:202 ../core/core.php:204
 msgid "Footer Widget #4"
 msgstr ""
 
-#: ../core/core.php:199 ../core/core.php:201
+#: ../core/core.php:211 ../core/core.php:213
 msgid "Footer Widget #5"
 msgstr ""
 
-#: ../core/core.php:208 ../core/core.php:210
+#: ../core/core.php:220 ../core/core.php:222
 msgid "Footer Widget #6"
 msgstr ""
 
@@ -157,88 +157,88 @@ msgstr ""
 msgid "Merge"
 msgstr ""
 
-#: ../core/includes/custom-functions.php:422
+#: ../core/includes/custom-functions.php:417
 #, php-format
 msgid "Page %s"
 msgstr ""
 
-#: ../core/includes/custom-functions.php:471
+#: ../core/includes/custom-functions.php:466
 msgid "Search Results"
 msgstr ""
 
-#: ../core/includes/custom-functions.php:473
+#: ../core/includes/custom-functions.php:468
 msgid "Not Found"
 msgstr ""
 
-#: ../core/includes/custom-functions.php:474
+#: ../core/includes/custom-functions.php:469
 msgid "Blog"
 msgstr ""
 
-#: ../core/includes/custom-functions.php:476
+#: ../core/includes/custom-functions.php:471
 msgid "Category Archive"
 msgstr ""
 
-#: ../core/includes/custom-functions.php:479
+#: ../core/includes/custom-functions.php:474
 msgid "Author Archive"
 msgstr ""
 
-#: ../core/includes/custom-functions.php:481
+#: ../core/includes/custom-functions.php:476
 msgid "Tag Archive"
 msgstr ""
 
-#: ../core/includes/custom-functions.php:482
+#: ../core/includes/custom-functions.php:477
 msgid "Yearly Archive"
 msgstr ""
 
-#: ../core/includes/custom-functions.php:483
+#: ../core/includes/custom-functions.php:478
 msgid "Monthly Archive"
 msgstr ""
 
-#: ../core/includes/custom-functions.php:484
+#: ../core/includes/custom-functions.php:479
 msgid "Daily Archive"
 msgstr ""
 
-#: ../core/includes/custom-functions.php:802
-#: ../core/includes/custom-functions.php:803
+#: ../core/includes/custom-functions.php:797
+#: ../core/includes/custom-functions.php:798
 msgid "Search"
 msgstr ""
 
-#: ../core/includes/custom-functions.php:873
+#: ../core/includes/custom-functions.php:868
 msgid "View your shopping cart"
 msgstr ""
 
-#: ../core/includes/recommended-plugin-list.php:41
+#: ../core/includes/recommended-plugin-list.php:42
 #: ../core/vandors/class-tgm-plugin-activation.php:161
 msgid "Install Required Plugins"
 msgstr ""
 
-#: ../core/includes/recommended-plugin-list.php:42
+#: ../core/includes/recommended-plugin-list.php:43
 #: ../core/vandors/class-tgm-plugin-activation.php:162
 msgid "Install Plugins"
 msgstr ""
 
-#: ../core/includes/recommended-plugin-list.php:43
+#: ../core/includes/recommended-plugin-list.php:44
 #: ../core/vandors/class-tgm-plugin-activation.php:163
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr ""
 
-#: ../core/includes/recommended-plugin-list.php:44
+#: ../core/includes/recommended-plugin-list.php:45
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: ../core/includes/recommended-plugin-list.php:55
+#: ../core/includes/recommended-plugin-list.php:56
 #: ../core/vandors/class-tgm-plugin-activation.php:175
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
-#: ../core/includes/recommended-plugin-list.php:56
+#: ../core/includes/recommended-plugin-list.php:57
 #: ../core/vandors/class-tgm-plugin-activation.php:177
 #: ../core/vandors/class-tgm-plugin-activation.php:1945
 msgid "Plugin activated successfully."
 msgstr ""
 
-#: ../core/includes/recommended-plugin-list.php:57
+#: ../core/includes/recommended-plugin-list.php:58
 #, php-format
 msgid "All plugins installed and activated successfully. %s"
 msgstr ""
@@ -463,208 +463,230 @@ msgid "Enable or Disable Site PreLoader"
 msgstr ""
 
 #: ../core/options/_o_colors.php:10
-msgid "Choose Your Color Skin"
-msgstr ""
-
-#: ../core/options/_o_colors.php:27
 msgid "Accent Color of The Site"
 msgstr ""
 
-#: ../core/options/_o_colors.php:40
+#: ../core/options/_o_colors.php:23
 msgid "2nd Accent Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:54
+#: ../core/options/_o_colors.php:37
 msgid "Site Body Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:83
+#: ../core/options/_o_colors.php:66
 msgid "Headings color on Dark Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:84 ../core/options/_o_colors.php:126
+#: ../core/options/_o_colors.php:67 ../core/options/_o_colors.php:109
 msgid ""
 "This font color will show on the dark background. For example your "
 "background color is balck and the text heading color need to be white"
 msgstr ""
 
-#: ../core/options/_o_colors.php:96
+#: ../core/options/_o_colors.php:79
 msgid "Headings color on Light Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:97 ../core/options/_o_colors.php:139
+#: ../core/options/_o_colors.php:80 ../core/options/_o_colors.php:122
 msgid ""
 "This font color will show on the light background. For example your "
 "background color is white and the text heading color need to be black"
 msgstr ""
 
-#: ../core/options/_o_colors.php:125
+#: ../core/options/_o_colors.php:108
 msgid "Sub-Headings color on Dark Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:138
+#: ../core/options/_o_colors.php:121
 msgid "sub-Headings color on Light Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:167
+#: ../core/options/_o_colors.php:150
 msgid "Text color on Dark Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:168 ../core/options/_o_colors.php:209
+#: ../core/options/_o_colors.php:151 ../core/options/_o_colors.php:192
 msgid ""
 "This font color will show on the dark background. For example your "
 "background color is balck and the text color need to be white"
 msgstr ""
 
-#: ../core/options/_o_colors.php:180
+#: ../core/options/_o_colors.php:163
 msgid "Text color on Light Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:181 ../core/options/_o_colors.php:222
+#: ../core/options/_o_colors.php:164 ../core/options/_o_colors.php:205
 msgid ""
 "This font color will show on the light background. For example your "
 "background color is white and the text color need to be black"
 msgstr ""
 
-#: ../core/options/_o_colors.php:208
+#: ../core/options/_o_colors.php:191
 msgid "Meta Text color on Dark Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:221
+#: ../core/options/_o_colors.php:204
 msgid "Meta Text color on Light Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:250
+#: ../core/options/_o_colors.php:233
 msgid "Border color on Dark Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:251
+#: ../core/options/_o_colors.php:234
 msgid ""
 "This border color will show on the dark background. For example your "
 "background color is balck and the border color need to be white"
 msgstr ""
 
-#: ../core/options/_o_colors.php:263
+#: ../core/options/_o_colors.php:246
 msgid "Border color on Light Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:264
+#: ../core/options/_o_colors.php:247
 msgid ""
 "This border color will show on the light background. For example your "
 "background color is white and the border color need to be black"
 msgstr ""
 
-#: ../core/options/_o_colors.php:292
+#: ../core/options/_o_colors.php:275
 msgid "Light Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:293
+#: ../core/options/_o_colors.php:276
 msgid "This will be a light color of background. Example: white (#ffffff)"
 msgstr ""
 
-#: ../core/options/_o_colors.php:305
+#: ../core/options/_o_colors.php:288
 msgid "Dark Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:306
+#: ../core/options/_o_colors.php:289
 msgid "This will be a bark color of background. Example: black (#000000)"
 msgstr ""
 
-#: ../core/options/_o_colors.php:333
+#: ../core/options/_o_colors.php:316
 msgid "Inner Background color on Dark Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:334
+#: ../core/options/_o_colors.php:317
 msgid ""
 "This will be a light color of inner background. Example: darker white "
 "(#f1f1f1)"
 msgstr ""
 
-#: ../core/options/_o_colors.php:346
+#: ../core/options/_o_colors.php:329
 msgid "Inner Background color on Light Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:347
+#: ../core/options/_o_colors.php:330
 msgid ""
 "This will be a dark color of inner background. Example: whiter black "
 "(#eeeeee)"
 msgstr ""
 
-#: ../core/options/_o_colors.php:376 ../core/options/_o_colors.php:423
-#: ../core/options/_o_colors.php:580 ../core/options/_o_colors.php:627
-#: ../core/options/_o_colors.php:674 ../core/options/_o_colors.php:721
+#: ../core/options/_o_colors.php:359 ../core/options/_o_colors.php:406
+#: ../core/options/_o_colors.php:452 ../core/options/_o_colors.php:660
+#: ../core/options/_o_colors.php:707 ../core/options/_o_colors.php:754
+#: ../core/options/_o_colors.php:801
 msgid "Choose Font Color Mood"
 msgstr ""
 
-#: ../core/options/_o_colors.php:377 ../core/options/_o_colors.php:424
-#: ../core/options/_o_colors.php:581 ../core/options/_o_colors.php:628
-#: ../core/options/_o_colors.php:675 ../core/options/_o_colors.php:722
+#: ../core/options/_o_colors.php:360 ../core/options/_o_colors.php:407
+#: ../core/options/_o_colors.php:453 ../core/options/_o_colors.php:661
+#: ../core/options/_o_colors.php:708 ../core/options/_o_colors.php:755
+#: ../core/options/_o_colors.php:802
 msgid ""
 "if background color is dark you will select light mood OR if the background "
 "color is dark you will select light mood"
 msgstr ""
 
-#: ../core/options/_o_colors.php:393
+#: ../core/options/_o_colors.php:376
 msgid "Topbar Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:440
+#: ../core/options/_o_colors.php:423
 msgid "Header Background"
 msgstr ""
 
 #: ../core/options/_o_colors.php:469
-msgid "Navigation Text Color"
-msgstr ""
-
-#: ../core/options/_o_colors.php:470 ../core/options/_o_colors.php:511
-msgid "Simple text color of the navigation area"
+msgid "Navigation area Background Color"
 msgstr ""
 
 #: ../core/options/_o_colors.php:482
-msgid "Navigation Border Color"
+msgid "Navigation Text Color"
 msgstr ""
 
 #: ../core/options/_o_colors.php:483 ../core/options/_o_colors.php:524
-msgid "Border color for each element in the navigation area"
+msgid "Simple text color of the navigation area"
 msgstr ""
 
 #: ../core/options/_o_colors.php:495
-msgid "Navigation Background Color"
+msgid "Navigation Border Color"
 msgstr ""
 
 #: ../core/options/_o_colors.php:496 ../core/options/_o_colors.php:537
+msgid "Border color for each element in the navigation area"
+msgstr ""
+
+#: ../core/options/_o_colors.php:508
+msgid "Navigation Background Color"
+msgstr ""
+
+#: ../core/options/_o_colors.php:509 ../core/options/_o_colors.php:550
 msgid "background color of the navigation area"
 msgstr ""
 
-#: ../core/options/_o_colors.php:510
+#: ../core/options/_o_colors.php:523
 msgid "Navigation Text Hover Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:523
+#: ../core/options/_o_colors.php:536
 msgid "Navigation Border Hover Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:536
+#: ../core/options/_o_colors.php:549
 msgid "Navigation Background Hover Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:550
+#: ../core/options/_o_colors.php:564
+msgid "Navigation Submenu Text Color"
+msgstr ""
+
+#: ../core/options/_o_colors.php:577
+msgid "Navigation Submenu Border Color"
+msgstr ""
+
+#: ../core/options/_o_colors.php:590
 msgid "Navigation Submenu Background Color"
 msgstr ""
 
-#: ../core/options/_o_colors.php:597
+#: ../core/options/_o_colors.php:604
+msgid "Navigation Submenu Hover Text Color"
+msgstr ""
+
+#: ../core/options/_o_colors.php:617
+msgid "Navigation Submenu Hover Border Color"
+msgstr ""
+
+#: ../core/options/_o_colors.php:630
+msgid "Navigation Submenu Hover Background Color"
+msgstr ""
+
+#: ../core/options/_o_colors.php:677
 msgid "Sub-Header Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:644
+#: ../core/options/_o_colors.php:724
 msgid "Content Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:691
+#: ../core/options/_o_colors.php:771
 msgid "Footer Widgets Background"
 msgstr ""
 
-#: ../core/options/_o_colors.php:739
+#: ../core/options/_o_colors.php:819
 msgid "Footer Background"
 msgstr ""
 
@@ -800,6 +822,74 @@ msgid ""
 "code></strong>"
 msgstr ""
 
+#: ../core/options/_o_header.php:68
+msgid "Topbar height"
+msgstr ""
+
+#: ../core/options/_o_header.php:69
+msgid ""
+"This is the height of the site topbar <strong>Example: <code>52px</code></"
+"strong>"
+msgstr ""
+
+#: ../core/options/_o_header.php:82
+msgid "Navigation height"
+msgstr ""
+
+#: ../core/options/_o_header.php:83
+msgid ""
+"This is the height of the site Navigation <strong>Example: <code>40px</"
+"code></strong>"
+msgstr ""
+
+#: ../core/options/_o_header.php:115
+msgid "Header Info Text"
+msgstr ""
+
+#: ../core/options/_o_header.php:130
+msgid "Header Phone Number"
+msgstr ""
+
+#: ../core/options/_o_header.php:145
+msgid "Header Email Address"
+msgstr ""
+
+#: ../core/options/_o_header.php:160
+msgid "Active Header Social Icons"
+msgstr ""
+
+#: ../core/options/_o_header.php:175
+msgid "Active Header WooCommerce Cart"
+msgstr ""
+
+#: ../core/options/_o_header.php:190
+msgid "Active Header WPML Menu"
+msgstr ""
+
+#: ../core/options/_o_header.php:205
+msgid "Header Advertisment Code"
+msgstr ""
+
+#: ../core/options/_o_header.php:220
+msgid "Active Header Search bar"
+msgstr ""
+
+#: ../core/options/_o_header.php:235
+msgid "Register Page URL"
+msgstr ""
+
+#: ../core/options/_o_header.php:236 ../core/options/_o_header.php:252
+msgid "include the full URL including <code>http://</code>"
+msgstr ""
+
+#: ../core/options/_o_header.php:251
+msgid "Login Page URL"
+msgstr ""
+
+#: ../core/options/_o_header.php:295
+msgid "header_1"
+msgstr ""
+
 #: ../core/options/_o_integration.php:9
 msgid "Custom CSS"
 msgstr ""
@@ -902,38 +992,50 @@ msgstr ""
 msgid "<h3>Trackbacks</h3>"
 msgstr ""
 
-#: ../core/structure/_st_post.php:77 ../core/structure/_st_post.php:323
+#: ../core/structure/_st_post.php:77 ../core/structure/_st_post.php:330
 #, php-format
 msgid "Permalink to %s"
 msgstr ""
 
-#: ../core/structure/_st_post.php:109 ../core/structure/_st_post.php:118
+#: ../core/structure/_st_post.php:97
+msgid "No Comments"
+msgstr ""
+
+#: ../core/structure/_st_post.php:98
+msgid "1 Comment"
+msgstr ""
+
+#: ../core/structure/_st_post.php:99
+msgid "Comments"
+msgstr ""
+
+#: ../core/structure/_st_post.php:116 ../core/structure/_st_post.php:125
 msgid "Read More"
 msgstr ""
 
-#: ../core/structure/_st_post.php:129
+#: ../core/structure/_st_post.php:136
 msgid "Pages:"
 msgstr ""
 
-#: ../core/structure/_st_post.php:150
+#: ../core/structure/_st_post.php:157
 msgid "Nothing Found"
 msgstr ""
 
-#: ../core/structure/_st_post.php:151
+#: ../core/structure/_st_post.php:158
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
 
-#: ../core/structure/_st_post.php:187
+#: ../core/structure/_st_post.php:194
 msgid "About"
 msgstr ""
 
-#: ../core/structure/_st_post.php:206
+#: ../core/structure/_st_post.php:213
 msgid "Categories:"
 msgstr ""
 
-#: ../core/structure/_st_post.php:207
+#: ../core/structure/_st_post.php:214
 msgid "Tags:"
 msgstr ""
 

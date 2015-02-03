@@ -92,7 +92,14 @@ function tally_do_post_info(){
     <div class="entry-meta">
         <div class="entry-meta-item"><i class="fa-user fa"></i> <?php the_author_posts_link(); ?></div>
         <div class="entry-meta-item"><i class="fa-calendar fa"></i> <?php the_date(); ?></div>
-        <div class="entry-meta-item"><i class="fa-comment fa"></i> <?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></div>
+        <div class="entry-meta-item"><i class="fa-comment fa"></i> 
+		<?php
+        	$comment_no = __('No Comments', 'tally_textdomain');
+			$comment_1 = __('1 Comment', 'tally_textdomain');
+			$comment_all = __('Comments', 'tally_textdomain');
+			comments_popup_link($comment_no, $comment_1, '% '.$comment_all);
+		?>
+        </div>
     </div>
     <div class="clear"></div>
     <?php
