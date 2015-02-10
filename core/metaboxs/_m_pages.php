@@ -6,7 +6,116 @@ function tally_page_metabox_register() {
 		$prefix = 'tally_';
 		
 		$settings = array();
+		$settings[] = array(
+			'id'          => 'tally_page_tab00',
+			'label'       => __('Title', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'tab',
+			'section'     => '',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
+		$settings[] = array(
+			'id'          => $prefix.'custom_title',
+			'label'       => __('Custom Title', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'text',
+			'section'     => '',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
+		$settings[] = array(
+			'id'          => $prefix.'sub_title',
+			'label'       => __('Sub Title', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'text',
+			'section'     => '',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
 		
+		$settings[] = array(
+			'id'          => 'tally_page_tab0',
+			'label'       => __('Sub-Header', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'tab',
+			'section'     => '',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
+		$settings[] = array(
+			'id'          => $prefix.'subheader_custom',
+			'label'       => __('Customize Subheader HTML', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'textarea-simple',
+			'section'     => '',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
+		$settings[] = array(
+			'id'          => $prefix.'subheader_text_color',
+			'label'       => __('Sub-Header Text Color', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'colorpicker',
+			'section'     => '',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
+		$settings[] = array(
+			'id'          => $prefix.'subheader_padding',
+			'label'       => __('Sub-Header Padding', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'spacing',
+			'section'     => '',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
+		$settings[] = array(
+			'id'          => $prefix.'subheader_bg',
+			'label'       => __('Sub-Header Background', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'background',
+			'section'     => '',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
+	
+		$settings[] = array(
+			'id'          => 'tally_page_tab1',
+			'label'       => __('Sections', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'tab',
+			'section'     => '',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
 		if(TALLY_LAYOUT_TOPBAR_REMOVE == false):
 			$settings[] = array(
 				'id'          => 'tally_is_topbar',
@@ -64,7 +173,38 @@ function tally_page_metabox_register() {
 				)
 			);
 		endif;
+		if(TALLY_LAYOUT_FOOTER_REMOVE == false):
+			$settings[] = array(
+				'id'          => 'tally_footer_layout',
+				'label'       => __('Footer', 'tally_taxdomain'),
+				'desc'        => __('Enable or Disable Footer on this page / post.', 'tally_taxdomain'),
+				'std'         => '',
+				'type'        => 'select',
+				'section'     => 'footer',
+				'rows'        => '',
+				'post_type'   => '',
+				'taxonomy'    => '',
+				'class'       => '',
+				'choices'     => array(
+					 array( 'label' => '', 'value' => '' ),
+					 array( 'label' => 'no', 'value' => 'none'),
+					 array( 'label' => 'yes', 'value' => '2'),
+				)
+			);
+		endif;
 		
+		$settings[] = array(
+			'id'          => 'tally_page_tab2',
+			'label'       => __('Layouts', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'tab',
+			'section'     => '',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
 		$settings[] = array(
 			'id'          => 'tally_sidebar_layout',
 			'label'       => __('Sidebar Layout', 'tally_taxdomain'),
@@ -105,6 +245,18 @@ function tally_page_metabox_register() {
 		);
 		
 		
+		$settings[] = array(
+			'id'          => 'tally_page_tab3',
+			'label'       => __('Footer Widgets', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'tab',
+			'section'     => '',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
 		if(TALLY_LAYOUT_FOOTER_WIDGETS_REMOVE == false):
 		$settings[] = array(
 			'id'          => 'tally_footer_widget_layout',
@@ -231,25 +383,7 @@ function tally_page_metabox_register() {
 		);
 		endif;
 		
-		if(TALLY_LAYOUT_FOOTER_REMOVE == false):
-		$settings[] = array(
-			'id'          => 'tally_footer_layout',
-			'label'       => __('Footer', 'tally_taxdomain'),
-			'desc'        => __('Enable or Disable Footer on this page / post.', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'select',
-			'section'     => 'footer',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => array(
-				 array( 'label' => '', 'value' => '' ),
-				 array( 'label' => 'no', 'value' => 'none'),
-				 array( 'label' => 'yes', 'value' => '2'),
-			)
-		);
-		endif;
+		
 		
 		$metabox = array(
 			'id'        => 'tally_ot_page_metabox',
@@ -258,7 +392,7 @@ function tally_page_metabox_register() {
 			'pages'     => apply_filters('tally_ot_page_metabox', array( 'post', 'page' )),
 			'context'   => 'normal',
 			'priority'  => 'high',
-			'fields'    => $settings,
+			'fields'    => apply_filters('tally_ot_page_metabox_options', $settings),
 		);
 		ot_register_meta_box( $metabox );
 	

@@ -26,13 +26,15 @@ function tally_script_loader(){
 	wp_enqueue_style('main-css', tally_assets_file2('css', 'style.css'));
 	wp_enqueue_style('responsive', tally_assets_file2('css', 'responsive.css'));
 	
-	wp_enqueue_style('tally-dynamic', admin_url('admin-ajax.php').'?action=tally_dynamic_css');
+	wp_enqueue_style('tally-dynamic', admin_url('admin-ajax.php').'?action=tally_dynamic_css&post_id='.get_the_ID().'');
 
 }
 
 function tally_dynamic_css() {
-  require(TALLY_DRI.'/core/assets/css/dynamic.css.php');
-  exit;
+	$current_post_id = '';
+	if(isset($_GET['post_id']) && !empty($_GET['post_id'])){ $current_post_id = $_GET['post_id']; }
+	require(TALLY_DRI.'/core/assets/css/dynamic.css.php');
+	exit;
 }
 add_action('wp_ajax_tally_dynamic_css', 'tally_dynamic_css');
 add_action('wp_ajax_nopriv_tally_dynamic_css', 'tally_dynamic_css');

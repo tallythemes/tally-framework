@@ -115,3 +115,6 @@ body .wrap.settings-wrap .ui-tabs-nav{
 #setting_color_footer_mood.format-settings .format-setting-wrap,
 #setting_color_footer_bg.format-settings .format-setting-wrap{ border-left:solid 5px #90C; border-right:solid 5px #90C; margin-bottom:0px; padding:20px; }
 #setting_color_footer_bg.format-settings .format-setting-wrap{ border-bottom:solid 5px #90C; margin-bottom:30px; }
+
+
+.ot-theme-option-tabs.ui-tabs .ot-theme-option-panels{ margin-top:20px !important; }

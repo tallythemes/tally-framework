@@ -571,6 +571,32 @@ body .menu_area #nav ul > .current-menu-parent > a{
 /*--- Search Bar ---*/
 .color_mood_light .tally_icon_search_bar .the_search_icon i.fa{ color: <?php tally_color('color_headings_light'); ?> !important; }
 .color_mood_dark .tally_icon_search_bar .the_search_icon i.fa{ color: <?php tally_color('color_headings_dark'); ?> !important; }
+
+
+/*--- Sub-Header ---*/
+<?php 
+$subheader_text_color = get_post_meta($current_post_id, 'tally_subheader_text_color', true);
+$subheader_bg = get_post_meta($current_post_id, 'tally_subheader_bg', true);
+$subheader_padding = get_post_meta($current_post_id, 'tally_subheader_padding', true);
+$subheader_padding_unit = 'px';
+if(isset($subheader_padding['unit']) && !empty($subheader_padding['unit'])){ $subheader_padding_unit = $subheader_padding['unit']; }
+if($subheader_text_color != ''){
+?>
+body h1.page_title{ color:<?php echo $subheader_text_color; ?> !important; }
+<?php } ?>
+
+body #subheader{ 
+	<?php if(isset($subheader_bg['background-color']) && !empty($subheader_bg['background-color'])){ ?>background-color:<?php echo $subheader_bg['background-color']; ?>;<?php } ?>
+	<?php if(isset($subheader_bg['background-image']) && !empty($subheader_bg['background-image'])){ ?>background-image:url(<?php echo $subheader_bg['background-image']; ?>);<?php } ?>
+	<?php if(isset($subheader_bg['background-attachment']) && !empty($subheader_bg['background-attachment'])){ ?>background-attachment:<?php echo $subheader_bg['background-attachment']; ?>;<?php } ?>
+	<?php if(isset($subheader_bg['background-size']) && !empty($subheader_bg['background-size'])){ ?>background-size:<?php echo $subheader_bg['background-size']; ?>;<?php } ?>
+	<?php if(isset($subheader_bg['background-repeat']) && !empty($subheader_bg['background-repeat'])){ ?>background-repeat:<?php echo $subheader_bg['background-repeat']; ?>;<?php } ?>
+	<?php if(isset($subheader_bg['background-position']) && !empty($subheader_bg['background-position'])){ ?>background-position:<?php echo $subheader_bg['background-position']; ?>;<?php } ?>
+}
+body #subheader #subheader-inner{
+<?php if(isset($subheader_padding['top']) && !empty($subheader_padding['top'])){ ?>padding-top:<?php echo $subheader_padding['top'].$subheader_padding_unit; ?>;<?php } ?>
+<?php if(isset($subheader_padding['bottom']) && !empty($subheader_padding['bottom'])){ ?>padding-bottom:<?php echo $subheader_padding['bottom'].$subheader_padding_unit; ?>;<?php } ?>
+}
 <?php 
 do_action('tally_dynamic_css');
 

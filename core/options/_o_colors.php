@@ -48,6 +48,19 @@ function tally_color_ot_options($custom_settings){
 		
 		
 		/*-- Headings Color --*/
+		$custom_settings['settings']['color_tab_1'] = array(
+			'id'          => 'color_tab_1',
+			'label'       => __('Headings Colors', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'tab',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
 		$custom_settings['settings']['color_block_headings'] = array(
 			'id'          => 'color_block_headings',
 			'label'       => '',
@@ -132,6 +145,19 @@ function tally_color_ot_options($custom_settings){
 		
 		
 		/*-- Text Color --*/
+		$custom_settings['settings']['color_tab_3'] = array(
+			'id'          => 'color_tab_3',
+			'label'       => __('Text Colors', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'tab',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
 		$custom_settings['settings']['color_block_text'] = array(
 			'id'          => 'color_block_text',
 			'label'       => '',
@@ -215,6 +241,19 @@ function tally_color_ot_options($custom_settings){
 		
 		
 		/*-- Border Color --*/
+		$custom_settings['settings']['color_tab_4'] = array(
+			'id'          => 'color_tab_4',
+			'label'       => __('Border Colors', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'tab',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
 		$custom_settings['settings']['color_block_border'] = array(
 			'id'          => 'color_block_border',
 			'label'       => '',
@@ -257,6 +296,19 @@ function tally_color_ot_options($custom_settings){
 		
 		
 		/*-- Background Color --*/
+		$custom_settings['settings']['color_tab_5'] = array(
+			'id'          => 'color_tab_5',
+			'label'       => __('Background Colors', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'tab',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
 		$custom_settings['settings']['color_block_bg'] = array(
 			'id'          => 'color_block_bg',
 			'label'       => '',
@@ -339,6 +391,19 @@ function tally_color_ot_options($custom_settings){
 		);
 		
 		
+		$custom_settings['settings']['color_tab_2'] = array(
+			'id'          => 'color_tab_2',
+			'label'       => __('Sections Colors', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'tab',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
 		/*-- Topbar Color --*/
 		if(TALLY_LAYOUT_TOPBAR_REMOVE == false):
 		$custom_settings['settings']['color_block_topbar'] = array(
@@ -432,8 +497,209 @@ function tally_color_ot_options($custom_settings){
 			'choices'     => ''
 		);
 		
+		/*-- Sub Header Color --*/
+		if(TALLY_LAYOUT_SUBHEADER_REMOVE == false):
+		$custom_settings['settings']['color_block_subheader'] = array(
+			'id'          => 'color_block_subheader',
+			'label'       => '',
+			'desc'        => '<div class="tally-ot-section"><h2>Sub Header</h2></div>',
+			'std'         => '',
+			'type'        => 'textblock',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_subheader_mood'] = array(
+			'id'          => 'color_subheader_mood',
+			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
+			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
+			'std'         => tally_option_std('color_subheader_mood'),
+			'type'        => 'select',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => array(
+				array( 'label' => '--', 'value' => ''),
+				array( 'label' => 'Light', 'value' => 'light'),
+				array( 'label' => 'Dark', 'value' => 'dark'),
+			),
+		);
+		$custom_settings['settings']['color_subheader_bg'] = array(
+			'id'          => 'color_subheader_bg',
+			'label'       => __('Sub-Header Background', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => tally_option_std('color_subheader_bg'),
+			'type'        => 'background',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		endif;
+		
+		
+		/*-- Main Content area Color --*/
+		$custom_settings['settings']['color_block_content'] = array(
+			'id'          => 'color_block_content',
+			'label'       => '',
+			'desc'        => '<div class="tally-ot-section"><h2>Main Content area</h2></div>',
+			'std'         => '',
+			'type'        => 'textblock',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_content_mood'] = array(
+			'id'          => 'color_content_mood',
+			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
+			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
+			'std'         => tally_option_std('color_content_mood'),
+			'type'        => 'select',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => array(
+				array( 'label' => '--', 'value' => ''),
+				array( 'label' => 'Light', 'value' => 'light'),
+				array( 'label' => 'Dark', 'value' => 'dark'),
+			),
+		);
+		$custom_settings['settings']['color_content_bg'] = array(
+			'id'          => 'color_content_bg',
+			'label'       => __('Content Background', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => tally_option_std('color_content_bg'),
+			'type'        => 'background',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		
+		
+		/*-- Footer Widgets area Color --*/
+		if(TALLY_LAYOUT_FOOTER_WIDGETS_REMOVE == false):
+		$custom_settings['settings']['color_block_fwidget'] = array(
+			'id'          => 'color_block_fwidget',
+			'label'       => '',
+			'desc'        => '<div class="tally-ot-section"><h2>Footer Widgets area</h2></div>',
+			'std'         => '',
+			'type'        => 'textblock',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_fwidget_mood'] = array(
+			'id'          => 'color_fwidget_mood',
+			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
+			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
+			'std'         => tally_option_std('color_fwidget_mood'),
+			'type'        => 'select',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => array(
+				array( 'label' => '--', 'value' => ''),
+				array( 'label' => 'Light', 'value' => 'light'),
+				array( 'label' => 'Dark', 'value' => 'dark'),
+			),
+		);
+		$custom_settings['settings']['color_fwidget_bg'] = array(
+			'id'          => 'color_fwidget_bg',
+			'label'       => __('Footer Widgets Background', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => tally_option_std('color_fwidget_bg'),
+			'type'        => 'background',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		endif;
+		
+		/*-- Footer area Color --*/
+		if(TALLY_LAYOUT_FOOTER_REMOVE == false):
+		$custom_settings['settings']['color_block_footer'] = array(
+			'id'          => 'color_block_footer',
+			'label'       => '',
+			'desc'        => '<div class="tally-ot-section"><h2>Footer area</h2></div>',
+			'std'         => '',
+			'type'        => 'textblock',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		$custom_settings['settings']['color_footer_mood'] = array(
+			'id'          => 'color_footer_mood',
+			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
+			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
+			'std'         => tally_option_std('color_footer_mood'),
+			'type'        => 'select',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => array(
+				array( 'label' => '--', 'value' => ''),
+				array( 'label' => 'Light', 'value' => 'light'),
+				array( 'label' => 'Dark', 'value' => 'dark'),
+			),
+		);
+
+		$custom_settings['settings']['color_footer_bg'] = array(
+			'id'          => 'color_footer_bg',
+			'label'       => __('Footer Background', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => tally_option_std('color_footer_bg'),
+			'type'        => 'background',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
+		endif;
 		
 		/*-- Navigation Color --*/
+		$custom_settings['settings']['color_tab_6'] = array(
+			'id'          => 'color_tab_6',
+			'label'       => __('Navigation Colors', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'tab',
+			'section'     => 'color',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => ''
+		);
 		$custom_settings['settings']['color_block_navigation'] = array(
 			'id'          => 'color_block_navigation',
 			'label'       => '',
@@ -638,196 +904,6 @@ function tally_color_ot_options($custom_settings){
 			'class'       => '',
 			'choices'     => ''
 		);
-		
-		
-		/*-- Sub Header Color --*/
-		if(TALLY_LAYOUT_SUBHEADER_REMOVE == false):
-		$custom_settings['settings']['color_block_subheader'] = array(
-			'id'          => 'color_block_subheader',
-			'label'       => '',
-			'desc'        => '<div class="tally-ot-section"><h2>Sub Header</h2></div>',
-			'std'         => '',
-			'type'        => 'textblock',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
-		);
-		$custom_settings['settings']['color_subheader_mood'] = array(
-			'id'          => 'color_subheader_mood',
-			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
-			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
-			'std'         => tally_option_std('color_subheader_mood'),
-			'type'        => 'select',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => array(
-				array( 'label' => '--', 'value' => ''),
-				array( 'label' => 'Light', 'value' => 'light'),
-				array( 'label' => 'Dark', 'value' => 'dark'),
-			),
-		);
-		$custom_settings['settings']['color_subheader_bg'] = array(
-			'id'          => 'color_subheader_bg',
-			'label'       => __('Sub-Header Background', 'tally_taxdomain'),
-			'desc'        => '',
-			'std'         => tally_option_std('color_subheader_bg'),
-			'type'        => 'background',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
-		);
-		endif;
-		
-		
-		/*-- Main Content area Color --*/
-		$custom_settings['settings']['color_block_content'] = array(
-			'id'          => 'color_block_content',
-			'label'       => '',
-			'desc'        => '<div class="tally-ot-section"><h2>Main Content area</h2></div>',
-			'std'         => '',
-			'type'        => 'textblock',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
-		);
-		$custom_settings['settings']['color_content_mood'] = array(
-			'id'          => 'color_content_mood',
-			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
-			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
-			'std'         => tally_option_std('color_content_mood'),
-			'type'        => 'select',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => array(
-				array( 'label' => '--', 'value' => ''),
-				array( 'label' => 'Light', 'value' => 'light'),
-				array( 'label' => 'Dark', 'value' => 'dark'),
-			),
-		);
-		$custom_settings['settings']['color_content_bg'] = array(
-			'id'          => 'color_content_bg',
-			'label'       => __('Content Background', 'tally_taxdomain'),
-			'desc'        => '',
-			'std'         => tally_option_std('color_content_bg'),
-			'type'        => 'background',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
-		);
-		
-		
-		/*-- Footer Widgets area Color --*/
-		if(TALLY_LAYOUT_FOOTER_WIDGETS_REMOVE == false):
-		$custom_settings['settings']['color_block_fwidget'] = array(
-			'id'          => 'color_block_fwidget',
-			'label'       => '',
-			'desc'        => '<div class="tally-ot-section"><h2>Footer Widgets area</h2></div>',
-			'std'         => '',
-			'type'        => 'textblock',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
-		);
-		$custom_settings['settings']['color_fwidget_mood'] = array(
-			'id'          => 'color_fwidget_mood',
-			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
-			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
-			'std'         => tally_option_std('color_fwidget_mood'),
-			'type'        => 'select',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => array(
-				array( 'label' => '--', 'value' => ''),
-				array( 'label' => 'Light', 'value' => 'light'),
-				array( 'label' => 'Dark', 'value' => 'dark'),
-			),
-		);
-		$custom_settings['settings']['color_fwidget_bg'] = array(
-			'id'          => 'color_fwidget_bg',
-			'label'       => __('Footer Widgets Background', 'tally_taxdomain'),
-			'desc'        => '',
-			'std'         => tally_option_std('color_fwidget_bg'),
-			'type'        => 'background',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
-		);
-		endif;
-		
-		/*-- Footer area Color --*/
-		if(TALLY_LAYOUT_FOOTER_REMOVE == false):
-		$custom_settings['settings']['color_block_footer'] = array(
-			'id'          => 'color_block_footer',
-			'label'       => '',
-			'desc'        => '<div class="tally-ot-section"><h2>Footer area</h2></div>',
-			'std'         => '',
-			'type'        => 'textblock',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
-		);
-		$custom_settings['settings']['color_footer_mood'] = array(
-			'id'          => 'color_footer_mood',
-			'label'       => __('Choose Font Color Mood', 'tally_taxdomain'),
-			'desc'        => __('if background color is dark you will select light mood OR if the background color is dark you will select light mood', 'tally_taxdomain'),
-			'std'         => tally_option_std('color_footer_mood'),
-			'type'        => 'select',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => array(
-				array( 'label' => '--', 'value' => ''),
-				array( 'label' => 'Light', 'value' => 'light'),
-				array( 'label' => 'Dark', 'value' => 'dark'),
-			),
-		);
-
-		$custom_settings['settings']['color_footer_bg'] = array(
-			'id'          => 'color_footer_bg',
-			'label'       => __('Footer Background', 'tally_taxdomain'),
-			'desc'        => '',
-			'std'         => tally_option_std('color_footer_bg'),
-			'type'        => 'background',
-			'section'     => 'color',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => ''
-		);
-		endif;
 		
 	elseif( (tally_check() != true ) && ( TALLY_THEME_STORE_URL != '') ):
 		$custom_settings['sections'][] = array( 'id' => 'color','title' => 'Color Option');
