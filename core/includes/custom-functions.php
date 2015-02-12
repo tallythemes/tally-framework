@@ -122,6 +122,25 @@ if(!function_exists('tally_file_dri')):
 endif;
 
 
+/* Theme template file loader
+-------------------------------------------------*/
+if(!function_exists('tally_get_file_dri')):
+	function tally_get_file_dri($file){
+		if(file_exists(get_stylesheet_directory().'/'.$file)){
+			return(get_stylesheet_directory().'/'.$file);
+		}elseif(file_exists(get_stylesheet_directory().'/app/'.$file)){
+			return(get_stylesheet_directory().'/app/'.$file);
+		}elseif(file_exists(get_template_directory().'/'.$file)){
+			return(get_template_directory().'/'.$file);
+		}elseif(file_exists(get_template_directory().'/app/'.$file)){
+			return(get_template_directory().'/app/'.$file);
+		}elseif(file_exists(get_template_directory().'/core/'.$file)){
+			return(get_template_directory().'/core/'.$file);
+		}
+	}
+endif;
+
+
 /* assets file loader function
 -------------------------------------------------*/
 if(!function_exists('tally_assets_file')):
@@ -483,6 +502,66 @@ function tallyfn_title($tally_custom_page_title = NULL) {
 	if( $tally_custom_page_title != NULL ){ echo $tally_custom_page_title; }else{ echo $output; }
 }
 
+
+/* Output Page title
+-------------------------------------------------*/
+function tally_page_title( $tally_custom_page_title = NULL, $before='<h1 class="page_title">', $after = '</h1>' ) {
+	
+	global $wp_query;
+	$output = the_title('', '', false);
+	
+	if (is_tax()) $output = single_term_title( "", false );
+	elseif ((get_post_type() == 'product') && is_archive()) $output =  get_the_title( woocommerce_get_page_id( 'shop' ) );
+	elseif (is_search()) $output = __('Search Results', 'tally_taxdomain') . ' &quot;' . get_search_query() . '&quot;';
+	elseif (!(is_404()) && (is_single()) || (is_page())) $output = get_the_title();
+	elseif (is_404()) $output = __('Not Found', 'tally_taxdomain');
+	elseif (is_home()) $output = __('Blog', 'tally_taxdomain');
+	elseif (is_archive()) {
+		if (is_category()) $output = __('Category Archive', 'tally_taxdomain') . ' &raquo; ' . single_cat_title('', false);
+		if (is_author()) {
+			$curauth = get_userdata(get_query_var('author'));			
+			$output = __('Author Archive', 'tally_taxdomain') . ' &raquo; ' . $curauth->display_name;
+		}
+		if (is_tag()) $output = __('Tag Archive', 'tally_taxdomain') . ' &raquo; ' . single_tag_title('', false);
+		if (is_year()) $output = __('Yearly Archive', 'tally_taxdomain') . ' &raquo; ' . get_the_date('Y');
+		if (is_month()) $output = __('Monthly Archive', 'tally_taxdomain') . ' &raquo; ' . get_the_date('F Y');
+		if (is_day()) $output = __('Daily Archive', 'tally_taxdomain') . ' &raquo; ' . get_the_date('d F Y');
+	}
+	else $output = the_title('', '', false);
+	
+	if(get_post_meta(get_the_ID(), 'tally_custom_title', true) != ''){ $output = get_post_meta(get_the_ID(), 'tally_custom_title', true); }
+	if( $tally_custom_page_title != NULL ){  $output = $tally_custom_page_title; }
+	
+	echo $before;
+		echo apply_filters('tally_page_subtitle', $output);
+	echo $after;
+}
+
+
+
+/* Output Page subtitle
+-------------------------------------------------*/
+function tally_page_subtitle( $tally_custom_subpage_title = NULL, $before='<p class="page_subtitle">', $after = '</p>' ) {
+	$subtitle = get_post_meta(get_the_ID(), 'tally_sub_title', true);
+	if( $tally_custom_subpage_title != '' ){ $subtitle = $tally_custom_subpage_title; }
+	
+	if($subtitle != ''){
+		echo $before;
+			echo apply_filters('tally_page_subtitle', $subtitle);
+		echo $after;
+	}
+}
+
+
+
+function tally_theme_breadcrumbs($before='<div class="breadcrumbs">', $after = '</div>'){
+	
+	if(get_post_meta(get_the_ID(), 'tally_subheader_breadcrumbs', true) != 'off'){
+		echo $before;
+			echo  apply_filters('tally_breadcrumb', tally_breadcrumb2());
+		echo $after;
+	}
+}
 
 
 /* Output Theme title

@@ -80,6 +80,47 @@ function tally_page_metabox_register() {
 			'class'       => '',
 		);
 		$settings[] = array(
+			'id'          => $prefix.'subheader_text_shadow',
+			'label'       => __('Sub-Header Text Shadow', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'on_off',
+			'section'     => '',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
+		$settings[] = array(
+			'id'          => 'tally_subheader_color_mood',
+			'label'       => __('Sub-Header Color Mood', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'select',
+			'section'     => '',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+			'choices'     => array(
+				 array( 'label' => '', 'value' => '' ),
+				 array( 'label' => 'dark', 'value' => 'dark' ),
+				 array( 'label' => 'light', 'value' => 'light'),
+			)
+		);
+		$settings[] = array(
+			'id'          => $prefix.'subheader_breadcrumbs',
+			'label'       => __('Sub-Header Breadcrumbs', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'on_off',
+			'section'     => '',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
+		$settings[] = array(
 			'id'          => $prefix.'subheader_padding',
 			'label'       => __('Sub-Header Padding', 'tally_taxdomain'),
 			'desc'        => '',

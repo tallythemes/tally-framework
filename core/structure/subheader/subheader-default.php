@@ -36,10 +36,16 @@ endif;
 if('tally_do_page_title'):
 	function tally_do_page_title(){
 		if(tally_is_subheader() == 'no') return;
+		$custom_title = get_post_meta(get_the_ID(), 'tally_custom_title', true);
 		
 		echo '<h1 class="page_title">';
-			echo  apply_filters('tally_page_title', tallyfn_title());
+			echo  apply_filters('tally_page_title', tallyfn_title($custom_title));
 		echo '</h1>';
+		if(get_post_meta(get_the_ID(), 'tally_sub_title', true) != ''){
+			echo '<p class="page_subtitle">';
+				echo  apply_filters('tally_page_subtitle', get_post_meta(get_the_ID(), 'tally_sub_title', true));
+			echo '</p>';
+		}
 	}
 	add_action('tally_after_header', 'tally_do_page_title', 10);
 endif;

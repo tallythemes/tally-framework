@@ -47,8 +47,5 @@ function tally_option_std_filter($option){
 	
 	//print_r($default_options);
 	
-	$option['site_logo'] = 'none';
-	$option['site_logo_retina'] = TALLY_CHILD_URL.'/images/logo@2x.png';
-	
 	return $option;	
 }

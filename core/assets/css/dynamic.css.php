@@ -391,13 +391,13 @@ if(tally_option('body_font_size')){ echo 'body{ font-size:'.tally_option('body_f
 		
 /*--------------------- Menu ------------------*/
 body .menu_area #nav *{ color:<?php tally_color('color_navigation_text'); ?>; border-color:<?php tally_color('color_navigation_border'); ?> !important; }
-body .menu_area #nav a{ color:<?php tally_color('color_navigation_text'); ?>; background-color:<?php tally_color('color_navigation_bg'); ?>; }
+body .menu_area #nav a{ color:<?php tally_color('color_navigation_text'); ?>; background-color:<?php tally_color('color_navigation_bg'); ?> !important; }
 body .menu_area #nav a:hover,
 body .menu_area #nav ul > .current-menu-item > a,
 body .menu_area #nav ul > .current-menu-parent > a{ 
 	color:<?php tally_color('color_navigation_text_hover'); ?>;
 	border-color:<?php tally_color('color_navigation_border_hover'); ?> !important;
-	background-color:<?php tally_color('color_navigation_bg_hover'); ?>; 
+	background-color:<?php tally_color('color_navigation_bg_hover'); ?> !important; 
 }
 
 
@@ -577,12 +577,14 @@ body .menu_area #nav ul > .current-menu-parent > a{
 <?php 
 $subheader_text_color = get_post_meta($current_post_id, 'tally_subheader_text_color', true);
 $subheader_bg = get_post_meta($current_post_id, 'tally_subheader_bg', true);
+$subheader_shadow = get_post_meta($current_post_id, 'tally_subheader_text_shadow', true);
 $subheader_padding = get_post_meta($current_post_id, 'tally_subheader_padding', true);
 $subheader_padding_unit = 'px';
 if(isset($subheader_padding['unit']) && !empty($subheader_padding['unit'])){ $subheader_padding_unit = $subheader_padding['unit']; }
 if($subheader_text_color != ''){
 ?>
-body h1.page_title{ color:<?php echo $subheader_text_color; ?> !important; }
+body h1.page_title,
+body p.page_subtitle{ color:<?php echo $subheader_text_color; ?> !important; }
 <?php } ?>
 
 body #subheader{ 
@@ -597,6 +599,10 @@ body #subheader #subheader-inner{
 <?php if(isset($subheader_padding['top']) && !empty($subheader_padding['top'])){ ?>padding-top:<?php echo $subheader_padding['top'].$subheader_padding_unit; ?>;<?php } ?>
 <?php if(isset($subheader_padding['bottom']) && !empty($subheader_padding['bottom'])){ ?>padding-bottom:<?php echo $subheader_padding['bottom'].$subheader_padding_unit; ?>;<?php } ?>
 }
+<?php if($subheader_shadow == 'on'){ ?>
+body #subheader .page_title,
+body #subheader .page_subtitle{ text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65); }
+<?php } ?>
 <?php 
 do_action('tally_dynamic_css');
 

@@ -303,13 +303,14 @@ class tally_loader{
 		tally_file_dri('options/_o_footer.php');
 		tally_file_dri('options/_o_integration.php');
 		tally_file_dri('options/_o_action.php');
+		tally_file_dri('options/_o_advance.php');
 		
 		
 		/* Loading Structure
 		----------------------------------*/		
 		tally_file_dri('structure/_st_topbar.php');
 		tally_file_dri('structure/_st_header.php');
-		tally_file_dri('structure/_st_subheader.php');
+		tally_file_dri('structure/subheader/_st_subheader.php');
 		tally_file_dri('structure/_st_footer-widgets.php');
 		tally_file_dri('structure/_st_footer.php');
 		tally_file_dri('structure/_st_sidebar.php');
