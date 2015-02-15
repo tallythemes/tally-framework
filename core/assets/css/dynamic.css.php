@@ -588,7 +588,7 @@ body p.page_subtitle{ color:<?php echo $subheader_text_color; ?> !important; }
 <?php } ?>
 
 body #subheader{ 
-	<?php if(isset($subheader_bg['background-color']) && !empty($subheader_bg['background-color'])){ ?>background-color:<?php echo $subheader_bg['background-color']; ?>;<?php } ?>
+	<?php if(isset($subheader_bg['background-color']) && !empty($subheader_bg['background-color'])){ ?>background-color:<?php echo $subheader_bg['background-color']; ?> !important;<?php } ?>
 	<?php if(isset($subheader_bg['background-image']) && !empty($subheader_bg['background-image'])){ ?>background-image:url(<?php echo $subheader_bg['background-image']; ?>);<?php } ?>
 	<?php if(isset($subheader_bg['background-attachment']) && !empty($subheader_bg['background-attachment'])){ ?>background-attachment:<?php echo $subheader_bg['background-attachment']; ?>;<?php } ?>
 	<?php if(isset($subheader_bg['background-size']) && !empty($subheader_bg['background-size'])){ ?>background-size:<?php echo $subheader_bg['background-size']; ?>;<?php } ?>
