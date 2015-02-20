@@ -107,14 +107,10 @@ endif;
 -------------------------------------------------*/
 if(!function_exists('tally_file_dri')):
 	function tally_file_dri($file, $data = NULL){
-		if(file_exists(get_stylesheet_directory().'/'.$file)){
-			include(get_stylesheet_directory().'/'.$file);
-		}elseif(file_exists(get_stylesheet_directory().'/app/'.$file)){
-			include(get_stylesheet_directory().'/app/'.$file);
-		}elseif(file_exists(get_template_directory().'/'.$file)){
-			include(get_template_directory().'/'.$file);
-		}elseif(file_exists(get_template_directory().'/app/'.$file)){
-			include(get_template_directory().'/app/'.$file);
+		if(file_exists(get_stylesheet_directory().'/tally/'.$file)){
+			include(get_stylesheet_directory().'/tally/'.$file);
+		}elseif(file_exists(get_template_directory().'/tally/'.$file)){
+			include(get_template_directory().'/tally/'.$file);
 		}elseif(file_exists(get_template_directory().'/core/'.$file)){
 			include(get_template_directory().'/core/'.$file);
 		}
@@ -126,14 +122,10 @@ endif;
 -------------------------------------------------*/
 if(!function_exists('tally_get_file_dri')):
 	function tally_get_file_dri($file){
-		if(file_exists(get_stylesheet_directory().'/'.$file)){
-			return(get_stylesheet_directory().'/'.$file);
-		}elseif(file_exists(get_stylesheet_directory().'/app/'.$file)){
-			return(get_stylesheet_directory().'/app/'.$file);
-		}elseif(file_exists(get_template_directory().'/'.$file)){
-			return(get_template_directory().'/'.$file);
-		}elseif(file_exists(get_template_directory().'/app/'.$file)){
-			return(get_template_directory().'/app/'.$file);
+		if(file_exists(get_stylesheet_directory().'/tally/'.$file)){
+			return(get_stylesheet_directory().'/tally/'.$file);
+		}elseif(file_exists(get_template_directory().'/tally/'.$file)){
+			return(get_template_directory().'/tally/'.$file);
 		}elseif(file_exists(get_template_directory().'/core/'.$file)){
 			return(get_template_directory().'/core/'.$file);
 		}
@@ -147,12 +139,12 @@ if(!function_exists('tally_assets_file')):
 	function tally_assets_file($file){
 		if(file_exists(get_stylesheet_directory().'/'.$file)){
 			return get_stylesheet_directory_uri().'/'.$file;
-		}elseif(file_exists(get_stylesheet_directory().'/app/assets/'.$file)){
-			return get_stylesheet_directory_uri().'/app/assets/'.$file;
+		}elseif(file_exists(get_stylesheet_directory().'/tally/assets/'.$file)){
+			return get_stylesheet_directory_uri().'/tally/assets/'.$file;
 		}elseif(file_exists(get_template_directory().'/assets/'.$file)){
 			return get_template_directory_uri().'/assets/'.$file;
-		}elseif(file_exists(get_template_directory().'/app/assets/'.$file)){
-			return get_template_directory_uri().'/app/assets/'.$file;
+		}elseif(file_exists(get_template_directory().'/tally/assets/'.$file)){
+			return get_template_directory_uri().'/tally/assets/'.$file;
 		}elseif(file_exists(get_template_directory().'/core/assets/'.$file)){
 			return get_template_directory_uri().'/core/assets/'.$file;
 		}

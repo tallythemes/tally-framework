@@ -1,0 +1,72 @@
+==== View ====
+
+CSS Grid
+
+Isotope
+
+masonry
+
+Flexslider
+
+owlcarousel
+
+Tabs
+
+Accordion
+
+Toggle
+
+
+
+==== Blocks ====
+
+Banner [ https://www.brainstormforce.com/demos/ultimate/interactive-banner-2/  ]
+
+Icons 
+
+Info Box [ https://www.brainstormforce.com/demos/ultimate/info-box/ ]
+
+Info List [ https://www.brainstormforce.com/demos/ultimate/info-list/ ]
+
+Info Banner [ https://www.brainstormforce.com/demos/ultimate/info-banner/ ]
+
+Flip Box [ https://www.brainstormforce.com/demos/ultimate/flip-box/ ]
+
+Counter [ https://www.brainstormforce.com/demos/ultimate/stats-counter/ ]
+
+Pricing Table [ https://www.brainstormforce.com/demos/ultimate/price-box/ ]
+
+Contacy Form 
+
+Google Map 
+
+Text Blocks 
+
+Info Table [ https://www.brainstormforce.com/demos/ultimate/info-table/ ]
+
+Count Down Timer [ https://www.brainstormforce.com/demos/ultimate/count-down-timer/ ]
+
+
+
+==== Typs ====
+
+Blog Simple
+
+Blog Grid
+
+Blog List
+
+Blog List Grid
+
+Blog Slideshow
+
+Blog carousel
+
+Page Grid
+
+Page carousel
+
+Page List
+
+
+
