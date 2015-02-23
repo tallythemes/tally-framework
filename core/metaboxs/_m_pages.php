@@ -55,18 +55,26 @@ function tally_page_metabox_register() {
 			'taxonomy'    => '',
 			'class'       => '',
 		);
-		$settings[] = array(
-			'id'          => $prefix.'subheader_custom',
-			'label'       => __('Customize Subheader HTML', 'tally_taxdomain'),
-			'desc'        => '',
-			'std'         => '',
-			'type'        => 'textarea-simple',
-			'section'     => '',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-		);
+		if(TALLY_LAYOUT_SUBHEADER_REMOVE == false):
+			$settings[] = array(
+				'id'          => 'tally_is_subheader',
+				'label'       => __('Enable SubHeader', 'tally_taxdomain'),
+				'desc'        => __('Enable or Disable SubHeader of this page', 'tally_taxdomain'),
+				'std'         => '',
+				'type'        => 'select',
+				'section'     => 'branding',
+				'rows'        => '',
+				'post_type'   => '',
+				'taxonomy'    => '',
+				'class'       => '',
+				'choices'     => array(
+					array( 'label' => '', 'value' => '' ),
+					 array( 'label' => 'Yes', 'value' => 'yes' ),
+					 array( 'label' => 'No', 'value' => 'no'),
+				)
+			);
+		endif;
+		
 		$settings[] = array(
 			'id'          => $prefix.'subheader_text_color',
 			'label'       => __('Sub-Header Text Color', 'tally_taxdomain'),
@@ -144,95 +152,18 @@ function tally_page_metabox_register() {
 			'taxonomy'    => '',
 			'class'       => '',
 		);
-	
 		$settings[] = array(
-			'id'          => 'tally_page_tab1',
-			'label'       => __('Sections', 'tally_taxdomain'),
+			'id'          => $prefix.'subheader_custom',
+			'label'       => __('Customize Subheader HTML', 'tally_taxdomain'),
 			'desc'        => '',
 			'std'         => '',
-			'type'        => 'tab',
+			'type'        => 'textarea-simple',
 			'section'     => '',
 			'rows'        => '',
 			'post_type'   => '',
 			'taxonomy'    => '',
 			'class'       => '',
 		);
-		if(TALLY_LAYOUT_TOPBAR_REMOVE == false):
-			$settings[] = array(
-				'id'          => 'tally_is_topbar',
-				'label'       => __('Enable TopBar Area', 'tally_taxdomain'),
-				'desc'        => __('Enable or Disable TopBar of this page / post.', 'tally_taxdomain'),
-				'std'         => '',
-				'type'        => 'select',
-				'section'     => 'branding',
-				'rows'        => '',
-				'post_type'   => '',
-				'taxonomy'    => '',
-				'class'       => '',
-				'choices'     => array(
-					 array( 'label' => '', 'value' => '' ),
-					 array( 'label' => 'Yes', 'value' => 'yes' ),
-					 array( 'label' => 'No', 'value' => 'no'),
-				)
-			);
-		endif;
-		
-		$settings[] = array(
-			'id'          => 'tally_is_header',
-			'label'       => __('Enable Header', 'tally_taxdomain'),
-			'desc'        => __('Enable or Disable Header of this page', 'tally_taxdomain'),
-			'std'         => '',
-			'type'        => 'select',
-			'section'     => 'branding',
-			'rows'        => '',
-			'post_type'   => '',
-			'taxonomy'    => '',
-			'class'       => '',
-			'choices'     => array(
-				array( 'label' => '', 'value' => '' ),
-				 array( 'label' => 'Yes', 'value' => 'yes' ),
-				 array( 'label' => 'No', 'value' => 'no'),
-			)
-		);
-		
-		if(TALLY_LAYOUT_SUBHEADER_REMOVE == false):
-			$settings[] = array(
-				'id'          => 'tally_is_subheader',
-				'label'       => __('Enable SubHeader', 'tally_taxdomain'),
-				'desc'        => __('Enable or Disable SubHeader of this page', 'tally_taxdomain'),
-				'std'         => '',
-				'type'        => 'select',
-				'section'     => 'branding',
-				'rows'        => '',
-				'post_type'   => '',
-				'taxonomy'    => '',
-				'class'       => '',
-				'choices'     => array(
-					array( 'label' => '', 'value' => '' ),
-					 array( 'label' => 'Yes', 'value' => 'yes' ),
-					 array( 'label' => 'No', 'value' => 'no'),
-				)
-			);
-		endif;
-		if(TALLY_LAYOUT_FOOTER_REMOVE == false):
-			$settings[] = array(
-				'id'          => 'tally_footer_layout',
-				'label'       => __('Footer', 'tally_taxdomain'),
-				'desc'        => __('Enable or Disable Footer on this page / post.', 'tally_taxdomain'),
-				'std'         => '',
-				'type'        => 'select',
-				'section'     => 'footer',
-				'rows'        => '',
-				'post_type'   => '',
-				'taxonomy'    => '',
-				'class'       => '',
-				'choices'     => array(
-					 array( 'label' => '', 'value' => '' ),
-					 array( 'label' => 'no', 'value' => 'none'),
-					 array( 'label' => 'yes', 'value' => '2'),
-				)
-			);
-		endif;
 		
 		$settings[] = array(
 			'id'          => 'tally_page_tab2',
@@ -288,7 +219,7 @@ function tally_page_metabox_register() {
 		
 		$settings[] = array(
 			'id'          => 'tally_page_tab3',
-			'label'       => __('Footer Widgets', 'tally_taxdomain'),
+			'label'       => __('Footer', 'tally_taxdomain'),
 			'desc'        => '',
 			'std'         => '',
 			'type'        => 'tab',
@@ -423,6 +354,51 @@ function tally_page_metabox_register() {
 			'operator'    => 'or'
 		);
 		endif;
+		
+		if(TALLY_LAYOUT_FOOTER_REMOVE == false):
+			$settings[] = array(
+				'id'          => 'tally_footer_layout',
+				'label'       => __('Footer', 'tally_taxdomain'),
+				'desc'        => __('Enable or Disable Footer on this page / post.', 'tally_taxdomain'),
+				'std'         => '',
+				'type'        => 'select',
+				'section'     => 'footer',
+				'rows'        => '',
+				'post_type'   => '',
+				'taxonomy'    => '',
+				'class'       => '',
+				'choices'     => array(
+					 array( 'label' => '', 'value' => '' ),
+					 array( 'label' => 'no', 'value' => 'none'),
+					 array( 'label' => 'yes', 'value' => '2'),
+				)
+			);
+		endif;
+		
+		$settings[] = array(
+			'id'          => 'tally_page_tab4',
+			'label'       => __('Background', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'tab',
+			'section'     => '',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
+		$settings[] = array(
+			'id'          => $prefix.'page_bg',
+			'label'       => __('Page Background', 'tally_taxdomain'),
+			'desc'        => '',
+			'std'         => '',
+			'type'        => 'background',
+			'section'     => '',
+			'rows'        => '',
+			'post_type'   => '',
+			'taxonomy'    => '',
+			'class'       => '',
+		);
 		
 		
 		

@@ -603,6 +603,17 @@ body #subheader #subheader-inner{
 body #subheader .page_title,
 body #subheader .page_subtitle{ text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65); }
 <?php } ?>
+
+/*--- Page Background ---*/
+<?php $page_bg = get_post_meta($current_post_id, 'tally_page_bg', true); ?>
+body{
+	<?php if(isset($page_bg['background-color']) && !empty($page_bg['background-color'])){ ?>background-color:<?php echo $page_bg['background-color']; ?> !important;<?php } ?>
+	<?php if(isset($page_bg['background-image']) && !empty($page_bg['background-image'])){ ?>background-image:url(<?php echo $page_bg['background-image']; ?>);<?php } ?>
+	<?php if(isset($page_bg['background-attachment']) && !empty($page_bg['background-attachment'])){ ?>background-attachment:<?php echo $page_bg['background-attachment']; ?>;<?php } ?>
+	<?php if(isset($page_bg['background-size']) && !empty($page_bg['background-size'])){ ?>background-size:<?php echo $page_bg['background-size']; ?>;<?php } ?>
+	<?php if(isset($page_bg['background-repeat']) && !empty($page_bg['background-repeat'])){ ?>background-repeat:<?php echo $page_bg['background-repeat']; ?>;<?php } ?>
+	<?php if(isset($page_bg['background-position']) && !empty($page_bg['background-position'])){ ?>background-position:<?php echo $page_bg['background-position']; ?>;<?php } ?>
+}
 <?php 
 do_action('tally_dynamic_css');
 
